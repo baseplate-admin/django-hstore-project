@@ -30,7 +30,7 @@
         "jest-stencil-runner": "^0.0.19",
         "puppeteer": "^24.41.0",
         "sass": "^1.99.0",
-        "typescript": "^6.0.2"
+        "typescript": "^6.0.3"
     },
     "license": "MIT"
 }
