@@ -28,7 +28,7 @@
         "@types/node": "^25.6.0",
         "jest": "^30.3.0",
         "jest-stencil-runner": "^0.0.19",
-        "puppeteer": "^24.41.0",
+        "puppeteer": "^24.42.0",
         "sass": "^1.99.0",
         "typescript": "^6.0.3"
     },
