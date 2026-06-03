@@ -8,8 +8,8 @@ import widgetCss from './widget.css?inline';
 // Register
 import '../image-icon';
 
-const DJ = { input: 'vTextField' as const, textarea: 'vLargeTextField' as const };
-const GH = 'https://github.com/baseplate-admin/django-hstore-widget/issues';
+const DJANGO_MAPPING = { input: 'vTextField' as const, textarea: 'vLargeTextField' as const };
+const GITHUB_REPO = 'https://github.com/baseplate-admin/django-hstore-widget/issues';
 const SVG_KEYS = ['deleteSvgSrc', 'addSvgSrc', 'editSvgSrc'] as const;
 
 type Item = { key: string; value: string; index: number };
@@ -79,7 +79,7 @@ class DjangoHstoreWidget extends LitElement {
                 ? html`<div class="flex items-center justify-center gap-1" id="mount_error">
                       <p>Failed to mount. Unexpected JSON from <code>django backend</code></p>
                       <p>The provided json is: <code class="warning">${this.json}</code> which is not valid.</p>
-                      <p>Please check the json or <a href="${GH}">file an issue at Github</a></p>
+                      <p>Please check the json or <a href="${GITHUB_REPO}">file an issue at Github</a></p>
                   </div>`
                 : html``;
         }
@@ -123,9 +123,9 @@ class DjangoHstoreWidget extends LitElement {
         const row = (it: Item) =>
             html`<div class="form-row field-data" id="json_items">
                 <div class="flex gap-2.5 items-center justify-start">
-                    <input value="${it.key}" @input="${(e: Event) => dicIn(e, it, 'key')}" placeholder="key" class="min-width-[150px] ${DJ.input}" />
+                    <input value="${it.key}" @input="${(e: Event) => dicIn(e, it, 'key')}" placeholder="key" class="min-width-[150px] ${DJANGO_MAPPING.input}" />
                     <strong>:</strong>
-                    <input value="${it.value}" @input="${(e: Event) => dicIn(e, it, 'value')}" placeholder="value" class="min-width-[300px] ${DJ.input}" />
+                    <input value="${it.value}" @input="${(e: Event) => dicIn(e, it, 'value')}" placeholder="value" class="min-width-[300px] ${DJANGO_MAPPING.input}" />
                     <div
                         role="button"
                         aria-label="Delete ${it.key}:${it.value} at index ${it.index}"
@@ -140,7 +140,7 @@ class DjangoHstoreWidget extends LitElement {
 
         return html`<div class="flex gap-2.5 items-center">
                 <textarea
-                    class="${cn(this._mode === 'rows' && 'hidden invisible')} ${cn(this._err && 'warning')} ${DJ.textarea}"
+                    class="${cn(this._mode === 'rows' && 'hidden invisible')} ${cn(this._err && 'warning')} ${DJANGO_MAPPING.textarea}"
                     cols="${this.cols}"
                     name="${this.fieldName}"
                     rows="${this.rows}"
