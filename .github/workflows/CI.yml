@@ -36,7 +36,10 @@ jobs:
               with:
                   node-version: 24
             - run: npm ci
-            - run: npm run test
+            - name: Install Playwright browsers
+              run: npx playwright install --with-deps chromium firefox
+            - name: Run Playwright tests
+              run: npm test
 
     test-backend:
         name: Test Backend

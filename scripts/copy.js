@@ -45,6 +45,6 @@ try {
         console.warn('No non-empty files were copied');
     }
 } catch (error) {
-    console.error('Error:', (error as Error).message);
+    console.error('Error:', error.message);
     process.exit(1);
 }
