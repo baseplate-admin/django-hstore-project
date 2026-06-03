@@ -18,7 +18,9 @@
         "noUnusedParameters": true,
         "paths": {
             "$lib/*": ["./lib/*"],
-            "$store/*": ["./stores/*"]
+            "$store/*": ["./stores/*"],
+            "$mappping/*": ["./mappings/*"],
+            "$components/*": ["./components/*"]
         }
     },
     "include": ["src/frontend"],

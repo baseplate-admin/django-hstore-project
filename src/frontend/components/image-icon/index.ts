@@ -1,6 +1,6 @@
+import { getState, subscribe } from '$store/image';
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { subscribe, getState } from '$store/image';
 
 const ICONS = {
     delete: { src: 'delete_svg_src', alt: '❌' },

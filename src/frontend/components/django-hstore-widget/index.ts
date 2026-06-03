@@ -1,16 +1,16 @@
+import { cn } from '$lib/classnames';
+import { setState } from '$store/image';
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { state } from 'lit/decorators/state.js';
-import { setState } from '$store/image';
-import { cn } from '$lib/classnames';
 import widgetCss from './widget.css?inline';
 
-// Register
-import '../image-icon';
+import { DJANGO_MAPPING } from '$mappping/django';
+import { GITHUB_REPO } from '$mappping/github';
+import { SVG_KEYS } from '$mappping/svg_keys';
 
-const DJANGO_MAPPING = { input: 'vTextField' as const, textarea: 'vLargeTextField' as const };
-const GITHUB_REPO = 'https://github.com/baseplate-admin/django-hstore-widget/issues';
-const SVG_KEYS = ['deleteSvgSrc', 'addSvgSrc', 'editSvgSrc'] as const;
+// Register
+import '$components/image-icon';
 
 type Item = { key: string; value: string; index: number };
 
