@@ -2,14 +2,15 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { state } from 'lit/decorators/state.js';
 import { setState } from '$store/image';
-import '../image-icon';
 import { cn } from '$lib/classnames';
 import widgetCss from './widget.css?inline';
 
-const DJ = Object.freeze({ input: 'vTextField' as const, textarea: 'vLargeTextField' as const });
+// Register
+import '../image-icon';
+
+const DJ = { input: 'vTextField' as const, textarea: 'vLargeTextField' as const };
 const GH = 'https://github.com/baseplate-admin/django-hstore-widget/issues';
-const SVG_KEYS = Object.freeze(['deleteSvgSrc', 'addSvgSrc', 'editSvgSrc'] as const);
-let _cssDone = false;
+const SVG_KEYS = ['deleteSvgSrc', 'addSvgSrc', 'editSvgSrc'] as const;
 
 type Item = { key: string; value: string; index: number };
 
@@ -33,9 +34,15 @@ class DjangoHstoreWidget extends LitElement {
     @state() _items: Item[] = [];
     @state() _mode: 'rows' | 'textarea' = 'rows';
 
+    #cssRegistered = false;
     override connectedCallback() {
         super.connectedCallback();
-        _cssDone ||= (this.appendChild(Object.assign(document.createElement('style'), { textContent: widgetCss })), true);
+        if (!this.#cssRegistered) {
+            const styleChild = document.createElement('style');
+            styleChild.textContent = widgetCss;
+            this.appendChild(styleChild);
+            this.#cssRegistered = true;
+        }
         SVG_KEYS.forEach(k => this[k] && setState({ [k.replace(/[A-Z]/g, '_$1').toLowerCase()]: this[k]! }));
     }
 
