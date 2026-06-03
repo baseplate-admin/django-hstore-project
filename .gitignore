@@ -33,6 +33,5 @@ __pycache__
 /src/django_hstore_widget/static/admin/js/django_hstore_widget/*
 
 # Test files
-*.spec.ts
 **/test/
 /test-results
