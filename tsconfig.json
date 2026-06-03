@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": "./src/frontend",
-        "ignoreDeprecations": "5.0",
+        "ignoreDeprecations": "6.0",
         "strict": true,
         "experimentalDecorators": true,
         "useDefineForClassFields": false,
@@ -17,8 +17,8 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "paths": {
-            "$lib/*": ["lib/*"],
-            "$store/*": ["stores/*"]
+            "$lib/*": ["./lib/*"],
+            "$store/*": ["./stores/*"]
         }
     },
     "include": ["src/frontend"],

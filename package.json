@@ -7,7 +7,7 @@
         "url": "https://github.com/baseplate-admin/django-hstore-widget.git"
     },
     "scripts": {
-        "build": "vite build && node ./scripts/copy.js",
+        "build": "vite build && node --experimental-strip-types ./scripts/copy.ts",
         "dev": "vite --port 9100",
         "test": "playwright test",
         "test:ui": "playwright test --ui"
@@ -15,6 +15,7 @@
     "devDependencies": {
         "@playwright/test": "^1.60.0",
         "@types/node": "^25.9.1",
+        "@typescript/native-preview": "^7.0.0-dev.20260603.1",
         "lit": "^3.3.3",
         "playwright": "^1.51.0",
         "typescript": "^5.8.3",

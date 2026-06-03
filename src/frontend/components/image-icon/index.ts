@@ -4,6 +4,10 @@ import { subscribe, getState } from '$store/image';
 
 @customElement('image-icon')
 class ImageIcon extends LitElement {
+    override createRenderRoot() {
+        return this;
+    }
+
     @property({ type: String, reflect: true })
     type: 'delete' | 'add' | 'edit' = 'delete';
 
@@ -24,9 +28,9 @@ class ImageIcon extends LitElement {
     override render() {
         const store = getState();
         const mapping: Record<string, { src: string; alt: string }> = {
-            delete: { src: store.delete_svg_src, alt: 'delete' },
-            add: { src: store.add_svg_src, alt: 'add' },
-            edit: { src: store.edit_svg_src, alt: 'edit' },
+            delete: { src: store.delete_svg_src, alt: '❌' },
+            add: { src: store.add_svg_src, alt: '➕' },
+            edit: { src: store.edit_svg_src, alt: '✏️' },
         };
         const icon = mapping[this.type];
         if (!icon?.src) {
