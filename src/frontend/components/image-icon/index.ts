@@ -2,43 +2,37 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { subscribe, getState } from '$store/image';
 
+const ICONS = {
+    delete: { src: 'delete_svg_src', alt: '❌' },
+    add: { src: 'add_svg_src', alt: '➕' },
+    edit: { src: 'edit_svg_src', alt: '✏️' },
+} as const;
+
 @customElement('image-icon')
-class ImageIcon extends LitElement {
+export class ImageIcon extends LitElement {
     override createRenderRoot() {
         return this;
     }
 
     @property({ type: String, reflect: true })
-    type: 'delete' | 'add' | 'edit' = 'delete';
+    type: keyof typeof ICONS = 'delete';
 
-    private _unsubscribe = () => {};
+    #unsub = () => {};
 
     override connectedCallback() {
         super.connectedCallback();
-        this._unsubscribe = subscribe(() => {
-            this.requestUpdate();
-        });
+        this.#unsub = subscribe(() => this.requestUpdate());
     }
 
     override disconnectedCallback() {
         super.disconnectedCallback();
-        this._unsubscribe();
+        this.#unsub();
     }
 
     override render() {
-        const store = getState();
-        const mapping: Record<string, { src: string; alt: string }> = {
-            delete: { src: store.delete_svg_src, alt: '❌' },
-            add: { src: store.add_svg_src, alt: '➕' },
-            edit: { src: store.edit_svg_src, alt: '✏️' },
-        };
-        const icon = mapping[this.type];
-        if (!icon?.src) {
-            console.debug(`Icon type "${this.type}" src is not yet set`);
-        }
-
-        return html`<img src="${icon?.src ?? ''}" alt="${icon?.alt ?? ''}" />`;
+        const st = getState();
+        const icon = ICONS[this.type];
+        const src = st[icon.src] ?? '';
+        return html`<img src="${src}" alt="${icon.alt}" />`;
     }
 }
-
-export { ImageIcon };

@@ -1,41 +1,20 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 
-const BASE_DIR = import.meta.dirname;
-const DIST_DIR = path.resolve(BASE_DIR, '..', 'dist', 'components');
-const TARGET_DIR = path.resolve(BASE_DIR, '..', 'src', 'django_hstore_widget', 'static', 'admin', 'js', 'django_hstore_widget');
+const dist = path.resolve(import.meta.dirname, '..', 'dist', 'components');
+const target = path.resolve(import.meta.dirname, '..', 'src', 'django_hstore_widget', 'static', 'admin', 'js', 'django_hstore_widget');
 
-// Remove target directory if exists
-if (fs.existsSync(TARGET_DIR)) {
-    fs.rmSync(TARGET_DIR, { recursive: true, force: true });
+fs.rmSync(target, { recursive: true, force: true, maxRetries: 2 });
+fs.mkdirSync(target, { recursive: true });
+
+const files = fs.readdirSync(dist).filter(f => f.endsWith('.js'));
+
+if (!files.length) throw new Error('No JS files found. Re-run `npm run build`');
+
+let n = 0;
+for (const f of files) {
+    const src = path.join(dist, f);
+    fs.statSync(src).size > 0 && (fs.cpSync(src, path.join(target, f)), n++);
 }
 
-// Create target directory
-fs.mkdirSync(TARGET_DIR, { recursive: true });
-
-// Find JS files in dist directory
-const files = fs
-    .readdirSync(DIST_DIR)
-    .filter(file => file.endsWith('.js'))
-    .map(file => path.join(DIST_DIR, file));
-
-if (files.length === 0) {
-    throw new Error('There are no js files. Re-Run `npm run build`');
-}
-
-// Copy files
-let copiedCount = 0;
-for (const file of files) {
-    const stats = fs.statSync(file);
-    if (stats.size > 0) {
-        const targetFile = path.join(TARGET_DIR, path.basename(file));
-        fs.copyFileSync(file, targetFile);
-        copiedCount++;
-    }
-}
-
-if (copiedCount > 0) {
-    console.log('DONE');
-} else {
-    console.warn('No non-empty files were copied');
-}
+n ? console.log('DONE') : console.warn('No non-empty files copied');
