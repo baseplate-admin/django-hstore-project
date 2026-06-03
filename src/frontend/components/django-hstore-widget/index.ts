@@ -29,8 +29,8 @@ class DjangoHstoreWidget extends LitElement {
     @property({ type: String, attribute: 'edit_svg_src' }) editSvgSrc?: string;
 
     @state() _mounted = false;
-    @state() _err: string | null = null;
-    @state() _tv = '';
+    @state() _error: string | null = null;
+    @state() _textareaValue = '';
     @state() _items: Item[] = [];
     @state() _mode: 'rows' | 'textarea' = 'rows';
 
@@ -51,7 +51,7 @@ class DjangoHstoreWidget extends LitElement {
     }
 
     override firstUpdated() {
-        !this._err && (this._mounted = true);
+        !this._error && (this._mounted = true);
     }
 
     #str({ indent: i }: { indent?: number } = {}) {
@@ -63,19 +63,19 @@ class DjangoHstoreWidget extends LitElement {
         try {
             const o = JSON.parse(s);
             this._items = Object.entries(o).map(([k, v], i) => ({ key: k, value: String(v), index: i }));
-            this._err = null;
+            this._error = null;
         } catch (e) {
-            this._err = e instanceof Error ? e.toString() : 'An unknown error occurred';
+            this._error = e instanceof Error ? e.toString() : 'An unknown error occurred';
         } finally {
             this._items = structuredClone(this._items);
         }
-        this._tv = this.#str({ indent: 0 });
+        this._textareaValue = this.#str({ indent: 0 });
         this.requestUpdate();
     }
 
     render() {
         if (!this._mounted) {
-            return this._err
+            return this._error
                 ? html`<div class="flex items-center justify-center gap-1" id="mount_error">
                       <p>Failed to mount. Unexpected JSON from <code>django backend</code></p>
                       <p>The provided json is: <code class="warning">${this.json}</code> which is not valid.</p>
@@ -88,27 +88,27 @@ class DjangoHstoreWidget extends LitElement {
             const idx = this._items.findIndex(x => x.index === i);
             if (idx === -1) return;
             this._items = this._items.toSpliced(idx, 1);
-            this._tv = this.#str({ indent: 0 });
+            this._textareaValue = this.#str({ indent: 0 });
             this.requestUpdate();
         };
 
         const add = () => {
             const last = this._items.at(-1);
             this._items = [...this._items, { index: (last?.index ?? -1) + 1, key: '', value: '' }];
-            this._tv = this.#str({ indent: 0 });
+            this._textareaValue = this.#str({ indent: 0 });
             this.requestUpdate();
         };
 
         const tog = () => {
-            if (this._err) return;
+            if (this._error) return;
             this._mode = this._mode === 'rows' ? 'textarea' : 'rows';
-            this._mode === 'textarea' && (this._tv = this.#str());
+            this._mode === 'textarea' && (this._textareaValue = this.#str());
             this.requestUpdate();
         };
 
         const txtIn = (e: Event) => {
             this.#parse((e.target as HTMLTextAreaElement)?.value ?? '{}');
-            this._items.some(it => typeof it.value === 'object') && (this._err = "SyntaxError: 'ltree' doesn't support nested json");
+            this._items.some(it => typeof it.value === 'object') && (this._error = "SyntaxError: 'ltree' doesn't support nested json");
             this.requestUpdate();
         };
 
@@ -116,7 +116,7 @@ class DjangoHstoreWidget extends LitElement {
             const v = (e.target as HTMLInputElement)?.value;
             t === 'key' ? (it.key = v) : (it.value = v);
             this._items = structuredClone(this._items);
-            this._tv = this.#str({ indent: 0 });
+            this._textareaValue = this.#str({ indent: 0 });
             this.requestUpdate();
         };
 
@@ -140,16 +140,16 @@ class DjangoHstoreWidget extends LitElement {
 
         return html`<div class="flex gap-2.5 items-center">
                 <textarea
-                    class="${cn(this._mode === 'rows' && 'hidden invisible')} ${cn(this._err && 'warning')} ${DJANGO_MAPPING.textarea}"
+                    class="${cn(this._mode === 'rows' && 'hidden invisible')} ${cn(this._error && 'warning')} ${DJANGO_MAPPING.textarea}"
                     cols="${this.cols}"
                     name="${this.fieldName}"
                     rows="${this.rows}"
                     @input="${txtIn}"
-                    .value="${this._tv}"
+                    .value="${this._textareaValue}"
                 ></textarea>
-                <div class="${cn(this._err && 'warning brightness-90')}" id="textbox_error">${this._err}</div>
+                <div class="${cn(this._error && 'warning brightness-90')}" id="textbox_error">${this._error}</div>
             </div>
-            ${this._mode === 'rows' && !this._err && this._items ? this._items.map(row) : ''}
+            ${this._mode === 'rows' && !this._error && this._items ? this._items.map(row) : ''}
             <div class="form-row justify-between items-center flex">
                 <button
                     type="button"
@@ -160,7 +160,7 @@ class DjangoHstoreWidget extends LitElement {
                 >
                     <image-icon type="add"></image-icon> Add row
                 </button>
-                <div class="${cn(this._err && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
+                <div class="${cn(this._error && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
                     ${this._mode === 'textarea'
                         ? html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Close TextArea" @click="${tog}">
                               <image-icon type="delete"></image-icon> Close TextArea
