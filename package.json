@@ -1,36 +1,30 @@
 {
     "name": "django-hstore-widget",
-    "type": "module",
     "description": "Human friendly HStoreWidget. Continual of django-admin-hstore-widget.",
-    "main": "dist/index.cjs.js",
-    "module": "dist/index.js",
-    "types": "dist/types/index.d.ts",
-    "collection": "dist/collection/collection-manifest.json",
-    "collection:main": "dist/collection/index.js",
-    "unpkg": "dist/django-hstore-widget/django-hstore-widget.esm.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/baseplate-admin/django-hstore-widget.git"
     },
+    "license": "MIT",
+    "type": "module",
     "scripts": {
-        "build": "stencil build && node --experimental-transform-types ./scripts/copy.ts",
-        "start": "stencil build --dev --watch --serve",
-        "test": "jest",
-        "test.watch": "jest --watch",
-        "test.coverage": "jest --coverage",
-        "generate": "stencil generate"
+        "build": "vite build && node --experimental-strip-types ./scripts/copy.ts",
+        "dev": "vite --port 9100",
+        "format": "prettier --write 'src/**/*.ts' 'scripts/**/*.ts'",
+        "format:check": "prettier --check 'src/**/*.ts' 'scripts/**/*.ts'",
+        "test": "playwright test",
+        "test:ui": "playwright test --ui"
     },
     "devDependencies": {
-        "@stencil/core": "^4.43.5",
-        "@stencil/sass": "^3.2.3",
-        "@stencil/store": "^2.2.2",
-        "@types/jest": "^30.0.0",
+        "@ianvs/prettier-plugin-sort-imports": "4.7.1",
+        "@playwright/test": "^1.60.0",
         "@types/node": "^25.9.1",
-        "jest": "^30.4.2",
-        "jest-stencil-runner": "^0.0.20",
-        "puppeteer": "^25.1.0",
-        "sass": "^1.100.0",
-        "typescript": "^6.0.3"
-    },
-    "license": "MIT"
+        "@typescript/native-preview": "^7.0.0-dev.20260603.1",
+        "lit": "^3.3.3",
+        "playwright": "^1.51.0",
+        "prettier": "3.8.3",
+        "prettier-plugin-organize-imports": "^4.3.0",
+        "prettier-plugin-packagejson": "^3.0.2",
+        "vite": "^8.0.16"
+    }
 }

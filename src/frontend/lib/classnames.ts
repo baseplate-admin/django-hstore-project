@@ -1,6 +1,11 @@
-type ClassValue = ClassValue[] | Record<string, string | number | null | boolean | undefined> | string | number | null | boolean | undefined;
+type ClsVal = string | number | null | undefined | boolean | Record<string, string | number | null | undefined | boolean> | ClsArr;
+type ClsArr = readonly ClsVal[];
 
-// Code modified from
-// https://chat.openai.com/share/58feb08e-0905-4860-a309-6d75687c2e6e
-const clsx = (...args: ClassValue[]) => args.filter(arg => arg && typeof arg === 'string').join(' ');
-export const cn = (...classes: ClassValue[]) => clsx(...classes);
+export function cn(...args: ClsVal[]): string {
+    const flat = (v: ClsVal): (string | number | null | undefined | boolean)[] =>
+        Array.isArray(v) ? v.flatMap(flat) : typeof v === 'object' && v !== null ? (Object.values(v) as (string | number | null | undefined | boolean)[]) : [v];
+    return args
+        .flatMap(v => flat(v))
+        .filter(Boolean)
+        .join(' ');
+}

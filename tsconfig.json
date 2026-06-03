@@ -1,26 +1,28 @@
 {
     "compilerOptions": {
         "baseUrl": "./src/frontend",
+        "ignoreDeprecations": "6.0",
         "strict": true,
-        "types": ["jest", "jest-stencil-runner"],
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "allowUnreachableCode": false,
         "declaration": false,
-        "experimentalDecorators": true,
-        "lib": ["dom", "es2022"],
-        "moduleResolution": "node",
+        "lib": ["esnext", "dom"],
+        "types": ["node"],
+        "moduleResolution": "bundler",
         "module": "esnext",
-        "target": "es2020",
+        "target": "esnext",
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "jsx": "react",
-        "jsxFactory": "h",
         "paths": {
-            "$lib/*": ["lib/*"],
-            "$store/*": ["stores/*"]
+            "$lib/*": ["./lib/*"],
+            "$store/*": ["./stores/*"],
+            "$mappping/*": ["./mappings/*"],
+            "$components/*": ["./components/*"]
         }
     },
     "include": ["src/frontend"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "dist"]
 }
