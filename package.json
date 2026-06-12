@@ -19,7 +19,7 @@
         "@ianvs/prettier-plugin-sort-imports": "4.7.1",
         "@playwright/test": "^1.60.0",
         "@types/node": "^25.9.3",
-        "@typescript/native-preview": "^7.0.0-dev.20260611.2",
+        "@typescript/native-preview": "^7.0.0-dev.20260612.1",
         "lit": "^3.3.3",
         "playwright": "^1.51.0",
         "prettier": "3.8.4",
