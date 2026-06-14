@@ -1,6 +1,6 @@
-import TerserPlugin from 'terser-webpack-plugin';
-import { resolve, dirname } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import TerserPlugin from 'terser-webpack-plugin';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const frontendSourceDir = resolve(__dirname, 'src', 'frontend');

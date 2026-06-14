@@ -39,6 +39,9 @@ class DjangoHstoreWidget extends LitElement {
             hasRegisteredImageIcon = true;
         }
     }
+    protected override createRenderRoot() {
+        return this;
+    }
 
     override connectedCallback(): void {
         super.connectedCallback();
@@ -73,7 +76,7 @@ class DjangoHstoreWidget extends LitElement {
         }
     }
 
-    override willUpdate(changedProperties: Map<string, unknown>): void {
+    protected override willUpdate(changedProperties: Map<string, unknown>): void {
         if (changedProperties.has('json')) {
             this.#parseJsonInput(this.json);
         }
@@ -114,7 +117,7 @@ class DjangoHstoreWidget extends LitElement {
         this.requestUpdate();
     }
 
-    render() {
+    protected override render() {
         if (!this.isMounted) {
             return this.parsingError
                 ? html`<div class="flex items-center justify-center gap-1" id="mount_error">
@@ -205,7 +208,7 @@ class DjangoHstoreWidget extends LitElement {
                         id="delete-button"
                         @click="${() => removeRow(rowItem.index)}"
                     >
-                        <image-icon type="delete"></image-icon>
+                        <image-icon type="add" />
                     </div>
                 </div>
             </div>`;

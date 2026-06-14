@@ -8,17 +8,11 @@ const sharedPlugins = [
 ] as const;
 
 const config: BabelConfig = {
-    presets: [
-        ['@babel/preset-env', { targets: { browsers: ['defaults'] } }],
-        '@babel/preset-typescript',
-    ],
+    presets: [['@babel/preset-env', { targets: { browsers: ['defaults'] } }], '@babel/preset-typescript'],
     plugins: sharedPlugins,
     env: {
         test: {
-            presets: [
-                ['@babel/preset-env', { targets: { node: 'current' } }],
-                '@babel/preset-typescript',
-            ],
+            presets: [['@babel/preset-env', { targets: { node: 'current' } }], '@babel/preset-typescript'],
             plugins: sharedPlugins,
         },
     },

@@ -7,11 +7,5 @@ description = "Zensical documentation for the Django HStore project"
 
 dependencies = ["zensical"]
 
-[dependency-groups]
-dev = [
-    { path = "../packages/django_hstore_widget", editable = true },
-    { path = "../packages/django_hstore_field", editable = true },
-]
-
 [tool.uv]
 dev = ["django-hstore-widget", "django-hstore-field"]

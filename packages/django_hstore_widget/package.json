@@ -8,15 +8,15 @@
     "license": "MIT",
     "type": "module",
     "scripts": {
-        "build": "node --experimental-strip-types ./node_modules/webpack-cli/bin/cli.js --disable-interpret --config webpack.config.ts --mode production && node --experimental-strip-types ./scripts/copy.ts",
-        "dev": "node --experimental-strip-types ./node_modules/webpack-cli/bin/cli.js --disable-interpret serve --config webpack.config.ts --mode development --port 9100",
+        "build": "webpack --disable-interpret -c webpack.config.ts --mode production && node --experimental-strip-types ./scripts/copy.ts",
+        "dev": "webpack serve --disable-interpret -c webpack.config.ts --mode development",
         "format": "prettier --write 'src/**/*.ts' 'scripts/**/*.ts'",
         "format:check": "prettier --check 'src/**/*.ts' 'scripts/**/*.ts'",
         "test": "playwright test",
         "test:jest": "node ./node_modules/jest/bin/jest.js --config jest.config.cjs",
         "test:ui": "playwright test --ui",
-        "typecheck": "tsc --noEmit",
-        "tsgo": "tsgo --noEmit"
+        "tsgo": "tsgo --noEmit",
+        "typecheck": "tsc --noEmit"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",

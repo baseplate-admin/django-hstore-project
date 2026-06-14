@@ -1,34 +1,40 @@
 import os
+import sys
 
 import django
 import pytest
 from django.conf import settings
 
-from playwright.sync_api import Error as PlaywrightError
-from playwright.sync_api import sync_playwright
+try:
+    from playwright.sync_api import Error as PlaywrightError
+    from playwright.sync_api import sync_playwright
+except ImportError:
+    sync_playwright = None
+    PlaywrightError = Exception
+
+# Ensure the test app `cat` is importable when pytest runs from the repo root
+sys.path.insert(0, os.path.dirname(__file__))
 
 
-@pytest.fixture
-def page():
-    if sync_playwright is None:
-        pytest.skip("Playwright is not installed for this Python runtime")
-
+def _can_connect_to_db():
+    """Check if PostgreSQL is available before running db tests."""
     try:
-        with sync_playwright() as playwright:
-            browser = playwright.chromium.launch(headless=True)
-            context = browser.new_context(viewport={"width": 1920, "height": 1200})
-            browser_page = context.new_page()
-            yield browser_page
-            context.close()
-            browser.close()
-    except PlaywrightError as exc:
-        pytest.skip(str(exc))
+        from django.db import connection
+        conn = connection.ensure_connection()
+        return conn is not None
+    except Exception:
+        return False
 
 
-def pytest_sessionstart(session):
+def pytest_runtest_setup(item):
+    """Skip database tests when PostgreSQL is unavailable."""
+    if item.get_closest_marker("django_db") and not _can_connect_to_db():
+        pytest.skip("PostgreSQL database is not available")
+
+
+def _configure_django():
     if settings.configured:
         return
-
     settings.configure(
         DATABASES={
             "default": {
@@ -88,3 +94,23 @@ def pytest_sessionstart(session):
         ],
     )
     django.setup()
+
+
+_configure_django()
+
+
+@pytest.fixture
+def page():
+    if sync_playwright is None:
+        pytest.skip("Playwright is not installed for this Python runtime")
+
+    try:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(headless=True)
+            context = browser.new_context(viewport={"width": 1920, "height": 1200})
+            browser_page = context.new_page()
+            yield browser_page
+            context.close()
+            browser.close()
+    except PlaywrightError as exc:
+        pytest.skip(str(exc))

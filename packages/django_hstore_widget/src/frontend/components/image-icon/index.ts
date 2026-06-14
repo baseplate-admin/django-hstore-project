@@ -3,13 +3,13 @@ import { LitElement, html } from 'lit';
 import { property } from 'lit/decorators.js';
 
 const ICON_DEFINITIONS = {
-    delete: { attributeSource: 'delete_svg_src', accessibilityLabel: 'Delete icon' },
-    add: { attributeSource: 'add_svg_src', accessibilityLabel: 'Add icon' },
-    edit: { attributeSource: 'edit_svg_src', accessibilityLabel: 'Edit icon' },
+    delete: { attributeSource: 'delete_svg_src', accessibilityLabel: '❌' },
+    add: { attributeSource: 'add_svg_src', accessibilityLabel: '➕' },
+    edit: { attributeSource: 'edit_svg_src', accessibilityLabel: '✏️' },
 } as const;
 
 export class ImageIconComponent extends LitElement {
-    override createRenderRoot(): this {
+    protected override createRenderRoot(): this {
         return this;
     }
 
@@ -30,7 +30,7 @@ export class ImageIconComponent extends LitElement {
         this.#unsubscribeStoreUpdates();
     }
 
-    override render() {
+    protected override render() {
         const storeState = getState();
         const iconDefinition = ICON_DEFINITIONS[this.iconType];
         const resolvedImageSource = storeState[iconDefinition.attributeSource] ?? '';
