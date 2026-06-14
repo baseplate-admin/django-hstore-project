@@ -1,0 +1,27 @@
+Django HStore Field - LLM Context
+
+OVERVIEW
+========
+A thin wrapper around Django built-in HStoreField that auto-wires the HStoreFormField and HStoreFormWidget from django-hstore-widget. Users get a ready-to-use hstore field without manual form configuration.
+
+IMPLEMENTATION
+===============
+from django.contrib.postgres.fields import HStoreField as DjangoHStoreField
+from django_hstore_widget.forms import HStoreFormField
+from django_hstore_widget.widgets import HStoreFormWidget
+
+class HStoreField(DjangoHStoreField):
+    def formfield(self, **kwargs):
+        defaults = {
+            "form_class": HStoreFormField,
+            "widget": HStoreFormWidget,
+        }
+        defaults.update(kwargs)
+        return super().formfield(**defaults)
+
+PACKAGE DETAILS
+================
+- Only 2 source files (__init__.py, fields.py)
+- Depends on django-hstore-widget>=0.1.0
+- hatchling build backend, py-dist output
+- Tests use the same cat test app pattern as the widget package

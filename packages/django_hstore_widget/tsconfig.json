@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src/frontend",
+        "ignoreDeprecations": "6.0",
+        "strict": true,
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "declaration": false,
+        "lib": ["esnext", "dom"],
+        "types": ["node", "jest"],
+        "moduleResolution": "bundler",
+        "module": "esnext",
+        "target": "esnext",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+        "paths": {
+            "$lib/*": ["./lib/*"],
+            "$store/*": ["./stores/*"],
+            "$mappping/*": ["./mappings/*"],
+            "$components/*": ["./components/*"]
+        }
+    },
+    "include": ["src/frontend"],
+    "exclude": ["node_modules", "dist", "**/__tests__/**", "**/*.test.ts"]
+}

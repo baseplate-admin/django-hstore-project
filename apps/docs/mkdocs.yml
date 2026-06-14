@@ -1,0 +1,72 @@
+site_name: Django HStore Project
+site_description: Documentation for django-hstore-widget and django-hstore-field
+site_url: https://django-hstore-project.readthedocs.io/
+
+theme:
+    name: material
+    palette:
+        - media: "(prefers-color-scheme)"
+          toggle:
+              icon: material/brightness-auto
+              name: Switch to light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Switch to system preference
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.tracking
+        - navigation.top
+        - search.highlight
+        - search.share
+        - content.code.copy
+        - content.code.annotate
+
+nav:
+    - Home: index.md
+    - User Guide:
+        - Installation: user-guide/installation.md
+        - Quick Start: user-guide/quickstart.md
+        - HStore vs JSONB: user-guide/hstore-vs-jsonb.md
+    - Developer Guide:
+        - Architecture: developer-guide/architecture.md
+        - Contributing: developer-guide/contributing.md
+        - Frontend Build: developer-guide/frontend-build.md
+    - API Reference:
+        - Widget: api/widget.md
+        - Field: api/field.md
+    - LLM Context:
+        - Overview: llms.md
+        - Full Context: llms-full.md
+        - Widget: llms-django-hstore-widget.md
+        - Field: llms-django-hstore-field.md
+
+plugins:
+    - search:
+        separator: '[\s​:,()-]+'
+    - tags
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - codehilite:
+        guess_lang: false
+    - def_list
+    - footnotes
+    - md_in_html
+    - pymdownx.highlight:
+        use_pygments: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - toc:
+        permalink: true
+
+docs_dir: docs

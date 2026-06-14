@@ -1,0 +1,64 @@
+[project]
+name = "django-hstore-field"
+version = "0.0.7"
+description = "An easy to use postgres hstore field that is based on django-hstore-widget"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+    { name = "baseplate-admin", email = "61817579+baseplate-admin@users.noreply.github.com" },
+]
+
+maintainers = [
+    { name = "baseplate-admin", email = "61817579+baseplate-admin@users.noreply.github.com" },
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = ["django-hstore-widget>=0.1.0", "django>=5.0"]
+
+[dependency-groups]
+test = [
+    "pytest>=8.0.1",
+    "pytest-django>=4.8.0",
+    "psycopg[binary]>=3",
+    "playwright>=1.53.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/baseplate-admin/django-hstore-project"
+Repository = "https://github.com/baseplate-admin/django-hstore-project"
+"Bug Tracker" = "https://github.com/baseplate-admin/django-hstore-project/issues"
+
+[tool.hatch.build]
+packages = ["src/django_hstore_field"]
+directory = 'py-dist'
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+pythonpath = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
