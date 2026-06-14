@@ -1,15 +1,15 @@
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { Configuration } from 'webpack';
+import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
 import TerserPlugin from 'terser-webpack-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
-import type { Configuration } from 'webpack';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const frontendSourceDir = resolve(__dirname, 'src', 'frontend');
+const isProduction = process.env.NODE_ENV === 'production';
 
-export default (env: Record<string, unknown>, argv: { mode?: string }): Configuration => {
-    const isProduction = argv.mode === 'production';
-
+export default (): Configuration & { devServer?: DevServerConfiguration } => {
     return {
         mode: isProduction ? 'production' : 'development',
         entry: './src/frontend/index.ts',
@@ -47,14 +47,9 @@ export default (env: Record<string, unknown>, argv: { mode?: string }): Configur
         module: {
             rules: [
                 {
-                    test: /\.ts$/,
+                    test: /\.tsx?$/,
                     exclude: /node_modules/,
-                    use: {
-                        loader: 'ts-loader',
-                        options: {
-                            transpileOnly: true,
-                        },
-                    },
+                    use: 'babel-loader',
                 },
                 {
                     test: /\.css$/,

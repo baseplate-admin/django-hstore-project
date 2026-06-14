@@ -21,7 +21,8 @@
             "$lib/*": ["./lib/*"],
             "$store/*": ["./stores/*"],
             "$mappping/*": ["./mappings/*"],
-            "$components/*": ["./components/*"]
+            "$components/*": ["./components/*"],
+            "$registry/*": ["./registry/*"]
         }
     },
     "include": ["src/frontend"],

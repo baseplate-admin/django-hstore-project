@@ -10,11 +10,10 @@ import { GITHUB_REPO } from '$mappping/github';
 import { SVG_KEYS } from '$mappping/svg_keys';
 
 import { ImageIconComponent } from '$components/image-icon';
+import { enterScope, exitScope } from '$registry/scope';
 
 type KeyValueItem = { key: string; value: string; index: number };
 
-let hasRegisteredImageIcon = false;
-let hasInjectedStylesheet = false;
 let widgetInstanceCount = 0;
 
 @customElement('django-hstore-widget')
@@ -33,12 +32,8 @@ class DjangoHstoreWidget extends LitElement {
     @state() keyValueRows: KeyValueItem[] = [];
     @state() displayMode: 'rows' | 'textarea' = 'rows';
 
-    #registerScopedComponents(): void {
-        if (!hasRegisteredImageIcon) {
-            customElements.define('image-icon', ImageIconComponent);
-            hasRegisteredImageIcon = true;
-        }
-    }
+    #cssRegistered = false;
+
     protected override createRenderRoot() {
         return this;
     }
@@ -46,13 +41,20 @@ class DjangoHstoreWidget extends LitElement {
     override connectedCallback(): void {
         super.connectedCallback();
         widgetInstanceCount++;
-        this.#registerScopedComponents();
 
-        if (!hasInjectedStylesheet) {
+        // Register the image-icon element when the first widget mounts
+        if (widgetInstanceCount === 1) {
+            customElements.define('image-icon', ImageIconComponent);
+        }
+
+        // Activate the scope so child components know they're inside this widget
+        enterScope('django-hstore-widget');
+
+        if (!this.#cssRegistered) {
             const styleElement = document.createElement('style');
             styleElement.textContent = widgetCss;
             this.appendChild(styleElement);
-            hasInjectedStylesheet = true;
+            this.#cssRegistered = true;
         }
 
         for (const svgKey of SVG_KEYS) {
@@ -67,16 +69,16 @@ class DjangoHstoreWidget extends LitElement {
     override disconnectedCallback(): void {
         super.disconnectedCallback();
         widgetInstanceCount--;
+
+        // Deactivate the scope and unregister image-icon when all widgets disconnect
         if (widgetInstanceCount <= 0) {
             widgetInstanceCount = 0;
-            if (hasRegisteredImageIcon) {
-                customElements.unlink('image-icon');
-                hasRegisteredImageIcon = false;
-            }
+            exitScope('django-hstore-widget');
+            customElements.unlink('image-icon');
         }
     }
 
-    protected override willUpdate(changedProperties: Map<string, unknown>): void {
+    override willUpdate(changedProperties: Map<string, unknown>): void {
         if (changedProperties.has('json')) {
             this.#parseJsonInput(this.json);
         }
@@ -89,7 +91,9 @@ class DjangoHstoreWidget extends LitElement {
     }
 
     #buildJsonString({ indentCount }: { indentCount?: number } = {}): string {
-        const filteredEntries = this.keyValueRows.filter(entry => entry.key || entry.value).map(entry => [entry.key ?? '', entry.value ?? '']);
+        const filteredEntries = this.keyValueRows
+            .filter(entry => entry.key || entry.value)
+            .map(entry => [entry.key ?? '', entry.value ?? '']);
 
         const reconstructedObject = Object.fromEntries(filteredEntries);
         const usePrettyPrinting = Object.keys(reconstructedObject).length > 1;
@@ -208,7 +212,7 @@ class DjangoHstoreWidget extends LitElement {
                         id="delete-button"
                         @click="${() => removeRow(rowItem.index)}"
                     >
-                        <image-icon type="add" />
+                        <image-icon type="delete"></image-icon>
                     </div>
                 </div>
             </div>`;

@@ -1,5 +1,6 @@
-/** @type {import('jest').Config} */
-module.exports = {
+import type { Config } from 'jest';
+
+const config: Config = {
     testEnvironment: 'jsdom',
     transform: {
         '^.+\\.(t|j)sx?$': 'babel-jest',
@@ -11,3 +12,5 @@ module.exports = {
     },
     transformIgnorePatterns: ['<rootDir>/node_modules/(?!(lit|@lit)/)'],
 };
+
+export default config;
