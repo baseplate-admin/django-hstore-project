@@ -1,11 +1,13 @@
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import TerserPlugin from 'terser-webpack-plugin';
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import type { Configuration } from 'webpack';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const frontendSourceDir = resolve(__dirname, 'src', 'frontend');
 
-export default (env, argv) => {
+export default (env: Record<string, unknown>, argv: { mode?: string }): Configuration => {
     const isProduction = argv.mode === 'production';
 
     return {
@@ -18,26 +20,19 @@ export default (env, argv) => {
         },
         resolve: {
             extensions: ['.ts', '.js'],
-            alias: {
-                $lib: resolve(frontendSourceDir, 'lib'),
-                $store: resolve(frontendSourceDir, 'stores'),
-                $mappping: resolve(frontendSourceDir, 'mappings'),
-                $components: resolve(frontendSourceDir, 'components'),
-            },
+            plugins: [new TsconfigPathsPlugin({})],
         },
         optimization: {
             minimize: isProduction,
             minimizer: isProduction
                 ? [
                       new TerserPlugin({
+                          extractComments: false,
                           terserOptions: {
                               compress: {
                                   drop_console: true,
                                   passes: 3,
                                   unused: true,
-                              },
-                              mangle: {
-                                  safari10: true,
                               },
                               format: {
                                   comments: false,
