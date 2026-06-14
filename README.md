@@ -40,4 +40,4 @@ See the [Zensical docs](apps/docs/) for comprehensive documentation.
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT see [LICENSE](LICENSE)
