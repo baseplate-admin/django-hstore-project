@@ -100,7 +100,7 @@ jobs:
             - name: Install Playwright browser (Chromium)
               run: uv run playwright install --with-deps chromium
             - name: Run widget backend tests
-              run: uv run pytest packages/django_hstore_widget/tests/ -v -x -rs
+              run: uv run pytest tests/ -v -x -rs
 
     test-field-backend:
         name: Test Field Backend
@@ -151,7 +151,7 @@ jobs:
             - name: Install Playwright browser (Chromium)
               run: uv run playwright install --with-deps chromium
             - name: Run field backend tests
-              run: uv run pytest packages/django_hstore_field/tests/ -v -x -rs
+              run: uv run pytest tests/ -v -x -rs
 
     build-docs:
         name: Build Docs
