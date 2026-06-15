@@ -8,9 +8,8 @@ import widgetCss from './widget.css';
 import { DJANGO_MAPPING } from '$mappping/django';
 import { GITHUB_REPO } from '$mappping/github';
 import { SVG_KEYS } from '$mappping/svg_keys';
-
-// Register
-import '$components/image-icon';
+import { ImageIconBase } from '$components/image-icon';
+import { registerIconInstance, releaseIconInstance } from '$registry/icon-factory';
 
 type Item = { key: string; value: string; index: number };
 
@@ -35,6 +34,8 @@ class DjangoHstoreWidget extends LitElement {
     @state() _mode: 'rows' | 'textarea' = 'rows';
 
     #cssRegistered = false;
+    #iconTag = '';
+
     override connectedCallback() {
         super.connectedCallback();
         if (!this.#cssRegistered) {
@@ -43,7 +44,13 @@ class DjangoHstoreWidget extends LitElement {
             this.appendChild(styleChild);
             this.#cssRegistered = true;
         }
+        this.#iconTag = registerIconInstance(ImageIconBase, 'django-hstore-widget');
         SVG_KEYS.forEach(k => this[k] && setState({ [k.replace(/[A-Z]/g, '_$1').toLowerCase()]: this[k]! }));
+    }
+
+    override disconnectedCallback() {
+        super.disconnectedCallback();
+        releaseIconInstance(this.#iconTag);
     }
 
     override willUpdate(changed: Map<string, unknown>) {
@@ -74,6 +81,8 @@ class DjangoHstoreWidget extends LitElement {
     }
 
     render() {
+        const Icon = this.#iconTag;
+
         if (!this._mounted) {
             return this._error
                 ? html`<div class="flex items-center justify-center gap-1" id="mount_error">
@@ -133,7 +142,7 @@ class DjangoHstoreWidget extends LitElement {
                         id="delete-button"
                         @click="${() => del(it.index)}"
                     >
-                        <image-icon type="delete"></image-icon>
+                        <${Icon} type="delete"></${Icon}>
                     </div>
                 </div>
             </div>`;
@@ -158,15 +167,15 @@ class DjangoHstoreWidget extends LitElement {
                     aria-label="Add Row"
                     @click="${add}"
                 >
-                    <image-icon type="add"></image-icon> Add row
+                    <${Icon} type="add"></${Icon}> Add row
                 </button>
                 <div class="${cn(this._error && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
                     ${this._mode === 'textarea'
                         ? html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Close TextArea" @click="${tog}">
-                              <image-icon type="delete"></image-icon> Close TextArea
+                              <${Icon} type="delete"></${Icon}> Close TextArea
                           </button>`
                         : html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Open TextArea" @click="${tog}">
-                              <image-icon type="edit"></image-icon> Open TextArea
+                              <${Icon} type="edit"></${Icon}> Open TextArea
                           </button>`}
                 </div>
             </div>`;

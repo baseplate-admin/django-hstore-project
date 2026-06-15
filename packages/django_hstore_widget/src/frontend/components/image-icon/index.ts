@@ -1,16 +1,14 @@
 import { getState, subscribe } from '$store/image';
 import { LitElement, html } from 'lit';
 import { property } from 'lit/decorators.js';
-import { scopedChild } from '$registry/scoped-child';
 
-const ICON_DEFINITIONS = {
+export const ICON_DEFINITIONS = {
     delete: { attributeSource: 'delete_svg_src', accessibilityLabel: 'Delete' },
     add: { attributeSource: 'add_svg_src', accessibilityLabel: 'Add' },
     edit: { attributeSource: 'edit_svg_src', accessibilityLabel: 'Edit' },
 } as const;
 
-@scopedChild('django-hstore-widget')
-export class ImageIconComponent extends LitElement {
+export class ImageIconBase extends LitElement {
     protected override createRenderRoot(): this {
         return this;
     }
@@ -20,14 +18,14 @@ export class ImageIconComponent extends LitElement {
 
     #unsubscribeStoreUpdates = () => {};
 
-    override connectedCallback(): void {
+    connectedCallback(): void {
         super.connectedCallback();
         this.#unsubscribeStoreUpdates = subscribe(() => {
             this.requestUpdate();
         });
     }
 
-    override disconnectedCallback(): void {
+    disconnectedCallback(): void {
         super.disconnectedCallback();
         this.#unsubscribeStoreUpdates();
     }
