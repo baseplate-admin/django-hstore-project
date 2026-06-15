@@ -20,6 +20,7 @@ def _can_connect_to_db():
     """Check if PostgreSQL is available before running db tests."""
     try:
         from django.db import connection
+
         conn = connection.ensure_connection()
         return conn is not None
     except Exception:
