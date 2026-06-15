@@ -9,3 +9,6 @@ dependencies = ["zensical"]
 
 [tool.uv]
 dev = ["django-hstore-widget", "django-hstore-field"]
+
+[dependency-groups]
+docs = []
