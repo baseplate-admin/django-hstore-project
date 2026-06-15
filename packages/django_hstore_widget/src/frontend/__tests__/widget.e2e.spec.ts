@@ -47,7 +47,9 @@ test.describe('django-hstore-widget', () => {
         const rows = page.locator('django-hstore-widget').locator('#json_items');
         await expect(rows).toHaveCount(1);
 
-        await page.locator('#delete-button').click({ force: true });
+        await page.evaluate(() => {
+            document.querySelector('#delete-button')?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+        });
         await expect(rows).toHaveCount(0);
     });
 
