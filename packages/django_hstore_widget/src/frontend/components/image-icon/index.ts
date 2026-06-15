@@ -16,8 +16,6 @@ export class ImageIconComponent extends LitElement {
         return this;
     }
 
-    #scopeController: ScopeController;
-
     @property({ type: String, reflect: true, attribute: 'type' })
     iconType: keyof typeof ICON_DEFINITIONS = 'delete';
 
@@ -25,7 +23,7 @@ export class ImageIconComponent extends LitElement {
 
     override connectedCallback(): void {
         super.connectedCallback();
-        this.#scopeController = new ScopeController(this, 'django-hstore-widget');
+        new ScopeController(this, 'django-hstore-widget');
         this.#unsubscribeStoreUpdates = subscribe(() => {
             this.requestUpdate();
         });

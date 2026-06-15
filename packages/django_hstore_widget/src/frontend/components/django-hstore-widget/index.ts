@@ -9,15 +9,17 @@ import { DJANGO_MAPPING } from '$mappping/django';
 import { GITHUB_REPO } from '$mappping/github';
 import { SVG_KEYS } from '$mappping/svg_keys';
 
-import { ImageIconComponent } from '$components/image-icon';
-import { enterScope, exitScope } from '$registry/scope';
+// Register
+import '$components/image-icon';
 
-type KeyValueItem = { key: string; value: string; index: number };
-
-let widgetInstanceCount = 0;
+type Item = { key: string; value: string; index: number };
 
 @customElement('django-hstore-widget')
 class DjangoHstoreWidget extends LitElement {
+    override createRenderRoot() {
+        return this;
+    }
+
     @property({ type: String }) json = '';
     @property({ type: String, attribute: 'field_name' }) fieldName = '';
     @property({ type: Number }) cols = 40;
@@ -26,104 +28,54 @@ class DjangoHstoreWidget extends LitElement {
     @property({ type: String, attribute: 'add_svg_src' }) addSvgSrc?: string;
     @property({ type: String, attribute: 'edit_svg_src' }) editSvgSrc?: string;
 
-    @state() isMounted = false;
-    @state() parsingError: string | null = null;
-    @state() rawTextAreaContent = '';
-    @state() keyValueRows: KeyValueItem[] = [];
-    @state() displayMode: 'rows' | 'textarea' = 'rows';
+    @state() _mounted = false;
+    @state() _error: string | null = null;
+    @state() _textareaValue = '';
+    @state() _items: Item[] = [];
+    @state() _mode: 'rows' | 'textarea' = 'rows';
 
     #cssRegistered = false;
-
-    protected override createRenderRoot() {
-        return this;
-    }
-
-    override connectedCallback(): void {
+    override connectedCallback() {
         super.connectedCallback();
-        widgetInstanceCount++;
-
-        // Register the image-icon element when the first widget mounts
-        if (widgetInstanceCount === 1) {
-            customElements.define('image-icon', ImageIconComponent);
-        }
-
-        // Activate the scope so child components know they're inside this widget
-        enterScope('django-hstore-widget');
-
         if (!this.#cssRegistered) {
-            const styleElement = document.createElement('style');
-            styleElement.textContent = widgetCss;
-            this.appendChild(styleElement);
+            const styleChild = document.createElement('style');
+            styleChild.textContent = widgetCss;
+            this.appendChild(styleChild);
             this.#cssRegistered = true;
         }
-
-        for (const svgKey of SVG_KEYS) {
-            const svgValue = this[svgKey];
-            if (svgValue) {
-                const normalisedKey = svgKey.replace(/[A-Z]/g, '_$1').toLowerCase();
-                setState({ [normalisedKey]: svgValue });
-            }
-        }
+        SVG_KEYS.forEach(k => this[k] && setState({ [k.replace(/[A-Z]/g, '_$1').toLowerCase()]: this[k]! }));
     }
 
-    override disconnectedCallback(): void {
-        super.disconnectedCallback();
-        widgetInstanceCount--;
-
-        // Deactivate the scope and unregister image-icon when all widgets disconnect
-        if (widgetInstanceCount <= 0) {
-            widgetInstanceCount = 0;
-            exitScope('django-hstore-widget');
-            customElements.unlink('image-icon');
-        }
+    override willUpdate(changed: Map<string, unknown>) {
+        changed.has('json') && this.#parse(this.json);
     }
 
-    override willUpdate(changedProperties: Map<string, unknown>): void {
-        if (changedProperties.has('json')) {
-            this.#parseJsonInput(this.json);
-        }
+    override firstUpdated() {
+        !this._error && (this._mounted = true);
     }
 
-    override firstUpdated(): void {
-        if (!this.parsingError) {
-            this.isMounted = true;
-        }
+    #str({ indent: i }: { indent?: number } = {}) {
+        const o = Object.fromEntries(this._items.filter(it => it.key || it.value).map(it => [it.key ?? '', it.value ?? '']));
+        return JSON.stringify(o, null, i ?? (Object.keys(o).length > 1 ? 4 : 0));
     }
 
-    #buildJsonString({ indentCount }: { indentCount?: number } = {}): string {
-        const filteredEntries = this.keyValueRows
-            .filter(entry => entry.key || entry.value)
-            .map(entry => [entry.key ?? '', entry.value ?? '']);
-
-        const reconstructedObject = Object.fromEntries(filteredEntries);
-        const usePrettyPrinting = Object.keys(reconstructedObject).length > 1;
-        const indentation = indentCount ?? (usePrettyPrinting ? 4 : 0);
-
-        return JSON.stringify(reconstructedObject, null, indentation);
-    }
-
-    #parseJsonInput(jsonString: string): void {
+    #parse(s: string) {
         try {
-            const parsedObject = JSON.parse(jsonString);
-            this.keyValueRows = Object.entries(parsedObject).map(([entryKey, entryValue], entryIndex) => ({
-                key: entryKey,
-                value: String(entryValue),
-                index: entryIndex,
-            }));
-            this.parsingError = null;
-        } catch (error) {
-            this.parsingError = error instanceof Error ? error.toString() : 'An unknown error occurred';
+            const o = JSON.parse(s);
+            this._items = Object.entries(o).map(([k, v], i) => ({ key: k, value: String(v), index: i }));
+            this._error = null;
+        } catch (e) {
+            this._error = e instanceof Error ? e.toString() : 'An unknown error occurred';
         } finally {
-            this.keyValueRows = structuredClone(this.keyValueRows);
+            this._items = structuredClone(this._items);
         }
-
-        this.rawTextAreaContent = this.#buildJsonString({ indentCount: 0 });
+        this._textareaValue = this.#str({ indent: 0 });
         this.requestUpdate();
     }
 
-    protected override render() {
-        if (!this.isMounted) {
-            return this.parsingError
+    render() {
+        if (!this._mounted) {
+            return this._error
                 ? html`<div class="flex items-center justify-center gap-1" id="mount_error">
                       <p>Failed to mount. Unexpected JSON from <code>django backend</code></p>
                       <p>The provided json is: <code class="warning">${this.json}</code> which is not valid.</p>
@@ -132,85 +84,54 @@ class DjangoHstoreWidget extends LitElement {
                 : html``;
         }
 
-        const removeRow = (rowIndex: number) => {
-            const foundIndex = this.keyValueRows.findIndex(row => row.index === rowIndex);
-            if (foundIndex === -1) return;
-
-            this.keyValueRows = this.keyValueRows.toSpliced(foundIndex, 1);
-            this.rawTextAreaContent = this.#buildJsonString({ indentCount: 0 });
+        const del = (i: number) => {
+            const idx = this._items.findIndex(x => x.index === i);
+            if (idx === -1) return;
+            this._items = this._items.toSpliced(idx, 1);
+            this._textareaValue = this.#str({ indent: 0 });
             this.requestUpdate();
         };
 
-        const addNewRow = () => {
-            const lastRow = this.keyValueRows.at(-1);
-            const nextIndex = (lastRow?.index ?? -1) + 1;
-            this.keyValueRows = [...this.keyValueRows, { index: nextIndex, key: '', value: '' }];
-            this.rawTextAreaContent = this.#buildJsonString({ indentCount: 0 });
+        const add = () => {
+            const last = this._items.at(-1);
+            this._items = [...this._items, { index: (last?.index ?? -1) + 1, key: '', value: '' }];
+            this._textareaValue = this.#str({ indent: 0 });
             this.requestUpdate();
         };
 
-        const toggleDisplayMode = () => {
-            if (this.parsingError) return;
-
-            this.displayMode = this.displayMode === 'rows' ? 'textarea' : 'rows';
-
-            if (this.displayMode === 'textarea') {
-                this.rawTextAreaContent = this.#buildJsonString();
-            }
-
+        const tog = () => {
+            if (this._error) return;
+            this._mode = this._mode === 'rows' ? 'textarea' : 'rows';
+            this._mode === 'textarea' && (this._textareaValue = this.#str());
             this.requestUpdate();
         };
 
-        const handleTextAreaInput = (event: Event) => {
-            const textAreaElement = event.target as HTMLTextAreaElement;
-            const textContent = textAreaElement?.value ?? '{}';
-            this.#parseJsonInput(textContent);
-
-            const containsNestedObjects = this.keyValueRows.some(entry => typeof entry.value === 'object');
-            if (containsNestedObjects) {
-                this.parsingError = "SyntaxError: 'ltree' doesn't support nested json";
-            }
-
+        const txtIn = (e: Event) => {
+            this.#parse((e.target as HTMLTextAreaElement)?.value ?? '{}');
+            this._items.some(it => typeof it.value === 'object') && (this._error = "SyntaxError: 'ltree' doesn't support nested json");
             this.requestUpdate();
         };
 
-        const handleCellInput = (event: Event, rowItem: KeyValueItem, targetField: 'key' | 'value') => {
-            const inputElement = event.target as HTMLInputElement;
-            const inputValue = inputElement?.value;
-
-            if (targetField === 'key') {
-                rowItem.key = inputValue;
-            } else {
-                rowItem.value = inputValue;
-            }
-
-            this.keyValueRows = structuredClone(this.keyValueRows);
-            this.rawTextAreaContent = this.#buildJsonString({ indentCount: 0 });
+        const dicIn = (e: Event, it: Item, t: 'key' | 'value') => {
+            const v = (e.target as HTMLInputElement)?.value;
+            t === 'key' ? (it.key = v) : (it.value = v);
+            this._items = structuredClone(this._items);
+            this._textareaValue = this.#str({ indent: 0 });
             this.requestUpdate();
         };
 
-        const renderRow = (rowItem: KeyValueItem) =>
+        const row = (it: Item) =>
             html`<div class="form-row field-data" id="json_items">
                 <div class="flex gap-2.5 items-center justify-start">
-                    <input
-                        value="${rowItem.key}"
-                        @input="${(event: Event) => handleCellInput(event, rowItem, 'key')}"
-                        placeholder="key"
-                        class="min-width-[150px] ${DJANGO_MAPPING.input}"
-                    />
+                    <input value="${it.key}" @input="${(e: Event) => dicIn(e, it, 'key')}" placeholder="key" class="min-width-[150px] ${DJANGO_MAPPING.input}" />
                     <strong>:</strong>
-                    <input
-                        value="${rowItem.value}"
-                        @input="${(event: Event) => handleCellInput(event, rowItem, 'value')}"
-                        placeholder="value"
-                        class="min-width-[300px] ${DJANGO_MAPPING.input}"
-                    />
+                    <input value="${it.value}" @input="${(e: Event) => dicIn(e, it, 'value')}" placeholder="value" class="min-width-[300px] ${DJANGO_MAPPING.input}" />
                     <div
                         role="button"
-                        aria-label="Delete ${rowItem.key}:${rowItem.value} at index ${rowItem.index}"
+                        aria-label="Delete ${it.key}:${it.value} at index ${it.index}"
                         class="items-center justify-center flex cursor-pointer select-none"
                         id="delete-button"
-                        @click="${() => removeRow(rowItem.index)}"
+                        @click="${() => del(it.index)}"
                     >
                         <image-icon type="delete"></image-icon>
                     </div>
@@ -219,42 +140,32 @@ class DjangoHstoreWidget extends LitElement {
 
         return html`<div class="flex gap-2.5 items-center">
                 <textarea
-                    class="${cn(this.displayMode === 'rows' && 'hidden invisible')} ${cn(this.parsingError && 'warning')} ${DJANGO_MAPPING.textarea}"
+                    class="${cn(this._mode === 'rows' && 'hidden invisible')} ${cn(this._error && 'warning')} ${DJANGO_MAPPING.textarea}"
                     cols="${this.cols}"
                     name="${this.fieldName}"
                     rows="${this.rows}"
-                    @input="${handleTextAreaInput}"
-                    .value="${this.rawTextAreaContent}"
+                    @input="${txtIn}"
+                    .value="${this._textareaValue}"
                 ></textarea>
-                <div class="${cn(this.parsingError && 'warning brightness-90')}" id="textbox_error">${this.parsingError}</div>
+                <div class="${cn(this._error && 'warning brightness-90')}" id="textbox_error">${this._error}</div>
             </div>
-            ${this.displayMode === 'rows' && !this.parsingError && this.keyValueRows ? this.keyValueRows.map(renderRow) : ''}
+            ${this._mode === 'rows' && !this._error && this._items ? this._items.map(row) : ''}
             <div class="form-row justify-between items-center flex">
                 <button
                     type="button"
-                    class="${this.displayMode === 'rows' ? 'items-center select-none justify-center flex gap-1 cursor-pointer' : 'invisible'}"
+                    class="${this._mode === 'rows' ? 'items-center select-none justify-center flex gap-1 cursor-pointer' : 'invisible'}"
                     id="add-button"
                     aria-label="Add Row"
-                    @click="${addNewRow}"
+                    @click="${add}"
                 >
                     <image-icon type="add"></image-icon> Add row
                 </button>
-                <div class="${cn(this.parsingError && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
-                    ${this.displayMode === 'textarea'
-                        ? html`<button
-                              type="button"
-                              class="items-center select-none justify-center flex gap-1 cursor-pointer"
-                              aria-label="Close TextArea"
-                              @click="${toggleDisplayMode}"
-                          >
+                <div class="${cn(this._error && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
+                    ${this._mode === 'textarea'
+                        ? html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Close TextArea" @click="${tog}">
                               <image-icon type="delete"></image-icon> Close TextArea
                           </button>`
-                        : html`<button
-                              type="button"
-                              class="items-center select-none justify-center flex gap-1 cursor-pointer"
-                              aria-label="Open TextArea"
-                              @click="${toggleDisplayMode}"
-                          >
+                        : html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Open TextArea" @click="${tog}">
                               <image-icon type="edit"></image-icon> Open TextArea
                           </button>`}
                 </div>

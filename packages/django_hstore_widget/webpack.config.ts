@@ -49,7 +49,7 @@ export default (): Configuration & { devServer?: DevServerConfiguration } => {
                 {
                     test: /\.tsx?$/,
                     exclude: /node_modules/,
-                    use: 'babel-loader',
+                    use: 'ts-loader',
                 },
                 {
                     test: /\.css$/,
