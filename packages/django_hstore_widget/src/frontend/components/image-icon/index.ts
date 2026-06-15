@@ -2,7 +2,6 @@ import { getState, subscribe } from '$store/image';
 import { LitElement, html } from 'lit';
 import { property } from 'lit/decorators.js';
 import { scopedChild } from '$registry/scoped-child';
-import { ScopeController } from '$registry/scope-controller';
 
 const ICON_DEFINITIONS = {
     delete: { attributeSource: 'delete_svg_src', accessibilityLabel: 'Delete' },
@@ -23,7 +22,6 @@ export class ImageIconComponent extends LitElement {
 
     override connectedCallback(): void {
         super.connectedCallback();
-        new ScopeController(this, 'django-hstore-widget');
         this.#unsubscribeStoreUpdates = subscribe(() => {
             this.requestUpdate();
         });
