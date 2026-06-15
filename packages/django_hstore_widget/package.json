@@ -13,7 +13,7 @@
         "format": "prettier --write 'src/**/*.ts' 'scripts/**/*.ts'",
         "format:check": "prettier --check 'src/**/*.ts' 'scripts/**/*.ts'",
         "test": "playwright test",
-        "test:jest": "node ./node_modules/jest/bin/jest.js --config jest.config.ts",
+        "test:jest": "node --experimental-strip-types jest",
         "test:ui": "playwright test --ui",
         "tsgo": "tsgo --noEmit",
         "typecheck": "tsc --noEmit"
