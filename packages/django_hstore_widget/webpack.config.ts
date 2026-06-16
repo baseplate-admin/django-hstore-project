@@ -49,12 +49,23 @@ export default (): Configuration & { devServer?: DevServerConfiguration } => {
                 {
                     test: /\.tsx?$/,
                     exclude: /node_modules/,
-                    use: 'ts-loader',
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            configFile: resolve(__dirname, 'babel.config.ts'),
+                            generatorOpts: {
+                                compact: true,
+                            },
+                        },
+                    },
                 },
                 {
                     test: /\.css$/,
                     type: 'javascript/auto',
-                    use: 'raw-loader',
+                    use: [
+                        'raw-loader',
+                        isProduction ? resolve(__dirname, 'webpack-plugins/minify-css-loader.ts') : undefined,
+                    ].filter(Boolean),
                 },
             ],
         },

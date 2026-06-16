@@ -1,20 +1,19 @@
 import { cn } from '$lib/classnames';
-import { setState } from '$store/image';
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { state } from 'lit/decorators/state.js';
-import widgetCss from './widget.css';
+import widgetStyles from './widget.css';
 
-import { DJANGO_MAPPING } from '$mappping/django';
-import { GITHUB_REPO } from '$mappping/github';
-import { SVG_KEYS } from '$mappping/svg_keys';
+import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mappping/django';
+import { GITHUB_ISSUES_URL } from '$mappping/github';
 
 import '$components/image-icon';
 
-type Item = { key: string; value: string; index: number };
+type JsonKeyValue = { key: string; value: string; index: number };
 
 @customElement('django-hstore-widget')
 class DjangoHstoreWidget extends LitElement {
+    // Render in light DOM instead of shadow DOM
     override createRenderRoot() {
         return this;
     }
@@ -23,114 +22,149 @@ class DjangoHstoreWidget extends LitElement {
     @property({ type: String, attribute: 'field_name' }) fieldName = '';
     @property({ type: Number }) cols = 40;
     @property({ type: Number }) rows = 10;
-    @property({ type: String, attribute: 'delete_svg_src' }) deleteSvgSrc?: string;
-    @property({ type: String, attribute: 'add_svg_src' }) addSvgSrc?: string;
-    @property({ type: String, attribute: 'edit_svg_src' }) editSvgSrc?: string;
 
-    @state() _mounted = false;
-    @state() _error: string | null = null;
-    @state() _textareaValue = '';
-    @state() _items: Item[] = [];
-    @state() _mode: 'rows' | 'textarea' = 'rows';
+    @state() isMounted = false;
+    @state() parseError: string | null = null;
+    @state() textareaValue = '';
+    @state() keyValues: JsonKeyValue[] = [];
+    @state() displayMode: 'rows' | 'textarea' = 'rows';
 
-    #cssRegistered = false;
-    override connectedCallback() {
-        super.connectedCallback();
-        if (!this.#cssRegistered) {
-            const styleChild = document.createElement('style');
-            styleChild.textContent = widgetCss;
-            this.appendChild(styleChild);
-            this.#cssRegistered = true;
+    #cssStylesRegistered = false;
+
+    #registerCssStyles() {
+        if (!this.#cssStylesRegistered) {
+            const styleElement = document.createElement('style');
+            styleElement.textContent = widgetStyles;
+            this.appendChild(styleElement);
+            this.#cssStylesRegistered = true;
         }
-        SVG_KEYS.forEach(k => this[k] && setState({ [k.replace(/[A-Z]/g, '_$1').toLowerCase()]: this[k]! }));
     }
 
-    override willUpdate(changed: Map<string, unknown>) {
-        changed.has('json') && this.#parse(this.json);
+    override connectedCallback() {
+        super.connectedCallback();
+        this.#registerCssStyles();
+    }
+
+    override willUpdate(changedProperties: Map<string, unknown>) {
+        if (changedProperties.has('json')) {
+            this.#parseJson(this.json);
+        }
     }
 
     override firstUpdated() {
-        !this._error && (this._mounted = true);
-    }
-
-    #str({ indent: i }: { indent?: number } = {}) {
-        const o = Object.fromEntries(this._items.filter(it => it.key || it.value).map(it => [it.key ?? '', it.value ?? '']));
-        return JSON.stringify(o, null, i ?? (Object.keys(o).length > 1 ? 4 : 0));
-    }
-
-    #parse(s: string) {
-        try {
-            const o = JSON.parse(s);
-            this._items = Object.entries(o).map(([k, v], i) => ({ key: k, value: String(v), index: i }));
-            this._error = null;
-        } catch (e) {
-            this._error = e instanceof Error ? e.toString() : 'An unknown error occurred';
-        } finally {
-            this._items = structuredClone(this._items);
+        if (!this.parseError) {
+            this.isMounted = true;
         }
-        this._textareaValue = this.#str({ indent: 0 });
+    }
+
+    #serializeToJson({ indentSpaces }: { indentSpaces?: number } = {}) {
+        const validEntries = this.keyValues.filter(entry => entry.key || entry.value).map(entry => [entry.key ?? '', entry.value ?? '']);
+
+        const objectRepresentation = Object.fromEntries(validEntries);
+
+        const indentWidth = indentSpaces ?? (Object.keys(objectRepresentation).length > 1 ? 4 : 0);
+
+        return JSON.stringify(objectRepresentation, null, indentWidth);
+    }
+
+    #parseJson(jsonString: string) {
+        try {
+            const parsedObject = JSON.parse(jsonString);
+            this.keyValues = Object.entries(parsedObject).map(([entryKey, entryValue], entryIndex) => ({
+                key: entryKey,
+                value: String(entryValue),
+                index: entryIndex,
+            }));
+            this.parseError = null;
+        } catch (error) {
+            this.parseError = error instanceof Error ? error.toString() : 'An unknown error occurred';
+        } finally {
+            this.keyValues = structuredClone(this.keyValues);
+        }
+
+        this.textareaValue = this.#serializeToJson({ indentSpaces: 0 });
         this.requestUpdate();
     }
 
     render() {
-        if (!this._mounted) {
-            return this._error
+        if (!this.isMounted) {
+            return this.parseError
                 ? html`<div class="flex items-center justify-center gap-1" id="mount_error">
                       <p>Failed to mount. Unexpected JSON from <code>django backend</code></p>
                       <p>The provided json is: <code class="warning">${this.json}</code> which is not valid.</p>
-                      <p>Please check the json or <a href="${GITHUB_REPO}">file an issue at Github</a></p>
+                      <p>Please check the json or <a href="${GITHUB_ISSUES_URL}">file an issue at Github</a></p>
                   </div>`
                 : html``;
         }
 
-        const del = (i: number) => {
-            const idx = this._items.findIndex(x => x.index === i);
-            if (idx === -1) return;
-            this._items = this._items.toSpliced(idx, 1);
-            this._textareaValue = this.#str({ indent: 0 });
+        const handleDeleteEntry = (entryIndex: number) => {
+            const foundIndex = this.keyValues.findIndex(entry => entry.index === entryIndex);
+            if (foundIndex === -1) return;
+            this.keyValues = this.keyValues.toSpliced(foundIndex, 1);
+            this.textareaValue = this.#serializeToJson({ indentSpaces: 0 });
             this.requestUpdate();
         };
 
-        const add = () => {
-            const last = this._items.at(-1);
-            this._items = [...this._items, { index: (last?.index ?? -1) + 1, key: '', value: '' }];
-            this._textareaValue = this.#str({ indent: 0 });
+        const handleAddEntry = () => {
+            const lastEntry = this.keyValues.at(-1);
+            this.keyValues = [...this.keyValues, { index: (lastEntry?.index ?? -1) + 1, key: '', value: '' }];
+            this.textareaValue = this.#serializeToJson({ indentSpaces: 0 });
             this.requestUpdate();
         };
 
-        const tog = () => {
-            if (this._error) return;
-            this._mode = this._mode === 'rows' ? 'textarea' : 'rows';
-            this._mode === 'textarea' && (this._textareaValue = this.#str());
+        const handleToggleDisplayMode = () => {
+            if (this.parseError) return;
+            this.displayMode = this.displayMode === 'rows' ? 'textarea' : 'rows';
+            if (this.displayMode === 'textarea') {
+                this.textareaValue = this.#serializeToJson();
+            }
             this.requestUpdate();
         };
 
-        const txtIn = (e: Event) => {
-            this.#parse((e.target as HTMLTextAreaElement)?.value ?? '{}');
-            this._items.some(it => typeof it.value === 'object') && (this._error = "SyntaxError: 'ltree' doesn't support nested json");
+        const handleTextareaInput = (event: Event) => {
+            const inputJsonValue = (event.target as HTMLTextAreaElement)?.value ?? '{}';
+            this.#parseJson(inputJsonValue);
+            const hasNestedJsonValue = this.keyValues.some(entry => typeof entry.value === 'object');
+            if (hasNestedJsonValue) {
+                this.parseError = "SyntaxError: 'ltree' doesn't support nested json";
+            }
             this.requestUpdate();
         };
 
-        const dicIn = (e: Event, it: Item, t: 'key' | 'value') => {
-            const v = (e.target as HTMLInputElement)?.value;
-            t === 'key' ? (it.key = v) : (it.value = v);
-            this._items = structuredClone(this._items);
-            this._textareaValue = this.#str({ indent: 0 });
+        const handleKeyValueInput = (event: Event, entry: JsonKeyValue, inputType: 'key' | 'value') => {
+            const inputValue = (event.target as HTMLInputElement)?.value;
+            if (inputType === 'key') {
+                entry.key = inputValue;
+            } else {
+                entry.value = inputValue;
+            }
+            this.keyValues = structuredClone(this.keyValues);
+            this.textareaValue = this.#serializeToJson({ indentSpaces: 0 });
             this.requestUpdate();
         };
 
-        const row = (it: Item) =>
+        const renderKeyValueRow = (entry: JsonKeyValue) =>
             html`<div class="form-row field-data" id="json_items">
                 <div class="flex gap-2.5 items-center justify-start">
-                    <input value="${it.key}" @input="${(e: Event) => dicIn(e, it, 'key')}" placeholder="key" class="min-width-[150px] ${DJANGO_MAPPING.input}" />
+                    <input
+                        value="${entry.key}"
+                        @input="${(event: Event) => handleKeyValueInput(event, entry, 'key')}"
+                        placeholder="key"
+                        class="min-width-[150px] ${DJANGO_INPUT_STYLES}"
+                    />
                     <strong>:</strong>
-                    <input value="${it.value}" @input="${(e: Event) => dicIn(e, it, 'value')}" placeholder="value" class="min-width-[300px] ${DJANGO_MAPPING.input}" />
+                    <input
+                        value="${entry.value}"
+                        @input="${(event: Event) => handleKeyValueInput(event, entry, 'value')}"
+                        placeholder="value"
+                        class="min-width-[300px] ${DJANGO_INPUT_STYLES}"
+                    />
                     <div
                         role="button"
-                        aria-label="Delete ${it.key}:${it.value} at index ${it.index}"
+                        aria-label="Delete ${entry.key}:${entry.value} at index ${entry.index}"
                         class="items-center justify-center flex cursor-pointer select-none"
                         id="delete-button"
-                        @click="${() => del(it.index)}"
+                        @click="${() => handleDeleteEntry(entry.index)}"
                     >
                         <image-icon type="delete"></image-icon>
                     </div>
@@ -139,32 +173,42 @@ class DjangoHstoreWidget extends LitElement {
 
         return html`<div class="flex gap-2.5 items-center">
                 <textarea
-                    class="${cn(this._mode === 'rows' && 'hidden invisible')} ${cn(this._error && 'warning')} ${DJANGO_MAPPING.textarea}"
+                    class="${cn(this.displayMode === 'rows' && 'hidden invisible')} ${cn(this.parseError && 'warning')} ${DJANGO_TEXTAREA_STYLES}"
                     cols="${this.cols}"
                     name="${this.fieldName}"
                     rows="${this.rows}"
-                    @input="${txtIn}"
-                    .value="${this._textareaValue}"
+                    @input="${handleTextareaInput}"
+                    .value="${this.textareaValue}"
                 ></textarea>
-                <div class="${cn(this._error && 'warning brightness-90')}" id="textbox_error">${this._error}</div>
+                <div class="${cn(this.parseError && 'warning brightness-90')}" id="textbox_error">${this.parseError}</div>
             </div>
-            ${this._mode === 'rows' && !this._error && this._items ? this._items.map(row) : ''}
+            ${this.displayMode === 'rows' && !this.parseError && this.keyValues ? this.keyValues.map(renderKeyValueRow) : ''}
             <div class="form-row justify-between items-center flex">
                 <button
                     type="button"
-                    class="${this._mode === 'rows' ? 'items-center select-none justify-center flex gap-1 cursor-pointer' : 'invisible'}"
+                    class="${this.displayMode === 'rows' ? 'items-center select-none justify-center flex gap-1 cursor-pointer' : 'invisible'}"
                     id="add-button"
                     aria-label="Add Row"
-                    @click="${add}"
+                    @click="${handleAddEntry}"
                 >
                     <image-icon type="add"></image-icon> Add row
                 </button>
-                <div class="${cn(this._error && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
-                    ${this._mode === 'textarea'
-                        ? html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Close TextArea" @click="${tog}">
+                <div class="${cn(this.parseError && 'opacity-60') || 'cursor-pointer'} items-center select-none justify-center flex gap-1" id="textarea_open_close_toggle">
+                    ${this.displayMode === 'textarea'
+                        ? html`<button
+                              type="button"
+                              class="items-center select-none justify-center flex gap-1 cursor-pointer"
+                              aria-label="Close TextArea"
+                              @click="${handleToggleDisplayMode}"
+                          >
                               <image-icon type="delete"></image-icon> Close TextArea
                           </button>`
-                        : html`<button type="button" class="items-center select-none justify-center flex gap-1 cursor-pointer" aria-label="Open TextArea" @click="${tog}">
+                        : html`<button
+                              type="button"
+                              class="items-center select-none justify-center flex gap-1 cursor-pointer"
+                              aria-label="Open TextArea"
+                              @click="${handleToggleDisplayMode}"
+                          >
                               <image-icon type="edit"></image-icon> Open TextArea
                           </button>`}
                 </div>

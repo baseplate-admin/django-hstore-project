@@ -9,7 +9,7 @@
     "type": "module",
     "scripts": {
         "build": "cross-env NODE_ENV=production webpack --disable-interpret -c webpack.config.ts && node --experimental-strip-types ./scripts/copy.ts",
-        "preview": "node --experimental-strip-types ./scripts/preview.ts",
+        "preview": "cross-env NODE_ENV=production webpack serve --disable-interpret -c webpack.config.ts --no-hot",
         "dev": "cross-env NODE_ENV=development webpack serve --disable-interpret -c webpack.config.ts",
         "format": "prettier --write 'src/**/*.ts' 'scripts/**/*.ts'",
         "format:check": "prettier --check 'src/**/*.ts' 'scripts/**/*.ts'",

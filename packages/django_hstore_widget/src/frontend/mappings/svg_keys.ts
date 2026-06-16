@@ -1,1 +1,1 @@
-export const SVG_KEYS = ['deleteSvgSrc', 'addSvgSrc', 'editSvgSrc'] as const;
+export const SVG_ATTRIBUTE_KEYS = ['deleteSvgSrc', 'addSvgSrc', 'editSvgSrc'] as const;

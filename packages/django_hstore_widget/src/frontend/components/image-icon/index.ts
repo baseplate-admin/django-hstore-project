@@ -1,46 +1,34 @@
-import { getState, subscribe } from '$store/image';
-import { LitElement, html } from 'lit';
-import { property } from 'lit/decorators.js';
-import { registerIcon, TAG } from '$registry/icon-factory';
+import { css, html, LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { Pencil, Plus, X } from 'lucide-static';
 
 export const ICON_DEFINITIONS = {
-    delete: { attributeSource: 'delete_svg_src', accessibilityLabel: 'Delete' },
-    add: { attributeSource: 'add_svg_src', accessibilityLabel: 'Add' },
-    edit: { attributeSource: 'edit_svg_src', accessibilityLabel: 'Edit' },
+    delete: { accessibilityLabel: 'Delete Icon', svg: X },
+    add: { accessibilityLabel: 'Add Icon', svg: Plus },
+    edit: { accessibilityLabel: 'Edit Icon', svg: Pencil },
 } as const;
 
-export class ImageIconBase extends LitElement {
-    protected override createRenderRoot(): this {
-        return this;
-    }
-
+export
+@customElement('image-icon')
+class ImageIconBase extends LitElement {
     @property({ type: String, reflect: true, attribute: 'type' })
     iconType: keyof typeof ICON_DEFINITIONS = 'delete';
 
-    #unsubscribeStoreUpdates = () => {};
+    static styles = css`
+        :host {
+            display: inline-block;
+        }
 
-    connectedCallback(): void {
-        super.connectedCallback();
-        this.#unsubscribeStoreUpdates = subscribe(() => {
-            this.requestUpdate();
-        });
-    }
-
-    disconnectedCallback(): void {
-        super.disconnectedCallback();
-        this.#unsubscribeStoreUpdates();
-    }
+        svg {
+            display: block;
+            width: 16px;
+            height: 16px;
+        }
+    `;
 
     protected override render() {
-        const storeState = getState();
         const iconDefinition = ICON_DEFINITIONS[this.iconType];
-        const resolvedImageSource = storeState[iconDefinition.attributeSource] ?? '';
 
-        return html`<img src="${resolvedImageSource}" alt="${iconDefinition.accessibilityLabel}" />`;
+        return html`<svg aria-label="${iconDefinition.accessibilityLabel}" dangerouslySetInnerHTML=${{ __html: iconDefinition.svg }}></svg>`;
     }
 }
-
-registerIcon(ImageIconBase);
-
-export { TAG as ImageIconTag };
-export { getRegistryInfo } from '$registry/icon-factory';

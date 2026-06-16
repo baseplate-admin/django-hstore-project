@@ -28,64 +28,23 @@ function litWhitespacePlugin() {
             return '';
         }
 
-        let result = lines
+        return lines
             .map(line => (line.trim().length === 0 ? '' : line.slice(minIndent)))
             .join('')
-            .replace(/>\s+</g, '><')
-            .replace(/<\s+/g, '<')
             .trim();
-
-        // Collapse whitespace between attribute boundaries
-        // e.g., attr"  .next_attr  or  }  @event
-        result = result.replace(/["}]\s+([.@?])/g, '$1');
-
-        // Collapse whitespace before closing tags (indentation artifact in text content)
-        // e.g., "Add row    </button>" → "Add row</button>"
-        result = result.replace(/\s+(<\/)/g, '$1');
-
-        // Collapse multiple spaces inside tag definitions to single space
-        let prev = '';
-        let iterations = 0;
-        while (prev !== result && iterations < 10) {
-            prev = result;
-            result = result.replace(/([a-zA-Z0-9_"})])  +(?=[a-zA-Z@">/])/g, '$1 ');
-            iterations++;
-        }
-
-        return result;
     }
 
     const visitor = {
         TaggedTemplateExpression(path: NodePath<TaggedTemplateExpression>) {
             const { node } = path;
-
             if (!isLitTag(node)) return;
 
             const template = node.quasi as TemplateLiteral;
 
-            template.quasis.forEach((quasi, index, quasis) => {
-                const prevQuasi = index > 0 ? quasis[index - 1] : null;
-                const rawEnd = prevQuasi?.value.raw ?? '';
-                const isAfterQuote = rawEnd.endsWith('"');
-                const isAfterInterp = rawEnd.endsWith('}');
+            template.quasis.forEach((quasi) => {
                 const stripped = stripQuasiIndentation(quasi.value.raw);
-
-                // Trim leading whitespace when after interpolation (indentation artifact)
-                const trimmed = isAfterInterp ? stripped.trimStart() : stripped;
-
-                // Preserve space after " when followed by word char (inside attribute value)
-                if (isAfterQuote && /^[a-zA-Z]/.test(trimmed) && !trimmed.startsWith('"')) {
-                    quasi.value.raw = ' ' + trimmed;
-                    quasi.value.cooked = ' ' + trimmed;
-                }
-                else if (trimmed === '' && (isAfterQuote || isAfterInterp)) {
-                    quasi.value.raw = ' ';
-                    quasi.value.cooked = ' ';
-                }
-                else {
-                    quasi.value.raw = trimmed;
-                    quasi.value.cooked = trimmed;
-                }
+                quasi.value.raw = stripped;
+                quasi.value.cooked = stripped;
             });
         },
     };

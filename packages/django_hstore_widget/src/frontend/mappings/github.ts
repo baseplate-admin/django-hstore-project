@@ -1,1 +1,1 @@
-export const GITHUB_REPO = 'https://github.com/baseplate-admin/django-hstore-widget/issues';
+export const GITHUB_ISSUES_URL = 'https://github.com/baseplate-admin/django-hstore-widget/issues';

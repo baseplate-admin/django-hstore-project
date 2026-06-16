@@ -38,3 +38,4 @@ UserInterfaceState.xcuserstate
 # Lock files (keep root uv.lock for workspace)
 !uv.lock
 packages/*/uv.lock
+.playwright-mcp
