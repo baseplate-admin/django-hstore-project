@@ -18,18 +18,22 @@ function litWhitespacePlugin() {
         let minIndent = Infinity;
         for (const line of lines) {
             if (line.trim().length === 0) continue;
-            const match = line.match(/^(\s*)/);
-            if (match) {
-                minIndent = Math.min(minIndent, match[1].length);
-            }
+            const m = line.match(/^(\s*)/);
+            if (m) minIndent = Math.min(minIndent, m[1].length);
         }
 
-        if (!Number.isFinite(minIndent)) {
-            return '';
-        }
+        if (!Number.isFinite(minIndent)) return '';
 
         return lines
-            .map(line => (line.trim().length === 0 ? '' : line.slice(minIndent)))
+            .map(line => {
+                if (line.trim().length === 0) return '';
+                const dedented = line.slice(minIndent);
+                const trimmed = dedented.trim();
+                if (!trimmed) return '';
+                // Preserve one leading space for text content (not tags)
+                if (!trimmed.startsWith('<')) return ' ' + trimmed;
+                return trimmed;
+            })
             .join('')
             .trim();
     }
@@ -41,10 +45,27 @@ function litWhitespacePlugin() {
 
             const template = node.quasi as TemplateLiteral;
 
-            template.quasis.forEach((quasi) => {
+            template.quasis.forEach((quasi, idx, quasis) => {
+                const prevQuasi = idx > 0 ? quasis[idx - 1] : null;
+                const prevEndsQuote = prevQuasi ? prevQuasi.value.raw.endsWith('"') : false;
+                const prevEndsBrace = prevQuasi ? prevQuasi.value.raw.endsWith('}') : false;
+
                 const stripped = stripQuasiIndentation(quasi.value.raw);
-                quasi.value.raw = stripped;
-                quasi.value.cooked = stripped;
+
+                // Empty quasi between interpolations: add space for class concatenation
+                if (stripped === '' && (prevEndsQuote || prevEndsBrace)) {
+                    quasi.value.raw = ' ';
+                    quasi.value.cooked = ' ';
+                }
+                // After quote, preserve space if content starts with word char (inside attr value)
+                else if (prevEndsQuote && /^[a-zA-Z]/.test(stripped) && !stripped.startsWith('"') && !stripped.startsWith('<')) {
+                    quasi.value.raw = ' ' + stripped;
+                    quasi.value.cooked = ' ' + stripped;
+                }
+                else {
+                    quasi.value.raw = stripped;
+                    quasi.value.cooked = stripped;
+                }
             });
         },
     };
