@@ -1,19 +1,35 @@
-import type { BabelConfig } from '@babel/core';
+import type { TransformOptions } from '@babel/core';
 
-const sharedPlugins = [
-    '@babel/plugin-syntax-import-attributes',
-    '@babel/plugin-transform-private-methods',
-    '@babel/plugin-transform-class-properties',
-    ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
-] as const;
+import litWhitespacePlugin from './babel-plugins/lit-whitespace.ts';
 
-const config: BabelConfig = {
-    presets: [['@babel/preset-env', { targets: { browsers: ['defaults'] } }], '@babel/preset-typescript'],
-    plugins: sharedPlugins,
+const config: TransformOptions = {
+    presets: [
+        ['@babel/preset-env', { targets: { browsers: ['defaults'] } }],
+        '@babel/preset-typescript',
+    ],
+    plugins: [
+        ['@babel/plugin-proposal-decorators', { version: '2022-03' }],
+        '@babel/plugin-transform-class-properties',
+        '@babel/plugin-transform-private-methods',
+        '@babel/plugin-transform-private-property-in-object',
+        '@babel/plugin-transform-class-static-block',
+        '@babel/plugin-syntax-import-attributes',
+        litWhitespacePlugin,
+    ],
     env: {
         test: {
-            presets: [['@babel/preset-env', { targets: { node: 'current' } }], '@babel/preset-typescript'],
-            plugins: sharedPlugins,
+            presets: [
+                ['@babel/preset-env', { targets: { node: 'current' } }],
+                '@babel/preset-typescript',
+            ],
+            plugins: [
+                ['@babel/plugin-proposal-decorators', { version: '2022-03' }],
+                '@babel/plugin-transform-class-properties',
+                '@babel/plugin-transform-private-methods',
+                '@babel/plugin-transform-private-property-in-object',
+                '@babel/plugin-transform-class-static-block',
+                '@babel/plugin-syntax-import-attributes',
+            ],
         },
     },
 };
