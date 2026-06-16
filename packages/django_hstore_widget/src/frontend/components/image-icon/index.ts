@@ -1,6 +1,7 @@
 import { getState, subscribe } from '$store/image';
 import { LitElement, html } from 'lit';
 import { property } from 'lit/decorators.js';
+import { registerIcon, TAG } from '$registry/icon-factory';
 
 export const ICON_DEFINITIONS = {
     delete: { attributeSource: 'delete_svg_src', accessibilityLabel: 'Delete' },
@@ -38,3 +39,8 @@ export class ImageIconBase extends LitElement {
         return html`<img src="${resolvedImageSource}" alt="${iconDefinition.accessibilityLabel}" />`;
     }
 }
+
+registerIcon(ImageIconBase);
+
+export { TAG as ImageIconTag };
+export { getRegistryInfo } from '$registry/icon-factory';

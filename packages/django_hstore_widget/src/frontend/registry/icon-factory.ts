@@ -78,26 +78,21 @@ function factoryScoped(scopeKey: string, entryTag: string) {
     };
 }
 
-// --- Per-instance icon factory ---
+// --- Icon registration ---
 
 let instanceCounter = 0;
 
-export function registerIconInstance(
-    Base: Constructor<LitElement>,
-    scopeKey: string,
-): string {
-    instanceCounter++;
+const TAG = 'image-icon';
+const SCOPE = 'django-hstore-widget';
+
+function registerIcon(Base: Constructor<LitElement>): void {
     const uuid = crypto.randomUUID().replace(/-/g, '').slice(0, 8);
-    const tag = `image-component-${instanceCounter}-${uuid}`;
+    const entryId = `${TAG}-${instanceCounter++}-${uuid}`;
 
-    registry.set(tag, { tag, seq: instanceCounter, refCount: 0, scopeKey });
+    registry.set(entryId, { tag: TAG, seq: instanceCounter, refCount: 0, scopeKey: SCOPE });
 
-    const Decorated = factoryScoped(scopeKey, tag)(Base);
-    customElements.define(tag, Decorated);
-
-    return tag;
+    const Decorated = factoryScoped(SCOPE, entryId)(Base);
+    customElements.define(TAG, Decorated);
 }
 
-export function releaseIconInstance(tag: string): void {
-    registry.delete(tag);
-}
+export { registerIcon, TAG, SCOPE };
