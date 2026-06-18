@@ -1,6 +1,6 @@
 export class Signal<T> {
     #value: T;
-    #listeners = new Set<() => void>();
+    #subscribers = new Set<(value: T) => void>();
 
     constructor(initial: T) {
         this.#value = initial;
@@ -12,11 +12,15 @@ export class Signal<T> {
 
     set value(next: T) {
         this.#value = next;
-        this.#listeners.forEach(fn => fn());
+        this.#subscribers.forEach(fn => fn(this.#value));
     }
 
-    subscribe(fn: () => void): () => void {
-        this.#listeners.add(fn);
-        return () => this.#listeners.delete(fn);
+    subscribe(run: (value: T) => void): () => void {
+        this.#subscribers.add(run);
+        run(this.#value);
+
+        return () => {
+            this.#subscribers.delete(run);
+        };
     }
 }
