@@ -83,6 +83,10 @@ django-hstore-widget {
         filter: brightness(0.9);
     }
 
+    /* Icon size */
+    .w-4 { width: 1rem; }
+    .h-4 { height: 1rem; }
+
     /* Colors */
     .warning {
         color: var(--error-fg, red);

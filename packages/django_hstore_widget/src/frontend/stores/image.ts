@@ -1,27 +1,19 @@
-type IconStoreState = Record<'delete_svg_src' | 'add_svg_src' | 'edit_svg_src', string>;
+import { Signal } from './_base_';
 
-const storeState: IconStoreState = { delete_svg_src: '', add_svg_src: '', edit_svg_src: '' };
-const stateChangeListeners = new Set<() => void>();
+type IconKey = 'delete' | 'add' | 'edit';
 
-/**
- * Subscribe to store state changes. Returns an unsubscribe function.
- */
-export function subscribe(listenerCallback: () => void): () => void {
-    stateChangeListeners.add(listenerCallback);
-    return () => stateChangeListeners.delete(listenerCallback);
-}
+const iconKeys = ['delete', 'add', 'edit'] as const;
 
-/**
- * Get a deep clone of the current store state.
- */
-export function getState(): IconStoreState {
-    return structuredClone(storeState);
-}
+export const iconSignals = Object.fromEntries(iconKeys.map(k => [k, new Signal('')])) as Record<(typeof iconKeys)[number], Signal<string>>;
 
-/**
- * Update the store state and notify all subscribed listeners.
- */
-export function setState(stateUpdates: Partial<IconStoreState>) {
-    Object.assign(storeState, stateUpdates);
-    stateChangeListeners.forEach((listenerCallback) => listenerCallback());
+export function setFromAttributes(el: HTMLElement) {
+    const map: [IconKey, string][] = [
+        ['delete', 'delete_svg_src'],
+        ['add', 'add_svg_src'],
+        ['edit', 'edit_svg_src'],
+    ];
+    for (const [key, attr] of map) {
+        const src = el.getAttribute(attr);
+        if (src) iconSignals[key].value = src;
+    }
 }

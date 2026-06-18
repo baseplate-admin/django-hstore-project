@@ -2,7 +2,7 @@
     "compilerOptions": {
         "baseUrl": "./src/frontend",
         "ignoreDeprecations": "6.0",
-         "strict": true,
+        "strict": true,
         "experimentalDecorators": true,
         "useDefineForClassFields": false,
         "esModuleInterop": true,
@@ -10,7 +10,7 @@
         "allowUnreachableCode": false,
         "declaration": false,
         "lib": ["esnext", "dom"],
-        "types": ["node", "jest"],
+        "types": ["node", "vitest"],
         "moduleResolution": "bundler",
         "module": "esnext",
         "target": "esnext",
@@ -20,9 +20,12 @@
         "paths": {
             "$lib/*": ["./lib/*"],
             "$store/*": ["./stores/*"],
+            "$mapppings/*": ["./mappings/*"],
             "$mappping/*": ["./mappings/*"],
             "$components/*": ["./components/*"],
-         }
+            "$composite_classes/*": ["./composite_classes/*"],
+            "$css/*": ["./css/*"]
+        }
     },
     "include": ["src/frontend"],
     "exclude": ["node_modules", "dist", "**/__tests__/**", "**/*.test.ts"]

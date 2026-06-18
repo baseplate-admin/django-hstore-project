@@ -1,62 +1,58 @@
-import { getState, subscribe } from '$store/image';
+import { StyleFactory } from '$composite_classes/style';
+import appStyles from '$css/app.css?inline';
+import { iconSignals } from '$store/image';
 import { LitElement, html } from 'lit';
-import { property } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { Pencil, Plus, X } from 'lucide-static';
 
-const LUCIDE_FALLBACK = { delete: X, add: Plus, edit: Pencil } as const;
+const LUCIDE = { delete: X, add: Plus, edit: Pencil } as const;
 
-const ICON_DEFINITIONS = {
-    delete: { attributeSource: 'delete_svg_src', accessibilityLabel: '❌', fallback: LUCIDE_FALLBACK.delete },
-    add: { attributeSource: 'add_svg_src', accessibilityLabel: '➕', fallback: LUCIDE_FALLBACK.add },
-    edit: { attributeSource: 'edit_svg_src', accessibilityLabel: '✏️', fallback: LUCIDE_FALLBACK.edit },
-} as const;
-
+@customElement('image-icon')
 export class ImageIconComponent extends LitElement {
-    protected override createRenderRoot(): this {
+    #styleFactory = new StyleFactory();
+
+    firstUpdate() {
+        this.#styleFactory.mountStyles(this.renderRoot, appStyles);
+    }
+    override createRenderRoot() {
         return this;
     }
 
     @property({ type: String, reflect: true })
-    iconType: keyof typeof ICON_DEFINITIONS = 'delete';
+    iconType: keyof typeof LUCIDE = 'delete';
 
-    #unsubscribeStoreUpdates = () => {};
+    #unsubscribe = () => {};
 
-    override connectedCallback(): void {
+    override connectedCallback() {
         super.connectedCallback();
-        this.#unsubscribeStoreUpdates = subscribe(() => {
-            this.requestUpdate();
-        });
+        this.#unsubscribe = iconSignals[this.iconType].subscribe(() => this.requestUpdate());
     }
 
-    override disconnectedCallback(): void {
+    override disconnectedCallback() {
         super.disconnectedCallback();
-        this.#unsubscribeStoreUpdates();
+        this.#unsubscribe();
     }
 
-    protected override render() {
-        const storeState = getState();
-        const iconDefinition = ICON_DEFINITIONS[this.iconType];
-        const resolvedImageSource = storeState[iconDefinition.attributeSource] ?? '';
+    render() {
+        const src = iconSignals[this.iconType].value;
 
-        if (resolvedImageSource) {
-            return html`<img src="${resolvedImageSource}" alt="${iconDefinition.accessibilityLabel}" />`;
+        if (src) {
+            return html`<img src="${src}" class="w-4 h-4" alt="${this.iconType}" />`;
         }
 
         return html`<svg
+            class="w-4 h-4"
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            aria-label="${iconDefinition.accessibilityLabel}"
-            dangerouslySetInnerHTML=${{ __html: iconDefinition.fallback }}
-        ></svg>`;
+            aria-label="${this.iconType}"
+        >
+            ${unsafeHTML(LUCIDE[this.iconType])}
+        </svg>`;
     }
 }
-
-// Register as custom element
-customElements.define('image-icon', ImageIconComponent);

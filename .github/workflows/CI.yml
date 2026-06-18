@@ -46,8 +46,8 @@ jobs:
             - run: npm ci
             - name: Install Playwright browsers
               run: npx playwright install --with-deps chromium firefox
-            - name: Run Jest unit tests
-              run: npm run test:jest
+            - name: Run Vitest unit tests
+              run: npm run test:unit
             - name: Run Playwright tests
               run: npm test
 

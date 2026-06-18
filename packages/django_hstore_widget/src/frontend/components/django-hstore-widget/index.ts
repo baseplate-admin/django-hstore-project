@@ -1,16 +1,20 @@
-import { cn } from '$lib/classnames';
-import { LitElement, html } from 'lit';
-import { property } from 'lit/decorators.js';
-import { state } from 'lit/decorators/state.js';
-import widgetStyles from './widget.css';
-
-import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mappping/django';
-import { GITHUB_ISSUES_URL } from '$mappping/github';
-
 import '$components/image-icon';
+import { cn } from '$lib/classnames';
+
+import { LitElement, html } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
+
+import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mapppings/django';
+import { GITHUB_ISSUES_URL } from '$mapppings/github';
+
+import { StyleFactory } from '$composite_classes/style';
+import { setFromAttributes } from '$store/image';
+
+import appStyles from '$css/app.css?inline';
 
 type JsonKeyValue = { key: string; value: string; index: number };
 
+@customElement('django-hstore-widget')
 export class DjangoHstoreWidget extends LitElement {
     // Render in light DOM instead of shadow DOM
     override createRenderRoot() {
@@ -44,20 +48,11 @@ export class DjangoHstoreWidget extends LitElement {
     @state()
     displayMode: 'rows' | 'textarea' = 'rows';
 
-    #cssStylesRegistered = false;
-
-    #registerCssStyles() {
-        if (!this.#cssStylesRegistered) {
-            const styleElement = document.createElement('style');
-            styleElement.textContent = widgetStyles;
-            this.appendChild(styleElement);
-            this.#cssStylesRegistered = true;
-        }
-    }
+    #styleFactory = new StyleFactory();
 
     override connectedCallback() {
         super.connectedCallback();
-        this.#registerCssStyles();
+        setFromAttributes(this);
     }
 
     override willUpdate(changedProperties: Map<string, unknown>) {
@@ -67,6 +62,9 @@ export class DjangoHstoreWidget extends LitElement {
     }
 
     override firstUpdated() {
+        // Register CSS
+        this.#styleFactory.mountStyles(this.renderRoot, appStyles);
+
         if (!this.parseError) {
             this.isMounted = true;
         }
@@ -165,14 +163,14 @@ export class DjangoHstoreWidget extends LitElement {
                         value="${entry.key}"
                         @input="${(event: Event) => handleKeyValueInput(event, entry, 'key')}"
                         placeholder="key"
-                        class="min-width-[150px] ${DJANGO_INPUT_STYLES}"
+                        class="${cn('min-width-[150px]', DJANGO_INPUT_STYLES)}"
                     />
                     <strong>:</strong>
                     <input
                         value="${entry.value}"
                         @input="${(event: Event) => handleKeyValueInput(event, entry, 'value')}"
                         placeholder="value"
-                        class="min-width-[300px] ${DJANGO_INPUT_STYLES}"
+                        class="${cn('min-width-[300px]', DJANGO_INPUT_STYLES)}"
                     />
                     <div
                         role="button"
@@ -230,6 +228,3 @@ export class DjangoHstoreWidget extends LitElement {
             </div>`;
     }
 }
-
-// Register as custom element
-customElements.define('django-hstore-widget', DjangoHstoreWidget);
