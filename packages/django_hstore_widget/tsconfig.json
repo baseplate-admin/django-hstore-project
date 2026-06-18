@@ -2,7 +2,7 @@
     "compilerOptions": {
         "baseUrl": "./src/frontend",
         "ignoreDeprecations": "6.0",
-        "strict": true,
+         "strict": true,
         "experimentalDecorators": true,
         "useDefineForClassFields": false,
         "esModuleInterop": true,

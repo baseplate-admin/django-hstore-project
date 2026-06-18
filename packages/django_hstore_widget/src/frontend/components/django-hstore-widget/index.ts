@@ -1,6 +1,6 @@
 import { cn } from '$lib/classnames';
 import { LitElement, html } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { property } from 'lit/decorators.js';
 import { state } from 'lit/decorators/state.js';
 import widgetStyles from './widget.css';
 
@@ -11,23 +11,38 @@ import '$components/image-icon';
 
 type JsonKeyValue = { key: string; value: string; index: number };
 
-@customElement('django-hstore-widget')
-class DjangoHstoreWidget extends LitElement {
+export class DjangoHstoreWidget extends LitElement {
     // Render in light DOM instead of shadow DOM
     override createRenderRoot() {
         return this;
     }
 
-    @property({ type: String }) json = '';
-    @property({ type: String, attribute: 'field_name' }) fieldName = '';
-    @property({ type: Number }) cols = 40;
-    @property({ type: Number }) rows = 10;
+    @property({ type: String, attribute: 'json' })
+    json = '';
 
-    @state() isMounted = false;
-    @state() parseError: string | null = null;
-    @state() textareaValue = '';
-    @state() keyValues: JsonKeyValue[] = [];
-    @state() displayMode: 'rows' | 'textarea' = 'rows';
+    @property({ type: String, attribute: 'field_name' })
+    fieldName = '';
+
+    @property({ type: Number, attribute: 'cols' })
+    cols = 40;
+
+    @property({ type: Number, attribute: 'rows' })
+    rows = 10;
+
+    @state()
+    isMounted = false;
+
+    @state()
+    parseError: string | null = null;
+
+    @state()
+    textareaValue = '';
+
+    @state()
+    keyValues: JsonKeyValue[] = [];
+
+    @state()
+    displayMode: 'rows' | 'textarea' = 'rows';
 
     #cssStylesRegistered = false;
 
@@ -216,4 +231,5 @@ class DjangoHstoreWidget extends LitElement {
     }
 }
 
-export { DjangoHstoreWidget };
+// Register as custom element
+customElements.define('django-hstore-widget', DjangoHstoreWidget);
