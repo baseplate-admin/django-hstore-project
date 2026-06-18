@@ -8,6 +8,29 @@ function litWhitespacePlugin() {
         return node.tag?.type === 'Identifier' && litTagNames.has(node.tag.name ?? '');
     }
 
+    /**
+     * Minify HTML string inspired by @lit-labs/rollup-plugin-minify-html-literals.
+     * - Remove HTML comments
+     * - Collapse whitespace between tags
+     * - Trim leading/trailing whitespace
+     * - Collapse excessive whitespace in text content
+     */
+    function minifyHtml(str: string): string {
+        // Remove HTML comments
+        str = str.replace(/<!--[\s\S]*?-->/g, '');
+
+        // Collapse whitespace between closing tag and start of next tag
+        str = str.replace(/>\s+\</g, '><');
+
+        // Collapse whitespace between opening tag and self-closing/void tag
+        str = str.replace(/>\s+$/gm, '>');
+
+        // Remove leading/trailing whitespace
+        str = str.trim();
+
+        return str;
+    }
+
     function stripQuasiIndentation(text: string): string {
         const lines = text.split('\n');
 
@@ -41,10 +64,17 @@ function litWhitespacePlugin() {
 
             const template = node.quasi as TemplateLiteral;
 
-            template.quasis.forEach(quasi => {
-                const stripped = stripQuasiIndentation(quasi.value.raw);
-                quasi.value.raw = stripped;
-                quasi.value.cooked = stripped;
+            template.quasis.forEach((quasi, index) => {
+                let text = quasi.value.raw;
+
+                // Dedent
+                text = stripQuasiIndentation(text);
+
+                // HTML minification
+                text = minifyHtml(text);
+
+                quasi.value.raw = text;
+                quasi.value.cooked = text;
             });
         },
     };
