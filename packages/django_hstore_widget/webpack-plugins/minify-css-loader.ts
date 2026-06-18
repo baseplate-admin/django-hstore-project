@@ -14,7 +14,7 @@ function MinifyCssLoader(this: { async?: () => (err: Error | null, result?: stri
             code: Buffer.from(source, 'utf-8'),
             minify: true,
         });
-        cb(null, result.code.toString('utf-8'));
+        cb(null, result.code.toString());
     } catch {
         // Fall back to regex-based minification
         let css = source.replace(/\/\*[\s\S]*?\*\//g, '');
