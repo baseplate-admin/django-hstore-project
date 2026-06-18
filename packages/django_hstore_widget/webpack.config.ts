@@ -1,9 +1,9 @@
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Configuration } from 'webpack';
-import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
 import TerserPlugin from 'terser-webpack-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import type { Configuration } from 'webpack';
+import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const frontendSourceDir = resolve(__dirname, 'src', 'frontend');
@@ -62,10 +62,7 @@ export default (): Configuration & { devServer?: DevServerConfiguration } => {
                 {
                     test: /\.css$/,
                     type: 'javascript/auto',
-                    use: [
-                        'raw-loader',
-                        isProduction ? resolve(__dirname, 'webpack-plugins/minify-css-loader.ts') : undefined,
-                    ].filter(Boolean),
+                    use: ['raw-loader', resolve(__dirname, 'webpack-plugins/minify-css-loader.ts')].filter(Boolean),
                 },
             ],
         },
