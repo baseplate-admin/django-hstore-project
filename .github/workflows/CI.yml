@@ -14,7 +14,7 @@ jobs:
             run:
                 working-directory: packages/django_hstore_widget
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - uses: actions/setup-node@v6
               with:
                   node-version: latest
@@ -35,7 +35,7 @@ jobs:
             run:
                 working-directory: packages/django_hstore_widget
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - uses: actions/download-artifact@v8
               with:
                   name: workspace
@@ -82,7 +82,7 @@ jobs:
             DJANGO_DATABASE_NAME: postgres
 
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - uses: actions/download-artifact@v8
               with:
                   name: workspace
@@ -133,7 +133,7 @@ jobs:
             DJANGO_DATABASE_NAME: postgres
 
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - uses: actions/download-artifact@v8
               with:
                   name: workspace
@@ -159,7 +159,7 @@ jobs:
             run:
                 working-directory: apps/docs
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - name: Set up Python (uv)
               uses: astral-sh/setup-uv@v7
               with:
@@ -177,7 +177,7 @@ jobs:
         needs: [build-docs]
         if: github.actor == 'dependabot[bot]'
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - name: Enable auto-merge
               run: gh pr merge --auto --merge "$PR_URL"
               env:
@@ -196,7 +196,7 @@ jobs:
             contents: write
             id-token: write
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - name: Install Hatch
               run: pip install hatch
             - name: Build package
@@ -227,7 +227,7 @@ jobs:
             contents: write
             id-token: write
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
             - name: Install Hatch
               run: pip install hatch
             - name: Build package
