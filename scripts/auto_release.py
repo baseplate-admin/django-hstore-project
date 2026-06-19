@@ -96,7 +96,9 @@ if __name__ == "__main__":
         default="patch",
         help="Version part to bump",
     )
-    parser.add_argument("--dry-run", action="store_true", help="Preview without changes")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Preview without changes"
+    )
 
     args = parser.parse_args()
 
