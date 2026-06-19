@@ -57,6 +57,7 @@ Contents
    docs/developer-guide/architecture.rst
    docs/developer-guide/contributing.md
    docs/developer-guide/frontend-build.md
+   docs/playground
 
 .. toctree::
    :maxdepth: 2

@@ -30,9 +30,11 @@ extensions = [
     "sphinx_contributors",
     "sphinx_iconify",
     "llms_txt_generator",
+    "widget_builder",
 ]
 
 templates_path = ["_templates"]
+html_static_path = ["static"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc_typehints = "description"
