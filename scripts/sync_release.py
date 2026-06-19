@@ -24,22 +24,8 @@ def get_pyprojects() -> dict[str, Path]:
 
 def get_init_files() -> dict[str, Path]:
     return {
-        "widget": (
-            BASE_DIR
-            / "packages"
-            / "django_hstore_widget"
-            / "src"
-            / "django_hstore_widget"
-            / "__init__.py"
-        ),
-        "field": (
-            BASE_DIR
-            / "packages"
-            / "django_hstore_field"
-            / "src"
-            / "django_hstore_field"
-            / "__init__.py"
-        ),
+        "widget": (BASE_DIR / "packages" / "django_hstore_widget" / "src" / "django_hstore_widget" / "__init__.py"),
+        "field": (BASE_DIR / "packages" / "django_hstore_field" / "src" / "django_hstore_field" / "__init__.py"),
     }
 
 
@@ -80,7 +66,7 @@ def pin_dependency(pyproject: Path, package: str, version: str) -> None:
     text = pyproject.read_text()
     # Match patterns like "django-hstore-widget>=0.1.0" or "django-hstore-widget==0.1.0"
     pattern = rf'({re.escape(package)})[><=!~]+[^",\]]*'
-    replacement = f'\1=={version}'
+    replacement = f"\1=={version}"
     text = re.sub(pattern, replacement, text)
     pyproject.write_text(text)
 
