@@ -10,14 +10,24 @@ Edit key-value pairs, add new entries, and delete existing ones.
 
    <style>
        .playground-widget {
-           background: var(--color-background-secondary, #f8f9fa);
-           border: 1px solid var(--color-foreground-muted, #dee2e6);
+           background: var(--sy-c-background, #f8f9fa);
+           border: 1px solid var(--sy-c-border, #dee2e6);
            border-radius: 8px;
            padding: 24px;
            margin: 16px 0;
+           color: var(--sy-c-text, #374151);
        }
        .playground-widget django-hstore-widget {
            min-height: 200px;
+       }
+       .playground-widget django-hstore-widget input,
+       .playground-widget django-hstore-widget textarea {
+           background: var(--sy-c-surface, #ffffff);
+           color: var(--sy-c-text, #374151);
+           border-color: var(--sy-c-border, #dee2e6);
+       }
+       .playground-widget django-hstore-widget .warning {
+           color: var(--sy-c-bold, #dc2626);
        }
    </style>
 
