@@ -3,17 +3,8 @@ version: 2
 build:
     os: ubuntu-24.04
     tools:
-        python: "latest"
-        nodejs: "latest"
-
-python:
-    install:
-        - method: pip
-          path: .
-
-nodejs:
-    packages:
-        - ref: packages/django_hstore_widget
+        python: "3.14"
+        nodejs: "22"
 
 jobs:
     install:
