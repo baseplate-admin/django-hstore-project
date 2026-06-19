@@ -44,6 +44,7 @@ test = [
     "pytest>=8.0.1",
     "pytest-django>=4.8.0",
     "psycopg[binary]>=3",
+    "playwright>=1.52.0",
 ]
 dev = [
     "ruff>=0.11",
