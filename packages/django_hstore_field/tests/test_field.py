@@ -1,9 +1,8 @@
-from django.urls import reverse
-from django.test import Client
-from django.contrib.auth.models import User
-from cat.models import Cat
 import pytest
-
+from cat.models import Cat
+from django.contrib.auth.models import User
+from django.test import Client
+from django.urls import reverse
 
 WAIT_TIME = 10_000
 
@@ -58,10 +57,9 @@ def test_hstore_field_edit_view_render_no_js(client_with_login):
 
 @pytest.mark.django_db
 def test_field_uses_correct_widget(client_with_login):
+    from django_hstore_field import HStoreField
     from django_hstore_widget.forms import HStoreFormField
     from django_hstore_widget.widgets import HStoreFormWidget
-
-    from django_hstore_field import HStoreField
 
     field = HStoreField()
     form_field = field.formfield()

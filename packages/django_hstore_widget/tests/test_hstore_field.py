@@ -1,9 +1,8 @@
-from django.urls import reverse
-from django.test import Client
-from django.contrib.auth.models import User
-from cat.models import Cat
 import pytest
-
+from cat.models import Cat
+from django.contrib.auth.models import User
+from django.test import Client
+from django.urls import reverse
 
 WAIT_TIME = 10_000
 

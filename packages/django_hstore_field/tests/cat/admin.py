@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models import Cat
 from .forms import CatForm
+from .models import Cat
 
 
 @admin.register(Cat)

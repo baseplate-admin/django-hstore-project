@@ -1,5 +1,5 @@
-from django.db import models
 from django.contrib.postgres.fields import HStoreField
+from django.db import models
 
 
 class Cat(models.Model):

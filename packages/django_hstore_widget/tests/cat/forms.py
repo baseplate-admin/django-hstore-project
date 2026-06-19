@@ -1,6 +1,5 @@
 from django import forms
 
-
 from django_hstore_widget.forms import HStoreFormField
 
 from .models import Cat
