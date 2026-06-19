@@ -1,5 +1,10 @@
 # Django HStore Project
 
+[![CI](https://github.com/baseplate-admin/django-hstore-widget/actions/workflows/ci.yml/badge.svg)](https://github.com/baseplate-admin/django-hstore-widget/actions/workflows/ci.yml)
+[![Documentation Status](https://readthedocs.org/projects/django-hstore-project/badge/?version=latest)](https://django-hstore-project.readthedocs.io/en/latest/?badge=latest)
+[![license: MIT](https://img.shields.io/badge/license-MIT-light.svg)](LICENSE)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+
 Monorepo for the Django HStore ecosystem packages.
 
 ## Packages
