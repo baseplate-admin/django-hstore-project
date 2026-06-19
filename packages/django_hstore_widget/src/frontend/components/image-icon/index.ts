@@ -10,10 +10,10 @@ const LUCIDE = { delete: X, add: Plus, edit: Pencil } as const;
 
 @customElement('image-icon')
 export class ImageIconComponent extends LitElement {
-    #styleFactory = new StyleFactory();
+    #sharedStyleFactory = new StyleFactory();
 
-    firstUpdate() {
-        this.#styleFactory.mountStyles(this.renderRoot, appStyles);
+    firstUpdated() {
+        this.#sharedStyleFactory.mountStyles(this.renderRoot, appStyles);
     }
     override createRenderRoot() {
         return this;

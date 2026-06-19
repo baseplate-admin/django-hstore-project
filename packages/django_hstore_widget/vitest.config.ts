@@ -1,11 +1,11 @@
 import path, { resolve } from 'node:path';
-import { defineConfig } from 'vite';
+import { playwright } from '@vitest/browser-playwright';
+import { defineConfig } from 'vitest/config';
 
 const frontendSourceDir = resolve(__dirname, 'src', 'frontend');
 
 export default defineConfig({
     root: frontendSourceDir,
-    base: '/',
     resolve: {
         alias: {
             $lib: path.resolve(frontendSourceDir, 'lib'),
@@ -20,14 +20,13 @@ export default defineConfig({
     css: {
         transformer: 'lightningcss',
     },
-    build: {
-        outDir: path.resolve(__dirname, 'dist', 'components'),
-        emptyOutDir: true,
-        lib: {
-            entry: resolve(frontendSourceDir, 'index.ts'),
-            formats: ['iife'],
-            name: 'DjangoHstoreWidget',
-            fileName: () => 'django-hstore-widget.js',
+    test: {
+        browser: {
+            enabled: true,
+            headless: true,
+            provider: playwright(),
+            instances: [{ browser: 'firefox' }],
         },
+        include: ['__tests__/**/*.spec.ts'],
     },
- });
+});

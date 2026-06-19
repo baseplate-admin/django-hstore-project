@@ -2,11 +2,11 @@ import '$components/image-icon';
 
 import { LitElement, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { classMap } from 'lit/directives/class-map.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { repeat } from 'lit/directives/repeat.js';
 import { when } from 'lit/directives/when.js';
 
+import { cn } from '$lib/classnames';
 import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mapppings/django';
 import { GITHUB_ISSUES_URL } from '$mapppings/github';
 
@@ -158,6 +158,9 @@ export class DjangoHstoreWidget extends LitElement {
             this.requestUpdate();
         };
 
+        const isRowsMode = this.displayMode === 'rows';
+        const hasError = !!this.parseError;
+
         const renderKeyValueRow = (entry: JsonKeyValue) =>
             html`<div class="form-row field-data" id="json_items">
                 <div class="flex gap-2.5 items-center justify-start">
@@ -165,25 +168,19 @@ export class DjangoHstoreWidget extends LitElement {
                         value="${entry.key}"
                         @input="${(event: Event) => handleKeyValueInput(event, entry, 'key')}"
                         placeholder="key"
-                        class="min-width-[150px] ${DJANGO_INPUT_STYLES}"
+                        class="${cn('min-width-[150px]', DJANGO_INPUT_STYLES)}"
                     />
                     <strong>:</strong>
                     <input
                         value="${entry.value}"
                         @input="${(event: Event) => handleKeyValueInput(event, entry, 'value')}"
                         placeholder="value"
-                        class="min-width-[300px] ${DJANGO_INPUT_STYLES}"
+                        class="${cn('min-width-[300px]', DJANGO_INPUT_STYLES)}"
                     />
                     <div
                         role="button"
                         aria-label="Delete ${entry.key}:${entry.value} at index ${entry.index}"
-                        class=${classMap({
-                            'items-center': true,
-                            'justify-center': true,
-                            'flex': true,
-                            'cursor-pointer': true,
-                            'select-none': true,
-                        })}
+                        class="items-center justify-center flex cursor-pointer select-none"
                         id="delete-button"
                         @click="${() => handleDeleteEntry(entry.index)}"
                     >
@@ -194,24 +191,16 @@ export class DjangoHstoreWidget extends LitElement {
 
         return html`<div class="flex gap-2.5 items-center">
                 <textarea
-                    class=${classMap({
-                        'hidden': this.displayMode === 'rows',
-                        'invisible': this.displayMode === 'rows',
-                        'warning': !!this.parseError,
-                        [DJANGO_TEXTAREA_STYLES]: true,
-                    })}
+                    class="${cn(isRowsMode && 'hidden invisible', hasError && 'warning', DJANGO_TEXTAREA_STYLES)}"
                     cols="${this.cols}"
                     name=${ifDefined(this.fieldName)}
                     rows="${this.rows}"
                     @input="${handleTextareaInput}"
                     .value="${this.textareaValue}"
                 ></textarea>
-                <div class=${classMap({
-                    'warning': !!this.parseError,
-                    'brightness-90': !!this.parseError,
-                })} id="textbox_error">${this.parseError}</div>
+                <div class="${cn(hasError && 'warning brightness-90')}" id="textbox_error">${this.parseError}</div>
             </div>
-            ${when(this.displayMode === 'rows' && !this.parseError && this.keyValues, () =>
+            ${when(isRowsMode && !hasError && this.keyValues, () =>
                 repeat(
                     this.keyValues,
                     entry => entry.index,
@@ -221,39 +210,22 @@ export class DjangoHstoreWidget extends LitElement {
             <div class="form-row justify-between items-center flex">
                 <button
                     type="button"
-                    class=${classMap({
-                        'items-center': this.displayMode === 'rows',
-                        'select-none': this.displayMode === 'rows',
-                        'justify-center': this.displayMode === 'rows',
-                        'flex': this.displayMode === 'rows',
-                        'gap-1': this.displayMode === 'rows',
-                        'cursor-pointer': this.displayMode === 'rows',
-                        'invisible': this.displayMode !== 'rows',
-                    })}
+                    class="${cn(
+                        isRowsMode && 'items-center select-none justify-center flex gap-1 cursor-pointer',
+                        !isRowsMode && 'invisible',
+                    )}"
                     id="add-button"
                     aria-label="Add Row"
                     @click="${handleAddEntry}"
                 >
                     <image-icon type="add"></image-icon> Add row
                 </button>
-                <div class=${classMap({
-                    'cursor-pointer': !this.parseError,
-                    'opacity-60': !!this.parseError,
-                    'items-center': true,
-                    'select-none': true,
-                    'justify-center': true,
-                    'flex': true,
-                    'gap-1': true,
-                })} id="textarea_open_close_toggle">
-                    ${when(this.displayMode === 'textarea',
-                        () => html`<button
-                            type="button"
-                            class="items-center select-none justify-center flex gap-1 cursor-pointer"
-                            aria-label="Close TextArea"
-                            @click="${handleToggleDisplayMode}"
-                        >
-                            <image-icon type="delete"></image-icon> Close TextArea
-                        </button>`,
+                <div class="${cn(
+                    'items-center select-none justify-center flex gap-1',
+                    hasError && 'opacity-60',
+                    !hasError && 'cursor-pointer',
+                )}" id="textarea_open_close_toggle">
+                    ${when(isRowsMode,
                         () => html`<button
                             type="button"
                             class="items-center select-none justify-center flex gap-1 cursor-pointer"
@@ -261,6 +233,14 @@ export class DjangoHstoreWidget extends LitElement {
                             @click="${handleToggleDisplayMode}"
                         >
                             <image-icon type="edit"></image-icon> Open TextArea
+                        </button>`,
+                        () => html`<button
+                            type="button"
+                            class="items-center select-none justify-center flex gap-1 cursor-pointer"
+                            aria-label="Close TextArea"
+                            @click="${handleToggleDisplayMode}"
+                        >
+                            <image-icon type="delete"></image-icon> Close TextArea
                         </button>`,
                     )}
                 </div>

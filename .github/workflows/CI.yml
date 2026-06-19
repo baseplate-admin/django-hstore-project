@@ -45,10 +45,8 @@ jobs:
                   node-version: latest
             - run: npm ci
             - name: Install Playwright browsers
-              run: npx playwright install --with-deps chromium firefox
-            - name: Run Vitest unit tests
-              run: npm run test:unit
-            - name: Run Playwright tests
+              run: npx playwright install --with-deps firefox
+            - name: Run Vitest browser tests
               run: npm test
 
     test-widget-backend:
