@@ -41,3 +41,4 @@ autodoc_default_options = {
 myst_enable_extensions = [
     "colon_fence",
 ]
+myst_fence_as_directive = ["mermaid"]

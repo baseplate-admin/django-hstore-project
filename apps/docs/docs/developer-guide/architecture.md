@@ -31,12 +31,12 @@ apps/
 
 ## Dependency Flow
 
-.. mermaid::
-
-    graph TD
-        A[django_hstore_field] --> B[django_hstore_widget]
-        B --> C[Django runtime]
-        B --> D[Lit frontend]
+```{mermaid}
+graph TD
+    A[django_hstore_field] --> B[django_hstore_widget]
+    B --> C[Django runtime]
+    B --> D[Lit frontend]
+```
 
 ## Frontend Architecture
 
@@ -49,17 +49,17 @@ The widget uses [LitElement](https://lit.dev/) for web components:
 
 ## Data Flow
 
-.. mermaid::
+```{mermaid}
+sequenceDiagram
+    participant Admin as Django Admin
+    participant Widget as HStoreFormWidget
+    participant FE as Frontend Component
+    participant Store as Pub-Sub Store
+    participant BE as Django Backend
 
-    sequenceDiagram
-        participant Admin as Django Admin
-        participant Widget as HStoreFormWidget
-        participant FE as Frontend Component
-        participant Store as Pub-Sub Store
-        participant BE as Django Backend
-
-        Admin->>Widget: render field
-        Widget->>FE: mount web component
-        FE->>FE: user edits key-value pairs
-        FE->>Store: emit changes
-        FE->>BE: submit form as JSON
+    Admin->>Widget: render field
+    Widget->>FE: mount web component
+    FE->>FE: user edits key-value pairs
+    FE->>Store: emit changes
+    FE->>BE: submit form as JSON
+```
