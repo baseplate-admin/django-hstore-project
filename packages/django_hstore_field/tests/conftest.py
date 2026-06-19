@@ -13,6 +13,7 @@ def _can_connect_to_db():
     """Check if PostgreSQL is available before running db tests."""
     try:
         from django.db import connection
+
         conn = connection.ensure_connection()
         return conn is not None
     except Exception:
@@ -23,6 +24,7 @@ def pytest_runtest_setup(item):
     """Skip database tests when PostgreSQL is unavailable."""
     if item.get_closest_marker("django_db") and not _can_connect_to_db():
         pytest.skip("PostgreSQL database is not available")
+
 
 try:
     from playwright.sync_api import Error as PlaywrightError
