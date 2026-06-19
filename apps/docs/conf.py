@@ -1,4 +1,9 @@
 import os
+import sys
+
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "_extensions"))
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django.conf.global_settings")
 import django
@@ -24,6 +29,7 @@ extensions = [
     "sphinx_tabs.tabs",
     "sphinx_contributors",
     "sphinx_iconify",
+    "llms_txt_generator",
 ]
 
 templates_path = ["_templates"]
