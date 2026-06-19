@@ -104,18 +104,14 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Auto-release a package")
-    parser.add_argument(
-        "package", choices=["widget", "field", "all"], help="Package to release"
-    )
+    parser.add_argument("package", choices=["widget", "field", "all"], help="Package to release")
     parser.add_argument(
         "--bump",
         choices=["patch", "minor", "major"],
         default="patch",
         help="Version part to bump",
     )
-    parser.add_argument(
-        "--dry-run", action="store_true", help="Preview without changes"
-    )
+    parser.add_argument("--dry-run", action="store_true", help="Preview without changes")
 
     args = parser.parse_args()
 

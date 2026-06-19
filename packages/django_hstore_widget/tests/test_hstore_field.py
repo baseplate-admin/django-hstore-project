@@ -80,9 +80,7 @@ def test_hstore_field_edit_view_render_js(admin_user, cat_instance, page, live_s
     page.wait_for_selector("body.dashboard", timeout=WAIT_TIME)
 
     # Go to the Cat change page
-    change_url = (
-        f"{live_server.url}{reverse('admin:cat_cat_change', args=(cat_instance.pk,))}"
-    )
+    change_url = f"{live_server.url}{reverse('admin:cat_cat_change', args=(cat_instance.pk,))}"
     page.goto(change_url)
 
     # Assert the widget is present
@@ -91,12 +89,8 @@ def test_hstore_field_edit_view_render_js(admin_user, cat_instance, page, live_s
 
     # Assert that console is empty
     # Playwright captures framework-level warnings; only fail on actual errors.
-    browser_errors = [
-        message.text for message in console_messages if message.type == "error"
-    ]
-    unexpected_errors = [
-        text for text in browser_errors if "404 (Not Found)" not in text
-    ]
+    browser_errors = [message.text for message in console_messages if message.type == "error"]
+    unexpected_errors = [text for text in browser_errors if "404 (Not Found)" not in text]
     assert not unexpected_errors
 
     # Assert that there is the hidden textarea
