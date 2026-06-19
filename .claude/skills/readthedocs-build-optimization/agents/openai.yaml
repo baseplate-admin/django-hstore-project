@@ -1,0 +1,4 @@
+interface:
+  display_name: "Read the Docs Build Optimization"
+  short_description: "Speed up Read the Docs builds"
+  default_prompt: "Use $readthedocs-build-optimization to troubleshoot and speed up a slow Read the Docs build."
