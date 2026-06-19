@@ -101,6 +101,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [{ name = "zensical" }]
 
+[package.metadata.requires-dev]
+docs = []
+
 [[package]]
 name = "django-hstore-field"
 version = "0.0.7"
@@ -128,7 +131,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 test = [
     { name = "playwright", specifier = ">=1.53.0" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "pytest", specifier = ">=8.0.1" },
     { name = "pytest-django", specifier = ">=4.8.0" },
 ]
@@ -161,7 +164,7 @@ requires-dist = [{ name = "django", specifier = ">=5.0" }]
 [package.metadata.requires-dev]
 test = [
     { name = "playwright", specifier = ">=1.52.0" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "pytest", specifier = ">=8.0.1" },
     { name = "pytest-django", specifier = ">=4.8.0" },
 ]
