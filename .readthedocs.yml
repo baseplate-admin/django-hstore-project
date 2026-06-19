@@ -8,11 +8,11 @@ build:
     jobs:
         install:
             - pip install uv
-            - (cd apps/docs && UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --group docs)
+            - cd apps/docs && UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --group docs
         pre_build:
             - cd packages/django_hstore_widget && npm ci && npm run build
-            - mkdir -p apps/docs/static/
-            - cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/static/
+            - mkdir -p apps/docs/static/admin/js/django_hstore_widget
+            - cp packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/static/admin/js/django_hstore_widget/
 
 sphinx:
     configuration: apps/docs/conf.py
