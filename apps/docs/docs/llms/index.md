@@ -6,18 +6,16 @@ This project provides machine-readable context files for LLM integration, auto-g
 
 | File | Description |
 |------|-------------|
-| [llms.txt](https://django-hstore-project.readthedocs.io/en/latest/llms.txt) | Index file listing all context files |
-| [llms-widget.txt](https://django-hstore-project.readthedocs.io/en/latest/llms-widget.txt) | django-hstore-widget package: widget API, frontend architecture |
-| [llms-field.txt](https://django-hstore-project.readthedocs.io/en/latest/llms-field.txt) | django-hstore-field package: field API, installation, quick start |
-| [llms-full.txt](https://django-hstore-project.readthedocs.io/en/latest/llms-full.txt) | Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide |
+| <a href="../llms.txt">llms.txt</a> | Index file listing all context files |
+| <a href="../llms-widget.txt">llms-widget.txt</a> | django-hstore-widget package: widget API, frontend architecture |
+| <a href="../llms-field.txt">llms-field.txt</a> | django-hstore-field package: field API, installation, quick start |
+| <a href="../llms-full.txt">llms-full.txt</a> | Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide |
 
 ## Usage
 
-Point your LLM to the context file that matches your scope:
-
-```
-https://django-hstore-project.readthedocs.io/en/latest/llms-full.txt
-```
+Point your LLM to the context file that matches your scope. The generated files
+are placed at the root of the documentation output and are accessible relative
+to the docs root.
 
 ## How It Works
 

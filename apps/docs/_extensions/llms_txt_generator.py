@@ -14,7 +14,7 @@ from pathlib import Path
 from sphinx.application import Sphinx
 
 
-BASE_URL = "https://django-hstore-project.readthedocs.io/en/latest/"
+BASE_URL = ""  # Set from app.config in setup()
 
 
 def generate_llms_txt(app: Sphinx, exception=None):
@@ -52,17 +52,7 @@ def _strip_leading_heading(text: str) -> str:
 # Shared header
 # ---------------------------------------------------------------------------
 
-SHARED_HEADER = """\
-# Django HStore Project
-
-A monorepo for the Django HStore ecosystem providing a human-friendly,
-Lit-based key-value editor for PostgreSQL hstore fields in Django admin.
-
-- **Repository**: https://github.com/baseplate-admin/django-hstore-widget
-- **Documentation**: https://django-hstore-project.readthedocs.io
-- **Python**: 3.10+
-- **Django**: 5.0+
-- **PostgreSQL**: 14+"""
+SHARED_HEADER = ""  # Built in setup() from config
 
 
 # ---------------------------------------------------------------------------
@@ -265,7 +255,33 @@ def _section_contributing(docs_dir: Path) -> str:
 # Sphinx entry point
 # ---------------------------------------------------------------------------
 
+def _build_shared_header(repo_url: str, docs_url: str) -> str:
+    """Build the shared header with configurable URLs."""
+    lines = [
+        "# Django HStore Project",
+        "",
+        "A monorepo for the Django HStore ecosystem providing a human-friendly,",
+        "Lit-based key-value editor for PostgreSQL hstore fields in Django admin.",
+        "",
+    ]
+    if repo_url:
+        lines.append(f"- **Repository**: {repo_url}")
+    if docs_url:
+        lines.append(f"- **Documentation**: {docs_url}")
+    lines.extend([
+        "- **Python**: 3.10+",
+        "- **Django**: 5.0+",
+        "- **PostgreSQL**: 14+",
+    ])
+    return "\n".join(lines)
+
+
 def setup(app: Sphinx):
+    global BASE_URL, SHARED_HEADER
+    base = getattr(app.config, "llms_base_url", "")
+    BASE_URL = base + "/" if base else ""
+    repo_url = getattr(app.config, "llms_repo_url", "")
+    SHARED_HEADER = _build_shared_header(repo_url, base)
     app.connect("build-finished", generate_llms_txt)
     return {
         "version": "0.1",

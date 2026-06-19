@@ -50,3 +50,13 @@ myst_enable_extensions = [
     "colon_fence",
 ]
 myst_fence_as_directive = ["mermaid"]
+
+# LLMs.txt base URL — defaults to RTD canonical URL, falls back to relative.
+llms_base_url = os.environ.get(
+    "READTHEDOCS_CANONICAL_URL",
+    "",
+).rstrip("/")
+llms_repo_url = os.environ.get(
+    "LLMS_REPO_URL",
+    "",
+)
