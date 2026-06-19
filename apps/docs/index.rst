@@ -1,10 +1,7 @@
 Django HStore Project
 =====================
 
-.. iconify:: fa6-brands:python
-.. iconify:: mdi:language-django
-
-A monorepo for the Django HStore ecosystem -- human-friendly PostgreSQL hstore
+A monorepo for the Django HStore ecosystem - human-friendly PostgreSQL hstore
 support for Django admin.
 
 Packages
@@ -39,7 +36,7 @@ For new projects, use **django-hstore-field**:
        name = models.CharField(max_length=100)
        metadata = HStoreField()
 
-The widget is auto-wired -- no form configuration needed.
+The widget is auto-wired - no form configuration needed.
 
 Contents
 --------

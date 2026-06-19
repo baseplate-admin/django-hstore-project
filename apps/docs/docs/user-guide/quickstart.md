@@ -1,5 +1,10 @@
 # Quick Start
 
+:::{note}
+**django-hstore-field is recommended** for new projects. It auto-wires the widget
+so you get the custom editor without any form configuration.
+:::
+
 ## Using django-hstore-field
 
 ```python
@@ -15,6 +20,8 @@ class Article(models.Model):
 The widget is automatically wired to the admin.
 
 ## Using django-hstore-widget
+
+If you need finer control over the widget configuration:
 
 ```python
 # models.py
