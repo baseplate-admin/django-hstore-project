@@ -151,38 +151,10 @@ jobs:
             - name: Run field backend tests
               run: uv run pytest tests/ -v -x -rs
 
-    build-docs:
-        name: Build Docs
-        runs-on: ubuntu-latest
-        needs: [test-frontend, test-widget-backend, test-field-backend]
-        steps:
-            - uses: actions/checkout@v7
-            - uses: actions/setup-node@v6
-              with:
-                  node-version: latest
-            - uses: actions/download-artifact@v8
-              with:
-                  name: workspace
-                  path: packages/django_hstore_widget/
-            - name: Set up Python (uv)
-              uses: astral-sh/setup-uv@v7
-              with:
-                  enable-cache: true
-                  python-version: '3.14'
-                  cache-dependency-glob: 'uv.lock'
-            - name: Install dependencies
-              run: uv sync --group docs
-            - name: Copy built frontend into docs
-              run: |
-                  mkdir -p apps/docs/static/
-                  cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/static/
-            - name: Build docs
-              run: uv run sphinx-build -b html apps/docs apps/docs/_build/html
-
     merge:
         name: Auto-merge Dependabot
         runs-on: ubuntu-latest
-        needs: [build-docs]
+        needs: [test-frontend, test-widget-backend, test-field-backend]
         if: github.actor == 'dependabot[bot]'
         steps:
             - uses: actions/checkout@v7
@@ -195,7 +167,7 @@ jobs:
     release-widget:
         name: Release Widget
         if: startsWith(github.ref, 'refs/tags/widget-')
-        needs: [build-docs]
+        needs: [test-frontend, test-widget-backend, test-field-backend]
         runs-on: ubuntu-latest
         environment:
             name: pypi
@@ -226,7 +198,7 @@ jobs:
     release-field:
         name: Release Field
         if: startsWith(github.ref, 'refs/tags/field-')
-        needs: [build-docs]
+        needs: [test-frontend, test-widget-backend, test-field-backend]
         runs-on: ubuntu-latest
         environment:
             name: pypi
