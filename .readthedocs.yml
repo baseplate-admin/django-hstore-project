@@ -1,0 +1,31 @@
+version: 2
+
+build:
+    os: ubuntu-24.04
+    tools:
+        python: "latest"
+        nodejs: "latest"
+
+python:
+    install:
+        - method: pip
+          path: .
+
+nodejs:
+    packages:
+        - ref: packages/django_hstore_widget
+
+jobs:
+    install:
+        - cd packages/django_hstore_widget && npm ci
+    post_install:
+        - pip install uv
+        - UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --group docs
+    pre_build:
+        - cd packages/django_hstore_widget && npm run build
+        - mkdir -p apps/docs/docs/static/
+        - cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/docs/static/
+    post_build:
+        - uv run zensical build --config apps/docs/zensical.toml
+        - mkdir -p $READTHEDOCS_OUTPUT/html/
+        - cp --recursive apps/docs/site/* $READTHEDOCS_OUTPUT/html/

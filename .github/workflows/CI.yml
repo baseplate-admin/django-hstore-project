@@ -155,11 +155,15 @@ jobs:
         name: Build Docs
         runs-on: ubuntu-latest
         needs: [test-frontend, test-widget-backend, test-field-backend]
-        defaults:
-            run:
-                working-directory: apps/docs
         steps:
             - uses: actions/checkout@v7
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: latest
+            - uses: actions/download-artifact@v8
+              with:
+                  name: workspace
+                  path: packages/django_hstore_widget/
             - name: Set up Python (uv)
               uses: astral-sh/setup-uv@v7
               with:
@@ -168,7 +172,12 @@ jobs:
                   cache-dependency-glob: 'uv.lock'
             - name: Install dependencies
               run: uv sync --group docs
+            - name: Copy built frontend into docs
+              run: |
+                  mkdir -p apps/docs/docs/static/
+                  cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/docs/static/
             - name: Build docs
+              working-directory: apps/docs
               run: uv run zensical build
 
     merge:

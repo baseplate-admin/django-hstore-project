@@ -1,0 +1,77 @@
+[project]
+site_name = "Django HStore Project"
+site_description = "Documentation for django-hstore-widget and django-hstore-field"
+site_url = "https://django-hstore-project.readthedocs.io/"
+docs_dir = "docs"
+site_dir = "site"
+
+extra_javascript = ["static/django-hstore-widget.js"]
+
+nav = [
+    { "Home" = "index.md" },
+    { "User Guide" = [
+        { "Installation" = "user-guide/installation.md" },
+        { "Quick Start" = "user-guide/quickstart.md" },
+        { "HStore vs JSONB" = "user-guide/hstore-vs-jsonb.md" },
+    ] },
+    { "Developer Guide" = [
+        { "Architecture" = "developer-guide/architecture.md" },
+        { "Contributing" = "developer-guide/contributing.md" },
+        { "Frontend Build" = "developer-guide/frontend-build.md" },
+    ] },
+    { "API Reference" = [
+        { "Widget" = "api/widget.md" },
+        { "Field" = "api/field.md" },
+    ] },
+    { "LLM Context" = [
+        { "Overview" = "llms.md" },
+        { "Full Context" = "llms-full.md" },
+        { "Widget" = "llms-django-hstore-widget.md" },
+        { "Field" = "llms-django-hstore-field.md" },
+    ] },
+]
+
+[project.theme]
+features = [
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.tracking",
+    "navigation.top",
+    "search.highlight",
+    "search.share",
+    "content.code.copy",
+    "content.code.annotate",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx.highlight]
+use_pygments = true
+
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.pymdownx.superfences]

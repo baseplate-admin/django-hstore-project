@@ -79,6 +79,23 @@ def release(package: str, bump: str = "patch", dry_run: bool = False) -> None:
     run(["git", "commit", "-m", f"Release {package}-{new_version}"])
     run(["git", "tag", tag_name])
     run(["git", "push", "origin", "master", tag_name])
+    run(["python", str(BASE_DIR / "scripts" / "sync_changelog.py")])
+    run(["git", "add", str(BASE_DIR / "CHANGELOG.md")])
+    # Only commit if there are changes
+    status = subprocess.run(
+        ["git", "diff", "--cached", "--quiet"],
+        cwd=BASE_DIR,
+    )
+    if status.returncode != 0:
+        run(
+            [
+                "git",
+                "commit",
+                "-m",
+                "chore: update CHANGELOG.md",
+            ]
+        )
+        run(["git", "push", "origin", "master"])
 
     print(f"Released {package}-{new_version}")
 

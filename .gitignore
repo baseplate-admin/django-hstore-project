@@ -39,3 +39,9 @@ UserInterfaceState.xcuserstate
 !uv.lock
 packages/*/uv.lock
 .playwright-mcp
+
+# Docs static builds (generated during docs build)
+apps/docs/docs/static/
+
+# Docs build output
+apps/docs/site/
