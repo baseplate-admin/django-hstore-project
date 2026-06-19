@@ -10,10 +10,9 @@ author = "baseplate-admin"
 
 html_theme = "shibuya"
 html_theme_options = {
-    "fonts": {
-        "text": "Source Sans 3",
-        "code": "JetBrains Mono",
-    },
+    "social": [
+        {"name": "GitHub", "url": "https://github.com/baseplate-admin/django-hstore-widget", "icon": "mdi:github"},
+    ],
 }
 
 extensions = [
@@ -30,8 +29,6 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-html_static_path = ["static"]
-
 autodoc_typehints = "description"
 autodoc_member_order = "groupwise"
 autodoc_default_options = {
@@ -39,3 +36,8 @@ autodoc_default_options = {
     "undoc-members": True,
     "show-inheritance": True,
 }
+
+# MyST config for mermaid
+myst_enable_extensions = [
+    "colon_fence",
+]

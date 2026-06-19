@@ -1,4 +1,5 @@
 from django.contrib.postgres.fields import HStoreField as DjangoHStoreField
+
 from django_hstore_widget.forms import HStoreFormField
 from django_hstore_widget.widgets import HStoreFormWidget
 

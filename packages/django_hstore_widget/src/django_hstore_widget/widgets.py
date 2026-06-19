@@ -2,14 +2,9 @@ import logging
 
 from django.contrib.admin.widgets import AdminTextareaWidget
 from django.template.loader import get_template
+from django.templatetags.static import static
 from django.utils.html import format_html, html_safe
 from django.utils.safestring import mark_safe
-
-try:
-    # Django 2.x
-    from django.contrib.admin.templatetags.admin_static import static
-except ImportError:
-    from django.templatetags.static import static
 
 logger = logging.getLogger("django_hstore_widget")
 
@@ -95,4 +90,4 @@ class HStoreFormWidget(AdminTextareaWidget):
         return mark_safe(html)
 
     class Media:
-        js = [ESM("admin/js/django_hstore_widget/django-hstore-widget.js")]
+        js = [ESM("admin/js/django_hstore_widget/django-hstore-widget.js")]  # noqa: RUF012

@@ -12,5 +12,4 @@ class DjangoHStoreWidgetConfig(AppConfig):
     name = "django_hstore_widget"
 
     def ready(self):
-        # noqa: F401 -- import registers the check via @register
         from . import checks  # noqa: F401

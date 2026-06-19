@@ -44,6 +44,7 @@ test = [
     "psycopg[binary]>=3",
     "playwright>=1.52.0",
 ]
+dev = ["ruff>=0.11", "pyrefly>=1.0", "django-stubs>=5.0"]
 
 [project.urls]
 Homepage = "https://github.com/baseplate-admin/django-hstore-widget"

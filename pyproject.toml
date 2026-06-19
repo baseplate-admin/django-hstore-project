@@ -7,12 +7,6 @@ description = "Monorepo for django-hstore-widget and django-hstore-field"
 readme = "README.md"
 license = { text = "MIT" }
 
-dependencies = [
-    "ruff>=0.11",
-    "pyright>=1.1",
-    "django-stubs>=5.0",
-]
-
 [tool.uv.workspace]
 members = ["packages/*", "apps/*"]
 
@@ -37,16 +31,11 @@ ignore = [
     "E501",  # line length handled by formatter
 ]
 
+[tool.ruff.lint.per-file-ignores]
+"**/migrations/*.py" = ["RUF012"]
+
 [tool.ruff.lint.isort]
 known-first-party = [
     "django_hstore_widget",
     "django_hstore_field",
 ]
-
-[tool.pyright]
-typeCheckingMode = "strict"
-pythonVersion = "3.10"
-include = ["packages/**/src", "packages/**/tests"]
-exclude = ["**/migrations", "**/_build"]
-reportMissingTypeStubs = "warning"
-reportIgnoreCommentWithoutRule = "error"

@@ -25,7 +25,7 @@ class HStoreFormField(HStoreField):
 
     widget = HStoreFormWidget
 
-    def clean(self, value={}):
+    def clean(self, value):
         """Parse the raw form value into a Python dict.
 
         Parameters
