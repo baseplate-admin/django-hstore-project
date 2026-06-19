@@ -14,7 +14,7 @@ from pathlib import Path
 from sphinx.application import Sphinx
 
 
-BASE_URL = "https://django-hstore-widget.readthedocs.io/en/latest/"
+BASE_URL = "https://django-hstore-project.readthedocs.io/en/latest/"
 
 
 def generate_llms_txt(app: Sphinx, exception=None):
@@ -59,7 +59,7 @@ A monorepo for the Django HStore ecosystem providing a human-friendly,
 Lit-based key-value editor for PostgreSQL hstore fields in Django admin.
 
 - **Repository**: https://github.com/baseplate-admin/django-hstore-widget
-- **Documentation**: https://django-hstore-widget.readthedocs.io
+- **Documentation**: https://django-hstore-project.readthedocs.io
 - **Python**: 3.10+
 - **Django**: 5.0+
 - **PostgreSQL**: 14+"""
