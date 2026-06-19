@@ -174,11 +174,10 @@ jobs:
               run: uv sync --group docs
             - name: Copy built frontend into docs
               run: |
-                  mkdir -p apps/docs/docs/static/
-                  cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/docs/static/
+                  mkdir -p apps/docs/static/
+                  cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/static/
             - name: Build docs
-              working-directory: apps/docs
-              run: uv run zensical build
+              run: uv run sphinx-build -b html apps/docs apps/docs/_build/html
 
     merge:
         name: Auto-merge Dependabot

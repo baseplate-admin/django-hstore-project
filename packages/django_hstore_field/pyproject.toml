@@ -1,9 +1,8 @@
 [project]
 name = "django-hstore-field"
 version = "0.0.7"
-description = "An easy to use postgres hstore field that is based on django-hstore-widget"
+description = "Drop-in HStoreField with auto-wired widget."
 readme = "README.md"
-requires-python = ">=3.10"
 license = { text = "MIT" }
 
 authors = [
@@ -13,7 +12,6 @@ authors = [
 maintainers = [
     { name = "baseplate-admin", email = "61817579+baseplate-admin@users.noreply.github.com" },
 ]
-
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Framework :: Django",
@@ -35,32 +33,36 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+requires-python = ">=3.10"
+dependencies = ["django>=5.0", "django-hstore-widget>=0.1.0"]
 
-dependencies = ["django-hstore-widget>=0.1.0", "django>=5.0"]
+[tool.uv.sources]
+django-hstore-widget = { workspace = true }
 
 [dependency-groups]
 test = [
     "pytest>=8.0.1",
     "pytest-django>=4.8.0",
     "psycopg[binary]>=3",
-    "playwright>=1.53.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/baseplate-admin/django-hstore-project"
-Repository = "https://github.com/baseplate-admin/django-hstore-project"
-"Bug Tracker" = "https://github.com/baseplate-admin/django-hstore-project/issues"
+Homepage = "https://github.com/baseplate-admin/django-hstore-widget"
+Repository = "https://github.com/baseplate-admin/django-hstore-widget"
+"Bug Tracker" = "https://github.com/baseplate-admin/django-hstore-widget/issues"
+
 
 [tool.hatch.build]
+ignore-vcs = true
+include = ['src/django_hstore_field/**/*']
 packages = ["src/django_hstore_field"]
 directory = 'py-dist'
+
 
 [tool.pytest.ini_options]
 addopts = ["--import-mode=importlib"]
 pythonpath = ["."]
-
-[tool.uv.sources]
-django-hstore-widget = { workspace = true }
+DJANGO_SETTINGS_MODULE = "tests.conftest"
 
 [build-system]
 requires = ["hatchling"]

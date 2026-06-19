@@ -9,9 +9,17 @@
 
 ## Option A: django-hstore-field (Recommended)
 
-```bash
-pip install django-hstore-field
-```
+=== "pip"
+
+    ```bash
+    pip install django-hstore-field
+    ```
+
+=== "uv"
+
+    ```bash
+    uv pip install django-hstore-field
+    ```
 
 This installs django-hstore-widget as a dependency.
 
@@ -25,11 +33,19 @@ INSTALLED_APPS = [
 ]
 ```
 
-## Option B: django-hstore-widget (Lower Level)
+## Option B: django-hstore-widget
 
-```bash
-pip install django-hstore-widget
-```
+=== "pip"
+
+    ```bash
+    pip install django-hstore-widget
+    ```
+
+=== "uv"
+
+    ```bash
+    uv pip install django-hstore-widget
+    ```
 
 ```python
 # settings.py

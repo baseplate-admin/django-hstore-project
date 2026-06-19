@@ -12,13 +12,13 @@ packages/
                 forms.py       # HStoreFormField
                 checks.py      # PostgreSQL validation
                 templates/     # Widget template
-            frontend/          # TypeScript + webpack
+            frontend/          # TypeScript + Vite
                 components/    # LitElement web components
                 stores/        # Pub-sub state store
                 lib/           # Utilities (classnames)
                 mappings/      # Constants
         tests/                 # Python tests + Playwright e2e
-        webpack.config.ts      # Frontend build config
+        vite.config.ts         # Frontend build config
         package.json           # NPM dependencies
     django_hstore_field/      # Field package (higher level)
         src/
@@ -26,23 +26,40 @@ packages/
                 fields.py      # HStoreField subclass
         tests/                 # Python tests
 apps/
-    docs/                     # Zensical documentation
+    docs/                     # Sphinx documentation
 ```
 
 ## Dependency Flow
 
-```
-django_hstore_field
-    -> django_hstore_widget
-        -> Django (runtime)
-        -> Lit (frontend)
+```mermaid
+graph TD
+    A[django_hstore_field] --> B[django_hstore_widget]
+    B --> C[Django runtime]
+    B --> D[Lit frontend]
 ```
 
 ## Frontend Architecture
 
 The widget uses [LitElement](https://lit.dev/) for web components:
 
-- `django-hstore-widget` — Main widget component
-- `image-icon` — Icon sub-component (light DOM, no shadow root)
+- `django-hstore-widget` -- Main widget component
+- `image-icon` -- Icon sub-component (light DOM, no shadow root)
 - Global pub-sub store for SVG icon sources
-- Webpack bundler with TypeScript support
+- Vite bundler with TypeScript support
+
+## Data Flow
+
+```mermaid
+sequenceDiagram
+    participant Admin as Django Admin
+    participant Widget as HStoreFormWidget
+    participant FE as Frontend Component
+    participant Store as Pub-Sub Store
+    participant BE as Django Backend
+
+    Admin->>Widget: render field
+    Widget->>FE: mount web component
+    FE->>FE: user edits key-value pairs
+    FE->>Store: emit changes
+    FE->>BE: submit form as JSON
+```

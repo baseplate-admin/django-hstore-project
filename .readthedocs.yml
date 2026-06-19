@@ -6,6 +6,11 @@ build:
         python: "3.14"
         nodejs: "22"
 
+sphinx:
+    configuration: apps/docs/conf.py
+    builder: html
+    fail_on_warning: false
+
 jobs:
     install:
         - cd packages/django_hstore_widget && npm ci
@@ -14,9 +19,5 @@ jobs:
         - UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --group docs
     pre_build:
         - cd packages/django_hstore_widget && npm run build
-        - mkdir -p apps/docs/docs/static/
-        - cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/docs/static/
-    post_build:
-        - uv run zensical build --config apps/docs/zensical.toml
-        - mkdir -p $READTHEDOCS_OUTPUT/html/
-        - cp --recursive apps/docs/site/* $READTHEDOCS_OUTPUT/html/
+        - mkdir -p apps/docs/static/
+        - cp -r packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/static/

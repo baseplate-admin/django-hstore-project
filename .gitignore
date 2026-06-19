@@ -41,7 +41,7 @@ packages/*/uv.lock
 .playwright-mcp
 
 # Docs static builds (generated during docs build)
-apps/docs/docs/static/
+apps/docs/static/
 
-# Docs build output
-apps/docs/site/
+# Sphinx build output
+apps/docs/_build/
