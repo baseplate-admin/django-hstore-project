@@ -1,4 +1,11 @@
-"""Sphinx extension that generates llms.txt from the documentation at build time."""
+"""Sphinx extension that auto-generates llms.txt files from the docs at build time.
+
+Produces:
+    - llms.txt                index file listing all context files
+    - llms-widget.txt         django-hstore-widget package context
+    - llms-field.txt          django-hstore-field package context
+    - llms-full.txt           complete project documentation for LLM context
+"""
 
 import re
 
@@ -7,40 +14,45 @@ from pathlib import Path
 from sphinx.application import Sphinx
 
 
+BASE_URL = "https://django-hstore-widget.readthedocs.io/en/latest/"
+
+
 def generate_llms_txt(app: Sphinx, exception=None):
-    """Generate llms.txt after the build completes."""
+    """Generate llms.txt files after the build completes."""
     if exception:
         return
 
     out_dir = Path(app.outdir)
     docs_dir = Path(app.srcdir) / "docs"
 
-    llms_content = build_llms_content(docs_dir)
-    (out_dir / "llms.txt").write_text(llms_content, encoding="utf-8")
+    widget_content = _build_widget_section(docs_dir)
+    field_content = _build_field_section(docs_dir)
+    full_content = _build_full_content(docs_dir, widget_content, field_content)
+
+    (out_dir / "llms-widget.txt").write_text(widget_content, encoding="utf-8")
+    (out_dir / "llms-field.txt").write_text(field_content, encoding="utf-8")
+    (out_dir / "llms-full.txt").write_text(full_content, encoding="utf-8")
+
+    index = "# llms.txt\n\n"
+    index += "This file is an index for LLM context files.\n\n"
+    index += f"- {BASE_URL}llms-widget.txt\n"
+    index += f"- {BASE_URL}llms-field.txt\n"
+    index += f"- {BASE_URL}llms-full.txt\n"
+    (out_dir / "llms.txt").write_text(index, encoding="utf-8")
 
 
 def _strip_leading_heading(text: str) -> str:
-    """Remove the top-level heading from a markdown file so it can be inlined."""
-    return re.sub(r"^# .+\n", "", text, count=1)
+    """Remove the top-level heading from a source file so it can be inlined."""
+    text = re.sub(r"^# .+\n", "", text, count=1)
+    text = re.sub(r"^[=\-~`]+$\n", "", text, count=1)
+    return text
 
 
-def build_llms_content(docs_dir: Path) -> str:
-    """Assemble the llms.txt content from the documentation source files."""
-    sections = [
-        PROJECT_HEADER,
-        _section_packages(),
-        _section_installation(docs_dir),
-        _section_quickstart(docs_dir),
-        _section_api(),
-        _section_frontend(docs_dir),
-        _section_best_practices(docs_dir),
-        _section_hstore_vs_jsonb(docs_dir),
-        _section_contributing(docs_dir),
-    ]
-    return "\n\n".join(sections) + "\n"
+# ---------------------------------------------------------------------------
+# Shared header
+# ---------------------------------------------------------------------------
 
-
-PROJECT_HEADER = """\
+SHARED_HEADER = """\
 # Django HStore Project
 
 A monorepo for the Django HStore ecosystem providing a human-friendly,
@@ -53,44 +65,22 @@ Lit-based key-value editor for PostgreSQL hstore fields in Django admin.
 - **PostgreSQL**: 14+"""
 
 
-def _section_packages() -> str:
+# ---------------------------------------------------------------------------
+# Widget package
+# ---------------------------------------------------------------------------
+
+def _build_widget_section(docs_dir: Path) -> str:
+    sections = [
+        SHARED_HEADER,
+        _widget_api(),
+        _section_frontend(docs_dir),
+    ]
+    return "\n\n".join(sections) + "\n"
+
+
+def _widget_api() -> str:
     return """\
-# Packages
-
-## django-hstore-widget
-
-Lower-level package providing the custom hstore editor widget for Django admin.
-
-- **HStoreFormWidget** — Lit-based key-value editor replacing the default textarea
-- **HStoreFormField** — Form field wired to the custom widget with JSON parsing
-- **check_database_backend_is_postgres** — System check that warns when the default
-  database is not PostgreSQL
-
-## django-hstore-field
-
-Higher-level package providing a drop-in HStoreField replacement.
-
-- **HStoreField** — Overrides ``formfield()`` so the admin and ModelForms
-  automatically use ``HStoreFormField`` and ``HStoreFormWidget`` with no
-  manual form configuration required."""
-
-
-def _section_installation(docs_dir: Path) -> str:
-    path = docs_dir / "user-guide" / "installation.md"
-    raw = path.read_text(encoding="utf-8") if path.exists() else ""
-    return "# Installation\n\n" + _strip_leading_heading(raw).strip()
-
-
-def _section_quickstart(docs_dir: Path) -> str:
-    path = docs_dir / "user-guide" / "quickstart.md"
-    raw = path.read_text(encoding="utf-8") if path.exists() else ""
-    return "# Quick Start\n\n" + _strip_leading_heading(raw).strip()
-
-
-
-def _section_api() -> str:
-    return """\
-# API Reference
+# django-hstore-widget API
 
 ## django_hstore_widget.widgets.HStoreFormWidget
 
@@ -137,7 +127,26 @@ Parse the raw form value into a Python dict using ``json.loads``.
 ## django_hstore_widget.checks.check_database_backend_is_postgres
 
 System check that warns when the default DB backend is not PostgreSQL.
-Runs during ``manage.py check`` and ``manage.py migrate``.
+Runs during ``manage.py check`` and ``manage.py migrate``."""
+
+
+# ---------------------------------------------------------------------------
+# Field package
+# ---------------------------------------------------------------------------
+
+def _build_field_section(docs_dir: Path) -> str:
+    sections = [
+        SHARED_HEADER,
+        _field_api(),
+        _section_installation(docs_dir),
+        _section_quickstart(docs_dir),
+    ]
+    return "\n\n".join(sections) + "\n"
+
+
+def _field_api() -> str:
+    return """\
+# django-hstore-field API
 
 ## django_hstore_field.HStoreField
 
@@ -163,10 +172,68 @@ Return a form field class pre-configured with the custom widget.
 Pass ``form_class`` or ``widget`` to override the defaults."""
 
 
+# ---------------------------------------------------------------------------
+# Full project
+# ---------------------------------------------------------------------------
+
+def _build_full_content(docs_dir: Path, widget: str, field: str) -> str:
+    sections = [
+        SHARED_HEADER,
+        _section_packages(),
+        _section_installation(docs_dir),
+        _section_quickstart(docs_dir),
+        _widget_api(),
+        _field_api(),
+        _section_frontend(docs_dir),
+        _section_best_practices(docs_dir),
+        _section_hstore_vs_jsonb(docs_dir),
+        _section_contributing(docs_dir),
+    ]
+    return "\n\n".join(sections) + "\n"
+
+
+def _section_packages() -> str:
+    return """\
+# Packages
+
+## django-hstore-widget
+
+Lower-level package providing the custom hstore editor widget for Django admin.
+
+- **HStoreFormWidget** — Lit-based key-value editor replacing the default textarea
+- **HStoreFormField** — Form field wired to the custom widget with JSON parsing
+- **check_database_backend_is_postgres** — System check that warns when the default
+  database is not PostgreSQL
+
+## django-hstore-field
+
+Higher-level package providing a drop-in HStoreField replacement.
+
+- **HStoreField** — Overrides ``formfield()`` so the admin and ModelForms
+  automatically use ``HStoreFormField`` and ``HStoreFormWidget`` with no
+  manual form configuration required."""
+
+
+# ---------------------------------------------------------------------------
+# Shared doc sections (read from source files)
+# ---------------------------------------------------------------------------
+
+def _section_installation(docs_dir: Path) -> str:
+    path = docs_dir / "user-guide" / "installation.md"
+    raw = path.read_text(encoding="utf-8") if path.exists() else ""
+    return "# Installation\n\n" + _strip_leading_heading(raw).strip()
+
+
+def _section_quickstart(docs_dir: Path) -> str:
+    path = docs_dir / "user-guide" / "quickstart.md"
+    raw = path.read_text(encoding="utf-8") if path.exists() else ""
+    return "# Quick Start\n\n" + _strip_leading_heading(raw).strip()
+
+
 def _section_frontend(docs_dir: Path) -> str:
     path = docs_dir / "developer-guide" / "frontend-build.md"
     raw = path.read_text(encoding="utf-8") if path.exists() else ""
-    arch_path = docs_dir / "developer-guide" / "architecture.md"
+    arch_path = docs_dir / "developer-guide" / "architecture.rst"
     arch_raw = arch_path.read_text(encoding="utf-8") if arch_path.exists() else ""
     return (
         "# Frontend Architecture\n\n"
@@ -193,6 +260,10 @@ def _section_contributing(docs_dir: Path) -> str:
     raw = path.read_text(encoding="utf-8") if path.exists() else ""
     return "# Contributing\n\n" + _strip_leading_heading(raw).strip()
 
+
+# ---------------------------------------------------------------------------
+# Sphinx entry point
+# ---------------------------------------------------------------------------
 
 def setup(app: Sphinx):
     app.connect("build-finished", generate_llms_txt)

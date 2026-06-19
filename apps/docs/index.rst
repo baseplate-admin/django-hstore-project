@@ -54,7 +54,7 @@ Contents
    :maxdepth: 2
    :caption: Developer Guide
 
-   docs/developer-guide/architecture.md
+   docs/developer-guide/architecture.rst
    docs/developer-guide/contributing.md
    docs/developer-guide/frontend-build.md
 
@@ -64,3 +64,9 @@ Contents
 
    api/widget
    api/field
+
+.. toctree::
+   :maxdepth: 2
+   :caption: LLM Context
+
+   docs/llms/index.md
