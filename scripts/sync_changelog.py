@@ -4,7 +4,6 @@
 Fetches releases from the current repo and updates CHANGELOG.md with the latest tags.
 """
 
-import json
 import subprocess
 from datetime import datetime
 from pathlib import Path
@@ -49,13 +48,15 @@ def fetch_tags(prefix: str, max_tags: int = 30) -> list[dict]:
         message = parts[1] if len(parts) > 1 else ""
         date = parts[2][:10] if len(parts) > 2 else ""
 
-        releases.append({
-            "tag": tag,
-            "version": tag[len(prefix):],
-            "message": message,
-            "date": date,
-            "commit": commit_hash[:7],
-        })
+        releases.append(
+            {
+                "tag": tag,
+                "version": tag[len(prefix) :],
+                "message": message,
+                "date": date,
+                "commit": commit_hash[:7],
+            }
+        )
 
     return releases
 
@@ -77,9 +78,7 @@ def generate_changelog() -> str:
             continue
 
         for release in releases:
-            sections.append(
-                f"### v{release['version']} - {release['date']}\n"
-            )
+            sections.append(f"### v{release['version']} - {release['date']}\n")
             if release["message"]:
                 sections.append(f"- {release['message']}")
             sections.append("")

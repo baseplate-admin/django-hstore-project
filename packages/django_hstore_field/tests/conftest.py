@@ -44,9 +44,7 @@ def _configure_django():
                 "NAME": os.environ.get("DJANGO_DATABASE_NAME", "postgres"),
                 "HOST": os.environ.get("DJANGO_DATABASE_HOST", "localhost"),
                 "USER": os.environ.get("DJANGO_DATABASE_USER", "postgres"),
-                "PASSWORD": os.environ.get(
-                    "DJANGO_DATABASE_PASSWORD", "supersecretpassword"
-                ),
+                "PASSWORD": os.environ.get("DJANGO_DATABASE_PASSWORD", "supersecretpassword"),
             },
         },
         INSTALLED_APPS=(
