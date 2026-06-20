@@ -1,6 +1,6 @@
 import '$components/image-icon';
 
-import { LitElement, html } from 'lit';
+import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { repeat } from 'lit/directives/repeat.js';
@@ -10,10 +10,7 @@ import { cn } from '$lib/classnames';
 import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mapppings/django';
 import { GITHUB_ISSUES_URL } from '$mapppings/github';
 
-import { StyleFactory } from '$composite_classes/style';
 import { setFromAttributes } from '$store/image';
-
-import appStyles from '$css/app.css?inline';
 
 type JsonKeyValue = { key: string; value: string; index: number };
 
@@ -22,6 +19,85 @@ export class DjangoHstoreWidget extends LitElement {
     override createRenderRoot() {
         return this;
     }
+
+    static override styles = css`
+        button {
+            all: unset;
+        }
+
+        .min-width-\[150px\] {
+            min-width: 150px;
+        }
+
+        .min-width-\[300px\] {
+            min-width: 300px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .select-none {
+            user-select: none;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-start {
+            justify-content: flex-start;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+
+        .gap-1 {
+            gap: 0.25rem;
+        }
+
+        .gap-2\.5 {
+            gap: 0.625rem;
+        }
+
+        .opacity-60 {
+            opacity: 0.6;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .brightness-90 {
+            filter: brightness(0.9);
+        }
+
+        .warning {
+            color: var(--error-fg, red);
+            border-color: var(--error-fg, red);
+        }
+    `;
 
     @property({ type: String, attribute: 'json' })
     json = '';
@@ -50,8 +126,6 @@ export class DjangoHstoreWidget extends LitElement {
     @state()
     displayMode: 'rows' | 'textarea' = 'rows';
 
-    #styleFactory = new StyleFactory();
-
     override connectedCallback() {
         super.connectedCallback();
         setFromAttributes(this);
@@ -64,8 +138,6 @@ export class DjangoHstoreWidget extends LitElement {
     }
 
     override firstUpdated() {
-        this.#styleFactory.mountStyles(this.renderRoot, appStyles);
-
         if (!this.parseError) {
             this.isMounted = true;
         }
