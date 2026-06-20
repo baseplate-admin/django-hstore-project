@@ -9,15 +9,35 @@ Edit key-value pairs, add new entries, and delete existing ones.
    <script type="module" src="../_static/admin/js/django_hstore_widget/django-hstore-widget.js"></script>
 
    <style>
-       /* Django admin field styles, vTextField, vLargeTextField, form-row */
+       /* Exact Django admin styles from base.css + forms.css (Django 5.1+) */
        :root {
+           --primary: #79aec8;
+           --secondary: #417690;
+           --accent: #f5dd5d;
+           --primary-fg: #fff;
            --body-fg: #333;
            --body-bg: #fff;
            --body-quiet-color: #666;
            --body-medium-color: #444;
-           --border-color: #ccc;
+           --body-loud-color: #000;
+           --header-color: #ffc;
+           --header-branding-color: var(--accent);
+           --header-bg: var(--secondary);
+           --header-link-color: var(--primary-fg);
+           --link-fg: #417893;
+           --link-hover-color: #036;
            --hairline-color: #e8e8e8;
+           --border-color: #ccc;
            --error-fg: #ba2121;
+           --darkened-bg: #f8f8f8;
+           --selected-bg: #e4e4e4;
+           --button-fg: #fff;
+           --button-bg: var(--secondary);
+           --button-hover-bg: #205067;
+           --delete-button-bg: #ba2121;
+           --delete-button-hover-bg: #a41515;
+           --close-button-bg: #747474;
+           --close-button-hover-bg: #333;
            --font-family-primary:
                "Segoe UI",
                system-ui,
@@ -29,11 +49,32 @@ Edit key-value pairs, add new entries, and delete existing ones.
                "Segoe UI Emoji",
                "Segoe UI Symbol",
                "Noto Color Emoji";
+           --font-family-monospace:
+               ui-monospace,
+               Menlo,
+               Monaco,
+               "Cascadia Mono",
+               "Segoe UI Mono",
+               "Roboto Mono",
+               "Oxygen Mono",
+               "Ubuntu Monospace",
+               "Source Code Pro",
+               "Fira Mono",
+               "Droid Sans Mono",
+               "Courier New",
+               monospace,
+               "Apple Color Emoji",
+               "Segoe UI Emoji",
+               "Segoe UI Symbol",
+               "Noto Color Emoji";
        }
 
+       /* FORM DEFAULTS (base.css) */
        django-hstore-widget input,
        django-hstore-widget textarea,
-       django-hstore-widget select {
+       django-hstore-widget select,
+       django-hstore-widget .form-row p,
+       django-hstore-widget .button {
            margin: 2px 0;
            padding: 2px 3px;
            vertical-align: middle;
@@ -46,6 +87,7 @@ Edit key-value pairs, add new entries, and delete existing ones.
            vertical-align: top;
        }
 
+       /* Input styling (base.css) — .vTextField included in the group */
        django-hstore-widget input:not([type]),
        django-hstore-widget input[type=text],
        django-hstore-widget input[type=password],
@@ -77,18 +119,25 @@ Edit key-value pairs, add new entries, and delete existing ones.
            border-color: var(--body-quiet-color);
        }
 
+       django-hstore-widget select {
+           height: 1.875rem;
+       }
+
+       django-hstore-widget select[multiple] {
+           height: auto;
+           min-height: 150px;
+       }
+
+       /* CUSTOM FORM FIELDS (forms.css) — exact width values from Django admin */
        django-hstore-widget .vTextField {
-           width: 100%;
-           max-width: 20em;
-           box-sizing: border-box;
+           width: 20em;
        }
 
        django-hstore-widget .vLargeTextField {
-           width: 100%;
-           max-width: 48em;
-           box-sizing: border-box;
+           width: 48em;
        }
 
+       /* FORM ROWS (forms.css) */
        django-hstore-widget .form-row {
            overflow: hidden;
            padding: 10px;
@@ -96,6 +145,12 @@ Edit key-value pairs, add new entries, and delete existing ones.
            border-bottom: 1px solid var(--hairline-color);
        }
 
+       django-hstore-widget .form-row img,
+       django-hstore-widget .form-row input {
+           vertical-align: middle;
+       }
+
+       /* Playground container to match Django admin fieldset styling */
        .admin-playground {
            background: var(--body-bg, #fff);
            border: 1px solid var(--hairline-color, #e8e8e8);
