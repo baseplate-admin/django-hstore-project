@@ -13,6 +13,8 @@ export default defineConfig({
             $mappping: path.resolve(frontendSourceDir, 'mappings'),
             $mapppings: path.resolve(frontendSourceDir, 'mappings'),
             $components: path.resolve(frontendSourceDir, 'components'),
+            $composite_classes: path.resolve(frontendSourceDir, 'composite_classes'),
+            $css: path.resolve(frontendSourceDir, 'css'),
         },
     },
     css: {
