@@ -1,0 +1,41 @@
+# Traduzione italiana del file di licenza.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin\n"
+"Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/license.rst:2
+msgid "License"
+msgstr "Licenza"
+
+#: ../../docs/license.rst:4
+msgid "MIT License"
+msgstr "Licenza MIT"
+
+#: ../../docs/license.rst:6
+msgid "Copyright 2024-onwards baseplate-admin"
+msgstr "Copyright 2024-in poi baseplate-admin"
+
+#: ../../docs/license.rst:8
+msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+msgstr "Si concede qui con la presente l'autorizzazione, senza alcun costo, a chiunque entri in possesso di una copia di questo software e dei relativi file di documentazione (il \"Software\"), di utilizzare il Software senza restrizioni, ivi compresi, a titolo puramente esemplificativo, i diritti di utilizzare, copiare, modificare, unire, pubblicare, distribuire, concedere in sublicenza e/o vendere copie del Software, nonché di permettere ai terzi a cui il Software è fornito di fare altrettanto, alle seguenti condizioni:"
+
+#: ../../docs/license.rst:15
+msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+msgstr "L'avviso di copyright riportato sopra e il presente avviso di autorizzazione devono essere inclusi in tutte le copie o porzioni sostanziali del Software."
+
+#: ../../docs/license.rst:18
+msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+msgstr "IL SOFTWARE È FORNITO \"COSÌ COM'È\", SENZA GARANZIE DI ALCUN TIPO, ESPLICITE O IMPLICITE, INCLUSE MA NON LIMITATE ALLE GARANZIE DI COMMERCIALIZZABILITÀ, IDONEITÀ PER UN PARTICOLARE SCOPO E NON VIOLAZIONE DI DIRITTI DI TERZI. IN NESSUN CASO GLI AUTORI O I TITOLARI DEL COPYRIGHT SARANNO RESPONSABILI PER QUALSIASI RECLAMO, DANNO O ALTRA RESPONSABILITÀ, CHE SI TRATTI DI UNA CAUSA DI CONTRATTO, ILLECITO O ALTRO, DERIVANTE DA, O IN CONNESSIONE CON, IL SOFTWARE O L'UTILIZZO OD ALTRE INTERAZIONI CON IL SOFTWARE."
