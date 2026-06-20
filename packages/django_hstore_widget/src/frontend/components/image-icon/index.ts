@@ -3,7 +3,7 @@ import appStyles from '$css/app.css?inline';
 import { iconSignals } from '$store/image';
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 import { Pencil, Plus, X } from 'lucide-static';
 
 const LUCIDE = { delete: X, add: Plus, edit: Pencil } as const;
@@ -56,7 +56,7 @@ export class ImageIconComponent extends LitElement {
             stroke-linejoin="round"
             aria-label="${this.iconType}"
         >
-            ${unsafeHTML(LUCIDE[this.iconType])}
+            ${unsafeSVG(LUCIDE[this.iconType])}
         </svg>`;
     }
 }
