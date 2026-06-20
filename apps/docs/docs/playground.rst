@@ -9,7 +9,7 @@ Edit key-value pairs, add new entries, and delete existing ones.
    <script type="module" src="../_static/admin/js/django_hstore_widget/django-hstore-widget.js"></script>
 
    <style>
-       /* Exact Django admin styles from base.css + forms.css (Django 5.1+) */
+       /* Django admin styles from base.css + forms.css (Django 5.1+) — exact match */
        :root {
            --primary: #79aec8;
            --secondary: #417690;
