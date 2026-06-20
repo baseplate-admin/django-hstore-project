@@ -1,4 +1,5 @@
 import os
+import shutil
 import sys
 
 from pathlib import Path
@@ -8,6 +9,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent / "_extensions"))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django.conf.global_settings")
 import django
 django.setup()
+
+# Copy Django admin icons for docs styling
+for _name in ["icon-deletelink.svg", "icon-addlink.svg", "icon-changelink.svg"]:
+    _src = Path(django.__file__).resolve().parent / "contrib" / "admin" / "static" / "admin" / "img" / _name
+    _dst = Path(__file__).resolve().parent / "static" / "admin" / "img" / _name
+    if _src.exists():
+        _dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(_src, _dst)
 
 root_doc = "index"
 
