@@ -25,6 +25,7 @@ html_context = {
     "source_type": "github",
     "source_user": "baseplate-admin",
     "source_repo": "django-hstore-widget",
+    "edit_page_url_template": "apps/docs/{filename}",
     "languages": [
         ("English", "/en/%s/", "en"),
         ("বাংলা", "/bn/%s/", "bn"),
@@ -37,6 +38,16 @@ html_context = {
         ("العربية", "/ar/%s/", "ar"),
         ("Русский", "/ru/%s/", "ru"),
         ("Português", "/pt/%s/", "pt"),
+        ("Deutsch", "/de/%s/", "de"),
+        ("한국어", "/ko/%s/", "ko"),
+        ("Türkçe", "/tr/%s/", "tr"),
+        ("Italiano", "/it/%s/", "it"),
+        ("Polski", "/pl/%s/", "pl"),
+        ("Tiếng Việt", "/vi/%s/", "vi"),
+        ("Bahasa Indonesia", "/id/%s/", "id"),
+        ("فارسی", "/fa/%s/", "fa"),
+        ("ไทย", "/th/%s/", "th"),
+        ("Українська", "/uk/%s/", "uk"),
     ],
 }
 
