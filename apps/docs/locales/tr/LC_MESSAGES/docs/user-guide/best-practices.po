@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Turkish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/best-practices.rst:2
+msgid "Best Practices"
+msgstr "En İyi Uygulamalar"
+
+#: ../../docs/user-guide/best-practices.rst:4
+msgid "Tips and recommendations for using HStore fields effectively in production."
+msgstr "HStore alanlarını üretim ortamında etkin kullanmak için ipuçları ve öneriler."
+
+#: ../../docs/user-guide/best-practices.rst:7
+msgid "Keep Keys Consistent"
+msgstr "Anahtarları Tutarlı Tutun"
+
+#: ../../docs/user-guide/best-practices.rst:9
+msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
+msgstr "Uygulamanız genelinde anahtarlar için bir adlandırma kuralı kullanın. Bu, sorgulama ve bakımı kolaylaştırır."
+
+#: ../../docs/user-guide/best-practices.rst:27
+msgid "Use Explicit Keys When Possible"
+msgstr "Mümkünse Açık Anahtarlar Kullanın"
+
+#: ../../docs/user-guide/best-practices.rst:29
+msgid "Defining explicit keys gives you:"
+msgstr "Açık anahtarlar tanımlamak size şunları sağlar:"
+
+#: ../../docs/user-guide/best-practices.rst:31
+msgid "Labeled form fields in the admin"
+msgstr "Admin'de etiketli form alanları"
+
+#: ../../docs/user-guide/best-practices.rst:32
+msgid "Built-in validation per key"
+msgstr "Anahtar başına yerleşik doğrulama"
+
+#: ../../docs/user-guide/best-practices.rst:33
+msgid "Widget customization per field"
+msgstr "Alan başına widget özelleştirme"
+
+#: ../../docs/user-guide/best-practices.rst:34
+msgid "IDE autocomplete for key names"
+msgstr "Anahtar adları için IDE otomatik tamamlama"
+
+#: ../../docs/user-guide/best-practices.rst:47
+msgid "Index Frequently Queried Keys"
+msgstr "Sık Sorgulanan Anahtarları İndekslendirin"
+
+#: ../../docs/user-guide/best-practices.rst:49
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr "Sık sorguladığınız HStore sütunlarına GIN indeksleri ekleyin:"
+
+#: ../../docs/user-guide/best-practices.rst:64
+msgid "Handle Missing Keys Gracefully"
+msgstr "Eksik Anahtarları Zarifçe Yönetin"
+
+#: ../../docs/user-guide/best-practices.rst:66
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr "HStore anahtarları tüm satırlarda mevcut olmayabilir. Varsayılanlarla ``get()`` kullanın:"
+
+#: ../../docs/user-guide/best-practices.rst:74
+msgid "Validate Key Values"
+msgstr "Anahtar Değerlerini Doğrulayın"
+
+#: ../../docs/user-guide/best-practices.rst:76
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr "HStore değerleri dizgilerdir. Gerekli yerlerde doğrulayın ve dönüştürün:"
+
+#: ../../docs/user-guide/best-practices.rst:90
+msgid "Consider Migration Paths"
+msgstr "Göç Yollarını Değerlendirin"
+
+#: ../../docs/user-guide/best-practices.rst:92
+msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
+msgstr "Gelecekte iç içe verilere ihtiyaç duyacağınızı düşünüyorsanız, HStore'dan JSONB'ye geçişinizi erkenden planlayın. Veri biçimleri doğrudan uyumlu değildir."

@@ -1,0 +1,146 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <admin@example.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Korean <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../docs/developer-guide/contributing.rst:2
+msgid "Contributing"
+msgstr "기여하기"
+
+#: ../../docs/developer-guide/contributing.rst:4
+msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
+msgstr "개발 환경을 설정하고 django-hstore-project 에 기여하는 단계별 가이드입니다."
+
+#: ../../docs/developer-guide/contributing.rst:8
+msgid "Prerequisites"
+msgstr "필수 조건"
+
+#: ../../docs/developer-guide/contributing.rst:10
+msgid "Make sure you have the following installed:"
+msgstr "다음 항목이 설치되어 있는지 확인하세요."
+
+#: ../../docs/developer-guide/contributing.rst:12
+msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
+msgstr ":iconify:`mdi:python` **Python 3.10+** 및 ``uv`` 패키지 관리자"
+
+#: ../../docs/developer-guide/contributing.rst:13
+msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
+msgstr ":iconify:`logos:nodejs` **Node.js 18+** 및 ``npm``"
+
+#: ../../docs/developer-guide/contributing.rst:14
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
+msgstr ":iconify:`logos:postgresql` 로컬에서 실행 중인 **PostgreSQL 14+**"
+
+#: ../../docs/developer-guide/contributing.rst:17
+msgid "Clone the Repository"
+msgstr "저장소 복제하기"
+
+#: ../../docs/developer-guide/contributing.rst:25
+msgid "Install Python Dependencies"
+msgstr "Python 종속성 설치"
+
+#: ../../docs/developer-guide/contributing.rst:29
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ":iconify:`simple-icons:astral` uv"
+
+#: ../../docs/developer-guide/contributing.rst:38
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ":iconify:`simple-icons:poetry` Poetry"
+
+#: ../../docs/developer-guide/contributing.rst:47
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ":iconify:`simple-icons:pdm` PDM"
+
+#: ../../docs/developer-guide/contributing.rst:55
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ":iconify:`mdi:package-variant` pip-tools"
+
+#: ../../docs/developer-guide/contributing.rst:65
+msgid "This installs all Python packages including test dependencies."
+msgstr "테스트 종속성을 포함한 모든 Python 패키지를 설치합니다."
+
+#: ../../docs/developer-guide/contributing.rst:68
+msgid "Install Frontend Dependencies"
+msgstr "프론트엔드 종속성 설치"
+
+#: ../../docs/developer-guide/contributing.rst:78
+msgid "This installs Lit, Vite, and all frontend tooling."
+msgstr "Lit, Vite 및 모든 프론트엔드 도구를 설치합니다."
+
+#: ../../docs/developer-guide/contributing.rst:81
+msgid "Set Up the Database"
+msgstr "데이터베이스 설정"
+
+#: ../../docs/developer-guide/contributing.rst:83
+msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
+msgstr "hstore 확장이 활성화된 로컬 PostgreSQL 인스턴스를 시작하세요."
+
+#: ../../docs/developer-guide/contributing.rst:87
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/developer-guide/contributing.rst:99
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/developer-guide/contributing.rst:110
+msgid "Run the Tests"
+msgstr "테스트 실행"
+
+#: ../../docs/developer-guide/contributing.rst:113
+msgid "Frontend Tests"
+msgstr "프론트엔드 테스트"
+
+#: ../../docs/developer-guide/contributing.rst:129
+msgid "Backend Tests"
+msgstr "백엔드 테스트"
+
+#: ../../docs/developer-guide/contributing.rst:145
+msgid "Type Checking"
+msgstr "타입 검사"
+
+#: ../../docs/developer-guide/contributing.rst:153
+msgid "Build the Project"
+msgstr "프로젝트 빌드"
+
+#: ../../docs/developer-guide/contributing.rst:167
+msgid "Start the Dev Server"
+msgstr "개발 서버 시작"
+
+#: ../../docs/developer-guide/contributing.rst:175
+msgid "The dev server runs on port 9100 with hot module replacement enabled."
+msgstr "개발 서버는 핫 모듈 교체 기능이 활성화된 포트 9100 에서 실행됩니다."
+
+#: ../../docs/developer-guide/contributing.rst:178
+msgid "Code Style"
+msgstr "코드 스타일"
+
+#: ../../docs/developer-guide/contributing.rst:180
+msgid "**Python**: Ruff (linter + formatter)"
+msgstr "**Python**: Ruff (린터 + 포맷터)"
+
+#: ../../docs/developer-guide/contributing.rst:181
+msgid "**TypeScript**: Prettier"
+msgstr "**TypeScript**: Prettier"
+
+#: ../../docs/developer-guide/contributing.rst:182
+msgid "Pre-commit hooks are configured for automated formatting"
+msgstr "자동 포맷팅을 위해 Pre-commit 훅이 구성되어 있습니다"
+
+#: ../../docs/developer-guide/contributing.rst:184
+msgid "Before submitting a pull request, run:"
+msgstr "풀 리퀘스트를 제출하기 전에 다음을 실행하세요."

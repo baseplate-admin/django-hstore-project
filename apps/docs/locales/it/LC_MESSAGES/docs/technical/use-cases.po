@@ -1,0 +1,149 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/technical/use-cases.rst:2
+msgid "Use Cases"
+msgstr "Casi d'Uso"
+
+#: ../../docs/technical/use-cases.rst:4
+msgid "Real-world scenarios for choosing between HStore and JSONB in your Django application."
+msgstr "Scenari pratici per scegliere tra HStore e JSONB nella vostra applicazione Django."
+
+#: ../../docs/technical/use-cases.rst:8
+msgid "Use HStore When"
+msgstr "Quando Utilizzare HStore"
+
+#: ../../docs/technical/use-cases.rst:11
+msgid "Product Attributes"
+msgstr "Attributi del Prodotto"
+
+#: ../../docs/technical/use-cases.rst:13
+msgid "Products have varying attributes like color, size, material that don't warrant dedicated columns. HStore stores them as flat key-value pairs with a clean admin interface."
+msgstr "I prodotti hanno attributi variabili come colore, dimensione, materiale che non giustificano colonne dedicate. HStore li memorizza come coppie chiave-valore piatte con un'interfaccia admin pulita."
+
+#: ../../docs/technical/use-cases.rst:30
+#: ../../docs/technical/use-cases.rst:94
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/use-cases.rst:40
+#: ../../docs/technical/use-cases.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/use-cases.rst:48
+msgid "User Preferences"
+msgstr "Preferenze dell'Utente"
+
+#: ../../docs/technical/use-cases.rst:50
+msgid "Store user settings like timezone, language, notification preferences as flexible key-value pairs:"
+msgstr "Memorizza le impostazioni utente come fuso orario, lingua, preferenze di notifica come coppie chiave-valore flessibili:"
+
+#: ../../docs/technical/use-cases.rst:62
+msgid "Content Metadata"
+msgstr "Metadata del Contenuto"
+
+#: ../../docs/technical/use-cases.rst:64
+msgid "Tags, categories, and custom fields for articles, media, or any content model:"
+msgstr "Tag, categorie e campi personalizzati per articoli, media o qualsiasi modello di contenuto:"
+
+#: ../../docs/technical/use-cases.rst:76
+msgid "Use JSONB When"
+msgstr "Quando Utilizzare JSONB"
+
+#: ../../docs/technical/use-cases.rst:79
+msgid "Nested Configuration"
+msgstr "Configurazione Annidata"
+
+#: ../../docs/technical/use-cases.rst:81
+msgid "Application settings with hierarchical structure:"
+msgstr "Impostazioni dell'applicazione con struttura gerarchica:"
+
+#: ../../docs/technical/use-cases.rst:108
+msgid "API Response Cache"
+msgstr "Cache delle Risposte API"
+
+#: ../../docs/technical/use-cases.rst:110
+msgid "Store and query nested API responses:"
+msgstr "Memorizza e interroga le risposte API annidate:"
+
+#: ../../docs/technical/use-cases.rst:120
+msgid "Search Facets"
+msgstr "Facets di Ricerca"
+
+#: ../../docs/technical/use-cases.rst:122
+msgid "Dynamic filter options with mixed types:"
+msgstr "Opzioni di filtro dinamiche con tipi misti:"
+
+#: ../../docs/technical/use-cases.rst:135
+msgid "Guidelines"
+msgstr "Linee Guida"
+
+#: ../../docs/technical/use-cases.rst:140
+#: ../../docs/technical/use-cases.rst:145
+msgid "Scenario"
+msgstr "Scenario"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/use-cases.rst:147
+msgid "Product attributes"
+msgstr "Attributi del prodotto"
+
+#: ../../docs/technical/use-cases.rst:147
+#: ../../docs/technical/use-cases.rst:149
+#: ../../docs/technical/use-cases.rst:151
+#: ../../docs/technical/use-cases.rst:153
+#: ../../docs/technical/use-cases.rst:155
+#: ../../docs/technical/use-cases.rst:157
+#: ../../docs/technical/use-cases.rst:159
+msgid "Yes"
+msgstr "Sì"
+
+#: ../../docs/technical/use-cases.rst:149
+msgid "User preferences"
+msgstr "Preferenze dell'utente"
+
+#: ../../docs/technical/use-cases.rst:151
+msgid "Content tags / metadata"
+msgstr "Tag del contenuto / metadata"
+
+#: ../../docs/technical/use-cases.rst:153
+msgid "Nested app config"
+msgstr "Configurazione app annidata"
+
+#: ../../docs/technical/use-cases.rst:155
+msgid "API response caching"
+msgstr "Cache delle risposte API"
+
+#: ../../docs/technical/use-cases.rst:157
+msgid "Mixed-type form data"
+msgstr "Dati di form con tipi misti"
+
+#: ../../docs/technical/use-cases.rst:159
+msgid "Document storage"
+msgstr "Archiviazione documenti"
+
+#: ../../docs/technical/use-cases.rst:164
+msgid "When in doubt, start with HStore. It's simpler, more compact, and gives you a better admin experience. Migrate to JSONB only when you genuinely need nested structures or mixed value types."
+msgstr "In caso di dubbio, iniziate con HStore. È più semplice, più compatto e offre un'esperienza admin migliore. Migrate a JSONB solo quando avete realmente bisogno di strutture annidate o tipi di valore misti."

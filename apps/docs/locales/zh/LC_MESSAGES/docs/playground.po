@@ -1,0 +1,37 @@
+# 中文翻译 for Playground.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/playground.rst:2
+msgid "Playground"
+msgstr "沙盒"
+
+#: ../../docs/playground.rst:4
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-"
+"value pairs, add new entries, and delete existing ones."
+msgstr ""
+"``django-hstore-widget`` 组件的交互式演示。"
+"编辑键值对、添加新条目和删除现有条目。"
+
+#: ../../docs/playground.rst:149
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built"
+" at docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+"上面的组件是在文档构建时构建的实时 ``django-hstore-widget`` Lit 组件。"
+"尝试添加、编辑和删除键值对。"

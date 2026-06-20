@@ -1,0 +1,45 @@
+﻿# Bengali translations for autoapi django_hstore_widget.apps.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:2
+msgid "django_hstore_widget.apps"
+msgstr "django_hstore_widget.apps"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:10
+msgid "Module Contents"
+msgstr "মডিউল বিষয়বস্তু"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:14
+msgid "Bases: :py:obj:`django.apps.AppConfig`"
+msgstr "বেস: :py:obj:`django.apps.AppConfig`"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:17
+msgid "Application configuration for django-hstore-widget."
+msgstr "django-hstore-widget-এর জন্য অ্যাপ্লিকেশন কনফিগারেশন।"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:19
+msgid ""
+"Registers the PostgreSQL backend check on app ready so that non-"
+"PostgreSQL setups receive a warning during system checks."
+msgstr ""
+"অ্যাপ রেডি হলে PostgreSQL ব্যাকএন্ড চেক রেজিস্টার করে যাতে non-"
+"PostgreSQL সেটআপগুলো সিস্টেম চেকের সময় সতর্কতা পায়।"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:35
+msgid "Override this method in subclasses to run code when Django starts."
+msgstr "Django চালু হলে কোড চালানোর জন্য সাবক্লাসে এই মেথডটি ওভাররাইড করুন।"

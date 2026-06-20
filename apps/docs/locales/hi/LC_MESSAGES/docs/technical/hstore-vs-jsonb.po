@@ -1,7 +1,6 @@
-# हिन्दी translation for Django HStore Project.
+﻿# हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: hi
 "
 "Language-Team: hi <LL@li.org>
@@ -33,32 +32,32 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: hi <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:2
 msgid "HStore vs JSONB"
-msgstr ""
+msgstr "HStore बनाम JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:4
 msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
-msgstr ""
+msgstr "PostgreSQL कुंजी-मान और दस्तावेज़ भंडारण के लिए दो लचीले डेटा प्रकार प्रदान करता है। यह पृष्ठ उन्हें तुलना करता है ताकि आप सही विकल्प चुन सकें।"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
-msgstr ""
+msgstr "त्वरित निर्णय"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
 msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
-msgstr ""
+msgstr "जब आपका डेटा समतल कुंजी-मान जोड़े हो, जो अधिकांश मेटाडेटा, टैग और उत्पाद विशेषताएँ हैं, तब **HStore** का उपयोग करें। जब आपको अंतर्निहित संरचनाएँ, मिश्रित मान प्रकार या समावेशन क्वेरी की आवश्यकता हो, तब **JSONB** का उपयोग करें।"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"
-msgstr ""
+msgstr "विशेषता मैट्रिक्स"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:20
 #: ../../docs/technical/hstore-vs-jsonb.rst:25

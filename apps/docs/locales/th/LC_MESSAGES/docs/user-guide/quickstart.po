@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Thai <ll@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quick Start"
+msgstr "เริ่มต้นอย่างรวดเร็ว"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "เริ่มใช้งาน django-hstore-project ได้ภายในหนึ่งนาที"
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Create a Model"
+msgstr "สร้างโมเดล"
+
+#: ../../docs/user-guide/quickstart.rst:9
+msgid "Add an HStore field to any model:"
+msgstr "เพิ่มฟิลด์ HStore เข้าไปในโมเดลใดก็ได้:"
+
+#: ../../docs/user-guide/quickstart.rst:21
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr "เพียงเท่านี้ วิดเจ็ตเชื่อมต่ออัตโนมัติ ไม่ต้องการการกำหนดค่าฟอร์ม"
+
+#: ../../docs/user-guide/quickstart.rst:24
+msgid "Run Migrations"
+msgstr "เรียกใช้ Migration"
+
+#: ../../docs/user-guide/quickstart.rst:31
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "คำสั่งนี้จะเปิดใช้งาน extension hstore ของ PostgreSQL โดยอัตโนมัติ"
+
+#: ../../docs/user-guide/quickstart.rst:34
+msgid "Register in Admin"
+msgstr "ลงทะเบียนใน Admin"
+
+#: ../../docs/user-guide/quickstart.rst:46
+msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgstr "เยี่ยมชมหน้า admin ของคุณจะเห็นวิดเจ็ต HStore พร้อมอินเทอร์เฟซแบบคีย์-ค่าที่เรียบง่าย แต่ละคู่คีย์-ค่าสามารถแก้ไขได้โดยตรง เพิ่ม ลบ และแก้ไขคู่ได้ตามต้องการ"
+
+#: ../../docs/user-guide/quickstart.rst:51
+msgid "With Custom Keys"
+msgstr "พร้อมคีย์แบบกำหนดเอง"
+
+#: ../../docs/user-guide/quickstart.rst:53
+msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgstr "กำหนดคีย์ที่ชัดเจนเพื่อรับฟิลด์ฟอร์มที่มีป้ายกำกับแทนที่แก้ไขแบบอิสระ:"
+
+#: ../../docs/user-guide/quickstart.rst:70
+msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "แต่ละคีย์จะกลายเป็นฟิลด์ฟอร์มที่ถูกต้องพร้อมการตรวจสอบความถูกต้อง วิดเจ็ต และป้ายกำกับ"
+
+#: ../../docs/user-guide/quickstart.rst:73
+msgid "What's Next"
+msgstr "ขั้นตอนถัดไป"
+
+#: ../../docs/user-guide/quickstart.rst:75
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` - ตัวเลือกการติดตั้งโดยละเอียด"
+
+#: ../../docs/user-guide/quickstart.rst:76
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ":doc:`../technical/hstore-vs-jsonb` - เมื่อใดควรใช้ HStore หรือ JSONB"
+
+#: ../../docs/user-guide/quickstart.rst:77
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ":doc:`../user-guide/best-practices` - เคล็ดลับสำหรับการใช้งานจริง"

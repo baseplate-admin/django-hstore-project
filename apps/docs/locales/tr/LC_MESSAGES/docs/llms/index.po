@@ -1,0 +1,84 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Turkish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/llms/index.rst:2
+msgid "LLM Context Files"
+msgstr "LLM Bağlam Dosyaları"
+
+#: ../../docs/llms/index.rst:4
+msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
+msgstr "Bu proje, Sphinx dokümantasyon derlemesi sırasında otomatik oluşturulan ve LLM entegrasyonu için makine tarafından okunabilen bağlam dosyaları sağlar."
+
+#: ../../docs/llms/index.rst:8
+msgid "Available Files"
+msgstr "Kullanılabilir Dosyalar"
+
+#: ../../docs/llms/index.rst:14
+msgid "File"
+msgstr "Dosya"
+
+#: ../../docs/llms/index.rst:15
+msgid "Description"
+msgstr "Açıklama"
+
+#: ../../docs/llms/index.rst:16
+msgid "`llms.txt <../../llms.txt>`_"
+msgstr "`llms.txt <../../llms.txt>`_"
+
+#: ../../docs/llms/index.rst:17
+msgid "Index file listing all context files"
+msgstr "Tüm bağlam dosyalarını listeleyen dizin dosyası"
+
+#: ../../docs/llms/index.rst:18
+msgid "`llms-widget.txt <../../llms-widget.txt>`_"
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
+
+#: ../../docs/llms/index.rst:19
+msgid "django-hstore-widget package: widget API, frontend architecture"
+msgstr "django-hstore-widget paketi: widget API'si, ön uç mimarisi"
+
+#: ../../docs/llms/index.rst:20
+msgid "`llms-field.txt <../../llms-field.txt>`_"
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
+
+#: ../../docs/llms/index.rst:21
+msgid "django-hstore-field package: field API, installation, quick start"
+msgstr "django-hstore-field paketi: alan API'si, yükleme, hızlı başlangıç"
+
+#: ../../docs/llms/index.rst:22
+msgid "`llms-full.txt <../../llms-full.txt>`_"
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
+
+#: ../../docs/llms/index.rst:23
+msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
+msgstr "Tüm paketleri, API referansını, mimariyi, en iyi uygulamaları ve katkı kılavuzunu içeren eksiksiz proje dokümantasyonu"
+
+#: ../../docs/llms/index.rst:26
+msgid "Usage"
+msgstr "Kullanım"
+
+#: ../../docs/llms/index.rst:28
+msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
+msgstr "LLM'inizi kapsamınıza uygun bağlam dosyasına yönlendirin. Oluşturulan dosyalar dokümantasyon çıktısının kök dizininde yer alır ve dokümantasyon köküne göre erişilebilir."
+
+#: ../../docs/llms/index.rst:33
+msgid "How It Works"
+msgstr "Nasıl Çalışır"
+
+#: ../../docs/llms/index.rst:35
+msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
+msgstr "llms.txt dosyaları, tüm dokümantasyon kaynak dosyalarından içeriği derleme sırasında birleştiren ve bağlam dosyalarının dokümantasyon ile senkronizde kalmasını sağlayan özel bir Sphinx eklentisi (``llms_txt_generator``) tarafından otomatik olarak oluşturulur."

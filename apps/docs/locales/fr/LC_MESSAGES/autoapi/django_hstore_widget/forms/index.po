@@ -1,41 +1,16 @@
 # Français translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: fr
-"
-"Language-Team: fr <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,44 +21,44 @@ msgstr ""
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "Contenu du module"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:18
 msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
-msgstr ""
+msgstr "Bases : :py:obj:`django.contrib.postgres.forms.HStoreField`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:21
 msgid "Form field that uses :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
-msgstr ""
+msgstr "Champ de formulaire qui utilise :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
 msgid "Extends Django's built-in ``HStoreField`` to inject the custom widget and override ``clean()`` so incoming values are parsed through ``json.loads``."
-msgstr ""
+msgstr "Étend le ``HStoreField`` intégré de Django pour injecter le widget personnalisé et redéfinir ``clean()`` afin que les valeurs entrantes soient analysées via ``json.loads``."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"
-msgstr ""
+msgstr "Exemple"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:40
 msgid "Parse the raw form value into a Python dict."
-msgstr ""
+msgstr "Analyse la valeur brute du formulaire en un dictionnaire Python."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "Paramètres"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:42
 msgid "The raw value submitted by the form."
-msgstr ""
+msgstr "La valeur brute soumise par le formulaire."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "Valeur de retour"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:45
 msgid "The deserialized key-value mapping."
-msgstr ""
+msgstr "Le mappage clé-valeur désérialisé."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "Type de retour"

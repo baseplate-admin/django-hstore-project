@@ -1,0 +1,89 @@
+﻿# Bengali translation for Quick Start.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quick Start"
+msgstr "কুইক স্টার্ট"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "এক মিনিটের মধ্যে django-hstore-project চালু করুন।"
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Create a Model"
+msgstr "Model তৈরি করুন"
+
+#: ../../docs/user-guide/quickstart.rst:9
+msgid "Add an HStore field to any model:"
+msgstr "যেকোনো model-এ HStore field যোগ করুন:"
+
+#: ../../docs/user-guide/quickstart.rst:21
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr "এটাই সব। উইজেট auto-wired, কোনো form configuration লাগবে না।"
+
+#: ../../docs/user-guide/quickstart.rst:24
+msgid "Run Migrations"
+msgstr "Migrations রান করুন"
+
+#: ../../docs/user-guide/quickstart.rst:31
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "এটি PostgreSQL hstore extension অটোমেটিকালি enable করবে।"
+
+#: ../../docs/user-guide/quickstart.rst:34
+msgid "Register in Admin"
+msgstr "Admin-এ Register করুন"
+
+#: ../../docs/user-guide/quickstart.rst:46
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and"
+" modify pairs as needed."
+msgstr ""
+"আপনার admin page-এ যান, সেখানে clean key-value interface সহ HStore widget দেখতে পাবেন। "
+"প্রতিটি key-value pair inline-এ এডিট করা যাবে। প্রয়োজন অনুযায়ী pair যোগ, সরানো, বা modify করতে পারবেন।"
+
+#: ../../docs/user-guide/quickstart.rst:51
+msgid "With Custom Keys"
+msgstr "কাস্টম Keys দিয়ে"
+
+#: ../../docs/user-guide/quickstart.rst:53
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
+msgstr ""
+"free-form editor-এর বদলে labeled form fields পেতে explicit keys define করুন:"
+
+#: ../../docs/user-guide/quickstart.rst:70
+msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "প্রতিটি key validation, widgets, এবং labels সহ proper form field হয়ে যাবে।"
+
+#: ../../docs/user-guide/quickstart.rst:73
+msgid "What's Next"
+msgstr "পরবর্তী কী করবেন"
+
+#: ../../docs/user-guide/quickstart.rst:75
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` - বিস্তারিত installation অপশন"
+
+#: ../../docs/user-guide/quickstart.rst:76
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ":doc:`../technical/hstore-vs-jsonb` - কখন HStore ব্যবহার করবেন আর কখন JSONB"
+
+#: ../../docs/user-guide/quickstart.rst:77
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ":doc:`../user-guide/best-practices` - production ব্যবহারের টিপস"

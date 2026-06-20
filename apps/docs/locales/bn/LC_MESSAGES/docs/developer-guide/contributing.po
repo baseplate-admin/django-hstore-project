@@ -1,0 +1,149 @@
+﻿# Bengali translation for Contributing.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/developer-guide/contributing.rst:2
+msgid "Contributing"
+msgstr "কনট্রিবিউটিং"
+
+#: ../../docs/developer-guide/contributing.rst:4
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"আপনার development environment সেটআপ এবং django-hstore-project-এ "
+"কনট্রিবিউট করার step-by-step গাইড।"
+
+#: ../../docs/developer-guide/contributing.rst:8
+msgid "Prerequisites"
+msgstr "প্রি-রিউয়রিসমেন্টস"
+
+#: ../../docs/developer-guide/contributing.rst:10
+msgid "Make sure you have the following installed:"
+msgstr "নিশ্চিত করুন যে এগুলো ইনস্টল করা আছে:"
+
+#: ../../docs/developer-guide/contributing.rst:12
+msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
+msgstr ":iconify:`mdi:python` ``uv`` package manager সহ **Python 3.10+**"
+
+#: ../../docs/developer-guide/contributing.rst:13
+msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
+msgstr ":iconify:`logos:nodejs` ``npm`` সহ **Node.js 18+**"
+
+#: ../../docs/developer-guide/contributing.rst:14
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
+msgstr ":iconify:`logos:postgresql` লোকালিতে চলমান **PostgreSQL 14+**"
+
+#: ../../docs/developer-guide/contributing.rst:17
+msgid "Clone the Repository"
+msgstr "Repository Clone করুন"
+
+#: ../../docs/developer-guide/contributing.rst:25
+msgid "Install Python Dependencies"
+msgstr "Python Dependencies ইনস্টল করুন"
+
+#: ../../docs/developer-guide/contributing.rst:29
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ":iconify:`simple-icons:astral` uv"
+
+#: ../../docs/developer-guide/contributing.rst:38
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ":iconify:`simple-icons:poetry` Poetry"
+
+#: ../../docs/developer-guide/contributing.rst:47
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ":iconify:`simple-icons:pdm` PDM"
+
+#: ../../docs/developer-guide/contributing.rst:55
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ":iconify:`mdi:package-variant` pip-tools"
+
+#: ../../docs/developer-guide/contributing.rst:65
+msgid "This installs all Python packages including test dependencies."
+msgstr "এটি test dependencies সহ সব Python packages ইনস্টল করবে।"
+
+#: ../../docs/developer-guide/contributing.rst:68
+msgid "Install Frontend Dependencies"
+msgstr "Frontend Dependencies ইনস্টল করুন"
+
+#: ../../docs/developer-guide/contributing.rst:78
+msgid "This installs Lit, Vite, and all frontend tooling."
+msgstr "এটি Lit, Vite, এবং সব frontend tooling ইনস্টল করবে।"
+
+#: ../../docs/developer-guide/contributing.rst:81
+msgid "Set Up the Database"
+msgstr "Database সেটআপ করুন"
+
+#: ../../docs/developer-guide/contributing.rst:83
+msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
+msgstr "hstore extension enabled করে একটি লোকাল PostgreSQL instance চালু করুন:"
+
+#: ../../docs/developer-guide/contributing.rst:87
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/developer-guide/contributing.rst:99
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/developer-guide/contributing.rst:110
+msgid "Run the Tests"
+msgstr "Tests রান করুন"
+
+#: ../../docs/developer-guide/contributing.rst:113
+msgid "Frontend Tests"
+msgstr "Frontend Tests"
+
+#: ../../docs/developer-guide/contributing.rst:129
+msgid "Backend Tests"
+msgstr "Backend Tests"
+
+#: ../../docs/developer-guide/contributing.rst:145
+msgid "Type Checking"
+msgstr "Type Checking"
+
+#: ../../docs/developer-guide/contributing.rst:153
+msgid "Build the Project"
+msgstr "প্রজেক্ট Build করুন"
+
+#: ../../docs/developer-guide/contributing.rst:167
+msgid "Start the Dev Server"
+msgstr "Dev Server চালু করুন"
+
+#: ../../docs/developer-guide/contributing.rst:175
+msgid "The dev server runs on port 9100 with hot module replacement enabled."
+msgstr "dev server port 9100-এ hot module replacement enabled অবস্থায় চলবে।"
+
+#: ../../docs/developer-guide/contributing.rst:178
+msgid "Code Style"
+msgstr "কোড স্টাইল"
+
+#: ../../docs/developer-guide/contributing.rst:180
+msgid "**Python**: Ruff (linter + formatter)"
+msgstr "**Python**: Ruff (linter + formatter)"
+
+#: ../../docs/developer-guide/contributing.rst:181
+msgid "**TypeScript**: Prettier"
+msgstr "**TypeScript**: Prettier"
+
+#: ../../docs/developer-guide/contributing.rst:182
+msgid "Pre-commit hooks are configured for automated formatting"
+msgstr "automated formatting-এর জন্য pre-commit hooks configured আছে"
+
+#: ../../docs/developer-guide/contributing.rst:184
+msgid "Before submitting a pull request, run:"
+msgstr "pull request submit করার আগে রান করুন:"

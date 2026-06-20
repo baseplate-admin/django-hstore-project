@@ -1,7 +1,6 @@
-# Русский translation for Django HStore Project.
+﻿# Русский translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ru
 "
 "Language-Team: ru <LL@li.org>
@@ -33,32 +32,32 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: ru <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:2
 msgid "HStore vs JSONB"
-msgstr ""
+msgstr "HStore против JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:4
 msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
-msgstr ""
+msgstr "PostgreSQL предлагает два гибких типа данных для хранения пар ключ-значение и документов. На этой странице они сравниваются, чтобы помочь вам выбрать подходящий вариант."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
-msgstr ""
+msgstr "Быстрый выбор"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
 msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
-msgstr ""
+msgstr "Используйте **HStore**, когда ваши данные представляют собой плоские пары ключ-значение, что характерно для большинства метаданных, тегов и атрибутов товаров. Используйте **JSONB**, когда нужны вложенные структуры, смешанные типы значений или запросы на вхождение."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"
-msgstr ""
+msgstr "Матрица возможностей"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:20
 #: ../../docs/technical/hstore-vs-jsonb.rst:25

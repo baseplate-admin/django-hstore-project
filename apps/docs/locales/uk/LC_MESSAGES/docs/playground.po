@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Ukrainian <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/playground.rst:2
+msgid "Playground"
+msgstr "Ігровий майданчик"
+
+#: ../../docs/playground.rst:4
+msgid "Interactive demo of the ``django-hstore-widget`` component. Edit key-value pairs, add new entries, and delete existing ones."
+msgstr "Інтерактивна демонстрація компонента ``django-hstore-widget``. Редагуйте пари ключ-значення, додавайте нові записи та видаляйте існуючі."
+
+#: ../../docs/playground.rst:149
+msgid "The widget above is the live ``django-hstore-widget`` Lit component built at docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr "Віджет вище — це живий компонент ``django-hstore-widget`` на Lit, зібраний під час збірки документації. Спробуйте додати, відредагувати та видалити пари ключ-значення."

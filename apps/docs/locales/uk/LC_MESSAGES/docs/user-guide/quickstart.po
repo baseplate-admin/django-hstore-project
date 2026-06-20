@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Ukrainian <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quick Start"
+msgstr "Швидкий старт"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "Запустіть django-hstore-project менш ніж за хвилину."
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Create a Model"
+msgstr "Створення моделі"
+
+#: ../../docs/user-guide/quickstart.rst:9
+msgid "Add an HStore field to any model:"
+msgstr "Додайте поле HStore до будь-якої моделі:"
+
+#: ../../docs/user-guide/quickstart.rst:21
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr "Все. Віджет підключається автоматично, конфігурація форми не потрібна."
+
+#: ../../docs/user-guide/quickstart.rst:24
+msgid "Run Migrations"
+msgstr "Виконання міграцій"
+
+#: ../../docs/user-guide/quickstart.rst:31
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "Це автоматично активує розширення PostgreSQL hstore."
+
+#: ../../docs/user-guide/quickstart.rst:34
+msgid "Register in Admin"
+msgstr "Реєстрація в адміні"
+
+#: ../../docs/user-guide/quickstart.rst:46
+msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgstr "Відвідайте сторінку адміністрування, і ви побачите віджет HStore із чистим інтерфейсом ключ-значення. Кожну пару ключ-значення можна редагувати на місці. Додавайте, видаляйте та змінюйте пари за потреби."
+
+#: ../../docs/user-guide/quickstart.rst:51
+msgid "With Custom Keys"
+msgstr "З користувацькими ключами"
+
+#: ../../docs/user-guide/quickstart.rst:53
+msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgstr "Визначте явні ключі, щоб отримати поля форми з мітками замість редактора вільної форми:"
+
+#: ../../docs/user-guide/quickstart.rst:70
+msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "Кожен ключ стає повноцінним полем форми з валідацією, віджетами та мітками."
+
+#: ../../docs/user-guide/quickstart.rst:73
+msgid "What's Next"
+msgstr "Що далі"
+
+#: ../../docs/user-guide/quickstart.rst:75
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` — Детальні варіанти встановлення"
+
+#: ../../docs/user-guide/quickstart.rst:76
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ":doc:`../technical/hstore-vs-jsonb` — Коли використовувати HStore замість JSONB"
+
+#: ../../docs/user-guide/quickstart.rst:77
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ":doc:`../user-guide/best-practices` — Поради для використання у виробничому середовищі"

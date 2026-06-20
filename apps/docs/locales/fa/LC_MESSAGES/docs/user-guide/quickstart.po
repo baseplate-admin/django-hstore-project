@@ -1,0 +1,82 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <baseplate-admin>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Persian (Farsi)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quick Start"
+msgstr "شروع سریع"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "در کمتر از یک دقیقه django-hstore-project را راه‌اندازی و اجرا کنید."
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Create a Model"
+msgstr "ایجاد Model"
+
+#: ../../docs/user-guide/quickstart.rst:9
+msgid "Add an HStore field to any model:"
+msgstr "یک فیلد HStore به هر Model اضافه کنید:"
+
+#: ../../docs/user-guide/quickstart.rst:21
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr "همین‌قدر ساده. ویجت به‌طور خودکار متصل می‌شود و نیازی به پیکربندی فرم نیست."
+
+#: ../../docs/user-guide/quickstart.rst:24
+msgid "Run Migrations"
+msgstr "اجرای Migrations"
+
+#: ../../docs/user-guide/quickstart.rst:31
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "این دستور افزونه hstore را در PostgreSQL به‌طور خودکار فعال می‌کند."
+
+#: ../../docs/user-guide/quickstart.rst:34
+msgid "Register in Admin"
+msgstr "ثبت در Admin"
+
+#: ../../docs/user-guide/quickstart.rst:46
+msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgstr "صفحه admin خود را بازدید کنید؛ ویجت HStore با رابط تمیز کلید-مقدار نمایش داده می‌شود. هر جفت کلید-مقدار قابل ویرایش درجا است. جفت‌ها را مطابق نیاز اضافه، حذف و ویرایش کنید."
+
+#: ../../docs/user-guide/quickstart.rst:51
+msgid "With Custom Keys"
+msgstr "با کلیدهای سفارشی"
+
+#: ../../docs/user-guide/quickstart.rst:53
+msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgstr "کلیدهای صریح تعریف کنید تا فیلدهای فرم با برچسب به‌جای ویرایشگر آزاد دریافت کنید:"
+
+#: ../../docs/user-guide/quickstart.rst:70
+msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "هر کلید به یک فیلد فرم معتبر با اعتبارسنجی، ویجت و برچسب تبدیل می‌شود."
+
+#: ../../docs/user-guide/quickstart.rst:73
+msgid "What's Next"
+msgstr "مرحله بعدی"
+
+#: ../../docs/user-guide/quickstart.rst:75
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` - گزینه‌های نصب دقیق"
+
+#: ../../docs/user-guide/quickstart.rst:76
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ":doc:`../technical/hstore-vs-jsonb` - چه زمانی از HStore و چه زمانی از JSONB استفاده کنیم"
+
+#: ../../docs/user-guide/quickstart.rst:77
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ":doc:`../user-guide/best-practices` - نکات استفاده در محیط تولید"

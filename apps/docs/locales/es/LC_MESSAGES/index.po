@@ -1,105 +1,81 @@
 # Español translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: es
-"
-"Language-Team: es <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../index.rst:61
 msgid "User Guide"
-msgstr ""
+msgstr "Guía del Usuario"
 
 #: ../../index.rst:69
 msgid "Technical"
-msgstr ""
+msgstr "Técnica"
 
 #: ../../index.rst:75
 msgid "Developer Guide"
-msgstr ""
+msgstr "Guía del Desarrollador"
 
 #: ../../index.rst:84
 msgid "LLM Context"
-msgstr ""
+msgstr "Contexto de LLM"
 
 #: ../../index.rst:90
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ../../index.rst:2
 msgid "Django HStore Project"
-msgstr ""
+msgstr "Proyecto Django HStore"
 
 #: ../../index.rst:4
 msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
-msgstr ""
+msgstr "Un monorepositorio para el ecosistema Django HStore, con soporte amigable para PostgreSQL hstore en Django admin."
 
 #: ../../index.rst:8
 msgid "Packages"
-msgstr ""
+msgstr "Paquetes"
 
 #: ../../index.rst:13
 msgid "django-hstore-widget"
-msgstr ""
+msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
 msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
-msgstr ""
+msgstr "Widget personalizado para editar datos hstore en Django admin. Construido con Lit y TypeScript para un editor reactivo de clave-valor."
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
-msgstr ""
+msgstr "django-hstore-field"
 
 #: ../../index.rst:34
 msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
-msgstr ""
+msgstr "HStoreField listo para usar con widget autoconectado. Cero configuración para nuevos proyectos."
 
 #: ../../index.rst:42
 msgid "Quick Start"
-msgstr ""
+msgstr "Inicio Rápido"
 
 #: ../../index.rst:44
 msgid "For new projects, use **django-hstore-field**:"
-msgstr ""
+msgstr "Para nuevos proyectos, utilice **django-hstore-field**:"
 
 #: ../../index.rst:56
 msgid "The widget is auto-wired, no form configuration needed."
-msgstr ""
+msgstr "El widget se conecta automáticamente, no se necesita configuración de formulario."
 
 #: ../../index.rst:59
 msgid "Contents"
-msgstr ""
+msgstr "Contenidos"

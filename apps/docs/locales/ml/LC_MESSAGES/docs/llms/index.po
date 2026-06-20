@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+﻿# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore
 # Project package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# baseplate-admin <baseplate-admin>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:03+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ml\n"
 "Language-Team: ml <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"

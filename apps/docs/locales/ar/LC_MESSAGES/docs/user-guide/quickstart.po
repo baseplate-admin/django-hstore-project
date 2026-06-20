@@ -1,7 +1,6 @@
-# العربية translation for Django HStore Project.
+﻿# العربية translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -10,9 +9,9 @@ msgstr ""
 "
 "POT-Creation-Date: 2026-06-20 17:41
 "
-"PO-Revision-Date: 2026-06-20 17:41
+"PO-Revision-Date: 2026-06-20 17:40+0600
 "
-"Last-Translator: 
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "
 "Language: ar
 "
@@ -33,73 +32,73 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: ar <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/user-guide/quickstart.rst:2
 msgid "Quick Start"
-msgstr ""
+msgstr "البدء السريع"
 
 #: ../../docs/user-guide/quickstart.rst:4
 msgid "Get up and running with django-hstore-project in under a minute."
-msgstr ""
+msgstr "ابدأ باستخدام django-hstore-project في أقل من دقيقة واحدة."
 
 #: ../../docs/user-guide/quickstart.rst:7
 msgid "Create a Model"
-msgstr ""
+msgstr "إنشاء نموذج"
 
 #: ../../docs/user-guide/quickstart.rst:9
 msgid "Add an HStore field to any model:"
-msgstr ""
+msgstr "أضف حقل HStore إلى أي نموذج:"
 
 #: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr ""
+msgstr "هذا كل شيء. يتم ربط المكون تلقائيًا دون الحاجة إلى تكوين النموذج."
 
 #: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"
-msgstr ""
+msgstr "تشغيل عمليات الترحيل"
 
 #: ../../docs/user-guide/quickstart.rst:31
 msgid "This enables the PostgreSQL hstore extension automatically."
-msgstr ""
+msgstr "يؤدي هذا إلى تمكين إضافة hstore في PostgreSQL تلقائيًا."
 
 #: ../../docs/user-guide/quickstart.rst:34
 msgid "Register in Admin"
-msgstr ""
+msgstr "التسجيل في لوحة الإدارة"
 
 #: ../../docs/user-guide/quickstart.rst:46
 msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
-msgstr ""
+msgstr "قم بزيارة صفحة الإدارة وسترى مكون HStore بواجهة مفتاح-قيمة واضحة. يمكن تعديل كل زوج مفتاح-قيمة مباشرة. أضف أزواجًا أو احذفها أو عدّلها حسب الحاجة."
 
 #: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
-msgstr ""
+msgstr "مع مفاتيح مخصصة"
 
 #: ../../docs/user-guide/quickstart.rst:53
 msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
-msgstr ""
+msgstr "حدد مفاتيح صريحة للحصول على حقول نموذج ذات تسميات بدلاً من المحرر الحر:"
 
 #: ../../docs/user-guide/quickstart.rst:70
 msgid "Each key becomes a proper form field with validation, widgets, and labels."
-msgstr ""
+msgstr "يصبح كل مفتاح حقل نموذج صحيح مع التحقق من الصحة والمكونات والتسميات."
 
 #: ../../docs/user-guide/quickstart.rst:73
 msgid "What's Next"
-msgstr ""
+msgstr "ما بعد ذلك"
 
 #: ../../docs/user-guide/quickstart.rst:75
 msgid ":doc:`../user-guide/installation` - Detailed installation options"
-msgstr ""
+msgstr ":doc:`../user-guide/installation` - خيارات التثبيت التفصيلية"
 
 #: ../../docs/user-guide/quickstart.rst:76
 msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
-msgstr ""
+msgstr ":doc:`../technical/hstore-vs-jsonb` - متى تستخدم HStore مقابل JSONB"
 
 #: ../../docs/user-guide/quickstart.rst:77
 msgid ":doc:`../user-guide/best-practices` - Tips for production use"
-msgstr ""
+msgstr ":doc:`../user-guide/best-practices` - نصائح للاستخدام في البيئة الإنتاجية"

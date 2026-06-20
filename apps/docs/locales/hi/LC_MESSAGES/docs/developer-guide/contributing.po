@@ -1,7 +1,6 @@
-# हिन्दी translation for Django HStore Project.
+﻿# हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: hi
 "
 "Language-Team: hi <LL@li.org>
@@ -33,20 +32,20 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: hi <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
-msgstr ""
+msgstr "योगदान करना"
 
 #: ../../docs/developer-guide/contributing.rst:4
 msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr ""
+msgstr "django-hstore-project में योगदान करने और अपने विकास वातावरण को स्थापित करने का चरण-दर-चरण मार्गदर्शिका।"
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"

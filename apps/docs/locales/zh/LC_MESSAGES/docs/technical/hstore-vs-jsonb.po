@@ -1,0 +1,166 @@
+# 中文翻译 for HStore vs JSONB.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:2
+msgid "HStore vs JSONB"
+msgstr "HStore 与 JSONB 对比"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:4
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"PostgreSQL 提供了两种用于键值和文档存储的灵活数据类型。"
+"本页对它们进行比较以帮助您做出正确的选择。"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:8
+msgid "Quick Decision"
+msgstr "快速判断"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:10
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need "
+"nested structures, mixed value types, or containment queries."
+msgstr ""
+"当您的数据是扁平的键值对（大多数元数据、标签和产品属性）时使用 **HStore**。"
+"当您需要嵌套结构、混合值类型或包含查询时使用 **JSONB**。"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:15
+msgid "Feature Matrix"
+msgstr "功能矩阵"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:20
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+msgid "Feature"
+msgstr "功能"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:59
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:87
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+msgid "Flat key-value"
+msgstr "扁平键值"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "Yes"
+msgstr "是"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+msgid "Nested structs"
+msgstr "嵌套结构"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "No"
+msgstr "否"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+msgid "Non-string vals"
+msgstr "非字符串值"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+msgid "Simple admin UI"
+msgstr "简洁的 admin UI"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+msgid "Easy validation"
+msgstr "简单验证"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+msgid "Containment"
+msgstr "包含"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "Smaller storage"
+msgstr "较小的存储"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "GIN indexes"
+msgstr "GIN 索引"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:45
+msgid "Storage"
+msgstr "存储"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:47
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+"HStore 更紧凑，因为它存储扁平的键值对而没有结构开销："
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:52
+msgid "HStore: ~200 bytes for 10 key-value pairs"
+msgstr "HStore: 10 个键值对约 200 字节"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:53
+msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
+msgstr "JSONB: 相同数据约 350 字节（结构开销）"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:56
+msgid "Query Performance"
+msgstr "查询性能"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:63
+#: ../../docs/technical/hstore-vs-jsonb.rst:91
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:73
+#: ../../docs/technical/hstore-vs-jsonb.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:112
+msgid "Indexing"
+msgstr "索引"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:114
+msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
+msgstr "HStore 和 JSONB 均支持用于快速查找的 GIN 索引："
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:122
+msgid "Summary"
+msgstr "总结"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:126
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+"简单的元数据、标签和产品属性选择 HStore。"
+"嵌套配置、API 响应和文档存储选择 JSONB。"

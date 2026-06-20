@@ -1,0 +1,100 @@
+﻿# Bengali translation for Best Practices.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/user-guide/best-practices.rst:2
+msgid "Best Practices"
+msgstr "বেস্ট প্র্যাকটিসেস"
+
+#: ../../docs/user-guide/best-practices.rst:4
+msgid ""
+"Tips and recommendations for using HStore fields effectively in "
+"production."
+msgstr ""
+"production-এ HStore fields কার্যকরভাবে ব্যবহার করার টিপস এবং recommendations।"
+
+#: ../../docs/user-guide/best-practices.rst:7
+msgid "Keep Keys Consistent"
+msgstr "Keys Consistent রাখুন"
+
+#: ../../docs/user-guide/best-practices.rst:9
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+"আপনার application জুড়ে keys-এর জন্য naming convention ব্যবহার করুন। "
+"এতে querying এবং maintenance সহজ হয়।"
+
+#: ../../docs/user-guide/best-practices.rst:27
+msgid "Use Explicit Keys When Possible"
+msgstr "সম্ভব হলে Explicit Keys ব্যবহার করুন"
+
+#: ../../docs/user-guide/best-practices.rst:29
+msgid "Defining explicit keys gives you:"
+msgstr "explicit keys define করলে আপনি পাবেন:"
+
+#: ../../docs/user-guide/best-practices.rst:31
+msgid "Labeled form fields in the admin"
+msgstr "admin-এ labeled form fields"
+
+#: ../../docs/user-guide/best-practices.rst:32
+msgid "Built-in validation per key"
+msgstr "প্রতিটি key-এর জন্য built-in validation"
+
+#: ../../docs/user-guide/best-practices.rst:33
+msgid "Widget customization per field"
+msgstr "প্রতিটি field-এর জন্য widget customization"
+
+#: ../../docs/user-guide/best-practices.rst:34
+msgid "IDE autocomplete for key names"
+msgstr "key names-এর জন্য IDE autocomplete"
+
+#: ../../docs/user-guide/best-practices.rst:47
+msgid "Index Frequently Queried Keys"
+msgstr "বারবার Query করা Keys-এর Index যোগ করুন"
+
+#: ../../docs/user-guide/best-practices.rst:49
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr "যে HStore columns বারবার query করেন তার উপর GIN indexes যোগ করুন:"
+
+#: ../../docs/user-guide/best-practices.rst:64
+msgid "Handle Missing Keys Gracefully"
+msgstr "Missing Keys Gracefully Handle করুন"
+
+#: ../../docs/user-guide/best-practices.rst:66
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr "HStore keys সব row-এ নাও থাকতে পারে। defaults সহ ``get()`` ব্যবহার করুন:"
+
+#: ../../docs/user-guide/best-practices.rst:74
+msgid "Validate Key Values"
+msgstr "Key Values Validate করুন"
+
+#: ../../docs/user-guide/best-practices.rst:76
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr "HStore values string হয়। প্রয়োজন অনুযায়ী validate এবং convert করুন:"
+
+#: ../../docs/user-guide/best-practices.rst:90
+msgid "Consider Migration Paths"
+msgstr "Migration Paths বিবেচনা করুন"
+
+#: ../../docs/user-guide/best-practices.rst:92
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+"ভবিষ্যতে nested data লাগবে বলে মনে হলে, HStore থেকে JSONB-তে migration "
+"শুরুতেই plan করুন। Data formats সরাসরি compatible নয়।"

@@ -1,7 +1,6 @@
-# Русский translation for Django HStore Project.
+﻿# Русский translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ru
 "
 "Language-Team: ru <LL@li.org>
@@ -33,32 +32,32 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: ru <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/user-guide/quickstart.rst:2
 msgid "Quick Start"
-msgstr ""
+msgstr "Быстрый старт"
 
 #: ../../docs/user-guide/quickstart.rst:4
 msgid "Get up and running with django-hstore-project in under a minute."
-msgstr ""
+msgstr "Начните работу с django-hstore-project менее чем за минуту."
 
 #: ../../docs/user-guide/quickstart.rst:7
 msgid "Create a Model"
-msgstr ""
+msgstr "Создание модели"
 
 #: ../../docs/user-guide/quickstart.rst:9
 msgid "Add an HStore field to any model:"
-msgstr ""
+msgstr "Добавьте поле HStore в любую модель:"
 
 #: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr ""
+msgstr "Всё. Виджет подключается автоматически, конфигурация форм не требуется."
 
 #: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"

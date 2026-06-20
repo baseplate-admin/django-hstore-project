@@ -1,0 +1,49 @@
+﻿# Japanese translation for Architecture.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/developer-guide/architecture.rst:2
+msgid "Architecture"
+msgstr "アーキテクチャ"
+
+#: ../../docs/developer-guide/architecture.rst:5
+msgid "Overview"
+msgstr "概要"
+
+#: ../../docs/developer-guide/architecture.rst:15
+msgid "django-hstore-field"
+msgstr "django-hstore-field"
+
+#: ../../docs/developer-guide/architecture.rst:17
+msgid ""
+"Drop-in HStoreField that auto-wires the widget. No form configuration "
+"needed."
+msgstr ""
+"ウィジェットを自動で接続するドロップイン型の HStoreField。"
+"フォームの設定は不要です。"
+
+#: ../../docs/developer-guide/architecture.rst:20
+msgid "django-hstore-widget"
+msgstr "django-hstore-widget"
+
+#: ../../docs/developer-guide/architecture.rst:22
+msgid ""
+"Lit-based frontend component with Django admin integration. Handles "
+"rendering, validation, and media registration."
+msgstr ""
+"Django admin 統合付きの Lit ベースのフロントエンドコンポーネント。"
+"レンダリング、バリデーション、メディア登録を処理します。"

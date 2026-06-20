@@ -1,7 +1,6 @@
-# Português translation for Django HStore Project.
+﻿# Português translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: pt
 "
 "Language-Team: pt <LL@li.org>
@@ -33,77 +32,77 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: pt <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/llms/index.rst:2
 msgid "LLM Context Files"
-msgstr ""
+msgstr "Arquivos de Contexto para LLM"
 
 #: ../../docs/llms/index.rst:4
 msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr ""
+msgstr "Este projeto fornece arquivos de contexto legíveis por máquina para integração com LLM, gerados automaticamente durante a compilação da documentação Sphinx."
 
 #: ../../docs/llms/index.rst:8
 msgid "Available Files"
-msgstr ""
+msgstr "Arquivos Disponíveis"
 
 #: ../../docs/llms/index.rst:14
 msgid "File"
-msgstr ""
+msgstr "Arquivo"
 
 #: ../../docs/llms/index.rst:15
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: ../../docs/llms/index.rst:16
 msgid "`llms.txt <../../llms.txt>`_"
-msgstr ""
+msgstr "`llms.txt <../../llms.txt>`_"
 
 #: ../../docs/llms/index.rst:17
 msgid "Index file listing all context files"
-msgstr ""
+msgstr "Arquivo de índice listando todos os arquivos de contexto"
 
 #: ../../docs/llms/index.rst:18
 msgid "`llms-widget.txt <../../llms-widget.txt>`_"
-msgstr ""
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
 
 #: ../../docs/llms/index.rst:19
 msgid "django-hstore-widget package: widget API, frontend architecture"
-msgstr ""
+msgstr "Pacote django-hstore-widget: API do widget, arquitetura do frontend"
 
 #: ../../docs/llms/index.rst:20
 msgid "`llms-field.txt <../../llms-field.txt>`_"
-msgstr ""
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
 
 #: ../../docs/llms/index.rst:21
 msgid "django-hstore-field package: field API, installation, quick start"
-msgstr ""
+msgstr "Pacote django-hstore-field: API do campo, instalação, início rápido"
 
 #: ../../docs/llms/index.rst:22
 msgid "`llms-full.txt <../../llms-full.txt>`_"
-msgstr ""
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
 #: ../../docs/llms/index.rst:23
 msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
-msgstr ""
+msgstr "Documentação completa do projeto incluindo todos os pacotes, referência da API, arquitetura, melhores práticas e guia de contribuição"
 
 #: ../../docs/llms/index.rst:26
 msgid "Usage"
-msgstr ""
+msgstr "Uso"
 
 #: ../../docs/llms/index.rst:28
 msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
-msgstr ""
+msgstr "Aponte seu LLM para o arquivo de contexto que corresponde ao seu escopo. Os arquivos gerados são colocados na raiz da saída da documentação e são acessíveis em relação à raiz da documentação."
 
 #: ../../docs/llms/index.rst:33
 msgid "How It Works"
-msgstr ""
+msgstr "Como Funciona"
 
 #: ../../docs/llms/index.rst:35
 msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
-msgstr ""
+msgstr "Os arquivos llms.txt são gerados automaticamente por uma extensão personalizada do Sphinx (``llms_txt_generator``) que reúne conteúdo de todos os arquivos de origem da documentação no momento da compilação, garantindo que os arquivos de contexto permaneçam sincronizados com a documentação."

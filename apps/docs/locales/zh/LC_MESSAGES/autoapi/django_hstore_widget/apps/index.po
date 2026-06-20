@@ -1,0 +1,45 @@
+# 中文翻译 for autoapi django_hstore_widget.apps.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:2
+msgid "django_hstore_widget.apps"
+msgstr "django_hstore_widget.apps"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:10
+msgid "Module Contents"
+msgstr "模块内容"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:14
+msgid "Bases: :py:obj:`django.apps.AppConfig`"
+msgstr "基类: :py:obj:`django.apps.AppConfig`"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:17
+msgid "Application configuration for django-hstore-widget."
+msgstr "django-hstore-widget 的应用程序配置。"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:19
+msgid ""
+"Registers the PostgreSQL backend check on app ready so that non-"
+"PostgreSQL setups receive a warning during system checks."
+msgstr ""
+"在应用程序就绪时注册 PostgreSQL 后端检查，"
+"使非 PostgreSQL 设置在进行系统检查时收到警告。"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:35
+msgid "Override this method in subclasses to run code when Django starts."
+msgstr "在子类中重写此方法以在 Django 启动时运行代码。"

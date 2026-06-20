@@ -1,16 +1,15 @@
-# Malayalam translation for Django HStore Project.
+﻿# Malayalam translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore
 # Project package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:03+0600\n"
-"PO-Revision-Date: 2026-06-20 16:03+0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ml\n"
 "Language-Team: ml <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -25,7 +24,7 @@ msgstr "ഉപയോക്തൃ ഗൈഡ്"
 
 #: ../../index.rst:69
 msgid "Technical"
-msgstr "താങ്കീഷ്യൽ"
+msgstr "സാങ്കേതികം"
 
 #: ../../index.rst:75
 msgid "Developer Guide"
@@ -37,7 +36,7 @@ msgstr "LLM കോണ്ടെക്സ്റ്റ്"
 
 #: ../../index.rst:90
 msgid "Legal"
-msgstr "കانونി"
+msgstr "നിയമപരം"
 
 #: ../../index.rst:2
 msgid "Django HStore Project"

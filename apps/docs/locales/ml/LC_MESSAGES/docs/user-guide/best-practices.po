@@ -1,14 +1,13 @@
-# Malayalam translation for Best Practices.
+﻿# Malayalam translation for Best Practices.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
-"PO-Revision-Date: 2026-06-20 16:01+0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ml\n"
 "Language-Team: ml <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -27,7 +26,7 @@ msgid ""
 "production."
 msgstr ""
 "പ്രൊഡക്ഷനിൽ HStore ഫീൽഡുകൾ ഫലപ്രദമായി ഉപയോഗിക്കാൻ ടിപ്പുകൾ, "
-"പരിശുദ്ധികൾ."
+"ശുപാർശകൾ."
 
 #: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
@@ -75,7 +74,7 @@ msgstr "പതിവായി ക്വവറി ചെയ്യുന്ന HSt
 
 #: ../../docs/user-guide/best-practices.rst:64
 msgid "Handle Missing Keys Gracefully"
-msgstr "നഷ്ടപ്പെട്ട കീകൾ ഗ്രേസ്‌ഫുലായി ഹാൻഡിൽ ചെയ്യുക"
+msgstr "ഇല്ലാത്ത കീകൾ ഗ്രേസ്‌ഫുലായി ഹാൻഡിൽ ചെയ്യുക"
 
 #: ../../docs/user-guide/best-practices.rst:66
 msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"

@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Thai <ll@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/best-practices.rst:2
+msgid "Best Practices"
+msgstr "แนวทางปฏิบัติที่ดี"
+
+#: ../../docs/user-guide/best-practices.rst:4
+msgid "Tips and recommendations for using HStore fields effectively in production."
+msgstr "เคล็ดลับและคำแนะนำสำหรับการใช้ฟิลด์ HStore อย่างมีประสิทธิภาพในระบบจริง"
+
+#: ../../docs/user-guide/best-practices.rst:7
+msgid "Keep Keys Consistent"
+msgstr "รักษาความสม่ำเสมอของคีย์"
+
+#: ../../docs/user-guide/best-practices.rst:9
+msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
+msgstr "ใช้กฎการตั้งชื่อคีย์ตลอดทั้งแอปพลิเคชัน ทำให้การค้นหาและการบำรุงรักษาง่ายขึ้น"
+
+#: ../../docs/user-guide/best-practices.rst:27
+msgid "Use Explicit Keys When Possible"
+msgstr "ใช้คีย์ที่ชัดเจนเมื่อเป็นไปได้"
+
+#: ../../docs/user-guide/best-practices.rst:29
+msgid "Defining explicit keys gives you:"
+msgstr "การกำหนดคีย์ที่ชัดเจนช่วยให้คุณได้รับ:"
+
+#: ../../docs/user-guide/best-practices.rst:31
+msgid "Labeled form fields in the admin"
+msgstr "ฟิลด์ฟอร์มที่มีป้ายกำกับใน admin"
+
+#: ../../docs/user-guide/best-practices.rst:32
+msgid "Built-in validation per key"
+msgstr "การตรวจสอบความถูกต้องในตัวสำหรับแต่ละคีย์"
+
+#: ../../docs/user-guide/best-practices.rst:33
+msgid "Widget customization per field"
+msgstr "การปรับแต่งวิดเจ็ตสำหรับแต่ละฟิลด์"
+
+#: ../../docs/user-guide/best-practices.rst:34
+msgid "IDE autocomplete for key names"
+msgstr "การเติมอัตโนมัติใน IDE สำหรับชื่อคีย์"
+
+#: ../../docs/user-guide/best-practices.rst:47
+msgid "Index Frequently Queried Keys"
+msgstr "สร้างดัชนีสำหรับคีย์ที่ค้นหาบ่อย"
+
+#: ../../docs/user-guide/best-practices.rst:49
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr "เพิ่มดัชนี GIN บนคอลัมน์ HStore ที่คุณค้นหาบ่อย:"
+
+#: ../../docs/user-guide/best-practices.rst:64
+msgid "Handle Missing Keys Gracefully"
+msgstr "จัดการคีย์ที่หายไปอย่างเหมาะสม"
+
+#: ../../docs/user-guide/best-practices.rst:66
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr "คีย์ HStore อาจไม่ปรากฏในทุกแถว ใช้ ``get()`` พร้อมค่าเริ่มต้น:"
+
+#: ../../docs/user-guide/best-practices.rst:74
+msgid "Validate Key Values"
+msgstr "ตรวจสอบค่าคีย์"
+
+#: ../../docs/user-guide/best-practices.rst:76
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr "ค่า HStore เป็นสตริง ตรวจสอบและแปลงค่าเมื่อจำเป็น:"
+
+#: ../../docs/user-guide/best-practices.rst:90
+msgid "Consider Migration Paths"
+msgstr "พิจารณาเส้นทาง Migration"
+
+#: ../../docs/user-guide/best-practices.rst:92
+msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
+msgstr "หากคุณคาดการณ์ว่าจะต้องใช้ข้อมูลแบบซ้อนในอนาคต ให้วางแผน migration จาก HStore ไปยัง JSONB ตั้งแต่เนิ่นๆ รูปแบบข้อมูลไม่เข้ากันโดยตรง"

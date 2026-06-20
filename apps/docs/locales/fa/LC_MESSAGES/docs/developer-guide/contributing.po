@@ -1,0 +1,144 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/developer-guide/contributing.rst:2
+msgid "Contributing"
+msgstr "مشارکت"
+
+#: ../../docs/developer-guide/contributing.rst:4
+msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
+msgstr "راهنمای گام‌به‌گام برای راه‌اندازی محیط توسعه و مشارکت در django-hstore-project."
+
+#: ../../docs/developer-guide/contributing.rst:8
+msgid "Prerequisites"
+msgstr "پیش‌نیازها"
+
+#: ../../docs/developer-guide/contributing.rst:10
+msgid "Make sure you have the following installed:"
+msgstr "اطمینان حاصل کنید موارد زیر نصب شده باشند:"
+
+#: ../../docs/developer-guide/contributing.rst:12
+msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
+msgstr ":iconify:`mdi:python` **Python 3.10+** با مدیریت بسته ``uv``"
+
+#: ../../docs/developer-guide/contributing.rst:13
+msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
+msgstr ":iconify:`logos:nodejs` **Node.js 18+** با ``npm``"
+
+#: ../../docs/developer-guide/contributing.rst:14
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
+msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+** در حال اجرا به‌صورت محلی"
+
+#: ../../docs/developer-guide/contributing.rst:17
+msgid "Clone the Repository"
+msgstr "کلون کردن مخزن"
+
+#: ../../docs/developer-guide/contributing.rst:25
+msgid "Install Python Dependencies"
+msgstr "نصب وابستگی‌های Python"
+
+#: ../../docs/developer-guide/contributing.rst:29
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ":iconify:`simple-icons:astral` uv"
+
+#: ../../docs/developer-guide/contributing.rst:38
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ":iconify:`simple-icons:poetry` Poetry"
+
+#: ../../docs/developer-guide/contributing.rst:47
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ":iconify:`simple-icons:pdm` PDM"
+
+#: ../../docs/developer-guide/contributing.rst:55
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ":iconify:`mdi:package-variant` pip-tools"
+
+#: ../../docs/developer-guide/contributing.rst:65
+msgid "This installs all Python packages including test dependencies."
+msgstr "این دستور تمام بسته‌های Python شامل وابستگی‌های آزمون را نصب می‌کند."
+
+#: ../../docs/developer-guide/contributing.rst:68
+msgid "Install Frontend Dependencies"
+msgstr "نصب وابستگی‌های Frontend"
+
+#: ../../docs/developer-guide/contributing.rst:78
+msgid "This installs Lit, Vite, and all frontend tooling."
+msgstr "این دستور Lit، Vite و تمام ابزارهای frontend را نصب می‌کند."
+
+#: ../../docs/developer-guide/contributing.rst:81
+msgid "Set Up the Database"
+msgstr "راه‌اندازی پایگاه داده"
+
+#: ../../docs/developer-guide/contributing.rst:83
+msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
+msgstr "یک نمونه محلی PostgreSQL را با افزونه hstore فعال آغاز کنید:"
+
+#: ../../docs/developer-guide/contributing.rst:87
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/developer-guide/contributing.rst:99
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/developer-guide/contributing.rst:110
+msgid "Run the Tests"
+msgstr "اجرای آزمون‌ها"
+
+#: ../../docs/developer-guide/contributing.rst:113
+msgid "Frontend Tests"
+msgstr "آزمون‌های Frontend"
+
+#: ../../docs/developer-guide/contributing.rst:129
+msgid "Backend Tests"
+msgstr "آزمون‌های Backend"
+
+#: ../../docs/developer-guide/contributing.rst:145
+msgid "Type Checking"
+msgstr "بررسی نوع"
+
+#: ../../docs/developer-guide/contributing.rst:153
+msgid "Build the Project"
+msgstr "ساخت پروژه"
+
+#: ../../docs/developer-guide/contributing.rst:167
+msgid "Start the Dev Server"
+msgstr "شروع سرور توسعه"
+
+#: ../../docs/developer-guide/contributing.rst:175
+msgid "The dev server runs on port 9100 with hot module replacement enabled."
+msgstr "سرور توسعه روی پورت 9100 با قابلیت جایگزینی زنده ماژول (hot module replacement) اجرا می‌شود."
+
+#: ../../docs/developer-guide/contributing.rst:178
+msgid "Code Style"
+msgstr "سبک کد"
+
+#: ../../docs/developer-guide/contributing.rst:180
+msgid "**Python**: Ruff (linter + formatter)"
+msgstr "**Python**: Ruff (linting + قالب‌دهی)"
+
+#: ../../docs/developer-guide/contributing.rst:181
+msgid "**TypeScript**: Prettier"
+msgstr "**TypeScript**: Prettier"
+
+#: ../../docs/developer-guide/contributing.rst:182
+msgid "Pre-commit hooks are configured for automated formatting"
+msgstr "قلاب‌های pre-commit برای قالب‌دهی خودکار پیکربندی شده‌اند"
+
+#: ../../docs/developer-guide/contributing.rst:184
+msgid "Before submitting a pull request, run:"
+msgstr "پیش از ارسال pull request، دستور زیر را اجرا کنید:"

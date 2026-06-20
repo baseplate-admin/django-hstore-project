@@ -1,89 +1,64 @@
 # हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
 msgid "django_hstore_field.fields"
-msgstr ""
+msgstr "django_hstore_field.fields"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:10
 msgid "Module Contents"
-msgstr ""
+msgstr "मॉड्यूल सामग्री"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:14
 msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
-msgstr ""
+msgstr "आधार: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
 msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
-msgstr ""
+msgstr "Django के ``HStoreField`` का ड्रॉप-इन प्रतिस्थापन जिसमें कस्टम विजेट शामिल है।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
 msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
-msgstr ""
+msgstr "``formfield()`` को ओवरराइड करता है ताकि एडमिन और ModelForms स्वचालित रूप से :class:`~django_hstore_widget.forms.HStoreFormField` और :class:`~django_hstore_widget.widgets.HStoreFormWidget` का उपयोग करें -- कोई मैन्युअल फॉर्म कॉन्फ़िगरेशन आवश्यक नहीं।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
-msgstr ""
+msgstr "उदाहरण"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:38
 msgid "Return a form field class pre-configured with the custom widget."
-msgstr ""
+msgstr "कस्टम विजेट के साथ पूर्व-कॉन्फ़िगर किया गया फॉर्म फ़ील्ड क्लास लौटाएँ।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "पैरामीटर"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:40
 msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
-msgstr ""
+msgstr "फॉर्म फ़ील्ड कंस्ट्रक्टर को अग्रेदित कीवर्ड तर्क। डिफ़ॉल्ट को ओवरराइड करने के लिए ``form_class`` या ``widget`` पास करें।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "लौटता है"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:44
 msgid "A form field instance wired to the hstore widget."
-msgstr ""
+msgstr "hstore विजेट से जुड़ा फॉर्म फ़ील्ड इंस्टेंस।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "रिटर्न प्रकार"

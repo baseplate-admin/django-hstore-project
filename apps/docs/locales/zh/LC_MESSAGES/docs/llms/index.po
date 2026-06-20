@@ -1,0 +1,103 @@
+# 中文翻译 for LLM Context.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/llms/index.rst:2
+msgid "LLM Context Files"
+msgstr "LLM 上下文文件"
+
+#: ../../docs/llms/index.rst:4
+msgid ""
+"This project provides machine-readable context files for LLM integration,"
+" auto-generated during the Sphinx documentation build."
+msgstr ""
+"本项目提供机器可读的上下文文件以用于 LLM 集成，"
+"在 Sphinx 文档构建期间自动生成。"
+
+#: ../../docs/llms/index.rst:8
+msgid "Available Files"
+msgstr "可用文件"
+
+#: ../../docs/llms/index.rst:14
+msgid "File"
+msgstr "文件"
+
+#: ../../docs/llms/index.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../docs/llms/index.rst:16
+msgid "`llms.txt <../../llms.txt>`_"
+msgstr "`llms.txt <../../llms.txt>`_"
+
+#: ../../docs/llms/index.rst:17
+msgid "Index file listing all context files"
+msgstr "列出所有上下文文件的索引文件"
+
+#: ../../docs/llms/index.rst:18
+msgid "`llms-widget.txt <../../llms-widget.txt>`_"
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
+
+#: ../../docs/llms/index.rst:19
+msgid "django-hstore-widget package: widget API, frontend architecture"
+msgstr "django-hstore-widget 包：组件 API、前端架构"
+
+#: ../../docs/llms/index.rst:20
+msgid "`llms-field.txt <../../llms-field.txt>`_"
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
+
+#: ../../docs/llms/index.rst:21
+msgid "django-hstore-field package: field API, installation, quick start"
+msgstr "django-hstore-field 包：字段 API、安装、快速开始"
+
+#: ../../docs/llms/index.rst:22
+msgid "`llms-full.txt <../../llms-full.txt>`_"
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
+
+#: ../../docs/llms/index.rst:23
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+"完整的项目文档，包括所有包、API 参考、架构、最佳实践和贡献指南"
+
+#: ../../docs/llms/index.rst:26
+msgid "Usage"
+msgstr "使用方法"
+
+#: ../../docs/llms/index.rst:28
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated"
+" files are placed at the root of the documentation output and are "
+"accessible relative to the docs root."
+msgstr ""
+"将您的 LLM 指向与您的范围匹配的上下文文件。"
+"生成的文件放置在文档输出的根目录中，可以通过相对于文档根目录的路径访问。"
+
+#: ../../docs/llms/index.rst:33
+msgid "How It Works"
+msgstr "工作原理"
+
+#: ../../docs/llms/index.rst:35
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx "
+"extension (``llms_txt_generator``) that assembles content from all "
+"documentation source files at build time, ensuring the context files stay"
+" in sync with the documentation."
+msgstr ""
+"llms.txt 文件由自定义 Sphinx 扩展（``llms_txt_generator``）自动生成，"
+"该扩展在构建时从所有文档源文件组装内容，确保上下文文件与文档保持同步。"

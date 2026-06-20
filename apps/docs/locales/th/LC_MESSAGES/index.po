@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Thai <ll@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:61
+msgid "User Guide"
+msgstr "คู่มือผู้ใช้"
+
+#: ../../index.rst:69
+msgid "Technical"
+msgstr "ข้อมูลทางเทคนิค"
+
+#: ../../index.rst:75
+msgid "Developer Guide"
+msgstr "คู่มือนักพัฒนา"
+
+#: ../../index.rst:84
+msgid "LLM Context"
+msgstr "บริบท LLM"
+
+#: ../../index.rst:90
+msgid "Legal"
+msgstr "กฎหมาย"
+
+#: ../../index.rst:2
+msgid "Django HStore Project"
+msgstr "โปรเจกต์ Django HStore"
+
+#: ../../index.rst:4
+msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
+msgstr "โมโนรีโปสำหรับระบบนิเวศ Django HStore การรองรับ PostgreSQL hstore ที่ใช้งานง่ายสำหรับ Django admin"
+
+#: ../../index.rst:8
+msgid "Packages"
+msgstr "แพ็กเกจ"
+
+#: ../../index.rst:13
+msgid "django-hstore-widget"
+msgstr "django-hstore-widget"
+
+#: ../../index.rst:20
+msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
+msgstr "วิดเจ็ตแบบกำหนดเองสำหรับการแก้ไขข้อมูล hstore ใน Django admin พัฒนาด้วย Lit และ TypeScript เพื่อสร้างแก้ไขข้อมูลแบบคีย์-ค่าที่ตอบสนองรวดเร็ว"
+
+#: ../../index.rst:27
+msgid "django-hstore-field"
+msgstr "django-hstore-field"
+
+#: ../../index.rst:34
+msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgstr "HStoreField ที่ติดตั้งได้เลยพร้อมวิดเจ็ตที่เชื่อมต่ออัตโนมัติ ไม่ต้องการการกำหนดค่าสำหรับโปรเจกต์ใหม่"
+
+#: ../../index.rst:42
+msgid "Quick Start"
+msgstr "เริ่มต้นอย่างรวดเร็ว"
+
+#: ../../index.rst:44
+msgid "For new projects, use **django-hstore-field**:"
+msgstr "สำหรับโปรเจกต์ใหม่ ให้ใช้ **django-hstore-field**:"
+
+#: ../../index.rst:56
+msgid "The widget is auto-wired, no form configuration needed."
+msgstr "วิดเจ็ตเชื่อมต่ออัตโนมัติ ไม่ต้องการการกำหนดค่าฟอร์ม"
+
+#: ../../index.rst:59
+msgid "Contents"
+msgstr "เนื้อหา"

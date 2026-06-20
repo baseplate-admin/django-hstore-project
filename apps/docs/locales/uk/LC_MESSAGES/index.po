@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Ukrainian <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:61
+msgid "User Guide"
+msgstr "Керівство користувача"
+
+#: ../../index.rst:69
+msgid "Technical"
+msgstr "Технічна документація"
+
+#: ../../index.rst:75
+msgid "Developer Guide"
+msgstr "Керівство розробника"
+
+#: ../../index.rst:84
+msgid "LLM Context"
+msgstr "Контекст LLM"
+
+#: ../../index.rst:90
+msgid "Legal"
+msgstr "Правова інформація"
+
+#: ../../index.rst:2
+msgid "Django HStore Project"
+msgstr "Проєкт Django HStore"
+
+#: ../../index.rst:4
+msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
+msgstr "Монорепозиторій для екосистеми Django HStore, зручна підтримка PostgreSQL hstore для адміністративної панелі Django."
+
+#: ../../index.rst:8
+msgid "Packages"
+msgstr "Пакети"
+
+#: ../../index.rst:13
+msgid "django-hstore-widget"
+msgstr "django-hstore-widget"
+
+#: ../../index.rst:20
+msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
+msgstr "Користувацький віжет для редагування hstore-даних у Django admin. Створено за допомогою Lit та TypeScript для адаптивного редактора пар ключ-значення."
+
+#: ../../index.rst:27
+msgid "django-hstore-field"
+msgstr "django-hstore-field"
+
+#: ../../index.rst:34
+msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgstr "Готовий HStoreField із автоматично підключеним віджетом. Нульова конфігурація для нових проєктів."
+
+#: ../../index.rst:42
+msgid "Quick Start"
+msgstr "Швидкий старт"
+
+#: ../../index.rst:44
+msgid "For new projects, use **django-hstore-field**:"
+msgstr "Для нових проєктів використовуйте **django-hstore-field**:"
+
+#: ../../index.rst:56
+msgid "The widget is auto-wired, no form configuration needed."
+msgstr "Віджет підключається автоматично, конфігурація форми не потрібна."
+
+#: ../../index.rst:59
+msgid "Contents"
+msgstr "Зміст"

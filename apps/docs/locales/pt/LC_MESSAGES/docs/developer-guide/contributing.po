@@ -1,7 +1,6 @@
-# Português translation for Django HStore Project.
+﻿# Português translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: pt
 "
 "Language-Team: pt <LL@li.org>
@@ -33,137 +32,137 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: pt <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
-msgstr ""
+msgstr "Como Contribuir"
 
 #: ../../docs/developer-guide/contributing.rst:4
 msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr ""
+msgstr "Guia passo a passo para configurar o ambiente de desenvolvimento e contribuir para o django-hstore-project."
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
-msgstr ""
+msgstr "Pré-requisitos"
 
 #: ../../docs/developer-guide/contributing.rst:10
 msgid "Make sure you have the following installed:"
-msgstr ""
+msgstr "Certifique-se de ter os seguintes itens instalados:"
 
 #: ../../docs/developer-guide/contributing.rst:12
 msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
-msgstr ""
+msgstr ":iconify:`mdi:python` **Python 3.10+** com o gerenciador de pacotes ``uv``"
 
 #: ../../docs/developer-guide/contributing.rst:13
 msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
-msgstr ""
+msgstr ":iconify:`logos:nodejs` **Node.js 18+** com ``npm``"
 
 #: ../../docs/developer-guide/contributing.rst:14
 msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
-msgstr ""
+msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+** em execução localmente"
 
 #: ../../docs/developer-guide/contributing.rst:17
 msgid "Clone the Repository"
-msgstr ""
+msgstr "Clonar o Repositório"
 
 #: ../../docs/developer-guide/contributing.rst:25
 msgid "Install Python Dependencies"
-msgstr ""
+msgstr "Instalar as Dependências Python"
 
 #: ../../docs/developer-guide/contributing.rst:29
 msgid ":iconify:`simple-icons:astral` uv"
-msgstr ""
+msgstr ":iconify:`simple-icons:astral` uv"
 
 #: ../../docs/developer-guide/contributing.rst:38
 msgid ":iconify:`simple-icons:poetry` Poetry"
-msgstr ""
+msgstr ":iconify:`simple-icons:poetry` Poetry"
 
 #: ../../docs/developer-guide/contributing.rst:47
 msgid ":iconify:`simple-icons:pdm` PDM"
-msgstr ""
+msgstr ":iconify:`simple-icons:pdm` PDM"
 
 #: ../../docs/developer-guide/contributing.rst:55
 msgid ":iconify:`mdi:package-variant` pip-tools"
-msgstr ""
+msgstr ":iconify:`mdi:package-variant` pip-tools"
 
 #: ../../docs/developer-guide/contributing.rst:65
 msgid "This installs all Python packages including test dependencies."
-msgstr ""
+msgstr "Isso instala todos os pacotes Python, incluindo as dependências de teste."
 
 #: ../../docs/developer-guide/contributing.rst:68
 msgid "Install Frontend Dependencies"
-msgstr ""
+msgstr "Instalar as Dependências do Frontend"
 
 #: ../../docs/developer-guide/contributing.rst:78
 msgid "This installs Lit, Vite, and all frontend tooling."
-msgstr ""
+msgstr "Isso instala o Lit, o Vite e todas as ferramentas de frontend."
 
 #: ../../docs/developer-guide/contributing.rst:81
 msgid "Set Up the Database"
-msgstr ""
+msgstr "Configurar o Banco de Dados"
 
 #: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr ""
+msgstr "Inicie uma instância local do PostgreSQL com a extensão hstore habilitada:"
 
 #: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
-msgstr ""
+msgstr ":iconify:`logos:django` Django ORM"
 
 #: ../../docs/developer-guide/contributing.rst:99
 msgid ":iconify:`mdi:database` SQL"
-msgstr ""
+msgstr ":iconify:`mdi:database` SQL"
 
 #: ../../docs/developer-guide/contributing.rst:110
 msgid "Run the Tests"
-msgstr ""
+msgstr "Executar os Testes"
 
 #: ../../docs/developer-guide/contributing.rst:113
 msgid "Frontend Tests"
-msgstr ""
+msgstr "Testes de Frontend"
 
 #: ../../docs/developer-guide/contributing.rst:129
 msgid "Backend Tests"
-msgstr ""
+msgstr "Testes de Backend"
 
 #: ../../docs/developer-guide/contributing.rst:145
 msgid "Type Checking"
-msgstr ""
+msgstr "Verificação de Tipos"
 
 #: ../../docs/developer-guide/contributing.rst:153
 msgid "Build the Project"
-msgstr ""
+msgstr "Compilar o Projeto"
 
 #: ../../docs/developer-guide/contributing.rst:167
 msgid "Start the Dev Server"
-msgstr ""
+msgstr "Iniciar o Servidor de Desenvolvimento"
 
 #: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr ""
+msgstr "O servidor de desenvolvimento roda na porta 9100 com substituição dinâmica de módulos habilitada."
 
 #: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"
-msgstr ""
+msgstr "Estilo de Código"
 
 #: ../../docs/developer-guide/contributing.rst:180
 msgid "**Python**: Ruff (linter + formatter)"
-msgstr ""
+msgstr "**Python**: Ruff (linter + formatador)"
 
 #: ../../docs/developer-guide/contributing.rst:181
 msgid "**TypeScript**: Prettier"
-msgstr ""
+msgstr "**TypeScript**: Prettier"
 
 #: ../../docs/developer-guide/contributing.rst:182
 msgid "Pre-commit hooks are configured for automated formatting"
-msgstr ""
+msgstr "Os hooks pre-commit estão configurados para formatação automatizada"
 
 #: ../../docs/developer-guide/contributing.rst:184
 msgid "Before submitting a pull request, run:"
-msgstr ""
+msgstr "Antes de enviar um pull request, execute:"

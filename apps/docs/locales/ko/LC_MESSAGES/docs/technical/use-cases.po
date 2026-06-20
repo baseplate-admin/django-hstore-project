@@ -1,0 +1,151 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Korean <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../docs/technical/use-cases.rst:2
+msgid "Use Cases"
+msgstr "사용 사례"
+
+#: ../../docs/technical/use-cases.rst:4
+msgid "Real-world scenarios for choosing between HStore and JSONB in your Django application."
+msgstr "Django 애플리케이션에서 HStore와 JSONB 중 무엇을 선택할지 결정하는 실제 시나리오입니다."
+
+#: ../../docs/technical/use-cases.rst:8
+msgid "Use HStore When"
+msgstr "HStore를 사용해야 하는 경우"
+
+#: ../../docs/technical/use-cases.rst:11
+msgid "Product Attributes"
+msgstr "제품 속성"
+
+#: ../../docs/technical/use-cases.rst:13
+msgid "Products have varying attributes like color, size, material that don't warrant dedicated columns. HStore stores them as flat key-value pairs with a clean admin interface."
+msgstr "제품에는 색상, 크기, 소재 등 전용 열을 만들 필요 없는 다양한 속성이 있습니다. HStore는 이러한 속성을 평평한 키-값 쌍으로 저장하며 깔끔한 관리자 인터페이스를 제공합니다."
+
+#: ../../docs/technical/use-cases.rst:30
+#: ../../docs/technical/use-cases.rst:94
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/use-cases.rst:40
+#: ../../docs/technical/use-cases.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/use-cases.rst:48
+msgid "User Preferences"
+msgstr "사용자 환경 설정"
+
+#: ../../docs/technical/use-cases.rst:50
+msgid "Store user settings like timezone, language, notification preferences as flexible key-value pairs:"
+msgstr "타임존, 언어, 알림 환경 설정과 같은 사용자 설정을 유연한 키-값 쌍으로 저장합니다:"
+
+#: ../../docs/technical/use-cases.rst:62
+msgid "Content Metadata"
+msgstr "콘텐츠 메타데이터"
+
+#: ../../docs/technical/use-cases.rst:64
+msgid "Tags, categories, and custom fields for articles, media, or any content model:"
+msgstr "기사, 미디어 또는 모든 콘텐츠 모델에 대한 태그, 카테고리 및 사용자 정의 필드:"
+
+#: ../../docs/technical/use-cases.rst:76
+msgid "Use JSONB When"
+msgstr "JSONB를 사용해야 하는 경우"
+
+#: ../../docs/technical/use-cases.rst:79
+msgid "Nested Configuration"
+msgstr "중첩 구성"
+
+#: ../../docs/technical/use-cases.rst:81
+msgid "Application settings with hierarchical structure:"
+msgstr "계층적 구조를 가진 애플리케이션 설정:"
+
+#: ../../docs/technical/use-cases.rst:108
+msgid "API Response Cache"
+msgstr "API 응답 캐시"
+
+#: ../../docs/technical/use-cases.rst:110
+msgid "Store and query nested API responses:"
+msgstr "중첩된 API 응답을 저장하고 쿼리합니다:"
+
+#: ../../docs/technical/use-cases.rst:120
+msgid "Search Facets"
+msgstr "검색 패싯"
+
+#: ../../docs/technical/use-cases.rst:122
+msgid "Dynamic filter options with mixed types:"
+msgstr "혼합된 유형의 동적 필터 옵션:"
+
+#: ../../docs/technical/use-cases.rst:135
+msgid "Guidelines"
+msgstr "가이드라인"
+
+#: ../../docs/technical/use-cases.rst:140
+#: ../../docs/technical/use-cases.rst:145
+msgid "Scenario"
+msgstr "시나리오"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/use-cases.rst:147
+msgid "Product attributes"
+msgstr "제품 속성"
+
+#: ../../docs/technical/use-cases.rst:147
+#: ../../docs/technical/use-cases.rst:149
+#: ../../docs/technical/use-cases.rst:151
+#: ../../docs/technical/use-cases.rst:153
+#: ../../docs/technical/use-cases.rst:155
+#: ../../docs/technical/use-cases.rst:157
+#: ../../docs/technical/use-cases.rst:159
+msgid "Yes"
+msgstr "예"
+
+#: ../../docs/technical/use-cases.rst:149
+msgid "User preferences"
+msgstr "사용자 환경 설정"
+
+#: ../../docs/technical/use-cases.rst:151
+msgid "Content tags / metadata"
+msgstr "콘텐츠 태그 / 메타데이터"
+
+#: ../../docs/technical/use-cases.rst:153
+msgid "Nested app config"
+msgstr "중첩 애플리케이션 구성"
+
+#: ../../docs/technical/use-cases.rst:155
+msgid "API response caching"
+msgstr "API 응답 캐싱"
+
+#: ../../docs/technical/use-cases.rst:157
+msgid "Mixed-type form data"
+msgstr "혼합 유형 폼 데이터"
+
+#: ../../docs/technical/use-cases.rst:159
+msgid "Document storage"
+msgstr "문서 저장"
+
+#: ../../docs/technical/use-cases.rst:164
+msgid "When in doubt, start with HStore. It's simpler, more compact, and gives you a better admin experience. Migrate to JSONB only when you genuinely need nested structures or mixed value types."
+msgstr "의문이 있을 때는 HStore부터 시작하세요. 더 간단하고 컴팩트하며 더 나은 관리자 경험을 제공합니다. 실제로 중첩 구조나 혼합 값 유형이 필요한 경우에만 JSONB로 마이그레이션하세요."

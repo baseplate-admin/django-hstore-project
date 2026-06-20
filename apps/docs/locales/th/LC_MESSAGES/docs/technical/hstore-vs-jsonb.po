@@ -1,0 +1,151 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project\n"
+"Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Thai <th@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:2
+msgid "HStore vs JSONB"
+msgstr "HStore เปรียบเทียบกับ JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:4
+msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
+msgstr "PostgreSQL มีประเภทข้อมูลที่ยืดหยุ่นสองแบบสำหรับการจัดเก็บข้อมูลแบบ key-value และเอกสาร หน้านี้เปรียบเทียบทั้งสองแบบเพื่อช่วยคุณเลือกประเภทที่เหมาะสม"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:8
+msgid "Quick Decision"
+msgstr "การตัดสินใจอย่างรวดเร็ว"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:10
+msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
+msgstr "ใช้ **HStore** เมื่อข้อมูลของคุณเป็นคู่ key-value แบบแบน ซึ่งครอบคลุมข้อมูลเมตา แท็ก และคุณลักษณะของสินค้าส่วนใหญ่ ใช้ **JSONB** เมื่อคุณต้องการโครงสร้างแบบซ้อน ประเภทค่าแบบผสม หรือการสอบถามแบบ containment"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:15
+msgid "Feature Matrix"
+msgstr "ตารางเปรียบเทียบฟีเจอร์"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:20
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+msgid "Feature"
+msgstr "ฟีเจอร์"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:59
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:87
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+msgid "Flat key-value"
+msgstr "key-value แบบแบน"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "Yes"
+msgstr "ใช่"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+msgid "Nested structs"
+msgstr "โครงสร้างแบบซ้อน"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "No"
+msgstr "ไม่"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+msgid "Non-string vals"
+msgstr "ค่าที่ไม่ใช่สตริง"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+msgid "Simple admin UI"
+msgstr "อินเทอร์เฟซผู้ดูแลระบบแบบง่าย"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+msgid "Easy validation"
+msgstr "การตรวจสอบความถูกต้องง่าย"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+msgid "Containment"
+msgstr "Containment"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "Smaller storage"
+msgstr "ใช้พื้นที่จัดเก็บน้อยกว่า"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "GIN indexes"
+msgstr "GIN indexes"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:45
+msgid "Storage"
+msgstr "พื้นที่จัดเก็บ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:47
+msgid "HStore is more compact because it stores flat key-value pairs without structural overhead:"
+msgstr "HStore ใช้พื้นที่น้อยกว่าเพราะจัดเก็บคู่ key-value แบบแบนโดยไม่มีความซับซ้อนของโครงสร้างเพิ่มเติม:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:52
+msgid "HStore: ~200 bytes for 10 key-value pairs"
+msgstr "HStore: ประมาณ 200 ไบต์สำหรับคู่ key-value 10 คู่"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:53
+msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
+msgstr "JSONB: ประมาณ 350 ไบต์สำหรับข้อมูลเดียวกัน (เนื่องจากความซับซ้อนของโครงสร้าง)"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:56
+msgid "Query Performance"
+msgstr "ประสิทธิภาพการสอบถามข้อมูล"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:63
+#: ../../docs/technical/hstore-vs-jsonb.rst:91
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:73
+#: ../../docs/technical/hstore-vs-jsonb.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:112
+msgid "Indexing"
+msgstr "การสร้างดัชนี"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:114
+msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
+msgstr "ทั้ง HStore และ JSONB รองรับ GIN indexes สำหรับการค้นหาที่รวดเร็ว:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:122
+msgid "Summary"
+msgstr "สรุป"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:126
+msgid "Choose HStore for simple metadata, tags, and product attributes. Choose JSONB for nested configurations, API responses, and document storage."
+msgstr "เลือก HStore สำหรับข้อมูลเมตาแบบง่าย แท็ก และคุณลักษณะของสินค้า เลือก JSONB สำหรับค่ากำหนดแบบซ้อน การตอบกลับ API และการจัดเก็บเอกสาร"

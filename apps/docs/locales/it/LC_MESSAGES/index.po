@@ -1,0 +1,82 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Italian <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../index.rst:61
+msgid "User Guide"
+msgstr "Guida per l'utente"
+
+#: ../../index.rst:69
+msgid "Technical"
+msgstr "Riferimento tecnico"
+
+#: ../../index.rst:75
+msgid "Developer Guide"
+msgstr "Guida per lo sviluppatore"
+
+#: ../../index.rst:84
+msgid "LLM Context"
+msgstr "Contesto LLM"
+
+#: ../../index.rst:90
+msgid "Legal"
+msgstr ""
+
+#: ../../index.rst:2
+msgid "Django HStore Project"
+msgstr ""
+
+#: ../../index.rst:4
+msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
+msgstr ""
+
+#: ../../index.rst:8
+msgid "Packages"
+msgstr ""
+
+#: ../../index.rst:13
+msgid "django-hstore-widget"
+msgstr ""
+
+#: ../../index.rst:20
+msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
+msgstr ""
+
+#: ../../index.rst:27
+msgid "django-hstore-field"
+msgstr ""
+
+#: ../../index.rst:34
+msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgstr ""
+
+#: ../../index.rst:42
+msgid "Quick Start"
+msgstr ""
+
+#: ../../index.rst:44
+msgid "For new projects, use **django-hstore-field**:"
+msgstr ""
+
+#: ../../index.rst:56
+msgid "The widget is auto-wired, no form configuration needed."
+msgstr ""
+
+#: ../../index.rst:59
+msgid "Contents"
+msgstr ""

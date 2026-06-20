@@ -1,0 +1,168 @@
+# Japanese translation for HStore vs JSONB.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:2
+msgid "HStore vs JSONB"
+msgstr "HStore と JSONB の比較"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:4
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"PostgreSQL は key-value 保存とドキュメント保存のための2つの柔軟なデータ型を"
+"提供しています。このページではどちらを選ぶかお選びいただけます。"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:8
+msgid "Quick Decision"
+msgstr "クイック判断"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:10
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need "
+"nested structures, mixed value types, or containment queries."
+msgstr ""
+"データがフラットな key-value ペア（メタデータ、タグ、製品属性の大部分）の場合は "
+"**HStore** を、ネストされた構造、混合型の値、または包含クエリが必要な場合は "
+"**JSONB** を使用してください。"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:15
+msgid "Feature Matrix"
+msgstr "機能マトリクス"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:20
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+msgid "Feature"
+msgstr "機能"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:59
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:87
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+msgid "Flat key-value"
+msgstr "フラット key-value"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "Yes"
+msgstr "はい"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+msgid "Nested structs"
+msgstr "ネストされた構造体"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "No"
+msgstr "いいえ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+msgid "Non-string vals"
+msgstr "文字列以外の値"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+msgid "Simple admin UI"
+msgstr "シンプルな admin UI"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+msgid "Easy validation"
+msgstr "簡単なバリデーション"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+msgid "Containment"
+msgstr "包含"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "Smaller storage"
+msgstr "小さなストレージ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "GIN indexes"
+msgstr "GIN インデックス"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:45
+msgid "Storage"
+msgstr "ストレージ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:47
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+"HStore は構造のオーバーヘッドなしでフラットな key-value ペアを保存するため"
+"よりコンパクトです:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:52
+msgid "HStore: ~200 bytes for 10 key-value pairs"
+msgstr "HStore: 10 key-value ペアあたり約 200 バイト"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:53
+msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
+msgstr "JSONB: 同じデータで約 350 バイト（構造オーバーヘッド）"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:56
+msgid "Query Performance"
+msgstr "クエリパフォーマンス"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:63
+#: ../../docs/technical/hstore-vs-jsonb.rst:91
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:73
+#: ../../docs/technical/hstore-vs-jsonb.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:112
+msgid "Indexing"
+msgstr "インデックス"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:114
+msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
+msgstr "HStore と JSONB の両方で高速検索のための GIN インデックスがサポートされています:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:122
+msgid "Summary"
+msgstr "まとめ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:126
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+"シンプルなメタデータ、タグ、製品属性には HStore を、ネストされた設定、"
+"API レスポンス、ドキュメント保存には JSONB を選択してください。"

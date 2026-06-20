@@ -1,0 +1,74 @@
+# 日本語翻訳 for autoapi django_hstore_widget.forms.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:2
+msgid "django_hstore_widget.forms"
+msgstr "django_hstore_widget.forms"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:12
+msgid "Module Contents"
+msgstr "モジュールの内容"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:18
+msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
+msgstr "ベース: :py:obj:`django.contrib.postgres.forms.HStoreField`"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:21
+msgid ""
+"Form field that uses "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgstr ""
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` を使用する"
+"フォームフィールド。"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:23
+msgid ""
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and"
+" override ``clean()`` so incoming values are parsed through "
+"``json.loads``."
+msgstr ""
+"カスタムウィジェットをインジェクトし、受信値を ``json.loads`` を通して解析するために"
+"``clean()`` をオーバーライドする Django の組み込み ``HStoreField`` を拡張します。"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:28
+msgid "Example"
+msgstr "例"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:40
+msgid "Parse the raw form value into a Python dict."
+msgstr "生のフォーム値を Python dict に解析します。"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:42
+msgid "The raw value submitted by the form."
+msgstr "フォームによって送信された生値。"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst
+msgid "Returns"
+msgstr "戻り値"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst:45
+msgid "The deserialized key-value mapping."
+msgstr "シリアライズ解除されたキー値マッピング。"
+
+#: ../../autoapi/django_hstore_widget/forms/index.rst
+msgid "Return type"
+msgstr "戻り値の型"

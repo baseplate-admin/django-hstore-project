@@ -1,0 +1,66 @@
+# 日本語翻訳 for autoapi django_hstore_widget.checks.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:2
+msgid "django_hstore_widget.checks"
+msgstr "django_hstore_widget.checks"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:10
+msgid "Module Contents"
+msgstr "モジュールの内容"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:14
+msgid "System check that warns when the default DB backend is not PostgreSQL."
+msgstr "デフォルトのデータベースバックエンドが PostgreSQL でない場合に警告するシステムチェック。"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:16
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+"HStore には ``hstore`` 拡張機能が必要で、これは PostgreSQL でのみ利用可能です。"
+"このチェックは ``manage.py check`` および ``manage.py migrate`` の実行中に動作します。"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:20
+msgid "The application configurations being checked."
+msgstr "チェック中のアプリケーション設定。"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:22
+msgid "Additional keyword arguments from the check runner."
+msgstr "チェックランナーからの追加キーワード引数。"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst
+msgid "Returns"
+msgstr "戻り値"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:24
+msgid ""
+"A list containing a warning if the default database engine does not "
+"include ``postgres`` or ``postgis``."
+msgstr ""
+"デフォルトのデータベースエンジンに ``postgres`` または ``postgis`` が含まれていない場合、"
+"警告を含むリスト。"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst
+msgid "Return type"
+msgstr "戻り値の型"

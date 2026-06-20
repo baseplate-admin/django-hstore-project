@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Ukrainian <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:2
+msgid "HStore vs JSONB"
+msgstr "HStore проти JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:4
+msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
+msgstr "PostgreSQL пропонує два гнучкі типи даних для зберігання пар ключ-значення та документів. На цій сторінці порівнюються ці типи, щоб допомогти вам обрати правильний."
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:8
+msgid "Quick Decision"
+msgstr "Швидкий вибір"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:10
+msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
+msgstr "Використовуйте **HStore**, коли ваші дані — це плоскі пари ключ-значення, як-от більшість метаданих, тегів та атрибутів товарів. Використовуйте **JSONB**, коли потрібні вкладені структури, змішані типи значень або запити на вміст."
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:15
+msgid "Feature Matrix"
+msgstr "Матриця можливостей"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:20
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+msgid "Feature"
+msgstr "Можливість"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:59
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:87
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+msgid "Flat key-value"
+msgstr "Пласкі пари ключ-значення"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "Yes"
+msgstr "Так"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+msgid "Nested structs"
+msgstr "Вкладені структури"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "No"
+msgstr "Ні"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+msgid "Non-string vals"
+msgstr "Не-рядок значення"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+msgid "Simple admin UI"
+msgstr "Простий інтерфейс адміні"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+msgid "Easy validation"
+msgstr "Проста валідація"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+msgid "Containment"
+msgstr "Вміст"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "Smaller storage"
+msgstr "Менше місця для зберігання"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "GIN indexes"
+msgstr "GIN-індекси"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:45
+msgid "Storage"
+msgstr "Зберігання"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:47
+msgid "HStore is more compact because it stores flat key-value pairs without structural overhead:"
+msgstr "HStore є більш компактним, оскільки зберігає плоскі пари ключ-значення без структурних витрат:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:52
+msgid "HStore: ~200 bytes for 10 key-value pairs"
+msgstr "HStore: ~200 байт для 10 пар ключ-значення"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:53
+msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
+msgstr "JSONB: ~350 байт для тих самих даних (структурні витрати)"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:56
+msgid "Query Performance"
+msgstr "Швидкість запитів"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:63
+#: ../../docs/technical/hstore-vs-jsonb.rst:91
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:73
+#: ../../docs/technical/hstore-vs-jsonb.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:112
+msgid "Indexing"
+msgstr "Індексування"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:114
+msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
+msgstr "Як HStore, так і JSONB підтримують GIN-індекси для швидкого пошуку:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:122
+msgid "Summary"
+msgstr "Підсумок"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:126
+msgid "Choose HStore for simple metadata, tags, and product attributes. Choose JSONB for nested configurations, API responses, and document storage."
+msgstr "Обирайте HStore для простих метаданих, тегів та атрибутів товарів. Обирайте JSONB для вкладених конфігурацій, відповідей API та зберігання документів."

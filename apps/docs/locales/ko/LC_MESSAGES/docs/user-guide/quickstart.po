@@ -1,0 +1,82 @@
+﻿# Korean translations for Django HStore Project.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <admin@baseplate.dev>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Korean <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quick Start"
+msgstr "빠른 시작"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "1 분도 안 걸려 django-hstore-project 를 설정하고 사용할 수 있습니다."
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Create a Model"
+msgstr "모델 만들기"
+
+#: ../../docs/user-guide/quickstart.rst:9
+msgid "Add an HStore field to any model:"
+msgstr "어떤 모델에도 HStore 필드를 추가합니다:"
+
+#: ../../docs/user-guide/quickstart.rst:21
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr "이것으로 충분합니다. 위젯이 자동으로 연결되며 폼 구성이 필요하지 않습니다."
+
+#: ../../docs/user-guide/quickstart.rst:24
+msgid "Run Migrations"
+msgstr "마이그레이션 실행"
+
+#: ../../docs/user-guide/quickstart.rst:31
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "이 명령은 PostgreSQL hstore 확장을 자동으로 활성화합니다."
+
+#: ../../docs/user-guide/quickstart.rst:34
+msgid "Register in Admin"
+msgstr "관리자 사이트에 등록"
+
+#: ../../docs/user-guide/quickstart.rst:46
+msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgstr "관리자 페이지로 이동하면 깔끔한 키-값 인터페이스를 가진 HStore 위젯을 볼 수 있습니다. 각 키-값 쌍을 인라인으로 편집할 수 있으며, 필요에 따라 추가, 삭제, 수정할 수 있습니다."
+
+#: ../../docs/user-guide/quickstart.rst:51
+msgid "With Custom Keys"
+msgstr "사용자 정의 키 사용"
+
+#: ../../docs/user-guide/quickstart.rst:53
+msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgstr "자유 형식 편집기 대신 레이블이 붙은 폼 필드를 얻으려면 명시적인 키를 정의합니다:"
+
+#: ../../docs/user-guide/quickstart.rst:70
+msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "각 키는 유효성 검사, 위젯, 레이블이 있는 정규 폼 필드가 됩니다."
+
+#: ../../docs/user-guide/quickstart.rst:73
+msgid "What's Next"
+msgstr "다음 단계"
+
+#: ../../docs/user-guide/quickstart.rst:75
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` - 상세 설치 옵션"
+
+#: ../../docs/user-guide/quickstart.rst:76
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ":doc:`../technical/hstore-vs-jsonb` - HStore 와 JSONB 중 언제 사용할지"
+
+#: ../../docs/user-guide/quickstart.rst:77
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ":doc:`../user-guide/best-practices` - 프로덕션 사용 팁"

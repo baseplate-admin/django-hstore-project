@@ -1,89 +1,64 @@
 # हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
 msgid "django_hstore_widget.forms"
-msgstr ""
+msgstr "django_hstore_widget.forms"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "मॉड्यूल सामग्री"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:18
 msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
-msgstr ""
+msgstr "आधार: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:21
 msgid "Form field that uses :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
-msgstr ""
+msgstr "फॉर्म फ़ील्ड जो :class:`~django_hstore_widget.widgets.HStoreFormWidget` का उपयोग करता है।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
 msgid "Extends Django's built-in ``HStoreField`` to inject the custom widget and override ``clean()`` so incoming values are parsed through ``json.loads``."
-msgstr ""
+msgstr "Django के बिल्ट-इन ``HStoreField`` को विस्तारित करता है ताकि कस्टम विजेट इंजेक्ट किया जा सके और ``clean()`` को ओवरराइड किया जा सके ताकि आने वाले मान ``json.loads`` के माध्यम से पार्स हों।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"
-msgstr ""
+msgstr "उदाहरण"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:40
 msgid "Parse the raw form value into a Python dict."
-msgstr ""
+msgstr "कच्चे फॉर्म मान को Python डिक्शनरी में पार्स करें।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "पैरामीटर"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:42
 msgid "The raw value submitted by the form."
-msgstr ""
+msgstr "फॉर्म द्वारा सबमिट किया गया कच्चा मान।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "लौटता है"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:45
 msgid "The deserialized key-value mapping."
-msgstr ""
+msgstr "डिसीरियलाइज़ किया गया की-मान मैपिंग।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "रिटर्न प्रकार"

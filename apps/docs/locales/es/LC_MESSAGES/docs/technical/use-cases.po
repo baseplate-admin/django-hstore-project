@@ -1,7 +1,6 @@
-# Español translation for Django HStore Project.
+﻿# Español translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: es
 "
 "Language-Team: es <LL@li.org>
@@ -33,107 +32,107 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: es <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/technical/use-cases.rst:2
 msgid "Use Cases"
-msgstr ""
+msgstr "Casos de uso"
 
 #: ../../docs/technical/use-cases.rst:4
 msgid "Real-world scenarios for choosing between HStore and JSONB in your Django application."
-msgstr ""
+msgstr "Escenarios reales para elegir entre HStore y JSONB en su aplicación Django."
 
 #: ../../docs/technical/use-cases.rst:8
 msgid "Use HStore When"
-msgstr ""
+msgstr "Cuándo usar HStore"
 
 #: ../../docs/technical/use-cases.rst:11
 msgid "Product Attributes"
-msgstr ""
+msgstr "Atributos de producto"
 
 #: ../../docs/technical/use-cases.rst:13
 msgid "Products have varying attributes like color, size, material that don't warrant dedicated columns. HStore stores them as flat key-value pairs with a clean admin interface."
-msgstr ""
+msgstr "Los productos tienen atributos variables como color, tamaño, material que no justifican columnas dedicadas. HStore los almacena como pares clave-valor planos con una interfaz de administración limpia."
 
 #: ../../docs/technical/use-cases.rst:30
 #: ../../docs/technical/use-cases.rst:94
 msgid ":iconify:`logos:django` Django ORM"
-msgstr ""
+msgstr ":iconify:`logos:django` Django ORM"
 
 #: ../../docs/technical/use-cases.rst:40
 #: ../../docs/technical/use-cases.rst:101
 msgid ":iconify:`mdi:database` SQL"
-msgstr ""
+msgstr ":iconify:`mdi:database` SQL"
 
 #: ../../docs/technical/use-cases.rst:48
 msgid "User Preferences"
-msgstr ""
+msgstr "Preferencias de usuario"
 
 #: ../../docs/technical/use-cases.rst:50
 msgid "Store user settings like timezone, language, notification preferences as flexible key-value pairs:"
-msgstr ""
+msgstr "Almacene la configuración del usuario, como zona horaria, idioma y preferencias de notificación, como pares clave-valor flexibles:"
 
 #: ../../docs/technical/use-cases.rst:62
 msgid "Content Metadata"
-msgstr ""
+msgstr "Metadatos del contenido"
 
 #: ../../docs/technical/use-cases.rst:64
 msgid "Tags, categories, and custom fields for articles, media, or any content model:"
-msgstr ""
+msgstr "Etiquetas, categorías y campos personalizados para artículos, medios o cualquier modelo de contenido:"
 
 #: ../../docs/technical/use-cases.rst:76
 msgid "Use JSONB When"
-msgstr ""
+msgstr "Cuándo usar JSONB"
 
 #: ../../docs/technical/use-cases.rst:79
 msgid "Nested Configuration"
-msgstr ""
+msgstr "Configuración anidada"
 
 #: ../../docs/technical/use-cases.rst:81
 msgid "Application settings with hierarchical structure:"
-msgstr ""
+msgstr "Configuración de la aplicación con estructura jerárquica:"
 
 #: ../../docs/technical/use-cases.rst:108
 msgid "API Response Cache"
-msgstr ""
+msgstr "Caché de respuestas de API"
 
 #: ../../docs/technical/use-cases.rst:110
 msgid "Store and query nested API responses:"
-msgstr ""
+msgstr "Almacene y consulte respuestas anidadas de API:"
 
 #: ../../docs/technical/use-cases.rst:120
 msgid "Search Facets"
-msgstr ""
+msgstr "Facetas de búsqueda"
 
 #: ../../docs/technical/use-cases.rst:122
 msgid "Dynamic filter options with mixed types:"
-msgstr ""
+msgstr "Opciones de filtro dinámico con tipos mixtos:"
 
 #: ../../docs/technical/use-cases.rst:135
 msgid "Guidelines"
-msgstr ""
+msgstr "Directrices"
 
 #: ../../docs/technical/use-cases.rst:140
 #: ../../docs/technical/use-cases.rst:145
 msgid "Scenario"
-msgstr ""
+msgstr "Escenario"
 
 #: ../../docs/technical/use-cases.rst:145
 msgid "HStore"
-msgstr ""
+msgstr "HStore"
 
 #: ../../docs/technical/use-cases.rst:145
 msgid "JSONB"
-msgstr ""
+msgstr "JSONB"
 
 #: ../../docs/technical/use-cases.rst:147
 msgid "Product attributes"
-msgstr ""
+msgstr "Atributos de producto"
 
 #: ../../docs/technical/use-cases.rst:147
 #: ../../docs/technical/use-cases.rst:149
@@ -143,32 +142,32 @@ msgstr ""
 #: ../../docs/technical/use-cases.rst:157
 #: ../../docs/technical/use-cases.rst:159
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: ../../docs/technical/use-cases.rst:149
 msgid "User preferences"
-msgstr ""
+msgstr "Preferencias de usuario"
 
 #: ../../docs/technical/use-cases.rst:151
 msgid "Content tags / metadata"
-msgstr ""
+msgstr "Etiquetas de contenido / metadatos"
 
 #: ../../docs/technical/use-cases.rst:153
 msgid "Nested app config"
-msgstr ""
+msgstr "Configuración de aplicación anidada"
 
 #: ../../docs/technical/use-cases.rst:155
 msgid "API response caching"
-msgstr ""
+msgstr "Caché de respuestas de API"
 
 #: ../../docs/technical/use-cases.rst:157
 msgid "Mixed-type form data"
-msgstr ""
+msgstr "Datos de formulario de tipos mixtos"
 
 #: ../../docs/technical/use-cases.rst:159
 msgid "Document storage"
-msgstr ""
+msgstr "Almacenamiento de documentos"
 
 #: ../../docs/technical/use-cases.rst:164
 msgid "When in doubt, start with HStore. It's simpler, more compact, and gives you a better admin experience. Migrate to JSONB only when you genuinely need nested structures or mixed value types."
-msgstr ""
+msgstr "Cuando tenga dudas, comience con HStore. Es más sencillo, más compacto y ofrece una mejor experiencia de administración. Migre a JSONB únicamente cuando necesite estructuras anidadas o tipos de valor mixtos."

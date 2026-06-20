@@ -1,0 +1,37 @@
+﻿# Bengali translation for Playground.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/playground.rst:2
+msgid "Playground"
+msgstr "প্লেগ্রাউন্ড"
+
+#: ../../docs/playground.rst:4
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-"
+"value pairs, add new entries, and delete existing ones."
+msgstr ""
+"``django-hstore-widget`` কম্পোনেন্টের ইন্টারেক্টিভ ডেমো। কি-ভ্যালু জোড়াগুলো "
+"সম্পাদনা করুন, নতুন এন্ট্রি যোগ করুন এবং পুরনোগুলো মুছুন।"
+
+#: ../../docs/playground.rst:149
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built"
+" at docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+"উপরের উইজেটটি ডক্স বিল্ড টাইম-এ তৈরি হওয়া লাইভ ``django-hstore-widget`` "
+"Lit কম্পোনেন্ট। কি-ভ্যালু জোড়া যোগ, সম্পাদনা এবং মুছে দেখুন।"

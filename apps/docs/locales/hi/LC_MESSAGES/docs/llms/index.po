@@ -1,7 +1,6 @@
-# हिन्दी translation for Django HStore Project.
+﻿# हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
@@ -13,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41
 "
 "Last-Translator: 
-"
+baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: hi
 "
 "Language-Team: hi <LL@li.org>
@@ -33,36 +32,36 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: hi <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/llms/index.rst:2
 msgid "LLM Context Files"
-msgstr ""
+msgstr "LLM संदर्भ फ़ाइलें"
 
 #: ../../docs/llms/index.rst:4
 msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr ""
+msgstr "यह परियोजना LLM एकीकरण के लिए मशीन-पाठ्य संदर्भ फ़ाइलें प्रदान करती है, जो Sphinx दस्तावेज़ीकरण बिल्ड के दौरान स्वचालित रूप से उत्पन्न होती हैं।"
 
 #: ../../docs/llms/index.rst:8
 msgid "Available Files"
-msgstr ""
+msgstr "उपलब्ध फ़ाइलें"
 
 #: ../../docs/llms/index.rst:14
 msgid "File"
-msgstr ""
+msgstr "फ़ाइल"
 
 #: ../../docs/llms/index.rst:15
 msgid "Description"
-msgstr ""
+msgstr "विवरण"
 
 #: ../../docs/llms/index.rst:16
 msgid "`llms.txt <../../llms.txt>`_"
-msgstr ""
+msgstr "`llms.txt <../../llms.txt>`_"
 
 #: ../../docs/llms/index.rst:17
 msgid "Index file listing all context files"

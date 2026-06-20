@@ -1,0 +1,81 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Persian (Farsi)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
+
+#: ../../index.rst:61
+msgid "User Guide"
+msgstr "راهنمای کاربر"
+
+#: ../../index.rst:69
+msgid "Technical"
+msgstr "فنی"
+
+#: ../../index.rst:75
+msgid "Developer Guide"
+msgstr "راهنمای توسعه‌دهنده"
+
+#: ../../index.rst:84
+msgid "LLM Context"
+msgstr "زمینه LLM"
+
+#: ../../index.rst:90
+msgid "Legal"
+msgstr "حقوقی"
+
+#: ../../index.rst:2
+msgid "Django HStore Project"
+msgstr "پروژه Django HStore"
+
+#: ../../index.rst:4
+msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
+msgstr "یک مخزن تک‌پروژه برای اکوسیستم Django HStore، پشتیبانی قابل‌فهم از hstore در PostgreSQL برای Django admin."
+
+#: ../../index.rst:8
+msgid "Packages"
+msgstr "بسته‌ها"
+
+#: ../../index.rst:13
+msgid "django-hstore-widget"
+msgstr "django-hstore-widget"
+
+#: ../../index.rst:20
+msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
+msgstr "ویجت سفارشی برای ویرایش داده‌های hstore در Django admin. ساخته‌شده با Lit و TypeScript برای یک ویرایشگر کلید-مقدار واکنش‌گرا."
+
+#: ../../index.rst:27
+msgid "django-hstore-field"
+msgstr "django-hstore-field"
+
+#: ../../index.rst:34
+msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgstr "HStoreField آماده با ویجت متصل‌شده خودکار. بدون نیاز به پیکربندی برای پروژه‌های جدید."
+
+#: ../../index.rst:42
+msgid "Quick Start"
+msgstr "شروع سریع"
+
+#: ../../index.rst:44
+msgid "For new projects, use **django-hstore-field**:"
+msgstr "برای پروژه‌های جدید، از **django-hstore-field** استفاده کنید:"
+
+#: ../../index.rst:56
+msgid "The widget is auto-wired, no form configuration needed."
+msgstr "ویجت به‌طور خودکار متصل می‌شود؛ نیازی به پیکربندی فرم نیست."
+
+#: ../../index.rst:59
+msgid "Contents"
+msgstr "فهرست"

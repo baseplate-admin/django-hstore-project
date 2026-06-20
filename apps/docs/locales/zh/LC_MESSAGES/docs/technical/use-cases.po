@@ -1,0 +1,167 @@
+# 中文翻译 for Use Cases.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/technical/use-cases.rst:2
+msgid "Use Cases"
+msgstr "使用场景"
+
+#: ../../docs/technical/use-cases.rst:4
+msgid ""
+"Real-world scenarios for choosing between HStore and JSONB in your Django"
+" application."
+msgstr ""
+"在 Django 应用程序中选择 HStore 和 JSONB 的实际场景。"
+
+#: ../../docs/technical/use-cases.rst:8
+msgid "Use HStore When"
+msgstr "使用 HStore 的场景"
+
+#: ../../docs/technical/use-cases.rst:11
+msgid "Product Attributes"
+msgstr "产品属性"
+
+#: ../../docs/technical/use-cases.rst:13
+msgid ""
+"Products have varying attributes like color, size, material that don't "
+"warrant dedicated columns. HStore stores them as flat key-value pairs "
+"with a clean admin interface."
+msgstr ""
+"产品具有颜色、尺寸、材质等不同的属性，不值得为其设置专用列。"
+"HStore 将它们存储为带有简洁 admin 界面的扁平键值对。"
+
+#: ../../docs/technical/use-cases.rst:30 ../../docs/technical/use-cases.rst:94
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/use-cases.rst:40 ../../docs/technical/use-cases.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/use-cases.rst:48
+msgid "User Preferences"
+msgstr "用户偏好"
+
+#: ../../docs/technical/use-cases.rst:50
+msgid ""
+"Store user settings like timezone, language, notification preferences as "
+"flexible key-value pairs:"
+msgstr ""
+"将时区、语言、通知偏好等用户设置存储为灵活的键值对："
+
+#: ../../docs/technical/use-cases.rst:62
+msgid "Content Metadata"
+msgstr "内容元数据"
+
+#: ../../docs/technical/use-cases.rst:64
+msgid ""
+"Tags, categories, and custom fields for articles, media, or any content "
+"model:"
+msgstr ""
+"文章、媒体或任何内容模型的标签、分类和自定义字段："
+
+#: ../../docs/technical/use-cases.rst:76
+msgid "Use JSONB When"
+msgstr "使用 JSONB 的场景"
+
+#: ../../docs/technical/use-cases.rst:79
+msgid "Nested Configuration"
+msgstr "嵌套配置"
+
+#: ../../docs/technical/use-cases.rst:81
+msgid "Application settings with hierarchical structure:"
+msgstr "具有层次结构的应用程序设置："
+
+#: ../../docs/technical/use-cases.rst:108
+msgid "API Response Cache"
+msgstr "API 响应缓存"
+
+#: ../../docs/technical/use-cases.rst:110
+msgid "Store and query nested API responses:"
+msgstr "存储和查询嵌套的 API 响应："
+
+#: ../../docs/technical/use-cases.rst:120
+msgid "Search Facets"
+msgstr "搜索维度"
+
+#: ../../docs/technical/use-cases.rst:122
+msgid "Dynamic filter options with mixed types:"
+msgstr "具有混合类型的动态过滤选项："
+
+#: ../../docs/technical/use-cases.rst:135
+msgid "Guidelines"
+msgstr "指导原则"
+
+#: ../../docs/technical/use-cases.rst:140
+#: ../../docs/technical/use-cases.rst:145
+msgid "Scenario"
+msgstr "场景"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/use-cases.rst:147
+msgid "Product attributes"
+msgstr "产品属性"
+
+#: ../../docs/technical/use-cases.rst:147
+#: ../../docs/technical/use-cases.rst:149
+#: ../../docs/technical/use-cases.rst:151
+#: ../../docs/technical/use-cases.rst:153
+#: ../../docs/technical/use-cases.rst:155
+#: ../../docs/technical/use-cases.rst:157
+#: ../../docs/technical/use-cases.rst:159
+msgid "Yes"
+msgstr "是"
+
+#: ../../docs/technical/use-cases.rst:149
+msgid "User preferences"
+msgstr "用户偏好"
+
+#: ../../docs/technical/use-cases.rst:151
+msgid "Content tags / metadata"
+msgstr "内容标签 / 元数据"
+
+#: ../../docs/technical/use-cases.rst:153
+msgid "Nested app config"
+msgstr "嵌套应用配置"
+
+#: ../../docs/technical/use-cases.rst:155
+msgid "API response caching"
+msgstr "API 响应缓存"
+
+#: ../../docs/technical/use-cases.rst:157
+msgid "Mixed-type form data"
+msgstr "混合类型表单数据"
+
+#: ../../docs/technical/use-cases.rst:159
+msgid "Document storage"
+msgstr "文档存储"
+
+#: ../../docs/technical/use-cases.rst:164
+msgid ""
+"When in doubt, start with HStore. It's simpler, more compact, and gives "
+"you a better admin experience. Migrate to JSONB only when you genuinely "
+"need nested structures or mixed value types."
+msgstr ""
+"不确定时，先从 HStore 开始。它更简单、更紧凑，并提供更好的 admin 体验。"
+"仅在真正需要嵌套结构或混合值类型时才迁移到 JSONB。"

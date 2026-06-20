@@ -1,14 +1,13 @@
-# Malayalam translation for Use Cases.
+﻿# Malayalam translation for Use Cases.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
-"PO-Revision-Date: 2026-06-20 16:01+0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ml\n"
 "Language-Team: ml <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -26,8 +25,8 @@ msgid ""
 "Real-world scenarios for choosing between HStore and JSONB in your Django"
 " application."
 msgstr ""
-"നിങ്ങളുടെ Django അപ്ലിക്കേഷനിൽ HStore, JSONB തിരഞ്ഞെടുക്കാൻ real-world "
-"സീനാരിയോകൾ."
+"നിങ്ങളുടെ Django അപ്ലിക്കേഷനിൽ HStore, JSONB തിരഞ്ഞെടുക്കാൻ പ്രായോഗിക "
+"സാഹചര്യങ്ങൾ."
 
 #: ../../docs/technical/use-cases.rst:8
 msgid "Use HStore When"

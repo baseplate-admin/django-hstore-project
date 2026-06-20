@@ -1,60 +1,36 @@
-# हिन्दी translation for Django HStore Project.
+﻿# हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Django HStore Project\n"
+"Report-Msgid-Bugs-To:\n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/developer-guide/architecture.rst:2
 msgid "Architecture"
-msgstr ""
+msgstr "आर्किटेक्चर"
 
 #: ../../docs/developer-guide/architecture.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "अवलोकन"
 
 #: ../../docs/developer-guide/architecture.rst:15
 msgid "django-hstore-field"
-msgstr ""
+msgstr "django-hstore-field"
 
 #: ../../docs/developer-guide/architecture.rst:17
 msgid "Drop-in HStoreField that auto-wires the widget. No form configuration needed."
-msgstr ""
+msgstr "वॉइड्जेट को स्वचालित रूप से जोडने वाला ड्रॉप-इन HStoreField। फॉर्म कॉन्फ़िगरेशन की आवश्यकता नहीं।"
 
 #: ../../docs/developer-guide/architecture.rst:20
 msgid "django-hstore-widget"

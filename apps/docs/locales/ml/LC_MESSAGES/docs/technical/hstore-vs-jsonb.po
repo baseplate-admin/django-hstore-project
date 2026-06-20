@@ -1,14 +1,13 @@
-# Malayalam translation for HStore vs JSONB.
+﻿# Malayalam translation for HStore vs JSONB.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
-"PO-Revision-Date: 2026-06-20 16:01+0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "Language: ml\n"
 "Language-Team: ml <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -27,11 +26,11 @@ msgid ""
 "storage. This page compares them to help you choose the right one."
 msgstr ""
 "PostgreSQL key-value, ഡോക്യുമെന്റ് സ്റ്റോറേജിന് രണ്ട് ഫ്ലെക്സിബിൾ ഡാറ്റാ "
-"ടൈപ്പുകൾ നൽകുന്നു. ഈ പേജ് ശരിയായത് തിരഞ്ഞെടുക്കാൻ താരകം ചെയ്യുന്നു."
+"ടൈപ്പുകൾ നൽകുന്നു. ശരിയായത് തിരഞ്ഞെടുക്കാൻ ഈ പേജ് താരതമ്യം ചെയ്യുന്നു."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
-msgstr "ക്വിക്ക് ഡിസിഷൻ"
+msgstr "വേഗത്തിലുള്ള തീരുമാനം"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
 msgid ""
@@ -100,7 +99,7 @@ msgstr "ലളിതമായ admin UI"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:35
 msgid "Easy validation"
-msgstr "ഇളമైన വാലിഡേഷൻ"
+msgstr "സുലഭമായ വാലിഡേഷൻ"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:37
 msgid "Containment"

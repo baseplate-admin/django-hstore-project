@@ -1,129 +1,104 @@
 # हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:2
 msgid "django_hstore_widget.widgets"
-msgstr ""
+msgstr "django_hstore_widget.widgets"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "मॉड्यूल सामग्री"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:18
 msgid "A generic asset reference that resolves to a static file path."
-msgstr ""
+msgstr "एक सामान्य एसेट संदर्भ जो स्थिर फ़ाइल पथ के लिए रिज़ॉल्व होता है।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:20
 msgid "Used by the widget ``Media`` class to declare JavaScript and CSS dependencies. Subclasses like :class:`ESM` render the asset as HTML instead of a plain path."
-msgstr ""
+msgstr "विजेट ``Media`` क्लास द्वारा JavaScript और CSS निर्भरता घोषित करने के लिए उपयोग किया जाता है। :class:`ESM` जैसे उप-क्लास एसेट को साधारण पथ के बजाय HTML के रूप में रेंडर करते हैं।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:30
 msgid "Return the fully resolved URL for *path*."
-msgstr ""
+msgstr "*path* के लिए पूरी तरह रिज़ॉल्व URL लौटाएँ।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:32
 msgid "Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. All other paths are resolved through Django's ``static()`` helper."
-msgstr ""
+msgstr "``http://``, ``https://``, या ``/`` से शुरू होने वाले पथ वैसा ही लौटाए जाते हैं। सभी अन्य पथ Django के ``static()`` हेल्पर के माध्यम से रिज़ॉल्व होते हैं।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:40
 msgid "Bases: :py:obj:`Asset`"
-msgstr ""
+msgstr "आधार: :py:obj:`Asset`"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:43
 msgid "An ECMAScript module asset."
-msgstr ""
+msgstr "एक ECMAScript मॉड्यूल एसेट।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:45
 msgid "Renders as a ``<script type=\"module\">`` tag so the browser loads the widget as an ES module."
-msgstr ""
+msgstr "``<script type=\"module\">`` टैग के रूप में रेंडर होता है ताकि ब्राउज़र विजेट को ESM मॉड्यूल के रूप में लोड कर सके।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:51
 msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
-msgstr ""
+msgstr "आधार: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:54
 msgid "Django admin widget that renders the custom hstore editor."
-msgstr ""
+msgstr "Django एडमिन विजेट जो कस्टम hstore एडिटर रेंडर करता है।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:56
 msgid "Replaces the default textarea with a Lit-based key-value editor component.  Loads the widget JavaScript as an ES module via the ``Media`` inner class."
-msgstr ""
+msgstr "डिफ़ॉल्ट टेक्स्टएरिया को Lit-आधारित की-मान एडिटर कंपोनेंट से बदल देता है। ``Media`` इंटरनल क्लास के माध्यम से विजेट JavaScript को ESM मॉड्यूल के रूप में लोड करता है।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:61
 msgid "Example"
-msgstr ""
+msgstr "उदाहरण"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:68
 msgid "Render the widget HTML for a given form field."
-msgstr ""
+msgstr "दिए गए फॉर्म फ़ील्ड के लिए विजेट HTML रेंडर करें।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "पैरामीटर"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:70
 msgid "The HTML ``name`` attribute for the field."
-msgstr ""
+msgstr "फ़ील्ड के लिए HTML ``name`` एट्रिब्यूट।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:72
 msgid "The current hstore data as a key-value mapping."
-msgstr ""
+msgstr "की-मान मैपिंग के रूप में वर्तमान hstore डेटा।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:74
 msgid "Additional HTML attributes passed to the template."
-msgstr ""
+msgstr "टेम्पलेट को पास किए जाने वाले अतिरिक्त HTML एट्रिब्यूट।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:76
 msgid "Template renderer instance."
-msgstr ""
+msgstr "टेम्पलेट रेंडरर इंस्टेंस।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "लौटता है"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:79
 msgid "The rendered HTML markup for the widget."
-msgstr ""
+msgstr "विजेट के लिए रेंडर किया गया HTML मार्कअप।"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "रिटर्न प्रकार"

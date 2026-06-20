@@ -1,18 +1,17 @@
-# हिन्दी translation for Django HStore Project.
+﻿# हिन्दी translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project 
 "
 "Report-Msgid-Bugs-To: 
 "
-"POT-Creation-Date: 2026-06-20 17:41
+"POT-Creation-Date: 2026-06-20 17:40+0600
 "
-"PO-Revision-Date: 2026-06-20 17:41
+"PO-Revision-Date: 2026-06-20 17:40+0600
 "
-"Last-Translator: 
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
 "
 "Language: hi
 "
@@ -33,33 +32,33 @@ msgstr ""
 "Project-Id-Version: Django HStore Project \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: hi <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/license.rst:2
 msgid "License"
-msgstr ""
+msgstr "लाइसेंस"
 
 #: ../../docs/license.rst:4
 msgid "MIT License"
-msgstr ""
+msgstr "MIT लाइसेंस"
 
 #: ../../docs/license.rst:6
 msgid "Copyright 2024-onwards baseplate-admin"
-msgstr ""
+msgstr "कॉपीराइट 2024-आगे तक baseplate-admin"
 
 #: ../../docs/license.rst:8
 msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
-msgstr ""
+msgstr "यहाँ इस सॉफ़्टवेयर और संबंधित दस्तावेज़ीकरण फ़ाइलों (\"सॉफ़्टवेयर\") की प्रतिलिपि प्राप्त करने वाले किसी भी व्यक्ति को, किसी भी शुल्क के बिना, अनुमति प्रदान की जाती है, कि वह सॉफ़्टवेयर पर किसी भी प्रतिबंध के बिना कार्य कर सके, जिसमें प्रतिबंधित नहीं किए गए उपयोग, प्रतिलिपि बनाने, संशोधित करने, विलीनीकरण, प्रकाशन, वितरण, सब-लाइसेंस देने और/या सॉफ़्टवेयर की प्रतियां बेचने के अधिकार शामिल हैं, और उन व्यक्तियों को सॉफ़्टवेयर प्रदान किए जाने पर ऐसा करने की अनुमति दें, निम्नलिखित शर्तों के अधीन:"
 
 #: ../../docs/license.rst:15
 msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
-msgstr ""
+msgstr "उपरोक्त कॉपीराइट सूचना और यह अनुमति सूचना सॉफ़्टवेयर की सभी प्रतियों या उल्लेखनीय भागों में शामिल होगी।"
 
 #: ../../docs/license.rst:18
 msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
-msgstr ""
+msgstr "सॉफ़्टवेयर \"जैसा है\" प्रदान किया गया है, किसी भी प्रकार की वारंटी के बिना, स्पष्ट या अंतर्निहित, लेकिन व्यापारिकता, किसी विशेष उद्देश्य के लिए उपयुक्तता और गैर-उल्लंघन की वारंटियों तक सीमित नहीं। किसी भी परिस्थिति में, लेखक या कॉपीराइट धारक किसी भी दावे, क्षति या अन्य दायित्व के लिए जिम्मेदार नहीं होंगे, चाहे वह अनुबंध, कृत्य या अन्यथा में हो, सॉफ़्टवेयर या सॉफ़्टवेयर के उपयोग या अन्य लेनदेन से उत्पन्न हो।"

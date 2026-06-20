@@ -1,0 +1,89 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translates: best-practices documentation to Korean.
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Korean <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/best-practices.rst:2
+msgid "Best Practices"
+msgstr "모범 사례"
+
+#: ../../docs/user-guide/best-practices.rst:4
+msgid "Tips and recommendations for using HStore fields effectively in production."
+msgstr "프로덕션 환경에서 HStore 필드를 효과적으로 사용하기 위한 팁과 권장 사항입니다."
+
+#: ../../docs/user-guide/best-practices.rst:7
+msgid "Keep Keys Consistent"
+msgstr "키 일관성 유지하기"
+
+#: ../../docs/user-guide/best-practices.rst:9
+msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
+msgstr "애플리케이션 전체에서 키에 대한 명명 규칙을 사용하세요. 이렇게 하면 쿼리 및 유지보수가 쉬워집니다."
+
+#: ../../docs/user-guide/best-practices.rst:27
+msgid "Use Explicit Keys When Possible"
+msgstr "가능한 경우 명시적 키 사용하기"
+
+#: ../../docs/user-guide/best-practices.rst:29
+msgid "Defining explicit keys gives you:"
+msgstr "명시적 키를 정의하면 다음과 같은 이점이 있습니다:"
+
+#: ../../docs/user-guide/best-practices.rst:31
+msgid "Labeled form fields in the admin"
+msgstr "관리자 페이지에서 라벨이 붙은 폼 필드"
+
+#: ../../docs/user-guide/best-practices.rst:32
+msgid "Built-in validation per key"
+msgstr "키별 내장 유효성 검사"
+
+#: ../../docs/user-guide/best-practices.rst:33
+msgid "Widget customization per field"
+msgstr "필드별 위젯 사용자 정의"
+
+#: ../../docs/user-guide/best-practices.rst:34
+msgid "IDE autocomplete for key names"
+msgstr "키 이름에 대한 IDE 자동 완성"
+
+#: ../../docs/user-guide/best-practices.rst:47
+msgid "Index Frequently Queried Keys"
+msgstr "자주 쿼리하는 키에 인덱스 추가하기"
+
+#: ../../docs/user-guide/best-practices.rst:49
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr "자주 쿼리하는 HStore 열에 GIN 인덱스를 추가하세요:"
+
+#: ../../docs/user-guide/best-practices.rst:64
+msgid "Handle Missing Keys Gracefully"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:66
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:74
+msgid "Validate Key Values"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:76
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:90
+msgid "Consider Migration Paths"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:92
+msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""

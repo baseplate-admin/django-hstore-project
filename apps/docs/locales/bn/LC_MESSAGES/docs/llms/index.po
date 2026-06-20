@@ -1,0 +1,107 @@
+# Bengali translation for LLM Context Files.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/llms/index.rst:2
+msgid "LLM Context Files"
+msgstr "LLM কনটেক্সট ফাইলগুলো"
+
+#: ../../docs/llms/index.rst:4
+msgid ""
+"This project provides machine-readable context files for LLM integration,"
+" auto-generated during the Sphinx documentation build."
+msgstr ""
+"এই প্রজেক্টটি LLM integration-এর জন্য machine-readable context files "
+"দিয়েছে, Sphinx documentation build-এর সময় auto-generated হয়।"
+
+#: ../../docs/llms/index.rst:8
+msgid "Available Files"
+msgstr "উপলব্ধ ফাইলগুলো"
+
+#: ../../docs/llms/index.rst:14
+msgid "File"
+msgstr "ফাইল"
+
+#: ../../docs/llms/index.rst:15
+msgid "Description"
+msgstr "বিবরণ"
+
+#: ../../docs/llms/index.rst:16
+msgid "`llms.txt <../../llms.txt>`_"
+msgstr "`llms.txt <../../llms.txt>`_"
+
+#: ../../docs/llms/index.rst:17
+msgid "Index file listing all context files"
+msgstr "সব context files-এর তালিকা সহ index file"
+
+#: ../../docs/llms/index.rst:18
+msgid "`llms-widget.txt <../../llms-widget.txt>`_"
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
+
+#: ../../docs/llms/index.rst:19
+msgid "django-hstore-widget package: widget API, frontend architecture"
+msgstr "django-hstore-widget প্যাকেজ: widget API, frontend architecture"
+
+#: ../../docs/llms/index.rst:20
+msgid "`llms-field.txt <../../llms-field.txt>`_"
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
+
+#: ../../docs/llms/index.rst:21
+msgid "django-hstore-field package: field API, installation, quick start"
+msgstr "django-hstore-field প্যাকেজ: field API, installation, quick start"
+
+#: ../../docs/llms/index.rst:22
+msgid "`llms-full.txt <../../llms-full.txt>`_"
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
+
+#: ../../docs/llms/index.rst:23
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+"সব packages, API reference, architecture, best practices, এবং "
+"contributing guide সহ সম্পূর্ণ প্রজেক্ট ডকুমেন্টেশন"
+
+#: ../../docs/llms/index.rst:26
+msgid "Usage"
+msgstr "ব্যবহার"
+
+#: ../../docs/llms/index.rst:28
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated"
+" files are placed at the root of the documentation output and are "
+"accessible relative to the docs root."
+msgstr ""
+"আপনার LLM-কে আপনার scope-এর সাথে মিলে যাবে এমন context file-এ "
+"নির্দেশ করুন। Generated ফাইলগুলো documentation output-এর root-এ "
+"থাকে এবং docs root-এর সাপেক্ষে accessible হয়।"
+
+#: ../../docs/llms/index.rst:33
+msgid "How It Works"
+msgstr "কীভাবে কাজ করে"
+
+#: ../../docs/llms/index.rst:35
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx "
+"extension (``llms_txt_generator``) that assembles content from all "
+"documentation source files at build time, ensuring the context files stay"
+" in sync with the documentation."
+msgstr ""
+"llms.txt ফাইলগুলো একটি কাস্টম Sphinx extension "
+"(``llms_txt_generator``) দ্বারা automatically generated হয়, যা build "
+"time-এ সব documentation source files থেকে content assemble করে, "
+"context files-গুলো documentation-এর সাথে sync-এ থাকে নিশ্চিত করে।"

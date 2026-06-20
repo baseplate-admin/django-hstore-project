@@ -1,0 +1,33 @@
+# 日本語翻訳 for autoapi index.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:03+0600\n"
+"PO-Revision-Date: 2026-06-20 16:03+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/index.rst:2
+msgid "API Reference"
+msgstr "API リファレンス"
+
+#: ../../autoapi/index.rst:4
+msgid "This page contains auto-generated API reference documentation [#f1]_."
+msgstr "このページには自動生成された API リファレンスドキュメントが含まれています [#f1]_。"
+
+#: ../../autoapi/index.rst:12
+msgid ""
+"Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_"
+msgstr ""
+"`sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_ で作成"

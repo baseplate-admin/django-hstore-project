@@ -1,53 +1,28 @@
-# Español translation for Django HStore Project.
+﻿# Español translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-"
-"Language: es
-"
-"Language-Team: es <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/playground.rst:2
 msgid "Playground"
-msgstr ""
+msgstr "Área de Pruebas"
 
 #: ../../docs/playground.rst:4
 msgid "Interactive demo of the ``django-hstore-widget`` component. Edit key-value pairs, add new entries, and delete existing ones."
-msgstr ""
+msgstr "Demostración interactiva del componente ``django-hstore-widget``. Edite pares clave-valor, agregue nuevas entradas y elimine las existentes."
 
 #: ../../docs/playground.rst:149
 msgid "The widget above is the live ``django-hstore-widget`` Lit component built at docs build time.  Try adding, editing, and deleting key-value pairs."
-msgstr ""
+msgstr "El widget anterior es el componente Lit en vivo de ``django-hstore-widget`` compilado durante la generación de la documentación. Intente agregar, editar y eliminar pares clave-valor."

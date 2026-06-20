@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language-Team: Ukrainian <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/llms/index.rst:2
+msgid "LLM Context Files"
+msgstr "Файли контексту LLM"
+
+#: ../../docs/llms/index.rst:4
+msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
+msgstr "Цей проєкт надає машинно-зчитувані файли контексту для інтеграції з LLM, які автоматично генеруються під час збірки документації Sphinx."
+
+#: ../../docs/llms/index.rst:8
+msgid "Available Files"
+msgstr "Доступні файли"
+
+#: ../../docs/llms/index.rst:14
+msgid "File"
+msgstr "Файл"
+
+#: ../../docs/llms/index.rst:15
+msgid "Description"
+msgstr "Опис"
+
+#: ../../docs/llms/index.rst:16
+msgid "`llms.txt <../../llms.txt>`_"
+msgstr "`llms.txt <../../llms.txt>`_"
+
+#: ../../docs/llms/index.rst:17
+msgid "Index file listing all context files"
+msgstr "Індексаційний файл із переліком усіх файлів контексту"
+
+#: ../../docs/llms/index.rst:18
+msgid "`llms-widget.txt <../../llms-widget.txt>`_"
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
+
+#: ../../docs/llms/index.rst:19
+msgid "django-hstore-widget package: widget API, frontend architecture"
+msgstr "Пакет django-hstore-widget: API віджета, архітектура фронтенду"
+
+#: ../../docs/llms/index.rst:20
+msgid "`llms-field.txt <../../llms-field.txt>`_"
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
+
+#: ../../docs/llms/index.rst:21
+msgid "django-hstore-field package: field API, installation, quick start"
+msgstr "Пакет django-hstore-field: API полів, встановлення, швидкий старт"
+
+#: ../../docs/llms/index.rst:22
+msgid "`llms-full.txt <../../llms-full.txt>`_"
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
+
+#: ../../docs/llms/index.rst:23
+msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
+msgstr "Повна документація проєкту, включаючи всі пакети, документацію API, архітектуру, найкращі практики та керівництво для сприяння проєкту"
+
+#: ../../docs/llms/index.rst:26
+msgid "Usage"
+msgstr "Використання"
+
+#: ../../docs/llms/index.rst:28
+msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
+msgstr "Вкажіть вашій LLM файл контексту, що відповідає вашому завданню. Згенеровані файли розміщуються в корені вихідної документації та доступні відносно кореня документації."
+
+#: ../../docs/llms/index.rst:33
+msgid "How It Works"
+msgstr "Як це працює"
+
+#: ../../docs/llms/index.rst:35
+msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
+msgstr "Файли llms.txt генеруються автоматично користувацьким розширенням Sphinx (``llms_txt_generator``), яке збирає вміст із усіх файлів вихідної документації під час збірки, забезпечуючи синхронізацію файлів контексту з документацією."

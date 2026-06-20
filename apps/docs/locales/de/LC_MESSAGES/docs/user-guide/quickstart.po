@@ -1,0 +1,82 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: German <de@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quick Start"
+msgstr "Schnellstart"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "Starten Sie mit django-hstore-project in weniger als einer Minute."
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Create a Model"
+msgstr "Modell erstellen"
+
+#: ../../docs/user-guide/quickstart.rst:9
+msgid "Add an HStore field to any model:"
+msgstr "Fügen Sie einem beliebigen Modell ein HStore-Feld hinzu:"
+
+#: ../../docs/user-guide/quickstart.rst:21
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr "Das war's. Das Widget wird automatisch eingebunden, keine Formular-Konfiguration erforderlich."
+
+#: ../../docs/user-guide/quickstart.rst:24
+msgid "Run Migrations"
+msgstr "Migrationen ausführen"
+
+#: ../../docs/user-guide/quickstart.rst:31
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "Dadurch wird die PostgreSQL hstore-Erweiterung automatisch aktiviert."
+
+#: ../../docs/user-guide/quickstart.rst:34
+msgid "Register in Admin"
+msgstr "Im Admin registrieren"
+
+#: ../../docs/user-guide/quickstart.rst:46
+msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgstr "Öffnen Sie Ihre Admin-Seite und Sie sehen das HStore-Widget mit einer klaren Schlüssel-Wert-Schnittstelle. Jedes Schlüssel-Wert-Paar kann inline bearbeitet werden. Fügen Sie Paare hinzu, entfernen oder ändern Sie sie nach Bedarf."
+
+#: ../../docs/user-guide/quickstart.rst:51
+msgid "With Custom Keys"
+msgstr "Mit benutzerdefinierten Schlüsseln"
+
+#: ../../docs/user-guide/quickstart.rst:53
+msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgstr "Definieren Sie explizite Schlüssel, um beschriftete Formularfelder anstelle des freien Editors zu erhalten:"
+
+#: ../../docs/user-guide/quickstart.rst:70
+msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "Jeder Schlüssel wird zu einem vollwertigen Formularfeld mit Validierung, Widgets und Beschriftungen."
+
+#: ../../docs/user-guide/quickstart.rst:73
+msgid "What's Next"
+msgstr "Nächste Schritte"
+
+#: ../../docs/user-guide/quickstart.rst:75
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` - Detaillierte Installationsoptionen"
+
+#: ../../docs/user-guide/quickstart.rst:76
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ":doc:`../technical/hstore-vs-jsonb` - Wann HStore und wann JSONB verwendet werden soll"
+
+#: ../../docs/user-guide/quickstart.rst:77
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ":doc:`../user-guide/best-practices` - Tipps für den Produktiveinsatz"

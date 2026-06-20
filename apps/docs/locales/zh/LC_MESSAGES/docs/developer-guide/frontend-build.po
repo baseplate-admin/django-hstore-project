@@ -1,0 +1,92 @@
+# 中文翻译 for Frontend Build Pipeline.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/developer-guide/frontend-build.rst:2
+msgid "Frontend Build Pipeline"
+msgstr "前端构建管道"
+
+#: ../../docs/developer-guide/frontend-build.rst:5
+msgid "Overview"
+msgstr "概述"
+
+#: ../../docs/developer-guide/frontend-build.rst:7
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single"
+" IIFE bundle loaded by Django admin."
+msgstr ""
+"组件前端使用 Vite 和 TypeScript 构建，生成由 Django admin 加载的单个 IIFE 包。"
+
+#: ../../docs/developer-guide/frontend-build.rst:11
+msgid "Build Steps"
+msgstr "构建步骤"
+
+#: ../../docs/developer-guide/frontend-build.rst:13
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-"
+"hstore-widget.js``"
+msgstr ""
+"Vite 将 ``src/frontend/index.ts`` 打包为 ``dist/components/django-"
+"hstore-widget.js``"
+
+#: ../../docs/developer-guide/frontend-build.rst:14
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgstr ""
+"``scripts/copy.ts`` 将包复制到 "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+
+#: ../../docs/developer-guide/frontend-build.rst:15
+msgid "Django serves the bundle via static files"
+msgstr "Django 通过静态文件提供该包"
+
+#: ../../docs/developer-guide/frontend-build.rst:18
+msgid "Configuration"
+msgstr "配置"
+
+#: ../../docs/developer-guide/frontend-build.rst:20
+msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
+msgstr "``vite.config.ts`` - 入口点、输出、别名、开发服务器"
+
+#: ../../docs/developer-guide/frontend-build.rst:21
+msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
+msgstr "``tsconfig.json`` - TypeScript 编译器选项、路径别名"
+
+#: ../../docs/developer-guide/frontend-build.rst:24
+msgid "Path Aliases"
+msgstr "路径别名"
+
+#: ../../docs/developer-guide/frontend-build.rst:36
+msgid "Resolves to ``src/frontend/lib/*``"
+msgstr "解析为 ``src/frontend/lib/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:45
+msgid "Resolves to ``src/frontend/stores/*``"
+msgstr "解析为 ``src/frontend/stores/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:54
+msgid "Resolves to ``src/frontend/mappings/*``"
+msgstr "解析为 ``src/frontend/mappings/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:63
+msgid "Resolves to ``src/frontend/components/*``"
+msgstr "解析为 ``src/frontend/components/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:66
+msgid "Development"
+msgstr "开发"

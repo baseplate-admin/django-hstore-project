@@ -1,0 +1,146 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=12) ? 1 : 2);\n"
+
+#: ../../docs/developer-guide/contributing.rst:2
+msgid "Contributing"
+msgstr "Współpraca"
+
+#: ../../docs/developer-guide/contributing.rst:4
+msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
+msgstr "Krok po kroku przewodnik konfiguracji środowiska programistycznego i współpracy przy projekcie django-hstore-project."
+
+#: ../../docs/developer-guide/contributing.rst:8
+msgid "Prerequisites"
+msgstr "Wymagania wstępne"
+
+#: ../../docs/developer-guide/contributing.rst:10
+msgid "Make sure you have the following installed:"
+msgstr "Upewnij się, że masz zainstalowane poniższe narzędzia:"
+
+#: ../../docs/developer-guide/contributing.rst:12
+msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
+msgstr ":iconify:`mdi:python` **Python 3.10+** z menedżerem pakietów ``uv``"
+
+#: ../../docs/developer-guide/contributing.rst:13
+msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
+msgstr ":iconify:`logos:nodejs` **Node.js 18+** z ``npm``"
+
+#: ../../docs/developer-guide/contributing.rst:14
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
+msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+** uruchomiony lokalnie"
+
+#: ../../docs/developer-guide/contributing.rst:17
+msgid "Clone the Repository"
+msgstr "Klonowanie repozytorium"
+
+#: ../../docs/developer-guide/contributing.rst:25
+msgid "Install Python Dependencies"
+msgstr "Instalowanie zależności Pythona"
+
+#: ../../docs/developer-guide/contributing.rst:29
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ":iconify:`simple-icons:astral` uv"
+
+#: ../../docs/developer-guide/contributing.rst:38
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ":iconify:`simple-icons:poetry` Poetry"
+
+#: ../../docs/developer-guide/contributing.rst:47
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ":iconify:`simple-icons:pdm` PDM"
+
+#: ../../docs/developer-guide/contributing.rst:55
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ":iconify:`mdi:package-variant` pip-tools"
+
+#: ../../docs/developer-guide/contributing.rst:65
+msgid "This installs all Python packages including test dependencies."
+msgstr "Instaluje wszystkie pakiety Pythona, w tym zależności testowe."
+
+#: ../../docs/developer-guide/contributing.rst:68
+msgid "Install Frontend Dependencies"
+msgstr "Instalowanie zależności frontendowych"
+
+#: ../../docs/developer-guide/contributing.rst:78
+msgid "This installs Lit, Vite, and all frontend tooling."
+msgstr "Instaluje Lit, Vite oraz wszystkie narzędzia frontendowe."
+
+#: ../../docs/developer-guide/contributing.rst:81
+msgid "Set Up the Database"
+msgstr "Konfigurowanie bazy danych"
+
+#: ../../docs/developer-guide/contributing.rst:83
+msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
+msgstr "Uruchom lokalną instancję PostgreSQL z włączonym rozszerzeniem hstore:"
+
+#: ../../docs/developer-guide/contributing.rst:87
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/developer-guide/contributing.rst:99
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/developer-guide/contributing.rst:110
+msgid "Run the Tests"
+msgstr "Uruchamianie testów"
+
+#: ../../docs/developer-guide/contributing.rst:113
+msgid "Frontend Tests"
+msgstr "Testy frontendowe"
+
+#: ../../docs/developer-guide/contributing.rst:129
+msgid "Backend Tests"
+msgstr "Testy backendowe"
+
+#: ../../docs/developer-guide/contributing.rst:145
+msgid "Type Checking"
+msgstr "Sprawdzanie typów"
+
+#: ../../docs/developer-guide/contributing.rst:153
+msgid "Build the Project"
+msgstr "Budowanie projektu"
+
+#: ../../docs/developer-guide/contributing.rst:167
+msgid "Start the Dev Server"
+msgstr "Uruchamianie serwera deweloperskiego"
+
+#: ../../docs/developer-guide/contributing.rst:175
+msgid "The dev server runs on port 9100 with hot module replacement enabled."
+msgstr "Serwer deweloperski działa na porcie 9100 z włączonym dynamicznym podmienianiem modułów."
+
+#: ../../docs/developer-guide/contributing.rst:178
+msgid "Code Style"
+msgstr "Styl kodu"
+
+#: ../../docs/developer-guide/contributing.rst:180
+msgid "**Python**: Ruff (linter + formatter)"
+msgstr "**Python**: Ruff (linter + formatowanie)"
+
+#: ../../docs/developer-guide/contributing.rst:181
+msgid "**TypeScript**: Prettier"
+msgstr "**TypeScript**: Prettier"
+
+#: ../../docs/developer-guide/contributing.rst:182
+msgid "Pre-commit hooks are configured for automated formatting"
+msgstr "Pre-commit hooki są skonfigurowane dla automatycznego formatowania"
+
+#: ../../docs/developer-guide/contributing.rst:184
+msgid "Before submitting a pull request, run:"
+msgstr "Przed przesłaniem pull requesta, uruchom:"

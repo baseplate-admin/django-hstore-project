@@ -1,0 +1,81 @@
+﻿# Polish translation of Django HStore Widget docs.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# baseplate-admin <baseplate-admin>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Polish <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/developer-guide/frontend-build.rst:2
+msgid "Frontend Build Pipeline"
+msgstr "Potok budowania frontend"
+
+#: ../../docs/developer-guide/frontend-build.rst:5
+msgid "Overview"
+msgstr "Przegląd"
+
+#: ../../docs/developer-guide/frontend-build.rst:7
+msgid "The widget frontend is built with Vite and TypeScript, producing a single IIFE bundle loaded by Django admin."
+msgstr "Frontend widgetu jest budowany za pomocą Vite i TypeScript, co daje pojedynczy pakiet IIFE ładowany przez Django admin."
+
+#: ../../docs/developer-guide/frontend-build.rst:11
+msgid "Build Steps"
+msgstr "Kroki budowania"
+
+#: ../../docs/developer-guide/frontend-build.rst:13
+msgid "Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-widget.js``"
+msgstr "Vite spakuje plik ``src/frontend/index.ts`` do ``dist/components/django-hstore-widget.js``"
+
+#: ../../docs/developer-guide/frontend-build.rst:14
+msgid "``scripts/copy.ts`` copies the bundle to ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgstr "Skrypt ``scripts/copy.ts`` kopiuje pakiet do ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+
+#: ../../docs/developer-guide/frontend-build.rst:15
+msgid "Django serves the bundle via static files"
+msgstr "Django serwuje pakiet przez pliki statyczne"
+
+#: ../../docs/developer-guide/frontend-build.rst:18
+msgid "Configuration"
+msgstr "Konfiguracja"
+
+#: ../../docs/developer-guide/frontend-build.rst:20
+msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
+msgstr "``vite.config.ts`` — punkt wejścia, wyjście, aliasy, serwer deweloperski"
+
+#: ../../docs/developer-guide/frontend-build.rst:21
+msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
+msgstr "``tsconfig.json`` — opcje kompilatora TypeScript, aliasy ścieżek"
+
+#: ../../docs/developer-guide/frontend-build.rst:24
+msgid "Path Aliases"
+msgstr "Alias ścieżek"
+
+#: ../../docs/developer-guide/frontend-build.rst:36
+msgid "Resolves to ``src/frontend/lib/*``"
+msgstr "Odnosi się do ``src/frontend/lib/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:45
+msgid "Resolves to ``src/frontend/stores/*``"
+msgstr "Odnosi się do ``src/frontend/stores/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:54
+msgid "Resolves to ``src/frontend/mappings/*``"
+msgstr "Odnosi się do ``src/frontend/mappings/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:63
+msgid "Resolves to ``src/frontend/components/*``"
+msgstr "Odnosi się do ``src/frontend/components/*``"
+
+#: ../../docs/developer-guide/frontend-build.rst:66
+msgid "Development"
+msgstr "Rozwój"

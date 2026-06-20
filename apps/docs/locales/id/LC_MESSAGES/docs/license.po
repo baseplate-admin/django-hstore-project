@@ -1,0 +1,41 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, baseplate-admin
+# This file is distributed under the same license as the Django HStore Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language-Team: Indonesian <LL@li.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/license.rst:2
+msgid "License"
+msgstr "Lisensi"
+
+#: ../../docs/license.rst:4
+msgid "MIT License"
+msgstr "Lisensi MIT"
+
+#: ../../docs/license.rst:6
+msgid "Copyright 2024-onwards baseplate-admin"
+msgstr "Hak cipta 2024-sekarang baseplate-admin"
+
+#: ../../docs/license.rst:8
+msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+msgstr "Dengan ini diberikan izin, tanpa biaya, kepada setiap orang yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait (\"Perangkat Lunak\") untuk mengelola Perangkat Lunak tanpa batasan, termasuk tanpa batasan hak untuk menggunakan, menyalin, mengubah, menggabungkan, menerbitkan, mendistribusikan, memberikan lisensi ulang, dan/atau menjual salinan Perangkat Lunak, serta mengizinkan pihak yang menerima Perangkat Lunak untuk melakukannya, dengan syarat-syarat berikut:"
+
+#: ../../docs/license.rst:15
+msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+msgstr "Pemberitahuan hak cipta di atas dan pemberitahuan izin ini harus disertakan dalam semua salinan atau bagian substansial dari Perangkat Lunak."
+
+#: ../../docs/license.rst:18
+msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+msgstr "PERANGKAT LUNAK DISEDIAKAN \"APA ADANYA\", TANPA JAMINAN APA PUN, BAIK TERSURAT MAUPUN TAKTERSURAT, TERMASUK TETAPI TIDAK TERBATAS PADA JAMINAN KELENGKAPAN, KESESUAIAN UNTUK TUJUAN TERTENTU, DAN TIDAK MELANGGAR HAK. DALAM KEADAAN APA PUN, PENULIS ATAU PEMEGANG HAK CIPTA TIDAK BERTEGUNG JAWAB ATAS KLAIM, KERUGIAN, ATAU KETAGIHAN LAINNYA, BAHIK DALAM PERKARA PERJANJIAN, PERSALAHAN, ATAU LAINNYA, YANG TIMBUL DARI, DARI ATAU HUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU PERKARA LAIN DALAM PERANGKAT LUNAK."

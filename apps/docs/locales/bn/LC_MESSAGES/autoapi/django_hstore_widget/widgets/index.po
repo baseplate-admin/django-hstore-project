@@ -1,0 +1,126 @@
+﻿# Bengali translations for autoapi django_hstore_widget.widgets.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
+"Language: bn\n"
+"Language-Team: bn <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:2
+msgid "django_hstore_widget.widgets"
+msgstr "django_hstore_widget.widgets"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:12
+msgid "Module Contents"
+msgstr "মডিউল বিষয়বস্তু"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:18
+msgid "A generic asset reference that resolves to a static file path."
+msgstr "সাধারণ ফাইল পথ-এ রিজোলভ হওয়া একটি জেনেরিক অ্যাসেট রেফারেন্স।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:20
+msgid ""
+"Used by the widget ``Media`` class to declare JavaScript and CSS "
+"dependencies. Subclasses like :class:`ESM` render the asset as HTML "
+"instead of a plain path."
+msgstr ""
+"JavaScript এবং CSS ডিপেন্ডেন্সি ঘোষণা করতে উইজেট ``Media`` ক্লাস দ্বারা "
+"ব্যবহৃত। :class:`ESM`-এর মতো সাবক্লাসগুলো সাধারণ পথের বদলে অ্যাসেটকে HTML "
+"রূপে রেন্ডার করে।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:30
+msgid "Return the fully resolved URL for *path*."
+msgstr "*path*-এর জন্য পুরোপুরি রিজোলভ করা URL ফেরত দেয়।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:32
+msgid ""
+"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-"
+"is. All other paths are resolved through Django's ``static()`` helper."
+msgstr ""
+"``http://``, ``https://``, অথবা ``/`` দিয়ে শুরু হওয়া পথগুলো যেমন আছে "
+"তেমন ফেরত দেওয়া হয়। অন্য সব পথ Django-এর ``static()`` হেল্পার-এর মাধ্যমে "
+"রিজোলভ করা হয়।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:40
+msgid "Bases: :py:obj:`Asset`"
+msgstr "বেস: :py:obj:`Asset`"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:43
+msgid "An ECMAScript module asset."
+msgstr "একটি ECMAScript মডিউল অ্যাসেট।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:45
+msgid ""
+"Renders as a ``<script type=\"module\">`` tag so the browser loads the "
+"widget as an ES module."
+msgstr ""
+"``<script type=\"module\">`` ট্যাগ হিসেবে রেন্ডার করে যাতে ব্রাউজার উইজেটকে "
+"একটি ES মডিউল হিসেবে লোড করে।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:51
+msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
+msgstr "বেস: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:54
+msgid "Django admin widget that renders the custom hstore editor."
+msgstr "কাস্টম hstore এডিটর রেন্ডার করে এমন Django admin উইজেট।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:56
+msgid ""
+"Replaces the default textarea with a Lit-based key-value editor "
+"component.  Loads the widget JavaScript as an ES module via the ``Media``"
+" inner class."
+msgstr ""
+"ডিফল্ট textarea-কে Lit-ভিত্তিক key-value এডিটর কম্পোনেন্ট দিয়ে প্রতিস্থাপন "
+"করে। ``Media`` ইনার ক্লাসের মাধ্যমে উইজেট JavaScript-কে একটি ES মডিউল "
+"হিসেবে লোড করে।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:61
+msgid "Example"
+msgstr "উদাহরণ"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:68
+msgid "Render the widget HTML for a given form field."
+msgstr "প্রদত্ত ফর্ম ফিল্ড-এর জন্য উইজেট HTML রেন্ডার করে।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst
+msgid "Parameters"
+msgstr "প্যারামিটার"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:70
+msgid "The HTML ``name`` attribute for the field."
+msgstr "ফিল্ড-এর HTML ``name`` অ্যাট্রিবিউট।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:72
+msgid "The current hstore data as a key-value mapping."
+msgstr "key-value ম্যাপিং হিসেবে বর্তমান hstore ডেটা।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:74
+msgid "Additional HTML attributes passed to the template."
+msgstr "টেমপ্লেটে পাঠানো অতিরিক্ত HTML অ্যাট্রিবিউট।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:76
+msgid "Template renderer instance."
+msgstr "টেমপ্লেট রেন্ডারার ইনস্ট্যান্স।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst
+msgid "Returns"
+msgstr "ফেরত দেয়"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:79
+msgid "The rendered HTML markup for the widget."
+msgstr "উইজেট-এর জন্য রেন্ডার করা HTML মার্কআপ।"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst
+msgid "Return type"
+msgstr "রিটার্ন টাইপ"

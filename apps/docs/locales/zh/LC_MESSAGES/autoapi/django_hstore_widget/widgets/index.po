@@ -1,0 +1,123 @@
+# 中文翻译 for autoapi django_hstore_widget.widgets.
+# Copyright (C) 2026, baseplate-admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:2
+msgid "django_hstore_widget.widgets"
+msgstr "django_hstore_widget.widgets"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:12
+msgid "Module Contents"
+msgstr "模块内容"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:18
+msgid "A generic asset reference that resolves to a static file path."
+msgstr "解析为静态文件路径的通用资源引用。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:20
+msgid ""
+"Used by the widget ``Media`` class to declare JavaScript and CSS "
+"dependencies. Subclasses like :class:`ESM` render the asset as HTML "
+"instead of a plain path."
+msgstr ""
+"由小部件 ``Media`` 类用于声明 JavaScript 和 CSS 依赖。"
+"如 :class:`ESM` 等子类将资源渲染为 HTML 而非纯路径。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:30
+msgid "Return the fully resolved URL for *path*."
+msgstr "返回 *path* 的完全解析的 URL。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:32
+msgid ""
+"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-"
+"is. All other paths are resolved through Django's ``static()`` helper."
+msgstr ""
+"以 ``http://``、``https://`` 或 ``/`` 开头的路径原样返回。"
+"所有其他路径通过 Django 的 ``static()`` 辅助函数解析。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:40
+msgid "Bases: :py:obj:`Asset`"
+msgstr "基类: :py:obj:`Asset`"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:43
+msgid "An ECMAScript module asset."
+msgstr "ECMAScript 模块资源。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:45
+msgid ""
+"Renders as a ``<script type=\"module\">`` tag so the browser loads the "
+"widget as an ES module."
+msgstr ""
+"渲染为 ``<script type=\"module\">`` 标签，"
+"以便浏览器将小部件作为 ES 模块加载。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:51
+msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
+msgstr "基类: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:54
+msgid "Django admin widget that renders the custom hstore editor."
+msgstr "渲染自定义 hstore 编辑器的 Django admin 小部件。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:56
+msgid ""
+"Replaces the default textarea with a Lit-based key-value editor "
+"component.  Loads the widget JavaScript as an ES module via the ``Media``"
+" inner class."
+msgstr ""
+"用基于 Lit 的键值编辑器组件替换默认的文本区域。"
+"通过 ``Media`` 内部类以小部件 JavaScript 作为 ES 模块加载。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:61
+msgid "Example"
+msgstr "示例"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:68
+msgid "Render the widget HTML for a given form field."
+msgstr "为指定的表单字段渲染小部件 HTML。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst
+msgid "Parameters"
+msgstr "参数"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:70
+msgid "The HTML ``name`` attribute for the field."
+msgstr "字段的 HTML ``name`` 属性。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:72
+msgid "The current hstore data as a key-value mapping."
+msgstr "作为键值映射的当前 hstore 数据。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:74
+msgid "Additional HTML attributes passed to the template."
+msgstr "传递给模板的额外 HTML 属性。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:76
+msgid "Template renderer instance."
+msgstr "模板渲染器实例。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst
+msgid "Returns"
+msgstr "返回值"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst:79
+msgid "The rendered HTML markup for the widget."
+msgstr "小部件的渲染 HTML 标记。"
+
+#: ../../autoapi/django_hstore_widget/widgets/index.rst
+msgid "Return type"
+msgstr "返回类型"
