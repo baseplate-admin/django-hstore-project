@@ -1,0 +1,89 @@
+# Français translation for Django HStore Project.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project 
+"
+"Report-Msgid-Bugs-To: 
+"
+"POT-Creation-Date: 2026-06-20 17:41
+"
+"PO-Revision-Date: 2026-06-20 17:41
+"
+"Last-Translator: 
+"
+"Language: fr
+"
+"Language-Team: fr <LL@li.org>
+"
+"Plural-Forms: nplurals=2; plural=(n != 1);
+"
+"MIME-Version: 1.0
+"
+"Content-Type: text/plain; charset=utf-8
+"
+"Content-Transfer-Encoding: 8bit
+"
+"Generated-By: Babel 2.18.0
+"
+sgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:2
+msgid "django_hstore_field.fields"
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:14
+msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:17
+msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:19
+msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:25
+msgid "Example"
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:38
+msgid "Return a form field class pre-configured with the custom widget."
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:40
+msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:44
+msgid "A form field instance wired to the hstore widget."
+msgstr ""
+
+#: ../../autoapi/django_hstore_field/fields/index.rst:0
+msgid "Return type"
+msgstr ""

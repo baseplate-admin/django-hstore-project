@@ -1,0 +1,109 @@
+# Русский translation for Django HStore Project.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project 
+"
+"Report-Msgid-Bugs-To: 
+"
+"POT-Creation-Date: 2026-06-20 17:41
+"
+"PO-Revision-Date: 2026-06-20 17:41
+"
+"Last-Translator: 
+"
+"Language: ru
+"
+"Language-Team: ru <LL@li.org>
+"
+"Plural-Forms: nplurals=2; plural=(n != 1);
+"
+"MIME-Version: 1.0
+"
+"Content-Type: text/plain; charset=utf-8
+"
+"Content-Transfer-Encoding: 8bit
+"
+"Generated-By: Babel 2.18.0
+"
+sgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/llms/index.rst:2
+msgid "LLM Context Files"
+msgstr ""
+
+#: ../../docs/llms/index.rst:4
+msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
+msgstr ""
+
+#: ../../docs/llms/index.rst:8
+msgid "Available Files"
+msgstr ""
+
+#: ../../docs/llms/index.rst:14
+msgid "File"
+msgstr ""
+
+#: ../../docs/llms/index.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../docs/llms/index.rst:16
+msgid "`llms.txt <../../llms.txt>`_"
+msgstr ""
+
+#: ../../docs/llms/index.rst:17
+msgid "Index file listing all context files"
+msgstr ""
+
+#: ../../docs/llms/index.rst:18
+msgid "`llms-widget.txt <../../llms-widget.txt>`_"
+msgstr ""
+
+#: ../../docs/llms/index.rst:19
+msgid "django-hstore-widget package: widget API, frontend architecture"
+msgstr ""
+
+#: ../../docs/llms/index.rst:20
+msgid "`llms-field.txt <../../llms-field.txt>`_"
+msgstr ""
+
+#: ../../docs/llms/index.rst:21
+msgid "django-hstore-field package: field API, installation, quick start"
+msgstr ""
+
+#: ../../docs/llms/index.rst:22
+msgid "`llms-full.txt <../../llms-full.txt>`_"
+msgstr ""
+
+#: ../../docs/llms/index.rst:23
+msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
+msgstr ""
+
+#: ../../docs/llms/index.rst:26
+msgid "Usage"
+msgstr ""
+
+#: ../../docs/llms/index.rst:28
+msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
+msgstr ""
+
+#: ../../docs/llms/index.rst:33
+msgid "How It Works"
+msgstr ""
+
+#: ../../docs/llms/index.rst:35
+msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
+msgstr ""

@@ -1,0 +1,113 @@
+# العربية translation for Django HStore Project.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project 
+"
+"Report-Msgid-Bugs-To: 
+"
+"POT-Creation-Date: 2026-06-20 17:41
+"
+"PO-Revision-Date: 2026-06-20 17:41
+"
+"Last-Translator: 
+"
+"Language: ar
+"
+"Language-Team: ar <LL@li.org>
+"
+"Plural-Forms: nplurals=2; plural=(n != 1);
+"
+"MIME-Version: 1.0
+"
+"Content-Type: text/plain; charset=utf-8
+"
+"Content-Transfer-Encoding: 8bit
+"
+"Generated-By: Babel 2.18.0
+"
+sgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/best-practices.rst:2
+msgid "Best Practices"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:4
+msgid "Tips and recommendations for using HStore fields effectively in production."
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:7
+msgid "Keep Keys Consistent"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:9
+msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:27
+msgid "Use Explicit Keys When Possible"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:29
+msgid "Defining explicit keys gives you:"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:31
+msgid "Labeled form fields in the admin"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:32
+msgid "Built-in validation per key"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:33
+msgid "Widget customization per field"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:34
+msgid "IDE autocomplete for key names"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:47
+msgid "Index Frequently Queried Keys"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:49
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:64
+msgid "Handle Missing Keys Gracefully"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:66
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:74
+msgid "Validate Key Values"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:76
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:90
+msgid "Consider Migration Paths"
+msgstr ""
+
+#: ../../docs/user-guide/best-practices.rst:92
+msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""

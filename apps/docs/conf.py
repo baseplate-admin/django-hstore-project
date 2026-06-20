@@ -17,9 +17,7 @@ author = "baseplate-admin"
 
 html_theme = "shibuya"
 html_theme_options = {
-    "social": [
-        {"name": "GitHub", "url": "https://github.com/baseplate-admin/django-hstore-widget", "icon": "mdi:github"},
-    ],
+    "github_url": "https://github.com/baseplate-admin/django-hstore-widget",
     "globaltoc_expand_depth": 1,
 }
 
@@ -27,31 +25,50 @@ html_context = {
     "source_type": "github",
     "source_user": "baseplate-admin",
     "source_repo": "django-hstore-widget",
+    "languages": [
+        ("English", "/en/%s/", "en"),
+        ("বাংলা", "/bn/%s/", "bn"),
+        ("日本語", "/ja/%s/", "ja"),
+        ("中文", "/zh/%s/", "zh"),
+        ("മലയാളം", "/ml/%s/", "ml"),
+        ("हिन्दी", "/hi/%s/", "hi"),
+        ("Español", "/es/%s/", "es"),
+        ("Français", "/fr/%s/", "fr"),
+        ("العربية", "/ar/%s/", "ar"),
+        ("Русский", "/ru/%s/", "ru"),
+        ("Português", "/pt/%s/", "pt"),
+    ],
 }
 
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
+    "sphinx.ext.intersphinx",
     "sphinx_tabs.tabs",
     "sphinx_termynal",
-    "myst_parser",
     "sphinxcontrib.mermaid",
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx_contributors",
     "sphinx_iconify",
+    "autoapi.extension",
     "llms_txt_generator",
     "widget_builder",
 ]
 
 source_suffix = {
     ".rst": "restructuredtext",
-    ".md": "markdown",
 }
+
+locale_dirs = ["locales/"]
+gettext_compact = False
 
 templates_path = ["_templates"]
 html_static_path = ["static"]
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+html_css_files = [
+    "django-admin-fields.css",
+]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "locales"]
 
 autodoc_typehints = "description"
 autodoc_member_order = "groupwise"
@@ -61,11 +78,18 @@ autodoc_default_options = {
     "show-inheritance": True,
 }
 
-# MyST config for mermaid
-myst_enable_extensions = [
-    "colon_fence",
+# AutoAPI config
+autoapi_dirs = [
+    "../../packages/django_hstore_widget/src/django_hstore_widget",
+    "../../packages/django_hstore_field/src/django_hstore_field",
 ]
-myst_fence_as_directive = ["mermaid"]
+autoapi_options = [
+    "members",
+    "undoc-members",
+    "show-inheritance",
+]
+autoapi_add_toctree_entry = True
+autoapi_template_dir = "_templates/autoapi"
 
 # LLMs.txt base URL — defaults to RTD canonical URL, falls back to relative.
 llms_base_url = os.environ.get(

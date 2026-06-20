@@ -1,0 +1,117 @@
+# Português translation for Django HStore Project.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project 
+"
+"Report-Msgid-Bugs-To: 
+"
+"POT-Creation-Date: 2026-06-20 17:41
+"
+"PO-Revision-Date: 2026-06-20 17:41
+"
+"Last-Translator: 
+"
+"Language: pt
+"
+"Language-Team: pt <LL@li.org>
+"
+"Plural-Forms: nplurals=2; plural=(n != 1);
+"
+"MIME-Version: 1.0
+"
+"Content-Type: text/plain; charset=utf-8
+"
+"Content-Transfer-Encoding: 8bit
+"
+"Generated-By: Babel 2.18.0
+"
+sgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/user-guide/installation.rst:2
+msgid "Installation"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:4
+msgid "Get up and running with django-hstore-project in minutes."
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:7
+msgid "Requirements"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:9
+msgid ":iconify:`mdi:python` **Python 3.10+**"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:10
+msgid ":iconify:`logos:django` **Django 5.0+**"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:11
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+**"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:12
+msgid "Modern browsers (Chrome 112+, Firefox 117+, Safari 16.5+)"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:15
+msgid "Install django-hstore-field"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:19
+msgid ":iconify:`logos:pypi` pip"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:29
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:39
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:48
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:57
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:71
+msgid "Configure"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:73
+msgid "Add both packages to your ``INSTALLED_APPS``:"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:86
+msgid "Run Migrations"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:98
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:101
+msgid "Next"
+msgstr ""
+
+#: ../../docs/user-guide/installation.rst:103
+msgid "Head over to the :doc:`quickstart` to use HStore fields in your models."
+msgstr ""

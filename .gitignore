@@ -40,8 +40,13 @@ UserInterfaceState.xcuserstate
 packages/*/uv.lock
 .playwright-mcp
 
-# Docs static builds (generated during docs build)
-apps/docs/static/
+# Docs static builds (generated during docs build) — keep CSS files
+apps/docs/static/**
+!apps/docs/static/*.css
 
 # Sphinx build output
 apps/docs/_build/
+apps/docs/build/
+
+# Compiled translation files (generated from .po)
+apps/docs/locales/**/*.mo
