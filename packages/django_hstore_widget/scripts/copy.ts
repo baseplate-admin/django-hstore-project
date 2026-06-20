@@ -21,7 +21,7 @@ if (!fs.existsSync(dist)) {
 fs.rmSync(target, { recursive: true, force: true, maxRetries: 2 });
 fs.mkdirSync(target, { recursive: true });
 
-const files = fs.readdirSync(dist).filter((f) => /\.(js|LICENSE)/.test(f));
+const files = fs.readdirSync(dist).filter((f) => /\.(js|css|LICENSE)/.test(f));
 
 if (!files.length) {
     console.error('ERROR: No files found in dist/components.');
