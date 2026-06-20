@@ -1,5 +1,3 @@
-import { StyleFactory } from '$composite_classes/style';
-import appStyles from '$css/app.css?inline';
 import { iconSignals } from '$store/image';
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
@@ -10,11 +8,6 @@ const LUCIDE = { delete: X, add: Plus, edit: Pencil } as const;
 
 @customElement('image-icon')
 export class ImageIconComponent extends LitElement {
-    #sharedStyleFactory = new StyleFactory();
-
-    firstUpdated() {
-        this.#sharedStyleFactory.mountStyles(this.renderRoot, appStyles);
-    }
     override createRenderRoot() {
         return this;
     }

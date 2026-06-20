@@ -10,10 +10,9 @@ import { cn } from '$lib/classnames';
 import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mapppings/django';
 import { GITHUB_ISSUES_URL } from '$mapppings/github';
 
-import { StyleFactory } from '$composite_classes/style';
 import { setFromAttributes } from '$store/image';
 
-import appStyles from '$css/app.css?inline';
+import '$css/app.css';
 
 type JsonKeyValue = { key: string; value: string; index: number };
 
@@ -50,8 +49,6 @@ export class DjangoHstoreWidget extends LitElement {
     @state()
     displayMode: 'rows' | 'textarea' = 'rows';
 
-    #styleFactory = new StyleFactory();
-
     override connectedCallback() {
         super.connectedCallback();
         setFromAttributes(this);
@@ -64,8 +61,6 @@ export class DjangoHstoreWidget extends LitElement {
     }
 
     override firstUpdated() {
-        this.#styleFactory.mountStyles(this.renderRoot, appStyles);
-
         if (!this.parseError) {
             this.isMounted = true;
         }
@@ -104,11 +99,12 @@ export class DjangoHstoreWidget extends LitElement {
         if (!this.isMounted) {
             return when(
                 this.parseError,
-                () => html`<div class="flex items-center justify-center gap-1" id="mount_error">
-                    <p>Failed to mount. Unexpected JSON from <code>django backend</code></p>
-                    <p>The provided json is: <code class="warning">${this.json}</code> which is not valid.</p>
-                    <p>Please check the json or <a href="${GITHUB_ISSUES_URL}">file an issue at Github</a></p>
-                </div>`,
+                () =>
+                    html`<div class="flex items-center justify-center gap-1" id="mount_error">
+                        <p>Failed to mount. Unexpected JSON from <code>django backend</code></p>
+                        <p>The provided json is: <code class="warning">${this.json}</code> which is not valid.</p>
+                        <p>Please check the json or <a href="${GITHUB_ISSUES_URL}">file an issue at Github</a></p>
+                    </div>`,
             );
         }
 
@@ -200,48 +196,38 @@ export class DjangoHstoreWidget extends LitElement {
                 ></textarea>
                 <div class="${cn(hasError && 'warning brightness-90')}" id="textbox_error">${this.parseError}</div>
             </div>
-            ${when(isRowsMode && !hasError && this.keyValues, () =>
-                repeat(
-                    this.keyValues,
-                    entry => entry.index,
-                    renderKeyValueRow,
-                )
-            )}
+            ${when(isRowsMode && !hasError && this.keyValues, () => repeat(this.keyValues, entry => entry.index, renderKeyValueRow))}
             <div class="form-row justify-between items-center flex">
                 <button
                     type="button"
-                    class="${cn(
-                        isRowsMode && 'items-center select-none justify-center flex gap-1 cursor-pointer',
-                        !isRowsMode && 'invisible',
-                    )}"
+                    class="${cn(isRowsMode && 'items-center select-none justify-center flex gap-1 cursor-pointer', !isRowsMode && 'invisible')}"
                     id="add-button"
                     aria-label="Add Row"
                     @click="${handleAddEntry}"
                 >
                     <image-icon type="add"></image-icon> Add row
                 </button>
-                <div class="${cn(
-                    'items-center select-none justify-center flex gap-1',
-                    hasError && 'opacity-60',
-                    !hasError && 'cursor-pointer',
-                )}" id="textarea_open_close_toggle">
-                    ${when(isRowsMode,
-                        () => html`<button
-                            type="button"
-                            class="items-center select-none justify-center flex gap-1 cursor-pointer"
-                            aria-label="Open TextArea"
-                            @click="${handleToggleDisplayMode}"
-                        >
-                            <image-icon type="edit"></image-icon> Open TextArea
-                        </button>`,
-                        () => html`<button
-                            type="button"
-                            class="items-center select-none justify-center flex gap-1 cursor-pointer"
-                            aria-label="Close TextArea"
-                            @click="${handleToggleDisplayMode}"
-                        >
-                            <image-icon type="delete"></image-icon> Close TextArea
-                        </button>`,
+                <div class="${cn('items-center select-none justify-center flex gap-1', hasError && 'opacity-60', !hasError && 'cursor-pointer')}" id="textarea_open_close_toggle">
+                    ${when(
+                        isRowsMode,
+                        () =>
+                            html`<button
+                                type="button"
+                                class="items-center select-none justify-center flex gap-1 cursor-pointer"
+                                aria-label="Open TextArea"
+                                @click="${handleToggleDisplayMode}"
+                            >
+                                <image-icon type="edit"></image-icon> Open TextArea
+                            </button>`,
+                        () =>
+                            html`<button
+                                type="button"
+                                class="items-center select-none justify-center flex gap-1 cursor-pointer"
+                                aria-label="Close TextArea"
+                                @click="${handleToggleDisplayMode}"
+                            >
+                                <image-icon type="delete"></image-icon> Close TextArea
+                            </button>`,
                     )}
                 </div>
             </div>`;

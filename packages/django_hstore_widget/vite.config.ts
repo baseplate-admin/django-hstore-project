@@ -7,15 +7,7 @@ export default defineConfig({
     root: frontendSourceDir,
     base: '/',
     resolve: {
-        alias: {
-            $lib: path.resolve(frontendSourceDir, 'lib'),
-            $store: path.resolve(frontendSourceDir, 'stores'),
-            $mappping: path.resolve(frontendSourceDir, 'mappings'),
-            $mapppings: path.resolve(frontendSourceDir, 'mappings'),
-            $components: path.resolve(frontendSourceDir, 'components'),
-            $composite_classes: path.resolve(frontendSourceDir, 'composite_classes'),
-            $css: path.resolve(frontendSourceDir, 'css'),
-        },
+        tsconfigPaths: true,
     },
     css: {
         transformer: 'lightningcss',
@@ -30,4 +22,4 @@ export default defineConfig({
             fileName: () => 'django-hstore-widget.js',
         },
     },
- });
+});
