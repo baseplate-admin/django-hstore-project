@@ -20,13 +20,15 @@ export class ImageIconComponent extends LitElement {
     }
 
     @property({ type: String, attribute: 'type', reflect: true })
-    iconType: keyof typeof LUCIDE = 'delete';
+    iconType: keyof typeof LUCIDE | undefined;
 
     #unsubscribe = () => {};
 
     override connectedCallback() {
         super.connectedCallback();
-        this.#unsubscribe = iconSignals[this.iconType].subscribe(() => this.requestUpdate());
+        if (this.iconType) {
+            this.#unsubscribe = iconSignals[this.iconType].subscribe(() => this.requestUpdate());
+        }
     }
 
     override disconnectedCallback() {
@@ -35,6 +37,8 @@ export class ImageIconComponent extends LitElement {
     }
 
     render() {
+        if (!this.iconType) return;
+
         const src = iconSignals[this.iconType].value;
 
         if (src) {
