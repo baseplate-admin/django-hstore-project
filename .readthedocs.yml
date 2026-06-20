@@ -1,5 +1,7 @@
 version: 2
 
+multilang: true
+
 build:
     os: ubuntu-24.04
     tools:
@@ -13,6 +15,17 @@ build:
             - cd packages/django_hstore_widget && npm ci && npm run build
             - mkdir -p apps/docs/static/admin/js/django_hstore_widget
             - cp packages/django_hstore_widget/src/django_hstore_widget/static/admin/js/django_hstore_widget/* apps/docs/static/admin/js/django_hstore_widget/
+            - |
+               python -c "
+               import django, os, shutil
+               src = os.path.join(os.path.dirname(django.__file__), 'contrib', 'admin', 'static', 'admin', 'img')
+               dst = 'apps/docs/static/admin/img'
+               os.makedirs(dst, exist_ok=True)
+               for name in ['icon-deletelink.svg', 'icon-addlink.svg', 'icon-changelink.svg']:
+                   sf = os.path.join(src, name)
+                   if os.path.exists(sf):
+                       shutil.copy2(sf, dst)
+               "
 
 sphinx:
     configuration: apps/docs/conf.py

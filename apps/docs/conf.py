@@ -9,6 +9,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django.conf.global_settings")
 import django
 django.setup()
 
+language = os.environ.get("READTHEDOCS_LANGUAGE", "en")
+
 root_doc = "index"
 
 project = "Django HStore Project"
@@ -79,7 +81,7 @@ html_static_path = ["static"]
 html_css_files = [
     "django-admin-fields.css",
 ]
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "locales"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc_typehints = "description"
 autodoc_member_order = "groupwise"

@@ -139,6 +139,9 @@ Edit key-value pairs, add new entries, and delete existing ones.
            <legend>Metadata</legend>
            <django-hstore-widget
                style="width: 100%"
+               delete_svg_src="../_static/admin/img/icon-deletelink.svg"
+               add_svg_src="../_static/admin/img/icon-addlink.svg"
+               edit_svg_src="../_static/admin/img/icon-changelink.svg"
                field_name="playground_metadata"
                json='{"color": "blue", "size": "large", "status": "active"}'
            ></django-hstore-widget>
