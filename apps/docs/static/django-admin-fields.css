@@ -1,20 +1,40 @@
-/* Django admin vTextField / vLargeTextField exact replicas */
+/* ============================================================
+   Django Admin vTextField / vLargeTextField Exact Replicas
+   ============================================================
+   Matches Django 5.2 admin CSS:
+   - base.css  (vTextField, focus states)
+   - forms.css (vLargeTextField, widths)
+   Applied to Sphinx highlight blocks so docs code blocks look
+   exactly like Django admin form fields.
+   ============================================================ */
 
 /* CSS custom properties matching Django admin light theme */
 :root {
-    --border-color: #ccc;
+    --primary: #79aec8;
+    --secondary: #417690;
+    --accent: #f5dd5d;
+    --primary-fg: #fff;
+
     --body-fg: #333;
     --body-bg: #fff;
     --body-quiet-color: #666;
-    --focus-color: #417690;
-    --font-family-primary: "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --code-bg: #fff;
-    --code-fg: #333;
+    --body-medium-color: #444;
+    --body-loud-color: #000;
+
+    --hairline-color: #e8e8e8;
+    --border-color: #ccc;
+
+    --darkened-bg: #f8f8f8;
+
+    --font-family-primary: "BlinkMacSystemFont", "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: "Fira Mono", Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
 }
 
-/* vTextField — standard admin input width (20em) */
+/* ======================================================
+   vTextField — standard admin input
+   ====================================================== */
+
 .vTextField {
-    width: 20em;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 5px 6px;
@@ -22,10 +42,11 @@
     color: var(--body-fg);
     background-color: var(--body-bg);
     font-family: var(--font-family-primary);
-    font-weight: normal;
     font-size: 0.8125rem;
+    line-height: 1.4;
     vertical-align: middle;
     box-sizing: border-box;
+    width: 20em;
 }
 
 .vTextField:focus {
@@ -33,21 +54,23 @@
     outline: none;
 }
 
-/* vLargeTextField — large admin textarea width (48em) */
+/* ======================================================
+   vLargeTextField — large admin textarea
+   ====================================================== */
+
 .vLargeTextField {
-    width: 48em;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 5px 6px;
     margin-top: 0;
     color: var(--body-fg);
     background-color: var(--body-bg);
-    font-family: var(--font-family-primary);
-    font-weight: normal;
+    font-family: var(--font-family-monospace);
     font-size: 0.8125rem;
+    line-height: 1.4;
     vertical-align: top;
     box-sizing: border-box;
-    line-height: 1.4;
+    width: 48em;
     resize: vertical;
 }
 
@@ -58,38 +81,41 @@
 
 /* ======================================================
    Apply Django admin field styling to Sphinx code blocks
+   ======================================================
+   Each highlight div is styled to look like a Django admin
+   vLargeTextField form field block.
    ====================================================== */
 
-/* Base highlight block — styled like a Django admin vLargeTextField */
 div.highlight,
 div.highlight-python,
 div.highlight-bash,
 div.highlight-sql,
 div.highlight-text,
-div.highlight-default {
+div.highlight-default,
+div.highlight-django,
+div.highlight-console {
     border: 1px solid var(--border-color) !important;
     border-radius: 4px !important;
-    background-color: var(--code-bg) !important;
+    background-color: var(--darkened-bg) !important;
     padding: 6px 8px !important;
-    margin: 1em 0 !important;
+    margin: 0 0 1.4em !important;
     box-shadow: none !important;
     overflow-x: auto !important;
+    font-family: var(--font-family-monospace) !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.4 !important;
+    color: var(--body-fg) !important;
 }
 
-/* Remove shibuya theme highlight header/background overrides */
-div.highlight > pre,
-div.highlight-python > pre,
-div.highlight-bash > pre,
-div.highlight-sql > pre,
-div.highlight-text > pre,
-div.highlight-default > pre {
+/* Inner pre element — no extra background/border/padding */
+div.highlight > pre {
     background: none !important;
     border: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
-    color: var(--code-fg) !important;
-    font-family: "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    color: var(--body-fg) !important;
+    font-family: var(--font-family-monospace) !important;
     font-size: 0.8125rem !important;
     line-height: 1.4 !important;
     overflow-wrap: normal !important;
@@ -102,18 +128,19 @@ div.highlight pre code {
     border: none !important;
     padding: 0 !important;
     margin: 0 !important;
-    font-family: "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: var(--font-family-monospace) !important;
     font-size: 0.8125rem !important;
-    color: var(--code-fg) !important;
+    color: var(--body-fg) !important;
     text-shadow: none !important;
 }
 
-/* Pygments token colors — Django admin compatible syntax highlighting */
+/* Pygments token colors — Django admin compatible */
 div.highlight .hll {
     background: none !important;
     display: inline !important;
 }
 
+/* Keywords — Django green */
 div.highlight .k,
 div.highlight .kd,
 div.highlight .kb,
@@ -122,6 +149,7 @@ div.highlight .kw {
     font-weight: bold !important;
 }
 
+/* Strings — Django green */
 div.highlight .s,
 div.highlight .s1,
 div.highlight .s2,
@@ -133,23 +161,23 @@ div.highlight .se,
 div.highlight .si,
 div.highlight .sx,
 div.highlight .sr,
-div.highlight .s2,
 div.highlight .sh,
 div.highlight .sk,
 div.highlight .sd {
     color: #417e00 !important;
 }
 
+/* Comments — gray italic */
 div.highlight .c,
 div.highlight .c1,
 div.highlight .cs,
 div.highlight .cm,
-div.highlight .cp,
-div.highlight .c1 {
+div.highlight .cp {
     color: #999 !important;
     font-style: italic !important;
 }
 
+/* Names — dark */
 div.highlight .n,
 div.highlight .na,
 div.highlight .nc,
@@ -162,65 +190,68 @@ div.highlight .nl,
 div.highlight .nv,
 div.highlight .no,
 div.highlight .nt {
-    color: #333 !important;
+    color: var(--body-fg) !important;
 }
 
+/* Operators */
 div.highlight .o,
 div.highlight .op {
-    color: #333 !important;
+    color: var(--body-fg) !important;
 }
 
+/* Numbers — Django green */
 div.highlight .mi,
 div.highlight .mf,
-div.highlight .il {
-    color: #417e00 !important;
-}
-
-div.highlight .p {
-    color: #333 !important;
-}
-
+div.highlight .il,
 div.highlight .m {
     color: #417e00 !important;
 }
 
-/* Line numbers — Django admin style */
+/* Punctuation */
+div.highlight .p {
+    color: var(--body-fg) !important;
+}
+
+/* Line numbers */
 div.highlight pre.linenos {
-    border-right: 1px solid #eee !important;
+    border-right: 1px solid var(--hairline-color) !important;
     margin-right: 8px !important;
     padding-right: 8px !important;
-    color: #999 !important;
+    color: var(--body-quiet-color) !important;
     background: none !important;
 }
 
-/* Inline code — styled like a Django admin vTextField */
+/* ======================================================
+   Inline code — styled like a small vTextField
+   ====================================================== */
+
 code.literal,
 code.xref,
 dl.py dt code,
 dl.c dt code {
-    font-family: "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: var(--font-family-monospace) !important;
     font-size: 0.8125rem !important;
-    background-color: #f5f5f5 !important;
-    border: 1px solid #e0e0e0 !important;
+    background-color: var(--darkened-bg) !important;
+    border: 1px solid var(--hairline-color) !important;
     border-radius: 3px !important;
     padding: 1px 4px !important;
-    color: #333 !important;
+    color: var(--body-fg) !important;
     white-space: nowrap !important;
 }
 
-/* Bash prompt styling for admin terminal feel */
-div.highlight-bash pre {
-    font-family: "Cascadia Code", "Fira Code", "Consolas", "Lucida Console", monospace !important;
-}
+/* ======================================================
+   Responsive: ensure code blocks fit on smaller screens
+   ====================================================== */
 
-/* Responsive: ensure code blocks fit on smaller screens */
 @media (max-width: 768px) {
     div.highlight,
     div.highlight-python,
     div.highlight-bash,
     div.highlight-sql,
     div.highlight-text,
-    div.highlight-default {
+    div.highlight-default,
+    div.highlight-django,
+    div.highlight-console {
         font-size: 0.75rem !important;
         padding: 4px 6px !important;
     }
