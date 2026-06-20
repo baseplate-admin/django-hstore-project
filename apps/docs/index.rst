@@ -1,25 +1,42 @@
 Django HStore Project
 =====================
 
-A monorepo for the Django HStore ecosystem -- human-friendly PostgreSQL hstore
+A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore
 support for Django admin.
 
 Packages
 --------
 
-.. list-table::
-   :widths: 25 45 30
-   :header-rows: 1
+.. grid:: 2
+   :gutter: 2
 
-   * - Package
-     - Description
-     - Install
-   * - `django-hstore-widget <https://pypi.org/project/django-hstore-widget/>`__
-     - Custom widget for editing hstore data in Django admin
-     - ``pip install django-hstore-widget``
-   * - `django-hstore-field <https://pypi.org/project/django-hstore-field/>`__
-     - Drop-in HStoreField with auto-wired widget
-     - ``pip install django-hstore-field``
+   .. grid-item-card:: django-hstore-widget
+      :columns: 12 12 6 6
+      :class-card: intro-card
+      :shadow: md
+      :link: https://pypi.org/project/django-hstore-widget/
+      :link-type: url
+
+      Custom widget for editing hstore data in Django admin. Built with Lit
+      and TypeScript for a responsive key-value editor.
+
+      .. code-block:: bash
+
+         pip install django-hstore-widget
+
+   .. grid-item-card:: django-hstore-field
+      :columns: 12 12 6 6
+      :class-card: intro-card
+      :shadow: md
+      :link: https://pypi.org/project/django-hstore-field/
+      :link-type: url
+
+      Drop-in HStoreField with auto-wired widget. Zero configuration for new
+      projects.
+
+      .. code-block:: bash
+
+         pip install django-hstore-field
 
 Quick Start
 -----------
@@ -36,7 +53,7 @@ For new projects, use **django-hstore-field**:
        name = models.CharField(max_length=100)
        metadata = HStoreField()
 
-The widget is auto-wired -- no form configuration needed.
+The widget is auto-wired, no form configuration needed.
 
 Contents
 --------
@@ -46,30 +63,30 @@ Contents
    :caption: User Guide
 
    docs/user-guide/installation.md
-   docs/user-guide/quickstart.rst
+   docs/user-guide/quickstart.md
    docs/user-guide/best-practices.md
 
 .. toctree::
    :maxdepth: 2
    :caption: Technical
 
-   docs/technical/index
+   docs/technical/index.md
 
 .. toctree::
    :maxdepth: 2
    :caption: Developer Guide
 
-   docs/developer-guide/architecture.rst
-   docs/developer-guide/contributing.rst
+   docs/developer-guide/architecture.md
+   docs/developer-guide/contributing.md
    docs/developer-guide/frontend-build.md
-   docs/playground
+   docs/playground.md
 
 .. toctree::
    :maxdepth: 2
    :caption: API Reference
 
-   api/widget
-   api/field
+   api/widget.rst
+   api/field.rst
 
 .. toctree::
    :maxdepth: 2

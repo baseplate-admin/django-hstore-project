@@ -221,7 +221,7 @@ def _section_quickstart(docs_dir: Path) -> str:
 def _section_frontend(docs_dir: Path) -> str:
     path = docs_dir / "developer-guide" / "frontend-build.md"
     raw = path.read_text(encoding="utf-8") if path.exists() else ""
-    arch_path = docs_dir / "developer-guide" / "architecture.rst"
+    arch_path = docs_dir / "developer-guide" / "architecture.md"
     arch_raw = arch_path.read_text(encoding="utf-8") if arch_path.exists() else ""
     return (
         "# Frontend Architecture\n\n"
@@ -238,7 +238,7 @@ def _section_best_practices(docs_dir: Path) -> str:
 
 
 def _section_hstore_vs_jsonb(docs_dir: Path) -> str:
-    path = docs_dir / "user-guide" / "hstore-vs-jsonb.md"
+    path = docs_dir / "technical" / "hstore-vs-jsonb.md"
     raw = path.read_text(encoding="utf-8") if path.exists() else ""
     return "# HStore vs JSONB\n\n" + _strip_leading_heading(raw).strip()
 

@@ -1,15 +1,15 @@
-Playground
-==========
+# Playground
 
 Interactive demo of the ``django-hstore-widget`` component.
 Edit key-value pairs, add new entries, and delete existing ones.
 
+```{eval-rst}
 .. raw:: html
 
    <script type="module" src="../_static/admin/js/django_hstore_widget/django-hstore-widget.js"></script>
 
    <style>
-       /* Django admin field styles — vTextField, vLargeTextField, form-row */
+       /* Django admin field styles, vTextField, vLargeTextField, form-row */
        :root {
            --body-fg: #333;
            --body-bg: #fff;
@@ -78,12 +78,15 @@ Edit key-value pairs, add new entries, and delete existing ones.
        }
 
        django-hstore-widget .vTextField {
-           width: 20em;
-           min-width: 100%;
+           width: 100%;
+           max-width: 20em;
+           box-sizing: border-box;
        }
 
        django-hstore-widget .vLargeTextField {
-           width: 48em;
+           width: 100%;
+           max-width: 48em;
+           box-sizing: border-box;
        }
 
        django-hstore-widget .form-row {
@@ -100,12 +103,14 @@ Edit key-value pairs, add new entries, and delete existing ones.
            padding: 0;
            margin: 16px 0;
            color: var(--body-fg, #333);
+           overflow: hidden;
        }
        .admin-playground fieldset {
            border: 1px solid var(--hairline-color, #e8e8e8);
            border-radius: 4px;
            padding: 12px;
            margin: 0;
+           min-width: 0;
        }
        .admin-playground legend {
            font-weight: bold;
@@ -117,6 +122,12 @@ Edit key-value pairs, add new entries, and delete existing ones.
        }
        .admin-playground django-hstore-widget {
            min-height: 200px;
+           display: block;
+           width: 100%;
+           max-width: 100%;
+       }
+       .admin-playground django-hstore-widget .form-row {
+           min-width: 0;
        }
        .admin-playground django-hstore-widget .warning {
            color: var(--error-fg, #ba2121);
@@ -133,8 +144,9 @@ Edit key-value pairs, add new entries, and delete existing ones.
            ></django-hstore-widget>
        </fieldset>
    </div>
+```
 
-.. note::
-
-   The widget above is the live ``django-hstore-widget`` Lit component built
-   at docs build time.  Try adding, editing, and deleting key-value pairs.
+:::{note}
+The widget above is the live ``django-hstore-widget`` Lit component built
+at docs build time.  Try adding, editing, and deleting key-value pairs.
+:::

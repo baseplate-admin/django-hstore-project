@@ -12,25 +12,27 @@ Get up and running with django-hstore-project in minutes.
 ## Install django-hstore-field
 
 ```{eval-rst}
-.. termynal::
-   $ pip install django-hstore-field
-   -->
-   Collecting django-hstore-field
-   Collecting django-hstore-widget
-   Installing collected packages...
-   Successfully installed django-hstore-field django-hstore-widget
-```
+.. tabs::
 
-or with uv:
+   .. tab:: pip
 
-```{eval-rst}
-.. termynal::
-   $ uv pip install django-hstore-field
-   -->
-   Collecting django-hstore-field
-   Collecting django-hstore-widget
-   Installing collected packages...
-   Successfully installed django-hstore-field django-hstore-widget
+      .. termynal::
+         $ pip install django-hstore-field
+         -->
+         Collecting django-hstore-field
+         Collecting django-hstore-widget
+         Installing collected packages...
+         Successfully installed django-hstore-field django-hstore-widget
+
+   .. tab:: uv
+
+      .. termynal::
+         $ uv pip install django-hstore-field
+         -->
+         Collecting django-hstore-field
+         Collecting django-hstore-widget
+         Installing collected packages...
+         Successfully installed django-hstore-field django-hstore-widget
 ```
 
 ## Configure

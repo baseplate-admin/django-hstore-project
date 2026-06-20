@@ -13,8 +13,8 @@ IIFE bundle loaded by Django admin.
 
 ## Configuration
 
-- `vite.config.ts` -- Entry point, output, aliases, dev server
-- `tsconfig.json` -- TypeScript compiler options, path aliases
+- `vite.config.ts` - Entry point, output, aliases, dev server
+- `tsconfig.json` - TypeScript compiler options, path aliases
 
 ## Path Aliases
 

@@ -9,6 +9,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django.conf.global_settings")
 import django
 django.setup()
 
+root_doc = "index"
+
 project = "Django HStore Project"
 copyright = "2026, baseplate-admin"
 author = "baseplate-admin"
@@ -18,6 +20,7 @@ html_theme_options = {
     "social": [
         {"name": "GitHub", "url": "https://github.com/baseplate-admin/django-hstore-widget", "icon": "mdi:github"},
     ],
+    "globaltoc_expand_depth": 1,
 }
 
 html_context = {
@@ -40,6 +43,11 @@ extensions = [
     "llms_txt_generator",
     "widget_builder",
 ]
+
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
 
 templates_path = ["_templates"]
 html_static_path = ["static"]
