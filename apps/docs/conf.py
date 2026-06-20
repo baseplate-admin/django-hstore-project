@@ -9,8 +9,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django.conf.global_settings")
 import django
 django.setup()
 
-language = os.environ.get("READTHEDOCS_LANGUAGE", "en")
-
 root_doc = "index"
 
 project = "Django HStore Project"
@@ -72,9 +70,6 @@ extensions = [
 source_suffix = {
     ".rst": "restructuredtext",
 }
-
-locale_dirs = ["locales/"]
-gettext_compact = False
 
 templates_path = ["_templates"]
 html_static_path = ["static"]

@@ -1,7 +1,5 @@
 version: 2
 
-multilang: true
-
 build:
     os: ubuntu-24.04
     tools:
