@@ -239,7 +239,7 @@ requires-dist = [
     { name = "django", specifier = ">=5.0" },
     { name = "django-stubs", specifier = ">=5.0" },
     { name = "myst-parser", specifier = ">=4.0" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3.0" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "pyrefly", specifier = ">=1.0" },
     { name = "ruff", specifier = ">=0.11" },
     { name = "shibuya", specifier = ">=2024.9.24" },
@@ -295,8 +295,8 @@ dev = [
 ]
 test = [
     { name = "playwright", specifier = ">=1.52.0" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3" },
-    { name = "pytest", specifier = ">=9.1.1" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
+    { name = "pytest", specifier = ">=8.0.1" },
     { name = "pytest-django", specifier = ">=4.8.0" },
 ]
 
@@ -338,8 +338,8 @@ dev = [
 ]
 test = [
     { name = "playwright", specifier = ">=1.52.0" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3" },
-    { name = "pytest", specifier = ">=9.1.1" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
+    { name = "pytest", specifier = ">=8.0.1" },
     { name = "pytest-django", specifier = ">=4.8.0" },
 ]
 
