@@ -1,7 +1,7 @@
 import { StyleFactory } from '$composite_classes/style';
 import appStyles from '$css/app.css?inline';
 import { iconSignals } from '$store/image';
-import { LitElement, html } from 'lit';
+import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 import { Pencil, Plus, X } from 'lucide-static';
@@ -10,6 +10,14 @@ const LUCIDE = { delete: X, add: Plus, edit: Pencil } as const;
 
 @customElement('image-icon')
 export class ImageIconComponent extends LitElement {
+    static override styles = css`
+        :host {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    `;
+
     #sharedStyleFactory = new StyleFactory();
 
     firstUpdated() {
