@@ -5,9 +5,8 @@ into ``static/``.  This extension copies the bundle from the widget
 package's static directory as a fallback for local builds.
 """
 
-import shutil
 import logging
-
+import shutil
 from pathlib import Path
 
 from sphinx.application import Sphinx

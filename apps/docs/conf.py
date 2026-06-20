@@ -20,6 +20,12 @@ html_theme_options = {
     ],
 }
 
+html_context = {
+    "source_type": "github",
+    "source_user": "baseplate-admin",
+    "source_repo": "django-hstore-widget",
+}
+
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
@@ -28,6 +34,7 @@ extensions = [
     "myst_parser",
     "sphinxcontrib.mermaid",
     "sphinx_copybutton",
+    "sphinx_design",
     "sphinx_contributors",
     "sphinx_iconify",
     "llms_txt_generator",
@@ -61,3 +68,9 @@ llms_repo_url = os.environ.get(
     "LLMS_REPO_URL",
     "",
 )
+
+# Termynal config — FastAPI-inspired terminal styling
+termynal_config = {
+    "title": "bash",
+    "macos": True,
+}

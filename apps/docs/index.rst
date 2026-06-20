@@ -1,7 +1,7 @@
 Django HStore Project
 =====================
 
-A monorepo for the Django HStore ecosystem - human-friendly PostgreSQL hstore
+A monorepo for the Django HStore ecosystem -- human-friendly PostgreSQL hstore
 support for Django admin.
 
 Packages
@@ -14,10 +14,10 @@ Packages
    * - Package
      - Description
      - Install
-   * - `django-hstore-widget <api/widget.html>`__
+   * - `django-hstore-widget <https://pypi.org/project/django-hstore-widget/>`__
      - Custom widget for editing hstore data in Django admin
      - ``pip install django-hstore-widget``
-   * - `django-hstore-field <api/field.html>`__
+   * - `django-hstore-field <https://pypi.org/project/django-hstore-field/>`__
      - Drop-in HStoreField with auto-wired widget
      - ``pip install django-hstore-field``
 
@@ -36,7 +36,7 @@ For new projects, use **django-hstore-field**:
        name = models.CharField(max_length=100)
        metadata = HStoreField()
 
-The widget is auto-wired - no form configuration needed.
+The widget is auto-wired -- no form configuration needed.
 
 Contents
 --------
@@ -46,16 +46,21 @@ Contents
    :caption: User Guide
 
    docs/user-guide/installation.md
-   docs/user-guide/quickstart.md
-   docs/user-guide/hstore-vs-jsonb.md
+   docs/user-guide/quickstart.rst
    docs/user-guide/best-practices.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Technical
+
+   docs/technical/index
 
 .. toctree::
    :maxdepth: 2
    :caption: Developer Guide
 
    docs/developer-guide/architecture.rst
-   docs/developer-guide/contributing.md
+   docs/developer-guide/contributing.rst
    docs/developer-guide/frontend-build.md
    docs/playground
 

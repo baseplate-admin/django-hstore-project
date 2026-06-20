@@ -1,5 +1,7 @@
 # Installation
 
+Get up and running with django-hstore-project in minutes.
+
 ## Requirements
 
 - Python 3.10+
@@ -7,25 +9,33 @@
 - PostgreSQL 14+
 - Modern browsers (Chrome 112+, Firefox 117+, Safari 16.5+)
 
-## Option A: django-hstore-field (Recommended)
+## Install django-hstore-field
 
 ```{eval-rst}
-.. tabs::
-
-   .. tab:: pip
-
-      .. code-block:: bash
-
-          pip install django-hstore-field
-
-   .. tab:: uv
-
-      .. code-block:: bash
-
-          uv pip install django-hstore-field
+.. termynal::
+   $ pip install django-hstore-field
+   -->
+   Collecting django-hstore-field
+   Collecting django-hstore-widget
+   Installing collected packages...
+   Successfully installed django-hstore-field django-hstore-widget
 ```
 
-This installs django-hstore-widget as a dependency.
+or with uv:
+
+```{eval-rst}
+.. termynal::
+   $ uv pip install django-hstore-field
+   -->
+   Collecting django-hstore-field
+   Collecting django-hstore-widget
+   Installing collected packages...
+   Successfully installed django-hstore-field django-hstore-widget
+```
+
+## Configure
+
+Add both packages to your ``INSTALLED_APPS``:
 
 ```python
 # settings.py
@@ -37,39 +47,22 @@ INSTALLED_APPS = [
 ]
 ```
 
-## Option B: django-hstore-widget
+## Run Migrations
 
 ```{eval-rst}
-.. tabs::
-
-   .. tab:: pip
-
-      .. code-block:: bash
-
-          pip install django-hstore-widget
-
-   .. tab:: uv
-
-      .. code-block:: bash
-
-          uv pip install django-hstore-widget
+.. termynal::
+   $ python manage.py migrate
+   -->
+   Operations to perform:
+     Apply all migrations: admin, auth, contenttypes, sessions
+   Running migrations:
+     Applying contenttypes.0001_initial... OK
+     Applying auth.0001_initial... OK
+   All migrations completed.
 ```
 
-```python
-# settings.py
-INSTALLED_APPS = [
-    ...,
-    'django_hstore_widget',
-    ...,
-]
-```
+This enables the PostgreSQL hstore extension automatically.
 
-## Database Setup
+## Next
 
-Run migrations to enable the hstore extension:
-
-```bash
-python manage.py migrate
-```
-
-This applies the `HStoreExtension()` migration automatically.
+Head over to the :doc:`quickstart` to use HStore fields in your models.

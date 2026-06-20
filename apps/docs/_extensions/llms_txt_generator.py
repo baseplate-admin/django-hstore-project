@@ -8,11 +8,9 @@ Produces:
 """
 
 import re
-
 from pathlib import Path
 
 from sphinx.application import Sphinx
-
 
 BASE_URL = ""  # Set from app.config in setup()
 
