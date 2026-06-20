@@ -1,0 +1,46 @@
+# Malayalam translations for autoapi django_hstore_widget.apps.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:2
+msgid "django_hstore_widget.apps"
+msgstr "django_hstore_widget.apps"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:10
+msgid "Module Contents"
+msgstr "മോഡ്യൂൾ ഉള്ളടക്കം"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:14
+msgid "Bases: :py:obj:`django.apps.AppConfig`"
+msgstr "ബേസ്: :py:obj:`django.apps.AppConfig`"
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:17
+msgid "Application configuration for django-hstore-widget."
+msgstr "django-hstore-widget-നുള്ള അപ്ലിക്കേഷൻ കോൺഫിഗറേഷൻ."
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:19
+msgid ""
+"Registers the PostgreSQL backend check on app ready so that non-"
+"PostgreSQL setups receive a warning during system checks."
+msgstr ""
+"PostgreSQL ബാക്ക്എൻഡ് ചെക്ക് app ready-യിൽ റെജിസ്റ്റർ ചെയ്യുന്നു, non-"
+"PostgreSQL സെറ്റപ്പുകൾ സിസ്റ്റം ചെക്കിനിടെ വാർണിംഗ് ലഭിക്കുന്നു."
+
+#: ../../autoapi/django_hstore_widget/apps/index.rst:35
+msgid "Override this method in subclasses to run code when Django starts."
+msgstr "Django ആരംഭിക്കുമ്പോൾ കോഡ് റൺ ചെയ്യാൻ സബ്ക്ലാസുകളിൽ ഈ മെത്തേഡ് ഓവർറൈഡ് ചെയ്യുക."

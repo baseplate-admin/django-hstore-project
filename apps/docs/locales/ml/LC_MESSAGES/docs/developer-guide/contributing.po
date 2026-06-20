@@ -1,0 +1,150 @@
+# Malayalam translation for Contributing.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/developer-guide/contributing.rst:2
+msgid "Contributing"
+msgstr "കോൺട്രിബ്യൂട്ടിംഗ്"
+
+#: ../../docs/developer-guide/contributing.rst:4
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"ഡെവലപ്മെന്റ് എൻവയോൺമെന്റ് സെറ്റപ്പ് ചെയ്യാനും django-hstore-project-ൽ "
+"കോൺട്രിബ്യൂട്ട് ചെയ്യാനും സ്റ്റെപ്പ്-ബൈ-സ്റ്റെപ്പ് ഗൈഡ്."
+
+#: ../../docs/developer-guide/contributing.rst:8
+msgid "Prerequisites"
+msgstr "പ്രീറെക്വിസിറ്റുകൾ"
+
+#: ../../docs/developer-guide/contributing.rst:10
+msgid "Make sure you have the following installed:"
+msgstr "ഇവ ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക:"
+
+#: ../../docs/developer-guide/contributing.rst:12
+msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
+msgstr ":iconify:`mdi:python` ``uv`` പായ്ക്കേജ് മാനേജർ ഉള്ള **Python 3.10+**"
+
+#: ../../docs/developer-guide/contributing.rst:13
+msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
+msgstr ":iconify:`logos:nodejs` ``npm`` ഉള്ള **Node.js 18+**"
+
+#: ../../docs/developer-guide/contributing.rst:14
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
+msgstr ":iconify:`logos:postgresql` ലോക്കലിൽ റണ്ണിംഗ് **PostgreSQL 14+**"
+
+#: ../../docs/developer-guide/contributing.rst:17
+msgid "Clone the Repository"
+msgstr "റെപ്പോസിറ്ററി ക്ലോൺ ചെയ്യുക"
+
+#: ../../docs/developer-guide/contributing.rst:25
+msgid "Install Python Dependencies"
+msgstr "Python ഡിപെൻഡൻസികൾ ഇൻസ്റ്റാൾ ചെയ്യുക"
+
+#: ../../docs/developer-guide/contributing.rst:29
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ":iconify:`simple-icons:astral` uv"
+
+#: ../../docs/developer-guide/contributing.rst:38
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ":iconify:`simple-icons:poetry` Poetry"
+
+#: ../../docs/developer-guide/contributing.rst:47
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ":iconify:`simple-icons:pdm` PDM"
+
+#: ../../docs/developer-guide/contributing.rst:55
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ":iconify:`mdi:package-variant` pip-tools"
+
+#: ../../docs/developer-guide/contributing.rst:65
+msgid "This installs all Python packages including test dependencies."
+msgstr "ഇത് ടെസ്റ്റ് ഡിപെൻഡൻസികൾ ഉൾപ്പെടെ എല്ലാ Python പായ്ക്കേജുകളും ഇൻസ്റ്റാൾ ചെയ്യുന്നു."
+
+#: ../../docs/developer-guide/contributing.rst:68
+msgid "Install Frontend Dependencies"
+msgstr "ഫ്രണ്ട്എൻഡ് ഡിപെൻഡൻസികൾ ഇൻസ്റ്റാൾ ചെയ്യുക"
+
+#: ../../docs/developer-guide/contributing.rst:78
+msgid "This installs Lit, Vite, and all frontend tooling."
+msgstr "ഇത് Lit, Vite, എല്ലാ ഫ്രണ്ട്എൻഡ് ടൂളിംഗും ഇൻസ്റ്റാൾ ചെയ്യുന്നു."
+
+#: ../../docs/developer-guide/contributing.rst:81
+msgid "Set Up the Database"
+msgstr "ഡാറ്റാബേസ് സെറ്റപ്പ് ചെയ്യുക"
+
+#: ../../docs/developer-guide/contributing.rst:83
+msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
+msgstr "hstore എക്സ്റ്റൻഷൻ ഇനേബിൾ ചെയ്ത് ഒരു ലോക്കൽ PostgreSQL ഇൻസ്റ്റൻസ് ആരംഭിക്കുക:"
+
+#: ../../docs/developer-guide/contributing.rst:87
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/developer-guide/contributing.rst:99
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/developer-guide/contributing.rst:110
+msgid "Run the Tests"
+msgstr "ടെസ്റ്റുകൾ റൺ ചെയ്യുക"
+
+#: ../../docs/developer-guide/contributing.rst:113
+msgid "Frontend Tests"
+msgstr "ഫ്രണ്ട്എൻഡ് ടെസ്റ്റുകൾ"
+
+#: ../../docs/developer-guide/contributing.rst:129
+msgid "Backend Tests"
+msgstr "ബാക്ക്എൻഡ് ടെസ്റ്റുകൾ"
+
+#: ../../docs/developer-guide/contributing.rst:145
+msgid "Type Checking"
+msgstr "ടൈപ്പ് ചെക്കിംഗ്"
+
+#: ../../docs/developer-guide/contributing.rst:153
+msgid "Build the Project"
+msgstr "പ്രോജക്റ്റ് ബിൽഡ് ചെയ്യുക"
+
+#: ../../docs/developer-guide/contributing.rst:167
+msgid "Start the Dev Server"
+msgstr "ഡെവ് സെർവർ ആരംഭിക്കുക"
+
+#: ../../docs/developer-guide/contributing.rst:175
+msgid "The dev server runs on port 9100 with hot module replacement enabled."
+msgstr "ഡെവ് സെർവർ port 9100-ൽ hot module replacement ഇനേബിൾ ചെയ്ത് റണ്ണിംഗ്."
+
+#: ../../docs/developer-guide/contributing.rst:178
+msgid "Code Style"
+msgstr "കോഡ് സ്റ്റൈൽ"
+
+#: ../../docs/developer-guide/contributing.rst:180
+msgid "**Python**: Ruff (linter + formatter)"
+msgstr "**Python**: Ruff (ലിന്റർ + ഫോർമാറ്റർ)"
+
+#: ../../docs/developer-guide/contributing.rst:181
+msgid "**TypeScript**: Prettier"
+msgstr "**TypeScript**: Prettier"
+
+#: ../../docs/developer-guide/contributing.rst:182
+msgid "Pre-commit hooks are configured for automated formatting"
+msgstr "ഓട്ടോമേറ്റഡ് ഫോർമാറ്റിംഗിന് പ്രീ-കമ്മിറ്റ് ഹുക്കുകൾ കോൺഫിഗർ ചെയ്തിട്ടുണ്ട്"
+
+#: ../../docs/developer-guide/contributing.rst:184
+msgid "Before submitting a pull request, run:"
+msgstr "പുൾ റിക്വസ്റ്റ് സബ്മിറ്റ് ചെയ്യുന്നതിന് മുൻപ് റൺ ചെയ്യുക:"

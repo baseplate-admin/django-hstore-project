@@ -1,0 +1,81 @@
+# Malayalam translation for Quickstart.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/user-guide/quickstart.rst:2
+msgid "Quickstart"
+msgstr "ക്വിക്ക്‌സ്റ്റാർട്ട്"
+
+#: ../../docs/user-guide/quickstart.rst:4
+msgid ""
+"Use HStore fields in your Django models with a beautiful key-value editor "
+"in Django admin."
+msgstr ""
+"Django admin-ൽ സുന്ദരമായ കീ-വാല്യൂ എഡിറ്റർ ഉപയോഗിച്ച് നിങ്ങളുടെ Django "
+"മോഡലുകളിൽ HStore ഫീൽഡുകൾ ഉപയോഗിക്കുക."
+
+#: ../../docs/user-guide/quickstart.rst:7
+msgid "Basic Usage"
+msgstr "ബേസിക് ഉപയോഗം"
+
+#: ../../docs/user-guide/quickstart.rst:11
+msgid "Define a model with an HStore field:"
+msgstr "HStore ഫീൽഡ് ഉള്ള ഒരു മോഡൽ ഡിഫൈൻ ചെയ്യുക:"
+
+#: ../../docs/user-guide/quickstart.rst:20
+msgid "Create and run migrations:"
+msgstr "മൈഗ്രേഷനുകൾ സൃഷ്ടിച്ച് റൺ ചെയ്യുക:"
+
+#: ../../docs/user-guide/quickstart.rst:33
+msgid "Query HStore data:"
+msgstr "HStore ഡാറ്റ ക്വവറി ചെയ്യുക:"
+
+#: ../../docs/user-guide/quickstart.rst:43
+msgid "With Explicit Keys"
+msgstr "എക്സ്പ്ലിസിറ്റ് കീകൾ ഉപയോഗിച്ചുള്ളത്"
+
+#: ../../docs/user-guide/quickstart.rst:45
+msgid ""
+"For better admin experience, define explicit keys with labels and widgets:"
+msgstr ""
+"നല്ല admin എക്സ്പീരിയൻസിന്, ലേബിളുകൾ, വീഡ്ജറ്റുകൾ ഉപയോഗിച്ച് "
+"എക്സ്പ്ലിസിറ്റ് കീകൾ ഡിഫൈൻ ചെയ്യുക:"
+
+#: ../../docs/user-guide/quickstart.rst:69
+msgid "Using in Forms"
+msgstr "ഫോമുകളിൽ ഉപയോഗിക്കുന്നത്"
+
+#: ../../docs/user-guide/quickstart.rst:71
+msgid "The widget works automatically with ModelForms:"
+msgstr "വീഡ്ജറ്റ് ModelForms-കൊണ്ട് സ്വയമേവ പ്രവർത്തിക്കുന്നു:"
+
+#: ../../docs/user-guide/quickstart.rst:83
+msgid "Using the Form Field Directly"
+msgstr "ഫോം ഫീൽഡ് നേരിട്ട് ഉപയോഗിക്കുന്നത്"
+
+#: ../../docs/user-guide/quickstart.rst:85
+msgid "You can also use the form field directly:"
+msgstr "ഫോം ഫീൽഡ് നേരിട്ടും ഉപയോഗിക്കാം:"
+
+#: ../../docs/user-guide/quickstart.rst:104
+msgid "Next Steps"
+msgstr "അടുത്ത ഘട്ടങ്ങൾ"
+
+#: ../../docs/user-guide/quickstart.rst:106
+msgid "Check out the :doc:`best-practices` guide for production-ready patterns."
+msgstr "പ്രൊഡക്ഷൻ-റീഡി പാറ്റേണുകൾക്ക് :doc:`best-practices` ഗൈഡ് പരിശോധിക്കുക."

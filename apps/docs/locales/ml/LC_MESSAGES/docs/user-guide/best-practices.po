@@ -1,0 +1,103 @@
+# Malayalam translation for Best Practices.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/user-guide/best-practices.rst:2
+msgid "Best Practices"
+msgstr "ബെസ്റ്റ് പ്രാക്ടീസുകൾ"
+
+#: ../../docs/user-guide/best-practices.rst:4
+msgid ""
+"Tips and recommendations for using HStore fields effectively in "
+"production."
+msgstr ""
+"പ്രൊഡക്ഷനിൽ HStore ഫീൽഡുകൾ ഫലപ്രദമായി ഉപയോഗിക്കാൻ ടിപ്പുകൾ, "
+"പരിശുദ്ധികൾ."
+
+#: ../../docs/user-guide/best-practices.rst:7
+msgid "Keep Keys Consistent"
+msgstr "കീകൾ കൺസിസ്റ്റന്റ് ആക്കുക"
+
+#: ../../docs/user-guide/best-practices.rst:9
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+"നിങ്ങളുടെ അപ്ലിക്കേഷനിൽ കീകൾക്ക് നെയിമിംഗ് കൺവെൻഷൻ ഉപയോഗിക്കുക. "
+"ഇത് ക്വവറിംഗ്, മെയിന്റനൻസ് എളുപ്പമാക്കുന്നു."
+
+#: ../../docs/user-guide/best-practices.rst:27
+msgid "Use Explicit Keys When Possible"
+msgstr "സാധ്യമെങ്കിൽ എക്സ്പ്ലിസിറ്റ് കീകൾ ഉപയോഗിക്കുക"
+
+#: ../../docs/user-guide/best-practices.rst:29
+msgid "Defining explicit keys gives you:"
+msgstr "എക്സ്പ്ലിസിറ്റ് കീകൾ ഡിഫൈൻ ചെയ്യുന്നത് നൽകുന്നത്:"
+
+#: ../../docs/user-guide/best-practices.rst:31
+msgid "Labeled form fields in the admin"
+msgstr "admin-ൽ ലേബൽ ചെയ്ത ഫോം ഫീൽഡുകൾ"
+
+#: ../../docs/user-guide/best-practices.rst:32
+msgid "Built-in validation per key"
+msgstr "ഓരോ കീയ്ക്കും ബിൽട്ട്-ഇൻ വാലിഡേഷൻ"
+
+#: ../../docs/user-guide/best-practices.rst:33
+msgid "Widget customization per field"
+msgstr "ഓരോ ഫീൽഡിനും വീഡ്ജറ്റ് കസ്റ്റമൈസേഷൻ"
+
+#: ../../docs/user-guide/best-practices.rst:34
+msgid "IDE autocomplete for key names"
+msgstr "കീ നാമങ്ങൾക്ക് IDE ഓട്ടോകംപ്ലീറ്റ്"
+
+#: ../../docs/user-guide/best-practices.rst:47
+msgid "Index Frequently Queried Keys"
+msgstr "പതിവായി ക്വവറി ചെയ്യുന്ന കീകൾ ഇൻഡക്സ് ചെയ്യുക"
+
+#: ../../docs/user-guide/best-practices.rst:49
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr "പതിവായി ക്വവറി ചെയ്യുന്ന HStore കോളങ്ങളിൽ GIN ഇൻഡക്സുകൾ ചേർക്കുക:"
+
+#: ../../docs/user-guide/best-practices.rst:64
+msgid "Handle Missing Keys Gracefully"
+msgstr "നഷ്ടപ്പെട്ട കീകൾ ഗ്രേസ്‌ഫുലായി ഹാൻഡിൽ ചെയ്യുക"
+
+#: ../../docs/user-guide/best-practices.rst:66
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr "HStore കീകൾ എല്ലാ റോകളിലും ഉണ്ടാകണമെന്നില്ല. defaults ഉപയോഗിച്ച് ``get()`` ഉപയോഗിക്കുക:"
+
+#: ../../docs/user-guide/best-practices.rst:74
+msgid "Validate Key Values"
+msgstr "കീ വാല്യൂകൾ വാലിഡേറ്റ് ചെയ്യുക"
+
+#: ../../docs/user-guide/best-practices.rst:76
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr "HStore വാല്യൂകൾ സ്ട്രിംഗ് ആണ്. ആവശ്യമുള്ളിടത്ത് വാലിഡേറ്റ്, കൺവേർട്ട് ചെയ്യുക:"
+
+#: ../../docs/user-guide/best-practices.rst:90
+msgid "Consider Migration Paths"
+msgstr "മൈഗ്രേഷൻ പാത്തുകൾ പരിഗണിക്കുക"
+
+#: ../../docs/user-guide/best-practices.rst:92
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+"ഭാവിയിൽ nested data ആവശ്യമുണ്ടെന്ന് കരുതുകയാണെങ്കിൽ, HStore-ൽ നിന്ന് "
+"JSONB-ലേക്ക് മൈഗ്രേഷൻ മുൻകൂട്ടി പ്ലാൻ ചെയ്യുക. ഡാറ്റാ ഫോർമാറ്റുകൾ "
+"നേരിട്ട് കംപാറ്റിബിൾ അല്ല."

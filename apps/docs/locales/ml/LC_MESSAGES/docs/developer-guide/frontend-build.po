@@ -1,0 +1,94 @@
+# Malayalam translation for Frontend Build Pipeline.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/developer-guide/frontend-build.rst:2
+msgid "Frontend Build Pipeline"
+msgstr "ഫ്രണ്ട്എൻഡ് ബിൽഡ് പൈപ്പ്‌ലൈൻ"
+
+#: ../../docs/developer-guide/frontend-build.rst:5
+msgid "Overview"
+msgstr "സമഗ്ര കാഴ്ച"
+
+#: ../../docs/developer-guide/frontend-build.rst:7
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single"
+" IIFE bundle loaded by Django admin."
+msgstr ""
+"വീഡ്ജറ്റ് ഫ്രണ്ട്എൻഡ് Vite, TypeScript ഉപയോഗിച്ചാണ് ബിൽഡ് ചെയ്യുന്നത്, Django "
+"admin ലോഡ് ചെയ്യുന്ന ഒരു IIFE ബണ്ടിൾ ഉത്പാദിപ്പിക്കുന്നു."
+
+#: ../../docs/developer-guide/frontend-build.rst:11
+msgid "Build Steps"
+msgstr "ബിൽഡ് സ്റ്റെപ്പുകൾ"
+
+#: ../../docs/developer-guide/frontend-build.rst:13
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-"
+"hstore-widget.js``"
+msgstr ""
+"Vite ``src/frontend/index.ts`` ``dist/components/django-"
+"hstore-widget.js`` ആയി ബണ്ടിൾ ചെയ്യുന്നു"
+
+#: ../../docs/developer-guide/frontend-build.rst:14
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgstr ""
+"``scripts/copy.ts`` ബണ്ടിൾ കോപ്പി ചെയ്യുന്നു "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``-ലേക്ക്"
+
+#: ../../docs/developer-guide/frontend-build.rst:15
+msgid "Django serves the bundle via static files"
+msgstr "Django സ്റ്റാറ്റിക് ഫയലുകൾ വഴി ബണ്ടിൾ സെർവ് ചെയ്യുന്നു"
+
+#: ../../docs/developer-guide/frontend-build.rst:18
+msgid "Configuration"
+msgstr "കോൺഫിഗറേഷൻ"
+
+#: ../../docs/developer-guide/frontend-build.rst:20
+msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
+msgstr "``vite.config.ts`` - എൻട്രി പോയിന്റ്, ഔട്ട്‌പുട്ട്, അലിയാസുകൾ, ഡെവ് സെർവർ"
+
+#: ../../docs/developer-guide/frontend-build.rst:21
+msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
+msgstr "``tsconfig.json`` - TypeScript കോമ്പൈലർ ഓപ്ഷനുകൾ, പാത്ത് അലിയാസുകൾ"
+
+#: ../../docs/developer-guide/frontend-build.rst:24
+msgid "Path Aliases"
+msgstr "പാത്ത് അലിയാസുകൾ"
+
+#: ../../docs/developer-guide/frontend-build.rst:36
+msgid "Resolves to ``src/frontend/lib/*``"
+msgstr "``src/frontend/lib/*``-ലേക്ക് റിസോൾവ് ചെയ്യുന്നു"
+
+#: ../../docs/developer-guide/frontend-build.rst:45
+msgid "Resolves to ``src/frontend/stores/*``"
+msgstr "``src/frontend/stores/*``-ലേക്ക് റിസോൾവ് ചെയ്യുന്നു"
+
+#: ../../docs/developer-guide/frontend-build.rst:54
+msgid "Resolves to ``src/frontend/mappings/*``"
+msgstr "``src/frontend/mappings/*``-ലേക്ക് റിസോൾവ് ചെയ്യുന്നു"
+
+#: ../../docs/developer-guide/frontend-build.rst:63
+msgid "Resolves to ``src/frontend/components/*``"
+msgstr "``src/frontend/components/*``-ലേക്ക് റിസോൾവ് ചെയ്യുന്നു"
+
+#: ../../docs/developer-guide/frontend-build.rst:66
+msgid "Development"
+msgstr "ഡെവലപ്മെന്റ്"

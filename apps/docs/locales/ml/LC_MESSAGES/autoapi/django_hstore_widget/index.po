@@ -1,0 +1,30 @@
+# Malayalam translations for autoapi django_hstore_widget.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/index.rst:2
+msgid "django_hstore_widget"
+msgstr "django_hstore_widget"
+
+#: ../../autoapi/django_hstore_widget/index.rst:8
+msgid "django-hstore-widget -- human-friendly hstore editor for Django admin."
+msgstr "django-hstore-widget -- Django admin-നുള്ള ലളിതമായ hstore എഡിറ്റർ."
+
+#: ../../autoapi/django_hstore_widget/index.rst:13
+msgid "Submodules"
+msgstr "സബ്മോഡ്യൂളുകൾ"

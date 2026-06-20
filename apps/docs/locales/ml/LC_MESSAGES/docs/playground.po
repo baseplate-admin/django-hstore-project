@@ -1,0 +1,40 @@
+# Malayalam translation for Playground.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/playground.rst:2
+msgid "Playground"
+msgstr "പ്ലേഗ്രൗണ്ട്"
+
+#: ../../docs/playground.rst:4
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-"
+"value pairs, add new entries, and delete existing ones."
+msgstr ""
+"``django-hstore-widget`` കോമ്പോണന്റിന്റെ ഇന്ററാക്ടീവ് ഡെമോ. കീ-വാല്യൂ "
+"ജോഡികൾ എഡിറ്റ് ചെയ്യുക, പുതിയ എൻട്രികൾ ചേർക്കുക, നിലവിലുള്ളവ "
+"ഇല്ലാതാക്കുക."
+
+#: ../../docs/playground.rst:149
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built"
+" at docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+"മുകളിലെ വീഡ്ജറ്റ് docs build time-ൽ ബിൽഡ് ചെയ്ത live "
+"``django-hstore-widget`` Lit കോമ്പോണന്റ് ആണ്. കീ-വാല്യൂ ജോഡികൾ ചേർക്കാൻ, "
+"എഡിറ്റ് ചെയ്യാൻ, ഇല്ലാതാക്കാൻ ശ്രമിക്കുക."

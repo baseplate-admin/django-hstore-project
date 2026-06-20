@@ -1,0 +1,170 @@
+# Malayalam translation for HStore vs JSONB.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:2
+msgid "HStore vs JSONB"
+msgstr "HStore vs JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:4
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"PostgreSQL key-value, ഡോക്യുമെന്റ് സ്റ്റോറേജിന് രണ്ട് ഫ്ലെക്സിബിൾ ഡാറ്റാ "
+"ടൈപ്പുകൾ നൽകുന്നു. ഈ പേജ് ശരിയായത് തിരഞ്ഞെടുക്കാൻ താരകം ചെയ്യുന്നു."
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:8
+msgid "Quick Decision"
+msgstr "ക്വിക്ക് ഡിസിഷൻ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:10
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need "
+"nested structures, mixed value types, or containment queries."
+msgstr ""
+"ഡാറ്റ flat key-value pairs ആണെങ്കിൽ **HStore** ഉപയോഗിക്കുക, metadata, "
+"ടാഗുകൾ, പ്രൊഡക്റ്റ് അട്രിബ്യൂട്ടുകൾക്ക്. nested structures, mixed value "
+"types, containment queries ആവശ്യമുണ്ടെങ്കിൽ **JSONB** ഉപയോഗിക്കുക."
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:15
+msgid "Feature Matrix"
+msgstr "ഫീച്ചർ മാട്രിക്സ്"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:20
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+msgid "Feature"
+msgstr "ഫീച്ചർ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:59
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:25
+#: ../../docs/technical/hstore-vs-jsonb.rst:87
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+msgid "Flat key-value"
+msgstr "Flat key-value"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:27
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "Yes"
+msgstr "അതെ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+msgid "Nested structs"
+msgstr "Nested structs"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:29
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "No"
+msgstr "ഇല്ല"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:31
+msgid "Non-string vals"
+msgstr "Non-string vals"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:33
+msgid "Simple admin UI"
+msgstr "ലളിതമായ admin UI"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:35
+msgid "Easy validation"
+msgstr "ഇളമైన വാലിഡേഷൻ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:37
+msgid "Containment"
+msgstr "കോണ്ടെയിൻമെന്റ്"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:39
+msgid "Smaller storage"
+msgstr "ചെറിയ സ്റ്റോറേജ്"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:41
+msgid "GIN indexes"
+msgstr "GIN ഇൻഡക്സുകൾ"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:45
+msgid "Storage"
+msgstr "സ്റ്റോറേജ്"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:47
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+"HStore കൂടുതൽ കോംപാക്റ്റ്, structural overhead ഇല്ലാതെ flat key-value "
+"ജോഡികൾ സ്ടോർ ചെയ്യുന്നു:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:52
+msgid "HStore: ~200 bytes for 10 key-value pairs"
+msgstr "HStore: 10 key-value ജോഡികൾക്ക് ~200 bytes"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:53
+msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
+msgstr "JSONB: അതേ ഡാറ്റയ്ക്ക് ~350 bytes (സ്ട്രക്ചർ ഓവർഹെഡ്)"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:56
+msgid "Query Performance"
+msgstr "ക്വവറി പ്രകടനം"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:63
+#: ../../docs/technical/hstore-vs-jsonb.rst:91
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:73
+#: ../../docs/technical/hstore-vs-jsonb.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:112
+msgid "Indexing"
+msgstr "ഇൻഡക്സിംഗ്"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:114
+msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
+msgstr "HStore, JSONB രണ്ടും fast lookups-ന് GIN ഇൻഡക്സുകൾ സപ്പോർട്ട് ചെയ്യുന്നു:"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:122
+msgid "Summary"
+msgstr "ചുരുക്കം"
+
+#: ../../docs/technical/hstore-vs-jsonb.rst:126
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+"ലളിതമായ metadata, ടാഗുകൾ, പ്രൊഡക്റ്റ് അട്രിബ്യൂട്ടുകൾക്ക് HStore തിരഞ്ഞെടുക്കുക. "
+"nested configurations, API responses, ഡോക്യുമെന്റ് സ്റ്റോറേജിന് JSONB "
+"തിരഞ്ഞെടുക്കുക."

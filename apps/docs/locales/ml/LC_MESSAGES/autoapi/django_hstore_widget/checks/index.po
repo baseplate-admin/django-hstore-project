@@ -1,0 +1,68 @@
+# Malayalam translations for autoapi django_hstore_widget.checks.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:2
+msgid "django_hstore_widget.checks"
+msgstr "django_hstore_widget.checks"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:10
+msgid "Module Contents"
+msgstr "മോഡ്യൂൾ ഉള്ളടക്കം"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:14
+msgid "System check that warns when the default DB backend is not PostgreSQL."
+msgstr "ഡിഫോൾട്ട് ഡാറ്റാബേസ് ബാക്ക്എൻഡ് PostgreSQL അല്ലെങ്കിൽ വാർണിംഗ് നൽകുന്ന സിസ്റ്റം ചെക്ക്."
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:16
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+"HStore-ക്ക് ``hstore`` എക്സ്റ്റൻഷൻ ആവശ്യമാണ്, PostgreSQL-ൽ മാത്രമേ "
+"ലഭ്യമാകൂ. ഈ ചെക്ക് ``manage.py check``, ``manage.py migrate`` "
+"സമയത്താണ് റൺ ചെയ്യുന്നത്."
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst
+msgid "Parameters"
+msgstr "പാരാമീറ്ററുകൾ"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:20
+msgid "The application configurations being checked."
+msgstr "ചെക്ക് ചെയ്യുന്ന അപ്ലിക്കേഷൻ കോൺഫിഗറേഷനുകൾ."
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:22
+msgid "Additional keyword arguments from the check runner."
+msgstr "ചെക്ക് റണ്ണറിൽ നിന്ന് അധിക കീവേർഡ് ആർഗ്യുമെന്റുകൾ."
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst
+msgid "Returns"
+msgstr "തിരികെ നൽകുന്നത്"
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst:24
+msgid ""
+"A list containing a warning if the default database engine does not "
+"include ``postgres`` or ``postgis``."
+msgstr ""
+"ഡിഫോൾട്ട് ഡാറ്റാബേസ് എഞ്ചിനിൽ ``postgres`` അല്ലെങ്കിൽ ``postgis`` "
+"ഇല്ലെങ്കിൽ ഒരു വാർണിംഗ് ഉൾപ്പെട്ട ലിസ്റ്റ്."
+
+#: ../../autoapi/django_hstore_widget/checks/index.rst
+msgid "Return type"
+msgstr "റിട്ടേൺ ടൈപ്പ്"

@@ -1,0 +1,173 @@
+# Malayalam translation for Use Cases.
+# Copyright (C) 2026, baseplate-admin
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 16:01+0600\n"
+"PO-Revision-Date: 2026-06-20 16:01+0600\n"
+"Last-Translator: \n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../docs/technical/use-cases.rst:2
+msgid "Use Cases"
+msgstr "ഉപയോഗ കേസുകൾ"
+
+#: ../../docs/technical/use-cases.rst:4
+msgid ""
+"Real-world scenarios for choosing between HStore and JSONB in your Django"
+" application."
+msgstr ""
+"നിങ്ങളുടെ Django അപ്ലിക്കേഷനിൽ HStore, JSONB തിരഞ്ഞെടുക്കാൻ real-world "
+"സീനാരിയോകൾ."
+
+#: ../../docs/technical/use-cases.rst:8
+msgid "Use HStore When"
+msgstr "HStore എപ്പോൾ ഉപയോഗിക്കണം"
+
+#: ../../docs/technical/use-cases.rst:11
+msgid "Product Attributes"
+msgstr "പ്രൊഡക്റ്റ് അട്രിബ്യൂട്ടുകൾ"
+
+#: ../../docs/technical/use-cases.rst:13
+msgid ""
+"Products have varying attributes like color, size, material that don't "
+"warrant dedicated columns. HStore stores them as flat key-value pairs "
+"with a clean admin interface."
+msgstr ""
+"പ്രൊഡക്റ്റുകൾക്ക് color, size, material പോലുള്ള വൈറയിംഗ് അട്രിബ്യൂട്ടുകൾ "
+"ഉണ്ട്, dedicated columns ആവശ്യമില്ല. HStore ഇവ flat key-value ജോഡികളായി "
+"സ്ടോർ ചെയ്യുന്നു, ക്ലീൻ admin ഇന്റർഫേസ് ഉള്ളത്."
+
+#: ../../docs/technical/use-cases.rst:30 ../../docs/technical/use-cases.rst:94
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ":iconify:`logos:django` Django ORM"
+
+#: ../../docs/technical/use-cases.rst:40 ../../docs/technical/use-cases.rst:101
+msgid ":iconify:`mdi:database` SQL"
+msgstr ":iconify:`mdi:database` SQL"
+
+#: ../../docs/technical/use-cases.rst:48
+msgid "User Preferences"
+msgstr "ഉപയോക്തൃ പരിഗണനകൾ"
+
+#: ../../docs/technical/use-cases.rst:50
+msgid ""
+"Store user settings like timezone, language, notification preferences as "
+"flexible key-value pairs:"
+msgstr ""
+"timezone, language, നോട്ടിഫിക്കേഷൻ പരിഗണനകൾ പോലുള്ള ഉപയോക്തൃ "
+"സെറ്റിംഗുകൾ ഫ്ലെക്സിബിൾ key-value ജോഡികളായി സ്ടോർ ചെയ്യുക:"
+
+#: ../../docs/technical/use-cases.rst:62
+msgid "Content Metadata"
+msgstr "കണ്ടെന്റ് മെറ്റാഡാറ്റ"
+
+#: ../../docs/technical/use-cases.rst:64
+msgid ""
+"Tags, categories, and custom fields for articles, media, or any content "
+"model:"
+msgstr ""
+"ആർട്ടിക്കിളുകൾ, മീഡിയ, അല്ലെങ്കിൽ ഏതെങ്കിലും കണ്ടെന്റ് മോഡലിന് ടാഗുകൾ, "
+"ക്യാറ്റഗറി, കസ്റ്റം ഫീൽഡുകൾ:"
+
+#: ../../docs/technical/use-cases.rst:76
+msgid "Use JSONB When"
+msgstr "JSONB എപ്പോൾ ഉപയോഗിക്കണം"
+
+#: ../../docs/technical/use-cases.rst:79
+msgid "Nested Configuration"
+msgstr "Nested കോൺഫിഗറേഷൻ"
+
+#: ../../docs/technical/use-cases.rst:81
+msgid "Application settings with hierarchical structure:"
+msgstr "ഹൈറാർക്കിക്കൽ സ്ട്രക്ചർ ഉള്ള അപ്ലിക്കേഷൻ സെറ്റിംഗുകൾ:"
+
+#: ../../docs/technical/use-cases.rst:108
+msgid "API Response Cache"
+msgstr "API റെസ്പോൺസ് കാഷ്"
+
+#: ../../docs/technical/use-cases.rst:110
+msgid "Store and query nested API responses:"
+msgstr "nested API റെസ്പോൺസുകൾ സ്ടോർ, ക്വവറി ചെയ്യുക:"
+
+#: ../../docs/technical/use-cases.rst:120
+msgid "Search Facets"
+msgstr "സെർച്ച് ഫസെറ്റുകൾ"
+
+#: ../../docs/technical/use-cases.rst:122
+msgid "Dynamic filter options with mixed types:"
+msgstr "mixed types ഉള്ള ഡൈനാമിക് ഫിൽട്ടർ ഓപ്ഷനുകൾ:"
+
+#: ../../docs/technical/use-cases.rst:135
+msgid "Guidelines"
+msgstr "ഗൈഡ്‌ലൈനുകൾ"
+
+#: ../../docs/technical/use-cases.rst:140
+#: ../../docs/technical/use-cases.rst:145
+msgid "Scenario"
+msgstr "സീനാരിയോ"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "HStore"
+msgstr "HStore"
+
+#: ../../docs/technical/use-cases.rst:145
+msgid "JSONB"
+msgstr "JSONB"
+
+#: ../../docs/technical/use-cases.rst:147
+msgid "Product attributes"
+msgstr "പ്രൊഡക്റ്റ് അട്രിബ്യൂട്ടുകൾ"
+
+#: ../../docs/technical/use-cases.rst:147
+#: ../../docs/technical/use-cases.rst:149
+#: ../../docs/technical/use-cases.rst:151
+#: ../../docs/technical/use-cases.rst:153
+#: ../../docs/technical/use-cases.rst:155
+#: ../../docs/technical/use-cases.rst:157
+#: ../../docs/technical/use-cases.rst:159
+msgid "Yes"
+msgstr "അതെ"
+
+#: ../../docs/technical/use-cases.rst:149
+msgid "User preferences"
+msgstr "ഉപയോക്തൃ പരിഗണനകൾ"
+
+#: ../../docs/technical/use-cases.rst:151
+msgid "Content tags / metadata"
+msgstr "കണ്ടെന്റ് ടാഗുകൾ / മെറ്റാഡാറ്റ"
+
+#: ../../docs/technical/use-cases.rst:153
+msgid "Nested app config"
+msgstr "Nested അപ് കോൺഫിഗ്"
+
+#: ../../docs/technical/use-cases.rst:155
+msgid "API response caching"
+msgstr "API റെസ്പോൺസ് കാഷിംഗ്"
+
+#: ../../docs/technical/use-cases.rst:157
+msgid "Mixed-type form data"
+msgstr "Mixed-type ഫോം ഡാറ്റ"
+
+#: ../../docs/technical/use-cases.rst:159
+msgid "Document storage"
+msgstr "ഡോക്യുമെന്റ് സ്റ്റോറേജ്"
+
+#: ../../docs/technical/use-cases.rst:164
+msgid ""
+"When in doubt, start with HStore. It's simpler, more compact, and gives "
+"you a better admin experience. Migrate to JSONB only when you genuinely "
+"need nested structures or mixed value types."
+msgstr ""
+"ശങ്ക ഉണ്ടെങ്കിൽ HStore കൊണ്ട് തുടങ്ങുക. ലളിതം, കൂടുതൽ കോംപാക്റ്റ്, "
+"നല്ല admin എക്സ്പീരിയൻസ് നൽകുന്നു. nested structures അല്ലെങ്കിൽ mixed value "
+"types നിലവറ ആവശ്യമുണ്ടെങ്കിൽ മാത്രം JSONB-ലേക്ക് മാറുക."
