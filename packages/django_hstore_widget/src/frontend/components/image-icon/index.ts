@@ -19,7 +19,7 @@ export class ImageIconComponent extends LitElement {
         return this;
     }
 
-    @property({ type: String, reflect: true })
+    @property({ type: String, attribute: 'type', reflect: true })
     iconType: keyof typeof LUCIDE = 'delete';
 
     #unsubscribe = () => {};
