@@ -23,10 +23,11 @@ html_theme_options = {
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
+    "sphinx_tabs.tabs",
+    "sphinx_termynal",
     "myst_parser",
     "sphinxcontrib.mermaid",
     "sphinx_copybutton",
-    "sphinx_tabs.tabs",
     "sphinx_contributors",
     "sphinx_iconify",
     "llms_txt_generator",
