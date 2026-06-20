@@ -1,9 +1,9 @@
-# Playground
+Playground
+==========
 
 Interactive demo of the ``django-hstore-widget`` component.
 Edit key-value pairs, add new entries, and delete existing ones.
 
-```{eval-rst}
 .. raw:: html
 
    <script type="module" src="../_static/admin/js/django_hstore_widget/django-hstore-widget.js"></script>
@@ -144,9 +144,7 @@ Edit key-value pairs, add new entries, and delete existing ones.
            ></django-hstore-widget>
        </fieldset>
    </div>
-```
 
-:::{note}
-The widget above is the live ``django-hstore-widget`` Lit component built
-at docs build time.  Try adding, editing, and deleting key-value pairs.
-:::
+.. note::
+   The widget above is the live ``django-hstore-widget`` Lit component built
+   at docs build time.  Try adding, editing, and deleting key-value pairs.

@@ -1,0 +1,42 @@
+<!-- Source Sans 3 Variable Font (weight 200–900, upright + italic) -->
+<link rel="preload" as="font" href="{{ pathto('_static/fonts/source-sans-3/SourceSans3VF-Upright.ttf', 1) }}" type="font/ttf" crossorigin>
+<link rel="preload" as="font" href="{{ pathto('_static/fonts/jetbrains-mono/JetBrainsMono%5Bwght%5D.ttf', 1) }}" type="font/ttf" crossorigin>
+
+<style>
+@font-face {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('{{ pathto("_static/fonts/source-sans-3/SourceSans3VF-Upright.ttf", 1) }}') format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans 3';
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('{{ pathto("_static/fonts/source-sans-3/SourceSans3VF-Italic.ttf", 1) }}') format('truetype');
+}
+
+/* JetBrains Mono Variable Font (weight 400–800, upright + italic) */
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('{{ pathto("_static/fonts/jetbrains-mono/JetBrainsMono%5Bwght%5D.ttf", 1) }}') format('truetype');
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('{{ pathto("_static/fonts/jetbrains-mono/JetBrainsMono-Italic%5Bwght%5D.ttf", 1) }}') format('truetype');
+}
+
+:root {
+    --sy-f-heading: 'Source Sans 3', var(--sy-f-sys), sans-serif;
+    --sy-f-text: 'Source Sans 3', var(--sy-f-sys), sans-serif;
+    --sy-f-mono: 'JetBrains Mono', var(--sy-f-sys), monospace;
+}
+</style>

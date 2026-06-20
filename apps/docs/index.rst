@@ -10,7 +10,7 @@ Packages
 .. grid:: 2
    :gutter: 2
 
-   .. grid-item-card:: django-hstore-widget
+   .. grid-item-card:: :iconify:`mdi:puzzle-edit` django-hstore-widget
       :columns: 12 12 6 6
       :class-card: intro-card
       :shadow: md
@@ -24,7 +24,7 @@ Packages
 
          pip install django-hstore-widget
 
-   .. grid-item-card:: django-hstore-field
+   .. grid-item-card:: :iconify:`mdi:database-edit` django-hstore-field
       :columns: 12 12 6 6
       :class-card: intro-card
       :shadow: md
@@ -62,37 +62,30 @@ Contents
    :maxdepth: 2
    :caption: User Guide
 
-   docs/user-guide/installation.md
-   docs/user-guide/quickstart.md
-   docs/user-guide/best-practices.md
+   docs/user-guide/installation.rst
+   docs/user-guide/quickstart.rst
+   docs/user-guide/best-practices.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Technical
 
-   docs/technical/index.md
+   docs/technical/index.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Developer Guide
 
-   docs/developer-guide/architecture.md
-   docs/developer-guide/contributing.md
-   docs/developer-guide/frontend-build.md
-   docs/playground.md
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Reference
-
-   api/widget.rst
-   api/field.rst
+   docs/developer-guide/architecture.rst
+   docs/developer-guide/contributing.rst
+   docs/developer-guide/frontend-build.rst
+   docs/playground.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: LLM Context
 
-   docs/llms/index.md
+   docs/llms/index.rst
 
 .. toctree::
    :maxdepth: 2
