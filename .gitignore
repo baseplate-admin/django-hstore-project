@@ -42,6 +42,7 @@ packages/*/uv.lock
 
 # Docs static builds (generated during docs build)
 apps/docs/static/
+!apps/docs/static/django-admin-fields.css
 
 # Sphinx build output
 apps/docs/_build/
