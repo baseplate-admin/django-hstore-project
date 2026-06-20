@@ -38,7 +38,8 @@ def ensure_widget_bundle(app: Sphinx, env, exception=None):
     target_dir.mkdir(parents=True, exist_ok=True)
 
     # If already copied by pre_build or a previous run, skip
-    if any(target_dir.iterdir()):
+    existing = list(target_dir.iterdir())
+    if existing and any(f.suffix == ".css" for f in existing):
         logger.info("Widget bundle already present in static dir.")
         return
 
