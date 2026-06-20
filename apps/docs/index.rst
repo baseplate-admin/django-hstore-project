@@ -71,3 +71,9 @@ Contents
    :caption: LLM Context
 
    docs/llms/index.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Legal
+
+   docs/license
