@@ -20,23 +20,23 @@ msgstr ""
 
 #: ../../index.rst:61
 msgid "User Guide"
-msgstr "ইউজার গাইড"
+msgstr "ব্যবহারকারী নির্দেশিকা"
 
 #: ../../index.rst:69
 msgid "Technical"
-msgstr "টেকনিক্যাল"
+msgstr "প্রযুক্তিগত"
 
 #: ../../index.rst:75
 msgid "Developer Guide"
-msgstr "ডেভেলপার গাইড"
+msgstr "ডেভেলপার নির্দেশিকা"
 
 #: ../../index.rst:84
 msgid "LLM Context"
-msgstr "LLM কনটেক্সট"
+msgstr "LLM প্রসঙ্গ"
 
 #: ../../index.rst:90
 msgid "Legal"
-msgstr "লিগ্যাল"
+msgstr "আইনি"
 
 #: ../../index.rst:2
 msgid "Django HStore Project"
@@ -47,8 +47,8 @@ msgid ""
 "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL "
 "hstore support for Django admin."
 msgstr ""
-"Django HStore ইকোসিস্টেমের জন্য একটি monorepo, Django admin-এর জন্য "
-"PostgreSQL hstore সাপোর্ট সহজ ও ইউজার-ফ্রেন্ডলিভাবে।"
+"Django HStore ইকোসিস্টেমের জন্য একটি একক ভঁড়ার, Django admin-এর জন্য "
+"PostgreSQL hstore সহজ ও ব্যবহারকারী-বান্ধব সমর্থন।"
 
 #: ../../index.rst:8
 msgid "Packages"
@@ -63,8 +63,8 @@ msgid ""
 "Custom widget for editing hstore data in Django admin. Built with Lit and"
 " TypeScript for a responsive key-value editor."
 msgstr ""
-"Django admin-এ hstore ডাটা এডিট করার জন্য কাস্টম উইজেট। Lit এবং TypeScript দিয়ে "
-"বিল্ট করা responsive key-value এডিটর।"
+"Django admin-এ hstore ডাটা সম্পাদনা করার জন্য কাস্টম উইজেট। Lit এবং TypeScript দিয়ে "
+"নির্মিত প্রতিক্রিয়াশীল key-value এডিটর।"
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
@@ -75,20 +75,20 @@ msgid ""
 "Drop-in HStoreField with auto-wired widget. Zero configuration for new "
 "projects."
 msgstr ""
-"auto-wired উইজেট সহ drop-in HStoreField। নতুন প্রজেক্টের জন্য কোনো configuration লাগবে না।"
+"স্বয়ংক্রিয় উইজেট সহ HStoreField। নতুন প্রকল্পের জন্য কোনো সেটআপ লাগবে না।"
 
 #: ../../index.rst:42
 msgid "Quick Start"
-msgstr "কুইক স্টার্ট"
+msgstr "দ্রুত শুরু"
 
 #: ../../index.rst:44
 msgid "For new projects, use **django-hstore-field**:"
-msgstr "নতুন প্রজেক্টের জন্য **django-hstore-field** ব্যবহার করুন:"
+msgstr "নতুন প্রকল্পের জন্য **django-hstore-field** ব্যবহার করুন:"
 
 #: ../../index.rst:56
 msgid "The widget is auto-wired, no form configuration needed."
-msgstr "উইজেট auto-wired, কোনো form configuration লাগবে না।"
+msgstr "উইজেট স্বয়ংক্রিয়ভাবে যুক্ত হয়, কোনো ফর্ম সেটআপ লাগবে না।"
 
 #: ../../index.rst:59
 msgid "Contents"
-msgstr "কনটেন্টস"
+msgstr "বিষয়বস্তু"

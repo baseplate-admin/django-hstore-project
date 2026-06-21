@@ -38,11 +38,11 @@ msgstr "कानूनी"
 
 #: ../../index.rst:2
 msgid "Django HStore Project"
-msgstr "Django HStore प्रोजेक्ट"
+msgstr "Django HStore परियोजना"
 
 #: ../../index.rst:4
 msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
-msgstr "Django HStore इकोसिस्टम के लिए एक monorepo, Django admin के लिए मानव-अनुकूल PostgreSQL hstore समर्थन।"
+msgstr "Django HStore इकोसिस्टम के लिए एक एकल भंडार, Django admin के लिए उपयोगकर्ता-अनुकूल PostgreSQL hstore समर्थन।"
 
 #: ../../index.rst:8
 msgid "Packages"
@@ -54,7 +54,7 @@ msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
 msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
-msgstr "Django admin में hstore डेटा संपादित करने के लिए कस्टम विजेट। Lit और TypeScript से बना प्रतिक्रियाशील key-value एडिटर।"
+msgstr="Django admin में hstore डेटा संपादित करने के लिए कस्टम विजेट। Lit और TypeScript से बना अनुक्रियाशील key-value एडिटर।"
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
@@ -62,15 +62,15 @@ msgstr "django-hstore-field"
 
 #: ../../index.rst:34
 msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
-msgstr "स्वतः जुड़े विजेट के साथ drop-in HStoreField। नए प्रोजेक्ट के लिए शून्य कॉन्फ़िगरेशन।"
+msgstr "स्वतः जुड़े विजेट के साथ HStoreField। नई परियोजना के लिए शून्य कॉन्फ़िगरेशन।"
 
 #: ../../index.rst:42
 msgid "Quick Start"
-msgstr "द्रुत आरंभ"
+msgstr "तेज़ शुरुआत"
 
 #: ../../index.rst:44
 msgid "For new projects, use **django-hstore-field**:"
-msgstr "नए प्रोजेक्ट के लिए, **django-hstore-field** का उपयोग करें:"
+msgstr="नई परियोजना के लिए, **django-hstore-field** का उपयोग करें:"
 
 #: ../../index.rst:56
 msgid "The widget is auto-wired, no form configuration needed."

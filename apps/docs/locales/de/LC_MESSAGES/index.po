@@ -22,7 +22,7 @@ msgstr "Benutzerhandbuch"
 
 #: ../../index.rst:69
 msgid "Technical"
-msgstr "Technisch"
+msgstr="Technische Details"
 
 #: ../../index.rst:75
 msgid "Developer Guide"
@@ -42,7 +42,7 @@ msgstr "Django HStore-Projekt"
 
 #: ../../index.rst:4
 msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
-msgstr "Ein Monorepo für das Django HStore-Ökosystem, benutzerfreundliche PostgreSQL-HStore-Unterstützung für das Django-Admin."
+msgstr="Ein Monorepo für das Django HStore-Ökosystem mit benutzerfreundlicher PostgreSQL-HStore-Unterstützung für Django Admin."
 
 #: ../../index.rst:8
 msgid "Packages"
@@ -54,7 +54,7 @@ msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
 msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
-msgstr "Benutzerdefiniertes Widget zum Bearbeiten von HStore-Daten im Django-Admin. Mit Lit und TypeScript entwickelt für einen reaktiven Schlüssel-Wert-Editor."
+msgstr="Benutzerdefiniertes Widget zum Bearbeiten von HStore-Daten im Django-Admin. Mit Lit und TypeScript entwickelt für einen dynamischen Schlüssel-Wert-Editor."
 
 #: ../../index.rst:27
 msgid "django-hstore-field"

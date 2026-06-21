@@ -54,7 +54,7 @@ msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
 msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
-msgstr "Widget personnalisé pour éditer les données hstore dans l'administration Django. Conçu avec Lit et TypeScript pour un éditeur clé-valeur réactif."
+msgstr="Widget personnalisé pour éditer les données hstore dans l'administration Django. Conçu avec Lit et TypeScript pour un éditeur clé-valeur interactif."
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
@@ -62,7 +62,7 @@ msgstr "django-hstore-field"
 
 #: ../../index.rst:34
 msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
-msgstr "HStoreField prêt à l'emploi avec widget auto-cablagé. Zéro configuration pour les nouveaux projets."
+msgstr "HStoreField prêt à l'emploi avec widget préconfiguré. Aucune configuration pour les nouveaux projets."
 
 #: ../../index.rst:42
 msgid "Quick Start"
@@ -74,7 +74,7 @@ msgstr "Pour les nouveaux projets, utilisez **django-hstore-field** :"
 
 #: ../../index.rst:56
 msgid "The widget is auto-wired, no form configuration needed."
-msgstr "Le widget est auto-cablagé, aucune configuration de formulaire nécessaire."
+msgstr "Le widget est préconfiguré, aucune configuration de formulaire nécessaire."
 
 #: ../../index.rst:59
 msgid "Contents"
