@@ -1,7 +1,32 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,opsz,wght@0,8..14,200..900;1,8..14,200..900&family=JetBrains+Mono:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <style>
+@font-face {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url("{{ pathto('_static/fonts/source-sans-3/SourceSans3VF-Upright.ttf', 1) }}") format("truetype");
+}
+@font-face {
+    font-family: 'Source Sans 3';
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url("{{ pathto('_static/fonts/source-sans-3/SourceSans3VF-Italic.ttf', 1) }}") format("truetype");
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url("{{ pathto('_static/fonts/jetbrains-mono/JetBrainsMono-Variable.ttf', 1) }}") format("truetype");
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url("{{ pathto('_static/fonts/jetbrains-mono/JetBrainsMono-Italic-Variable.ttf', 1) }}") format("truetype");
+}
 :root {
     --sy-f-heading: 'Source Sans 3', var(--sy-f-sys), sans-serif;
     --sy-f-text: 'Source Sans 3', var(--sy-f-sys), sans-serif;

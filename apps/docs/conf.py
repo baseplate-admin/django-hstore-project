@@ -74,9 +74,7 @@ source_suffix = {
 
 templates_path = ["_templates"]
 html_static_path = ["static"]
-html_css_files = [
-    "django-admin-fields.css",
-]
+html_css_files = []
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc_typehints = "description"

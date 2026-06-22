@@ -187,6 +187,50 @@ Edit key-value pairs, add new entries, and delete existing ones.
        .admin-playground django-hstore-widget .warning {
            color: var(--error-fg, #ba2121);
        }
+
+       /* Django admin vTextField / vLargeTextField styling for docs code blocks */
+       div.highlight,
+       div.highlight-python,
+       div.highlight-bash,
+       div.highlight-sql,
+       div.highlight-text,
+       div.highlight-default,
+       div.highlight-django,
+       div.highlight-console {
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           background-color: #f8f8f8;
+           padding: 6px 8px;
+           margin: 0 0 1.4em;
+           font-family: "Fira Mono", Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
+           font-size: 0.8125rem;
+           line-height: 1.4;
+           color: #333;
+       }
+
+       div.highlight > pre {
+           background: none;
+           border: none;
+           padding: 0;
+           margin: 0;
+       }
+
+       div.highlight pre code {
+           background: none;
+           border: none;
+           padding: 0;
+           margin: 0;
+       }
+
+       code.literal,
+       code.xref {
+           font-family: "Fira Mono", Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
+           font-size: 0.8125rem;
+           background-color: #f8f8f8;
+           border: 1px solid #e8e8e8;
+           border-radius: 3px;
+           padding: 1px 4px;
+       }
    </style>
 
    <div class="admin-playground">
