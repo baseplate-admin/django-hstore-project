@@ -200,7 +200,7 @@ export class DjangoHstoreWidget extends LitElement {
             <div class="form-row justify-between items-center flex">
                 <button
                     type="button"
-                    class="${cn(isRowsMode && 'items-center select-none justify-center flex gap-1 cursor-pointer', !isRowsMode && 'invisible')}"
+                    class="${cn(isRowsMode && 'items-center select-none justify-center flex gap-1 cursor-pointer whitespace-nowrap', !isRowsMode && 'invisible')}"
                     id="add-button"
                     aria-label="Add Row"
                     @click="${handleAddEntry}"
