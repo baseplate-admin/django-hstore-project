@@ -78,3 +78,64 @@ msgid ""
 "Check out the :doc:`best-practices` guide for production-ready patterns."
 msgstr ""
 "പ്രൊഡക്ഷൻ-റീഡി പാറ്റേണുകൾക്ക് :doc:`best-practices` ഗൈഡ് പരിശോധിക്കുക."
+
+msgid "Quick Start"
+msgstr "പ്രാഥമിക ആരംഭം"
+
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr "ഒരു മിനിറ്റിനുള്ളിൽ django-hstore-പ്രോജക്റ്റ് പ്രവർത്തനക്ഷമമാക്കുക."
+
+msgid "Create a Model"
+msgstr "ഒരു മോഡൽ സൃഷ്ടിക്കുക"
+
+msgid "Add an HStore field to any model:"
+msgstr "ഏത് മോഡലിലും ഒരു HStore ഫീൽഡ് ചേർക്കുക:"
+
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr ""
+"ഇതോടെ മതി. വിഡ്ജെറ്റ് സ്വയം കണക്ഷൻ ചെയ്യുന്നു, ഫോം കോൺഫിഗറേഷൻ ആവശ്യമില്ല."
+
+msgid "Run Migrations"
+msgstr "മൈഗ്രേഷനുകൾ റൺ ചെയ്യുക"
+
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr "ഇത് PostgreSQL hstore എക്സ്റ്റൻഷൻ സ്വയം സജീവമാക്കുന്നു."
+
+msgid "Register in Admin"
+msgstr "അഡ്മിനിസ്ട്രേഷനിൽ രജിസ്റ്റർ ചെയ്യുക"
+
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
+msgstr ""
+"നിങ്ങളുടെ അഡ്മിൻ പേജ് സന്ദർശിക്കുക, കീ-വാല്യൂ ഇന്റർഫേസുള്ള HStore വിഡ്ജെറ്റ്"
+" കാണാം."
+
+msgid "With Custom Keys"
+msgstr "കസ്റ്റം കീകളോടെ"
+
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
+msgstr ""
+"ഫ്രീ-ഫോം ഇന്റർഫേസിന് പകരം ലേബൽ ചെയ്ത ഫോം ഫീൽഡുകൾ ലഭിക്കാൻ എക്സ്പ്ലിസിറ്റ് "
+"കീകൾ നിർവചിക്കുക."
+
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
+msgstr "ഓരോ കീയും വാലിഡേഷൻ, വിഡ്ജറ്റുകൾ, ലേബലുകളുള്ള ഫോം ഫീൽഡായി മാറുന്നു."
+
+msgid "What's Next"
+msgstr "അടുത്തു എന്ത്"
+
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ":doc:`../user-guide/installation` - വിശദമായ ഇൻസ്റ്റാളേഷൻ ഓപ്ഷനുകൾ"
+
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ""
+":doc:`../technical/hstore-vs-jsonb` - എപ്പോൾ HStore vs JSONB ഉപയോഗിക്കണം"
+
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ""
+":doc:`../user-guide/best-practices` - പ്രൊഡക്ഷൻ ഉപയോഗത്തിനുള്ള ടിപ്പുകൾ"
