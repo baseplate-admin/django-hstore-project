@@ -75,6 +75,8 @@ source_suffix = {
 }
 
 templates_path = ["_templates"]
+locale_dirs = ["locales"]
+language = "en"
 html_static_path = ["static"]
 html_css_files = []
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
