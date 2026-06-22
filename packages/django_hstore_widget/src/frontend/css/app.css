@@ -93,4 +93,8 @@ django-hstore-widget {
         color: var(--error-fg, red);
         border-color: var(--error-fg, red);
     }
+    /* Whitespace */
+    .whitespace-nowrap {
+        white-space: nowrap;
+    };
 }
