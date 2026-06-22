@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Persian <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 
 #: ../../docs/developer-guide/frontend-build.rst:2
 msgid "Frontend Build Pipeline"
@@ -25,20 +24,33 @@ msgid "Overview"
 msgstr "نمای کلی"
 
 #: ../../docs/developer-guide/frontend-build.rst:7
-msgid "The widget frontend is built with Vite and TypeScript, producing a single IIFE bundle loaded by Django admin."
-msgstr "Frontend ویجت با Vite و TypeScript ساخته شده و یک بسته IIFE تولید می‌کند که توسط Django admin بارگذاری می‌شود."
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
+msgstr ""
+"Frontend ویجت با Vite و TypeScript ساخته شده و یک بسته IIFE تولید می‌کند که "
+"توسط Django admin بارگذاری می‌شود."
 
 #: ../../docs/developer-guide/frontend-build.rst:11
 msgid "Build Steps"
 msgstr "مراحل ساخت"
 
 #: ../../docs/developer-guide/frontend-build.rst:13
-msgid "Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-widget.js``"
-msgstr "Vite فایل ``src/frontend/index.ts`` را به ``dist/components/django-hstore-widget.js`` تبدیل می‌کند"
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
+msgstr ""
+"Vite فایل ``src/frontend/index.ts`` را به ``dist/components/django-hstore-"
+"widget.js`` تبدیل می‌کند"
 
 #: ../../docs/developer-guide/frontend-build.rst:14
-msgid "``scripts/copy.ts`` copies the bundle to ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
-msgstr "``scripts/copy.ts`` بسته را به ``src/django_hstore_widget/static/admin/js/django_hstore_widget/`` کپی می‌کند"
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgstr ""
+"``scripts/copy.ts`` بسته را به "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/`` کپی "
+"می‌کند"
 
 #: ../../docs/developer-guide/frontend-build.rst:15
 msgid "Django serves the bundle via static files"

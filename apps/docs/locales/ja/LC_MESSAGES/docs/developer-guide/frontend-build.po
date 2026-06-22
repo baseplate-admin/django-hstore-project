@@ -1,19 +1,17 @@
-﻿# Japanese translation for Frontend Build Pipeline.
+# Japanese translation for Frontend Build Pipeline.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/developer-guide/frontend-build.rst:2
@@ -26,11 +24,11 @@ msgstr "概要"
 
 #: ../../docs/developer-guide/frontend-build.rst:7
 msgid ""
-"The widget frontend is built with Vite and TypeScript, producing a single"
-" IIFE bundle loaded by Django admin."
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
 msgstr ""
-"ウィジェットフロントエンドは Vite と TypeScript でビルドされ、"
-"Django admin によってロードされる単一の IIFE バンドルを生成します。"
+"ウィジェットフロントエンドは Vite と TypeScript でビルドされ、Django admin によってロードされる単一の IIFE "
+"バンドルを生成します。"
 
 #: ../../docs/developer-guide/frontend-build.rst:11
 msgid "Build Steps"
@@ -38,11 +36,11 @@ msgstr "ビルド手順"
 
 #: ../../docs/developer-guide/frontend-build.rst:13
 msgid ""
-"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-"
-"hstore-widget.js``"
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
 msgstr ""
-"Vite が ``src/frontend/index.ts`` を ``dist/components/django-"
-"hstore-widget.js`` にバンドル"
+"Vite が ``src/frontend/index.ts`` を ``dist/components/django-hstore-"
+"widget.js`` にバンドル"
 
 #: ../../docs/developer-guide/frontend-build.rst:14
 msgid ""
@@ -50,8 +48,7 @@ msgid ""
 "``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
 msgstr ""
 "``scripts/copy.ts`` がバンドルを "
-"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
-" にコピー"
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/`` にコピー"
 
 #: ../../docs/developer-guide/frontend-build.rst:15
 msgid "Django serves the bundle via static files"

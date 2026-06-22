@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: German <de@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../docs/technical/use-cases.rst:2
@@ -22,8 +21,12 @@ msgid "Use Cases"
 msgstr "Anwendungsfälle"
 
 #: ../../docs/technical/use-cases.rst:4
-msgid "Real-world scenarios for choosing between HStore and JSONB in your Django application."
-msgstr "Praktische Szenarien für die Entscheidung zwischen HStore und JSONB in Ihrer Django-Anwendung."
+msgid ""
+"Real-world scenarios for choosing between HStore and JSONB in your Django "
+"application."
+msgstr ""
+"Praktische Szenarien für die Entscheidung zwischen HStore und JSONB in Ihrer"
+" Django-Anwendung."
 
 #: ../../docs/technical/use-cases.rst:8
 msgid "Use HStore When"
@@ -34,11 +37,17 @@ msgid "Product Attributes"
 msgstr "Produktattribute"
 
 #: ../../docs/technical/use-cases.rst:13
-msgid "Products have varying attributes like color, size, material that don't warrant dedicated columns. HStore stores them as flat key-value pairs with a clean admin interface."
-msgstr "Produkte verfügen über unterschiedliche Attribute wie Farbe, Größe oder Material, die keine eigenen Spalten rechtfertigen. HStore speichert diese als einfache Schlüssel-Wert-Paare mit einer übersichtlichen Admin-Oberfläche."
+msgid ""
+"Products have varying attributes like color, size, material that don't "
+"warrant dedicated columns. HStore stores them as flat key-value pairs with a"
+" clean admin interface."
+msgstr ""
+"Produkte verfügen über unterschiedliche Attribute wie Farbe, Größe oder "
+"Material, die keine eigenen Spalten rechtfertigen. HStore speichert diese "
+"als einfache Schlüssel-Wert-Paare mit einer übersichtlichen Admin-"
+"Oberfläche."
 
-#: ../../docs/technical/use-cases.rst:30
-#: ../../docs/technical/use-cases.rst:94
+#: ../../docs/technical/use-cases.rst:30 ../../docs/technical/use-cases.rst:94
 msgid ":iconify:`logos:django` Django ORM"
 msgstr ":iconify:`logos:django` Django ORM"
 
@@ -52,16 +61,24 @@ msgid "User Preferences"
 msgstr "Benutzereinstellungen"
 
 #: ../../docs/technical/use-cases.rst:50
-msgid "Store user settings like timezone, language, notification preferences as flexible key-value pairs:"
-msgstr "Speichern Sie Benutzereinstellungen wie Zeitzone, Sprache und Benachrichtigungsvorlieben als flexible Schlüssel-Wert-Paare:"
+msgid ""
+"Store user settings like timezone, language, notification preferences as "
+"flexible key-value pairs:"
+msgstr ""
+"Speichern Sie Benutzereinstellungen wie Zeitzone, Sprache und "
+"Benachrichtigungsvorlieben als flexible Schlüssel-Wert-Paare:"
 
 #: ../../docs/technical/use-cases.rst:62
 msgid "Content Metadata"
 msgstr "Inhaltsmetadaten"
 
 #: ../../docs/technical/use-cases.rst:64
-msgid "Tags, categories, and custom fields for articles, media, or any content model:"
-msgstr "Tags, Kategorien und benutzerdefinierte Felder für Artikel, Medien oder beliebige Inhaltsmodelle:"
+msgid ""
+"Tags, categories, and custom fields for articles, media, or any content "
+"model:"
+msgstr ""
+"Tags, Kategorien und benutzerdefinierte Felder für Artikel, Medien oder "
+"beliebige Inhaltsmodelle:"
 
 #: ../../docs/technical/use-cases.rst:76
 msgid "Use JSONB When"
@@ -147,5 +164,12 @@ msgid "Document storage"
 msgstr "Dokumentspeicherung"
 
 #: ../../docs/technical/use-cases.rst:164
-msgid "When in doubt, start with HStore. It's simpler, more compact, and gives you a better admin experience. Migrate to JSONB only when you genuinely need nested structures or mixed value types."
-msgstr "Im Zweifelsfall beginnen Sie mit HStore. Es ist einfacher, kompakter und bietet eine bessere Admin-Erfahrung. Wechseln Sie nur dann zu JSONB, wenn Sie tatsächlich verschachtelte Strukturen oder gemischte Wertetypen benötigen."
+msgid ""
+"When in doubt, start with HStore. It's simpler, more compact, and gives you "
+"a better admin experience. Migrate to JSONB only when you genuinely need "
+"nested structures or mixed value types."
+msgstr ""
+"Im Zweifelsfall beginnen Sie mit HStore. Es ist einfacher, kompakter und "
+"bietet eine bessere Admin-Erfahrung. Wechseln Sie nur dann zu JSONB, wenn "
+"Sie tatsächlich verschachtelte Strukturen oder gemischte Wertetypen "
+"benötigen."

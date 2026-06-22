@@ -5,12 +5,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
-"Language-Team: Thai <ll@li.org>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,5 +88,6 @@ msgid "Next"
 msgstr "ถัดไป"
 
 #: ../../docs/user-guide/installation.rst:103
-msgid "Head over to the :doc:`quickstart` to use HStore fields in your models."
+msgid ""
+"Head over to the :doc:`quickstart` to use HStore fields in your models."
 msgstr "ไปที่ :doc:`quickstart` เพื่อเริ่มใช้ฟิลด์ HStore ในโมเดลของคุณ"

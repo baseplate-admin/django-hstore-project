@@ -1,80 +1,91 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../index.rst:61
 msgid "User Guide"
-msgstr ""
+msgstr "Hướng dẫn người dùng"
 
 #: ../../index.rst:69
 msgid "Technical"
-msgstr ""
+msgstr "Kỹ thuật"
 
 #: ../../index.rst:75
 msgid "Developer Guide"
-msgstr ""
+msgstr "Hướng dẫn nhà phát triển"
 
 #: ../../index.rst:84
 msgid "LLM Context"
-msgstr ""
+msgstr "Ngữ cảnh LLM"
 
 #: ../../index.rst:90
 msgid "Legal"
-msgstr ""
+msgstr "Pháp lý"
 
 #: ../../index.rst:2
 msgid "Django HStore Project"
-msgstr ""
+msgstr "Dự án Django HStore"
 
 #: ../../index.rst:4
-msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
+msgid ""
+"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore"
+" support for Django admin."
 msgstr ""
+"Một monorepo cho hệ sinh thái Django HStore, hỗ trợ PostgreSQL hstore thân "
+"thiện với con người cho Django admin."
 
 #: ../../index.rst:8
 msgid "Packages"
-msgstr ""
+msgstr "Gói"
 
 #: ../../index.rst:13
 msgid "django-hstore-widget"
-msgstr ""
+msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
-msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
+msgid ""
+"Custom widget for editing hstore data in Django admin. Built with Lit and "
+"TypeScript for a responsive key-value editor."
 msgstr ""
+"Widget tùy chỉnh để chỉnh sửa dữ liệu hstore trong Django admin. Xây dựng "
+"với Lit và TypeScript cho trình soạn thảo khóa-giá trị phản hồi."
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
-msgstr ""
+msgstr "django-hstore-field"
 
 #: ../../index.rst:34
-msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgid ""
+"Drop-in HStoreField with auto-wired widget. Zero configuration for new "
+"projects."
 msgstr ""
+"HStoreField thay thế với widget tự động kết nối. Không cần cấu hình cho dự "
+"án mới."
 
 #: ../../index.rst:42
 msgid "Quick Start"
-msgstr ""
+msgstr "Bắt đầu nhanh"
 
 #: ../../index.rst:44
 msgid "For new projects, use **django-hstore-field**:"
-msgstr ""
+msgstr "Đối với dự án mới, sử dụng **django-hstore-field**:"
 
 #: ../../index.rst:56
 msgid "The widget is auto-wired, no form configuration needed."
-msgstr ""
+msgstr "Widget tự động kết nối, không cần cấu hình biểu mẫu."
 
 #: ../../index.rst:59
 msgid "Contents"
-msgstr ""
+msgstr "Nội dung"

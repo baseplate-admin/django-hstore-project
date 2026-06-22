@@ -1,40 +1,27 @@
-﻿# العربية translation for Django HStore Project.
+# العربية translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:40+0600
-"
-"PO-Revision-Date: 2026-06-20 17:40+0600
-"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"
-"Language: ar
-"
-"Language-Team: ar <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
+"Last-Translator: baseplate-admin <61817579+baseplate-"
+"admin@users.noreply.github.com>\n"
+
 #: ../../docs/playground.rst:2
 msgid "Playground"
 msgstr "ساحة اللعب"
 
 #: ../../docs/playground.rst:4
-msgid "Interactive demo of the ``django-hstore-widget`` component. Edit key-value pairs, add new entries, and delete existing ones."
-msgstr "عرض تفاعلي لمكون django-hstore-widget. عدّل أزواج المفاتيح والقيم، وأضف إدخالات جديدة، واحذف الموجودة."
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-value "
+"pairs, add new entries, and delete existing ones."
+msgstr ""
+"عرض تفاعلي لمكون django-hstore-widget. عدّل أزواج المفاتيح والقيم، وأضف "
+"إدخالات جديدة، واحذف الموجودة."
 
 #: ../../docs/playground.rst:149
-msgid "The widget above is the live ``django-hstore-widget`` Lit component built at docs build time.  Try adding, editing, and deleting key-value pairs."
-msgstr "الأداة أعلاه هي مكون Lit الحي django-hstore-widget المُدمج أثناء بناء التوثيق. جرّب إضافة أزواج المفاتيح والقيم وتعديلها وحذفها."
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built at"
+" docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+"الأداة أعلاه هي مكون Lit الحي django-hstore-widget المُدمج أثناء بناء "
+"التوثيق. جرّب إضافة أزواج المفاتيح والقيم وتعديلها وحذفها."

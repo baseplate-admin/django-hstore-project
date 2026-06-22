@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Korean <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +19,9 @@ msgid "LLM Context Files"
 msgstr "LLM 컨텍스트 파일"
 
 #: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
 msgstr "이 프로젝트는 LLM 통합을 위한 기계가독 컨텍스트 파일을 제공하며, Sphinx 문서 빌드 중에 자동으로 생성됩니다."
 
 #: ../../docs/llms/index.rst:8
@@ -64,7 +65,9 @@ msgid "`llms-full.txt <../../llms-full.txt>`_"
 msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
 #: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
 msgstr "모든 패키지, API 참조, 아키텍처, 모범 사례 및 기여 가이드를 포함한 전체 프로젝트 문서"
 
 #: ../../docs/llms/index.rst:26
@@ -72,13 +75,24 @@ msgid "Usage"
 msgstr "사용법"
 
 #: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
-msgstr "LLM에 범위에 맞는 컨텍스트 파일을 지정하세요. 생성된 파일은 문서 출력의 루트에 배치되며 문서 루트에서 상대적으로 접근할 수 있습니다."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
+msgstr ""
+"LLM에 범위에 맞는 컨텍스트 파일을 지정하세요. 생성된 파일은 문서 출력의 루트에 배치되며 문서 루트에서 상대적으로 접근할 수 "
+"있습니다."
 
 #: ../../docs/llms/index.rst:33
 msgid "How It Works"
 msgstr "동작 방식"
 
 #: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
-msgstr "llms.txt 파일은 빌드 시 모든 문서 소스 파일에서 콘텐츠를 수집하는 사용자 정의 Sphinx 확장 (``llms_txt_generator``)에 의해 자동으로 생성되어 컨텍스트 파일이 문서와 동기화되도록 보장합니다."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
+msgstr ""
+"llms.txt 파일은 빌드 시 모든 문서 소스 파일에서 콘텐츠를 수집하는 사용자 정의 Sphinx 확장 "
+"(``llms_txt_generator``)에 의해 자동으로 생성되어 컨텍스트 파일이 문서와 동기화되도록 보장합니다."

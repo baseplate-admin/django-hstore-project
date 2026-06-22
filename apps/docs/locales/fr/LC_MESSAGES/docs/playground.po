@@ -1,19 +1,17 @@
-﻿# Français translation for Django HStore Project.
+# Français translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project\n"
-"Report-Msgid-Bugs-To:\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/playground.rst:2
@@ -21,9 +19,18 @@ msgid "Playground"
 msgstr "Espace de démonstration"
 
 #: ../../docs/playground.rst:4
-msgid "Interactive demo of the ``django-hstore-widget`` component. Edit key-value pairs, add new entries, and delete existing ones."
-msgstr "Démo interactive du composant ``django-hstore-widget``. Modifiez les paires clé-valeur, ajoutez de nouvelles entrées et supprimez celles existantes."
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-value "
+"pairs, add new entries, and delete existing ones."
+msgstr ""
+"Démo interactive du composant ``django-hstore-widget``. Modifiez les paires "
+"clé-valeur, ajoutez de nouvelles entrées et supprimez celles existantes."
 
 #: ../../docs/playground.rst:149
-msgid "The widget above is the live ``django-hstore-widget`` Lit component built at docs build time.  Try adding, editing, and deleting key-value pairs."
-msgstr "Le widget ci-dessus est le composant Lit ``django-hstore-widget`` en direct, compilé lors de la génération de la documentation. Essayez d'ajouter, de modifier et de supprimer des paires clé-valeur."
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built at"
+" docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+"Le widget ci-dessus est le composant Lit ``django-hstore-widget`` en direct,"
+" compilé lors de la génération de la documentation. Essayez d'ajouter, de "
+"modifier et de supprimer des paires clé-valeur."

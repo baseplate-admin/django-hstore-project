@@ -1,64 +1,70 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
 msgid "django_hstore_widget.forms"
-msgstr ""
+msgstr "django_hstore_widget.forms"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "모듈 내용"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:18
 msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
-msgstr ""
+msgstr "기본: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:21
-msgid "Form field that uses :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgid ""
+"Form field that uses "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 msgstr ""
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`을(를) 사용하는 폼 필드."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
-msgid "Extends Django's built-in ``HStoreField`` to inject the custom widget and override ``clean()`` so incoming values are parsed through ``json.loads``."
+msgid ""
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
 msgstr ""
+"맞춤 위젯을 주입하고 ``clean()``을 재정의하여 들어오는 값이 ``json.loads``를 통해 파싱되도록 Django의 내장 "
+"``HStoreField``을 확장합니다."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"
-msgstr ""
+msgstr "예시"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:40
 msgid "Parse the raw form value into a Python dict."
-msgstr ""
+msgstr "원시 폼 값을 Python dict로 파싱합니다."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:42
 msgid "The raw value submitted by the form."
-msgstr ""
+msgstr "폼에서 제출한 원시 값."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "반환"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:45
 msgid "The deserialized key-value mapping."
-msgstr ""
+msgstr "직렬화 해지된 키-값 매핑."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"

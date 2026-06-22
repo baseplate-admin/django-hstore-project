@@ -1,48 +1,29 @@
-﻿# Français translation for Django HStore Project.
+# Français translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project
-"
-"Report-Msgid-Bugs-To:
-"
-"POT-Creation-Date: 2026-06-20 17:40+0600
-"
-"PO-Revision-Date: 2026-06-20 17:40+0600
-"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"
-"Language: fr
-"
-"Language-Team: fr <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: fr <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore ProjecReport-Msgid-Bugs-ToPOT-Creation-Date: 2026-06-20 17:40+060PO-Revision-Date: 2026-06-20 17:40+060Last-Translator: baseplate-admin <61817579+baseplate-Forms: nplurals=2; plural=(n != 1)MIME-Version: 1.Content-Type: text/plain; charset=utf-Content-Transfer-Encoding: 8biGenerated-By: Babel 2.18.\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 
 #: ../../docs/technical/index.rst:2
 msgid "Technical"
 msgstr "Technique"
 
 #: ../../docs/technical/index.rst:4
-msgid "Deep dives into HStore, JSONB, and how the widget works under the hood."
-msgstr "Analyses approfondies d'HStore, de JSONB et du fonctionnement interne du widget."
+msgid ""
+"Deep dives into HStore, JSONB, and how the widget works under the hood."
+msgstr ""
+"Analyses approfondies d'HStore, de JSONB et du fonctionnement interne du "
+"widget."

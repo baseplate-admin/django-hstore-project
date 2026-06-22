@@ -1,28 +1,31 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Thai\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: th\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
 msgstr "การมีส่วนร่วมในการพัฒนา"
 
 #: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "คู่มือทีละขั้นตอนในการตั้งค่าสภาพแวดล้อมการพัฒนาและการมีส่วนร่วมใน django-hstore-project"
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"คู่มือทีละขั้นตอนในการตั้งค่าสภาพแวดล้อมการพัฒนาและการมีส่วนร่วมใน django-"
+"hstore-project"
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
@@ -42,7 +45,8 @@ msgstr ":iconify:`logos:nodejs` **Node.js 18+** พร้อม ``npm``"
 
 #: ../../docs/developer-guide/contributing.rst:14
 msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
-msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+** ที่ทำงานในเครื่องท้องถิ่น"
+msgstr ""
+":iconify:`logos:postgresql` **PostgreSQL 14+** ที่ทำงานในเครื่องท้องถิ่น"
 
 #: ../../docs/developer-guide/contributing.rst:17
 msgid "Clone the Repository"
@@ -70,7 +74,8 @@ msgstr ":iconify:`mdi:package-variant` pip-tools"
 
 #: ../../docs/developer-guide/contributing.rst:65
 msgid "This installs all Python packages including test dependencies."
-msgstr "ขั้นตอนนี้จะติดตั้งแพ็กเกจ Python ทั้งหมด รวมถึง dependencies สำหรับการทดสอบ"
+msgstr ""
+"ขั้นตอนนี้จะติดตั้งแพ็กเกจ Python ทั้งหมด รวมถึง dependencies สำหรับการทดสอบ"
 
 #: ../../docs/developer-guide/contributing.rst:68
 msgid "Install Frontend Dependencies"
@@ -86,7 +91,9 @@ msgstr "ตั้งค่าฐานข้อมูล"
 
 #: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr "เริ่มต้น instance ของ PostgreSQL ในเครื่องท้องถิ่นโดยเปิดใช้งานส่วนขยาย hstore:"
+msgstr ""
+"เริ่มต้น instance ของ PostgreSQL ในเครื่องท้องถิ่นโดยเปิดใช้งานส่วนขยาย "
+"hstore:"
 
 #: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
@@ -122,7 +129,8 @@ msgstr "เริ่มต้นเซิร์ฟเวอร์พัฒนา
 
 #: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr "เซิร์ฟเวอร์พัฒนาทำงานที่พอร์ต 9100 พร้อมเปิดใช้งาน hot module replacement"
+msgstr ""
+"เซิร์ฟเวอร์พัฒนาทำงานที่พอร์ต 9100 พร้อมเปิดใช้งาน hot module replacement"
 
 #: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"

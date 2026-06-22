@@ -1,49 +1,20 @@
-﻿# हिन्दी translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
-#
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:40+0600
-"
-"PO-Revision-Date: 2026-06-20 17:40+0600
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: hi <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/technical/index.rst:2
 msgid "Technical"
 msgstr "तकनीकी"
 
-#: ../../docs/technical/index.rst:4
-msgid "Deep dives into HStore, JSONB, and how the widget works under the hood."
-msgstr "HStore, JSONB और वीजेट के अंदरूनी काम करने के तरीके की गहरी झलक।"
+msgid ""
+"Deep dives into HStore, JSONB, and how the widget works under the hood."
+msgstr ""
+"HStore, JSONB और विजेट हुड के तहत कैसे काम करता है इसमें गहराई से गोता।"

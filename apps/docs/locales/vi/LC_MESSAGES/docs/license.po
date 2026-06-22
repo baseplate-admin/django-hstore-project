@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Vietnamese <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,16 +24,46 @@ msgstr "Giấy phép MIT"
 
 #: ../../docs/license.rst:6
 msgid "Copyright 2024-onwards baseplate-admin"
-msgstr ""
+msgstr "Bản quyền 2024-trở đi baseplate-admin"
 
 #: ../../docs/license.rst:8
-msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+" of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
 msgstr ""
+"Quyền được cấp, miễn phí, cho bất kỳ người nào nhận được bản sao của phần "
+"mềm này và các tệp tài liệu liên quan (\"Phần mềm\"), để xử lý Phần mềm mà "
+"không bị hạn chế, bao gồm nhưng không giới hạn các quyền sử dụng, sao chép, "
+"sửa đổi, hợp nhất, xuất bản, phân phối, cấp phép phụ và/hoặc bán các bản sao"
+" của Phần mềm, và cho phép những người mà Phần mềm được cung cấp làm như "
+"vậy, với các điều kiện sau:"
 
 #: ../../docs/license.rst:15
-msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
 msgstr ""
+"Thông báo bản quyền ở trên và thông báo quyền này phải được bao gồm trong "
+"tất cả các bản sao hoặc phần đáng kể của Phần mềm."
 
 #: ../../docs/license.rst:18
-msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 msgstr ""
+"PHẦN MỀM ĐƯỢC CUNG CẤP \"NHƯ ĐÃ TRÌNH BÀY\", KHÔNG CÓ BẢO HÀNH MÀU NÀO, RÕ "
+"RÀNG HOẶC NGỤ Ý, BAO GỒM NHƯNG KHÔNG GIỚI HẠN CHO CÁC BẢO HÀNH VỀ TÍNH KHẢ "
+"THI THƯƠNG MẠI, PHÙ HỢP VỚI MỘT MỤC ĐÍCH CỤ THỂ VÀ KHÔNG XÂM PHẠM. TRONG MỌI"
+" TRƯỜNG HỢP, TÁC GIẢ HOẶC CHỦ SỞ HỮU BẢN QUYỀN KHÔNG CHỊU TRÁCH NHIỆM CHO "
+"BẤT KỲ YÊU CẦU, THIỆT HẠI HOẶC TRÁCH NHIỆM KHÁC, DÙ TRONG HÀNH ĐỘNG HỢP "
+"ĐỒNG, XẤU XÁ HOẶC KHÁC, PHÁT SINH TỪ, RA HOẶC LIÊN QUAN ĐẾN PHẦN MỀM HOẶC SỬ"
+" DỤNG HOẶC CÁC GIAO DỊCH KHÁC TRONG PHẦN MỀM."

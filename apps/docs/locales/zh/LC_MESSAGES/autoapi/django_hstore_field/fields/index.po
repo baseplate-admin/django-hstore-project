@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: zh\n"
-"Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
@@ -29,20 +28,20 @@ msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 msgstr "基类: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
 msgstr "带有自定义小部件的 Django ``HStoreField`` 的直接替换。"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
 msgid ""
-"Overrides ``formfield()`` so that the admin and ModelForms automatically "
-"use :class:`~django_hstore_widget.forms.HStoreFormField` and "
-":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form"
-" configuration required."
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
 msgstr ""
 "重写 ``formfield()`` 使 admin 和 ModelForms 自动使用 "
 ":class:`~django_hstore_widget.forms.HStoreFormField` 和 "
-":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- "
-"无需手动配置表单。"
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- 无需手动配置表单。"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
@@ -60,9 +59,7 @@ msgstr "参数"
 msgid ""
 "Keyword arguments forwarded to the form field constructor. Pass "
 "``form_class`` or ``widget`` to override the defaults."
-msgstr ""
-"转发到表单字段构造函数的关键字参数。"
-"传递 ``form_class`` 或 ``widget`` 以覆盖默认值。"
+msgstr "转发到表单字段构造函数的关键字参数。传递 ``form_class`` 或 ``widget`` 以覆盖默认值。"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst
 msgid "Returns"

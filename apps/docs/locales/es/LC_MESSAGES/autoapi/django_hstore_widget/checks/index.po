@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: es\n"
-"Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:2
@@ -26,11 +25,19 @@ msgstr "Contenido del Módulo"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:14
 msgid "System check that warns when the default DB backend is not PostgreSQL."
-msgstr "Verificación del sistema que advierte cuando el backend de base de datos predeterminado no es PostgreSQL."
+msgstr ""
+"Verificación del sistema que advierte cuando el backend de base de datos "
+"predeterminado no es PostgreSQL."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:16
-msgid "HStore requires the ``hstore`` extension, which is only available on PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py migrate``."
-msgstr "HStore requiere la extensión ``hstore``, que solo está disponible en PostgreSQL. Esta verificación se ejecuta durante ``manage.py check`` y ``manage.py migrate``."
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+"HStore requiere la extensión ``hstore``, que solo está disponible en "
+"PostgreSQL. Esta verificación se ejecuta durante ``manage.py check`` y "
+"``manage.py migrate``."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Parameters"
@@ -42,15 +49,20 @@ msgstr "Las configuraciones de aplicación que se están verificando."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:22
 msgid "Additional keyword arguments from the check runner."
-msgstr "Argumentos de palabra clave adicionales del ejecutor de verificaciones."
+msgstr ""
+"Argumentos de palabra clave adicionales del ejecutor de verificaciones."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Returns"
 msgstr "Retorna"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:24
-msgid "A list containing a warning if the default database engine does not include ``postgres`` or ``postgis``."
-msgstr "Una lista que contiene una advertencia si el motor de base de datos predeterminado no incluye ``postgres`` ni ``postgis``."
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
+msgstr ""
+"Una lista que contiene una advertencia si el motor de base de datos "
+"predeterminado no incluye ``postgres`` ni ``postgis``."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Return type"

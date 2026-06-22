@@ -1,49 +1,57 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2026, baseplate-admin
-# This file is distributed under the same license as the Django HStore Project package.
-# baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
-"Language-Team: Thai <ll@li.org>\n"
-"Language: th\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/license.rst:2
 msgid "License"
 msgstr "ใบอนุญาต"
 
-#: ../../docs/license.rst:4
 msgid "MIT License"
 msgstr "ใบอนุญาต MIT"
 
-#: ../../docs/license.rst:6
 msgid "Copyright 2024-onwards baseplate-admin"
-msgstr "ลิขสิทธิ์ 2024 เป็นต้นไป baseplate-admin"
+msgstr "ลิขสิทธิ์ 2024-เป็นต้นไป baseplate-admin"
 
-#: ../../docs/license.rst:8
-msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+" of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
 msgstr ""
-"โดยนี้ให้สิทธิ์โดยไม่คิดค่าใช้จ่ายแก่บุคคลใดๆ ที่ได้รับสำเนาของซอฟต์แวร์นี้และไฟล์เอกสารที่เกี่ยวข้อง ("Software") "
-"ในการจัดการ Software โดยไม่มีข้อจำกัด รวมถึงแต่ไม่จำกัดเพียงสิทธิ์ในการใช้งาน คัดลอก แก้ไข รวม เผยแพร่ แจกจ่าย "
-"ให้สิทธิ์ sublicence และ/หรือขายสำเนาของ Software และให้อนุญาตแก่บุคคลที่ได้รับ Software นี้ทำเช่นเดียวกัน "
-"ภายใต้เงื่อนไขต่อไปนี้:"
+"การอนุญาต herebyGranted ฟรี สำหรับบุคคลใดๆ "
+"ที่ได้รับสำเนาซอฟต์แวร์นี้และไฟล์เอกสารที่เกี่ยวข้อง (\"ซอฟต์แวร์\") "
+"เพื่อจัดการซอฟต์แวร์โดยไม่จำกัด รวมถึงสิทธิในการใช้, คัดลอก, แก้ไข, ผสาน, "
+"เผยแพร่, แจกจ่าย, อนุญาต sublicence และ/หรือขายสำเนาซอฟต์แวร์ "
+"และอนุญาตให้บุคคลที่ได้รับซอฟต์แวร์ทำเช่นนี้ ตามเงื่อนไขต่อไปนี้:"
 
-#: ../../docs/license.rst:15
-msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
-msgstr "ประกาศลิขสิทธิ์ข้างต้นและประกาศอนุญาตนี้ต้องรวมอยู่ในสำเนาหรือส่วนสำคัญของ Software ทั้งหมด"
-
-#: ../../docs/license.rst:18
-msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
 msgstr ""
-"Software นี้ให้ในรูปแบบ \"ตามสภาพที่เป็นอยู่\" โดยไม่มีคำรับประกันใดๆ ทั้งที่ระบุชัดหรือโดยนัย รวมถึงแต่ไม่จำกัดเพียงการรับประกันความสามารถในการขาย "
-"ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ และการไม่ละเมิดสิทธิ ในกรณีใดๆ ผู้เขียนหรือผู้ถือลิขสิทธิ์จะไม่รับผิดชอบสำหรับข้อเรียกร้อง "
-"ความเสียหาย หรือความรับผิดอื่นๆ ไม่ว่าจะเป็นคดีสัญญา ความผิดละเมิด หรือกรณีอื่นใด ที่เกิดจากหรือเกี่ยวข้องกับ Software "
-"หรือการใช้งานหรือการจัดการอื่นๆ ใน Software"
+"ประกาศลิขสิทธิ์ข้างต้นและประกาศอนุญาตนี้ต้องรวมอยู่ในสำเนาทั้งหมดหรือส่วนที่สำคัญของซอฟต์แวร์"
+
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
+msgstr ""
+"ซอฟต์แวร์นี้ให้ \"ตามที่เป็นอยู่\" โดยไม่มีรับประกันใดๆ无论是明示หรือโดยนัย "
+"รวมถึงแต่ไม่จำกัดเพียงการรับประกันการขายได้, "
+"ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ, และการไม่ละเมิด ในกรณีใดๆ "
+"ผู้เขียนหรือเจ้าของลิขสิทธิ์จะไม่รับผิดชอบสำหรับข้อเรียกร้อง, ความเสียหาย, "
+"หรือความรับผิดอื่นๆ ไม่ว่าจะเป็นการกระทำตามสัญญา, การละเมิด, หรืออื่นๆ "
+"ที่เกิดขึ้นจากหรือในการใช้ซอฟต์แวร์"

@@ -1,4 +1,4 @@
-﻿# German translation of docs/license.
+# German translation of docs/license.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: German\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,13 +28,46 @@ msgid "Copyright 2024-onwards baseplate-admin"
 msgstr "Copyright 2024-fortlaufend baseplate-admin"
 
 #: ../../docs/license.rst:8
-msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
-msgstr "Hiermit wird unentgeltlich jedermann, der eine Kopie dieser Software und der zugehörigen Dokumentation (im Folgenden die \"Software\") erhält, die Erlaubnis erteilt, die Software ohne Einschränkungen zu verwenden, einschließlich, aber nicht beschränkt auf das Recht, die Software zu nutzen, zu kopieren, zu ändern, zu verbinden, zu veröffentlichen, zu verbreiten, unterzulizenzieren und/oder Kopien der Software zu verkaufen, sowie anderen Personen, denen die Software überlassen wird, dies zu gestatten, vorbehaltlich der folgenden Bedingungen:"
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+" of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
+msgstr ""
+"Hiermit wird unentgeltlich jedermann, der eine Kopie dieser Software und der"
+" zugehörigen Dokumentation (im Folgenden die \"Software\") erhält, die "
+"Erlaubnis erteilt, die Software ohne Einschränkungen zu verwenden, "
+"einschließlich, aber nicht beschränkt auf das Recht, die Software zu nutzen,"
+" zu kopieren, zu ändern, zu verbinden, zu veröffentlichen, zu verbreiten, "
+"unterzulizenzieren und/oder Kopien der Software zu verkaufen, sowie anderen "
+"Personen, denen die Software überlassen wird, dies zu gestatten, "
+"vorbehaltlich der folgenden Bedingungen:"
 
 #: ../../docs/license.rst:15
-msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
-msgstr "Der oben stehende Copyright-Hinweis und dieser Genehmigungshinweis müssen in allen Kopien oder wesentlichen Teilen der Software enthalten sein."
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
+msgstr ""
+"Der oben stehende Copyright-Hinweis und dieser Genehmigungshinweis müssen in"
+" allen Kopien oder wesentlichen Teilen der Software enthalten sein."
 
 #: ../../docs/license.rst:18
-msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
-msgstr "DIE SOFTWARE WIRD \"WIE BESTEHT\" BEREITGESTELLT, OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF DIE GEWÄHRLEISTUNG DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG VON RECHTEN DRITTER. IN KEINEM FALL HAFTEN DIE AUTOREN ODER INHABER DER COPYRIGHT FÜR ANSPRÜCHE, SCHÄDEN ODER ANDERE HAFTUNGEN, SEI ES AUS VERTRAG, AUS DELIKT ODER ANDERWEITIG, DIE SICH AUS DER SOFTWARE ODER DEM EINSATZ ODER ANDERER HANDHABUNG IM ZUSAMMENHANG MIT DER SOFTWARE ERGEBEN."
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
+msgstr ""
+"DIE SOFTWARE WIRD \"WIE BESTEHT\" BEREITGESTELLT, OHNE JEGLICHE "
+"AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG, EINSCHLIESSLICH, ABER "
+"NICHT BESCHRÄNKT AUF DIE GEWÄHRLEISTUNG DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR"
+" EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG VON RECHTEN DRITTER. IN "
+"KEINEM FALL HAFTEN DIE AUTOREN ODER INHABER DER COPYRIGHT FÜR ANSPRÜCHE, "
+"SCHÄDEN ODER ANDERE HAFTUNGEN, SEI ES AUS VERTRAG, AUS DELIKT ODER "
+"ANDERWEITIG, DIE SICH AUS DER SOFTWARE ODER DEM EINSATZ ODER ANDERER "
+"HANDHABUNG IM ZUSAMMENHANG MIT DER SOFTWARE ERGEBEN."

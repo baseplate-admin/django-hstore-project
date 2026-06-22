@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: zh\n"
-"Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/developer-guide/frontend-build.rst:2
@@ -26,10 +25,9 @@ msgstr "概述"
 
 #: ../../docs/developer-guide/frontend-build.rst:7
 msgid ""
-"The widget frontend is built with Vite and TypeScript, producing a single"
-" IIFE bundle loaded by Django admin."
-msgstr ""
-"组件前端使用 Vite 和 TypeScript 构建，生成由 Django admin 加载的单个 IIFE 包。"
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
+msgstr "组件前端使用 Vite 和 TypeScript 构建，生成由 Django admin 加载的单个 IIFE 包。"
 
 #: ../../docs/developer-guide/frontend-build.rst:11
 msgid "Build Steps"
@@ -37,11 +35,11 @@ msgstr "构建步骤"
 
 #: ../../docs/developer-guide/frontend-build.rst:13
 msgid ""
-"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-"
-"hstore-widget.js``"
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
 msgstr ""
-"Vite 将 ``src/frontend/index.ts`` 打包为 ``dist/components/django-"
-"hstore-widget.js``"
+"Vite 将 ``src/frontend/index.ts`` 打包为 ``dist/components/django-hstore-"
+"widget.js``"
 
 #: ../../docs/developer-guide/frontend-build.rst:14
 msgid ""

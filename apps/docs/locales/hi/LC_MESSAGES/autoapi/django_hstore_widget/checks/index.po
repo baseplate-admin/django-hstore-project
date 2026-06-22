@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: hi\n"
-"Language-Team: hi <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:2
 msgid "django_hstore_widget.checks"
@@ -25,11 +24,19 @@ msgstr "मॉड्यूल सामग्री"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:14
 msgid "System check that warns when the default DB backend is not PostgreSQL."
-msgstr "सिस्टम जांच जो तब चेतावनी देती है जब डिफ़ॉल्ट डेटाबेस बैकएंड PostgreSQL नहीं होता।"
+msgstr ""
+"सिस्टम जांच जो तब चेतावनी देती है जब डिफ़ॉल्ट डेटाबेस बैकएंड PostgreSQL नहीं"
+" होता।"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:16
-msgid "HStore requires the ``hstore`` extension, which is only available on PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py migrate``."
-msgstr "HStore को ``hstore`` एक्सटेंशन की आवश्यकता होती है, जो केवल PostgreSQL पर उपलब्ध है। यह जांच ``manage.py check`` और ``manage.py migrate`` के दौरान चलती है।"
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+"HStore को ``hstore`` एक्सटेंशन की आवश्यकता होती है, जो केवल PostgreSQL पर "
+"उपलब्ध है। यह जांच ``manage.py check`` और ``manage.py migrate`` के दौरान "
+"चलती है।"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Parameters"
@@ -48,8 +55,12 @@ msgid "Returns"
 msgstr "लौटता है"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:24
-msgid "A list containing a warning if the default database engine does not include ``postgres`` or ``postgis``."
-msgstr "यदि डिफ़ॉल्ट डेटाबेस इंजन में ``postgres`` या ``postgis`` शामिल नहीं है तो चेतावनी वाला एक सूची।"
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
+msgstr ""
+"यदि डिफ़ॉल्ट डेटाबेस इंजन में ``postgres`` या ``postgis`` शामिल नहीं है तो "
+"चेतावनी वाला एक सूची।"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Return type"

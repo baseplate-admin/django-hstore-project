@@ -1,64 +1,70 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
 msgid "django_hstore_widget.forms"
-msgstr ""
+msgstr "django_hstore_widget.forms"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "เนื้อหาของโมดูล"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:18
 msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
-msgstr ""
+msgstr "ฐาน: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:21
-msgid "Form field that uses :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgid ""
+"Form field that uses "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 msgstr ""
+"ฟิลด์ฟอร์มที่ใช้ :class:`~django_hstore_widget.widgets.HStoreFormWidget`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
-msgid "Extends Django's built-in ``HStoreField`` to inject the custom widget and override ``clean()`` so incoming values are parsed through ``json.loads``."
+msgid ""
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
 msgstr ""
+"ขยาย ``HStoreField`` ที่ติดตั้งใน Django เพื่อฉีด widget แบบกำหนดเองและ "
+"override ``clean()`` ดังนั้นค่าที่เข้ามาจะผ่าน ``json.loads``"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"
-msgstr ""
+msgstr "ตัวอย่าง"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:40
 msgid "Parse the raw form value into a Python dict."
-msgstr ""
+msgstr "Parse ค่าฟอร์มดิบเป็น dict Python"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "พารามิเตอร์"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:42
 msgid "The raw value submitted by the form."
-msgstr ""
+msgstr "ค่าดิบที่ส่งโดยฟอร์ม"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "คืนค่า"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:45
 msgid "The deserialized key-value mapping."
-msgstr ""
+msgstr "การแมป key-value ที่ deserialize"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "ประเภทกลับ"

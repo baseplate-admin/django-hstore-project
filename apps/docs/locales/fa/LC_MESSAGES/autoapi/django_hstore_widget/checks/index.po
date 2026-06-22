@@ -1,56 +1,64 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:2
 msgid "django_hstore_widget.checks"
-msgstr ""
+msgstr "django_hstore_widget.checks"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:10
 msgid "Module Contents"
-msgstr ""
+msgstr "محتوای ماژول"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:14
 msgid "System check that warns when the default DB backend is not PostgreSQL."
-msgstr ""
+msgstr "بررسی سیستمی که هشدار می‌دهد وقتی بک‌اند DB پیش‌فرض PostgreSQL نیست."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:16
-msgid "HStore requires the ``hstore`` extension, which is only available on PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py migrate``."
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
 msgstr ""
+"HStore به افزونه ``hstore`` نیاز دارد که فقط در PostgreSQL موجود است. این "
+"بررسی در ``manage.py check`` و ``manage.py migrate`` اجرا می‌شود."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "پارامترها"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:20
 msgid "The application configurations being checked."
-msgstr ""
+msgstr "پیکربندی‌های برنامه در حال بررسی هستند."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:22
 msgid "Additional keyword arguments from the check runner."
-msgstr ""
+msgstr "آرگومان‌های کلیدواژه اضافی از اجرای بررسی."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "بازمی‌گرداند"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:24
-msgid "A list containing a warning if the default database engine does not include ``postgres`` or ``postgis``."
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
 msgstr ""
+"لیستی حاوی هشدار اگر موتور پایگاه داده پیش‌فرض ``postgres`` یا ``postgis`` "
+"را شامل نشود."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "نوع بازگشت"

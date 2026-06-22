@@ -1,112 +1,81 @@
-﻿# हिन्दी translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/user-guide/best-practices.rst:2
 msgid "Best Practices"
-msgstr "श्रेष्ठ अभ्यास"
+msgstr "सर्वोत्तम प्रथाएं"
 
-#: ../../docs/user-guide/best-practices.rst:4
-msgid "Tips and recommendations for using HStore fields effectively in production."
-msgstr "प्रोडक्शन में HStore फ़ील्डों का प्रभावी उपयोग करने के लिए सुझाव और सिफ़ारिशें।"
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr ""
+"प्रोडक्शन में HStore फ़ील्डों का प्रभावी रूप से उपयोग करने के लिए टिप्स और "
+"सिफारिशें।"
 
-#: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
-msgstr "कीज़ को सुसंगत रखें"
+msgstr "कुंजियों को सुसंगत रखें"
 
-#: ../../docs/user-guide/best-practices.rst:9
-msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
-msgstr "अपने एप्लिकेशन में कीज़ के लिए एक नामकरण परिपाटी अपनाएँ। इससे क्वेरी और रखरखाव आसान होता है।"
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+"अपने एप्लिकेशन में कुंजियों के लिए नामकरण परिपाटी का उपयोग करें। इससे क्वेरी"
+" और रखरखाव आसान होता है।"
 
-#: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
-msgstr "संभव हो तो स्पष्ट कीज़ का प्रयोग करें"
+msgstr "संभव हो तो स्पष्ट कुंजियों का उपयोग करें"
 
-#: ../../docs/user-guide/best-practices.rst:29
 msgid "Defining explicit keys gives you:"
-msgstr "स्पष्ट कीज़ परिभाषित करने से आपको ये लाभ मिलते हैं:"
+msgstr "स्पष्ट कुंजियां परिभाषित करने से आपको मिलता है:"
 
-#: ../../docs/user-guide/best-practices.rst:31
 msgid "Labeled form fields in the admin"
-msgstr "एडमिन में लेबलित फ़ॉर्म फ़ील्ड"
+msgstr "एडमिन में लेबल वाले फ़ॉर्म फ़ील्ड"
 
-#: ../../docs/user-guide/best-practices.rst:32
 msgid "Built-in validation per key"
-msgstr "प्रत्येक की के लिए अंतर्निर्मित सत्यापन"
+msgstr "प्रति कुंजी बिल्ट-इन वैलिडेशन"
 
-#: ../../docs/user-guide/best-practices.rst:33
 msgid "Widget customization per field"
-msgstr "प्रत्येक फ़ील्ड के लिए विजेट अनुकूलन"
+msgstr "प्रति फ़ील्ड विजेट कस्टमाइज़ेशन"
 
-#: ../../docs/user-guide/best-practices.rst:34
 msgid "IDE autocomplete for key names"
-msgstr "की नामों के लिए IDE ऑटोकॉम्प्लीट"
+msgstr "कुंजी नामों के लिए IDE ऑटोकंप्लीट"
 
-#: ../../docs/user-guide/best-practices.rst:47
 msgid "Index Frequently Queried Keys"
-msgstr "बार-बार क्वेरी किए जाने वाले कीज़ पर इंडेक्स लगाएँ"
+msgstr "बार-बार क्वेरी की जाने वाली कुंजियों का इंडेक्स"
 
-#: ../../docs/user-guide/best-practices.rst:49
 msgid "Add GIN indexes on HStore columns you query often:"
-msgstr "उन HStore कॉलमों पर GIN इंडेक्स जोड़ें जिन्हें आप अक्सर क्वेरी करते हैं:"
+msgstr ""
+"उन HStore कॉलमों पर GIN इंडेक्स जोड़ें जिन्हें आप अक्सर क्वेरी करते हैं:"
 
-#: ../../docs/user-guide/best-practices.rst:64
 msgid "Handle Missing Keys Gracefully"
-msgstr "अनुपस्थित कीज़ का कुशलतापूर्वक प्रबंधन करें"
+msgstr "ग़ायब कुंजियों को सही ढंग से संभालें"
 
-#: ../../docs/user-guide/best-practices.rst:66
 msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
-msgstr "HStore कीज़ सभी पंक्तियों में मौजूद नहीं हो सकते। डिफ़ॉल्ट के साथ ``get()`` का प्रयोग करें:"
+msgstr ""
+"HStore कुंजियां सभी पंक्तियों में मौजूद नहीं हो सकतीं। डिफ़ॉल्ट के साथ "
+"``get()`` का उपयोग करें:"
 
-#: ../../docs/user-guide/best-practices.rst:74
 msgid "Validate Key Values"
-msgstr "की मानों का सत्यापन करें"
+msgstr "कुंजी मानों की मान्यता"
 
-#: ../../docs/user-guide/best-practices.rst:76
 msgid "HStore values are strings. Validate and convert them where needed:"
-msgstr "HStore मान स्ट्रिंग होते हैं। जहाँ आवश्यक हो उन्हें सत्यापित और रूपांतरित करें:"
+msgstr ""
+"HStore मान स्ट्रिंग हैं। जहां आवश्यक हो उन्हें मान्य करें और परिवर्तित करें:"
 
-#: ../../docs/user-guide/best-practices.rst:90
 msgid "Consider Migration Paths"
-msgstr "माइग्रेशन पथों पर विचार करें"
+msgstr "माइग्रेशन पथ पर विचार करें"
 
-#: ../../docs/user-guide/best-practices.rst:92
-msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
-msgstr "यदि आप भविष्य में नेस्टेड डेटा की आवश्यकता की अपेक्षा करते हैं, तो HStore से JSONB तक अपने माइग्रेशन की शीघ्र योजना बनाएँ। डेटा प्रारूप सीधे तौर पर संगत नहीं हैं।"
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+"यदि आपको भविष्य में नेस्टेड डेटा की आवश्यकता का अनुमान है, तो HStore से "
+"JSONB में अपनी माइग्रेशन जल्दी योजना बनाएं। डेटा प्रारूप सीधे संगत नहीं हैं।"

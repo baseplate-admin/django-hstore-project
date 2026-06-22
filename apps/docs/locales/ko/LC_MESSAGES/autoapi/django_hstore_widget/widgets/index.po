@@ -1,104 +1,118 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:2
 msgid "django_hstore_widget.widgets"
-msgstr ""
+msgstr "django_hstore_widget.widgets"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "모듈 내용"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:18
 msgid "A generic asset reference that resolves to a static file path."
-msgstr ""
+msgstr "정적 파일 경로로 해결되는 일반 자산 참조."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:20
-msgid "Used by the widget ``Media`` class to declare JavaScript and CSS dependencies. Subclasses like :class:`ESM` render the asset as HTML instead of a plain path."
+msgid ""
+"Used by the widget ``Media`` class to declare JavaScript and CSS "
+"dependencies. Subclasses like :class:`ESM` render the asset as HTML instead "
+"of a plain path."
 msgstr ""
+"JavaScript 및 CSS 종속성을 선언하기 위해 위젯 ``Media`` 클래스에서 사용합니다. :class:`ESM`과 같은 하위 "
+"클래스는 일반 경로 대신 자산을 HTML로 렌더링합니다."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:30
 msgid "Return the fully resolved URL for *path*."
-msgstr ""
+msgstr "*path*에 대해 완전히 해결된 URL을 반환합니다."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:32
-msgid "Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. All other paths are resolved through Django's ``static()`` helper."
+msgid ""
+"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. "
+"All other paths are resolved through Django's ``static()`` helper."
 msgstr ""
+"``http://``, ``https://`` 또는 ``/``로 시작하는 경로는 그대로 반환됩니다. 모든 다른 경로는 Django의 "
+"``static()`` 헬퍼를 통해 해결됩니다."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:40
 msgid "Bases: :py:obj:`Asset`"
-msgstr ""
+msgstr "기본: :py:obj:`Asset`"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:43
 msgid "An ECMAScript module asset."
-msgstr ""
+msgstr "ECMAScript 모듈 자산."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:45
-msgid "Renders as a ``<script type=\"module\">`` tag so the browser loads the widget as an ES module."
-msgstr ""
+msgid ""
+"Renders as a ``<script type=\"module\">`` tag so the browser loads the "
+"widget as an ES module."
+msgstr "브라우저가 위젯을 ES 모듈로 로드할 수 있도록 ``<script type=\"module\">`` 태그로 렌더링됩니다."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:51
 msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
-msgstr ""
+msgstr "기본: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:54
 msgid "Django admin widget that renders the custom hstore editor."
-msgstr ""
+msgstr "맞춤 hstore 편집기를 렌더링하는 Django 관리자 위젯."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:56
-msgid "Replaces the default textarea with a Lit-based key-value editor component.  Loads the widget JavaScript as an ES module via the ``Media`` inner class."
+msgid ""
+"Replaces the default textarea with a Lit-based key-value editor component.  "
+"Loads the widget JavaScript as an ES module via the ``Media`` inner class."
 msgstr ""
+"기본 textarea를 Lit 기반 키-값 편집기 구성 요소로 대체합니다. ``Media`` 내부 클래스를 통해 위젯 "
+"JavaScript를 ES 모듈로 로드합니다."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:61
 msgid "Example"
-msgstr ""
+msgstr "예시"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:68
 msgid "Render the widget HTML for a given form field."
-msgstr ""
+msgstr "주어진 폼 필드에 대한 위젯 HTML을 렌더링합니다."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:70
 msgid "The HTML ``name`` attribute for the field."
-msgstr ""
+msgstr "필드의 HTML ``name`` 속성."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:72
 msgid "The current hstore data as a key-value mapping."
-msgstr ""
+msgstr "키-값 매핑으로 현재 hstore 데이터."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:74
 msgid "Additional HTML attributes passed to the template."
-msgstr ""
+msgstr "템플릿에 전달되는 추가 HTML 속성."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:76
 msgid "Template renderer instance."
-msgstr ""
+msgstr "템플릿 렌더러 인스턴스."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "반환"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:79
 msgid "The rendered HTML markup for the widget."
-msgstr ""
+msgstr "위젯에 대한 렌더링된 HTML 마크업."
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"

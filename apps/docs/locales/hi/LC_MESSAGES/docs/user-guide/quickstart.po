@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: hi\n"
-"Language-Team: hi <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/user-guide/quickstart.rst:2
@@ -34,7 +33,9 @@ msgstr "किसी भी मॉडल में HStore फ़ील्ड ज
 
 #: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr "बस इतना ही। विजेट स्वतः जुड़ जाता है, किसी फ़ॉर्म कॉन्फ़िगरेशन की आवश्यकता नहीं।"
+msgstr ""
+"बस इतना ही। विजेट स्वतः जुड़ जाता है, किसी फ़ॉर्म कॉन्फ़िगरेशन की आवश्यकता "
+"नहीं।"
 
 #: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"
@@ -49,20 +50,33 @@ msgid "Register in Admin"
 msgstr "Admin में पंजीकरण"
 
 #: ../../docs/user-guide/quickstart.rst:46
-msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
-msgstr "अपने admin पृष्ठ पर जाएँ और आपको साफ़ key-value इंटरफ़ेस के साथ HStore विजेट दिखेगा। प्रत्येक key-value जोड़ी inline संपादन योग्य है। आवश्यकतानुसार जोड़ियाँ जोड़ें, हटाएँ और संशोधित करें।"
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
+msgstr ""
+"अपने admin पृष्ठ पर जाएँ और आपको साफ़ key-value इंटरफ़ेस के साथ HStore विजेट"
+" दिखेगा। प्रत्येक key-value जोड़ी inline संपादन योग्य है। आवश्यकतानुसार "
+"जोड़ियाँ जोड़ें, हटाएँ और संशोधित करें।"
 
 #: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
 msgstr "कस्टम Keys के साथ"
 
 #: ../../docs/user-guide/quickstart.rst:53
-msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
-msgstr "free-form एडिटर के बजाय लेबलित फ़ॉर्म फ़ील्ड प्राप्त करने के लिए स्पष्ट keys परिभाषित करें:"
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
+msgstr ""
+"free-form एडिटर के बजाय लेबलित फ़ॉर्म फ़ील्ड प्राप्त करने के लिए स्पष्ट keys"
+" परिभाषित करें:"
 
 #: ../../docs/user-guide/quickstart.rst:70
-msgid "Each key becomes a proper form field with validation, widgets, and labels."
-msgstr "प्रत्येक key के साथ validation, widgets और labels वाला उचित फ़ॉर्म फ़ील्ड बन जाता है।"
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
+msgstr ""
+"प्रत्येक key के साथ validation, widgets और labels वाला उचित फ़ॉर्म फ़ील्ड बन"
+" जाता है।"
 
 #: ../../docs/user-guide/quickstart.rst:73
 msgid "What's Next"

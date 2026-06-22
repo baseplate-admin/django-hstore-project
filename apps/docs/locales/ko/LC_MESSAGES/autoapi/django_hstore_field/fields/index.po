@@ -1,64 +1,74 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
 msgid "django_hstore_field.fields"
-msgstr ""
+msgstr "django_hstore_field.fields"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:10
 msgid "Module Contents"
-msgstr ""
+msgstr "모듈 내용"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:14
 msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
-msgstr ""
+msgstr "기본: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
-msgstr ""
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgstr "맞춤 위젯이 있는 Django의 ``HStoreField`` 대체."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
-msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
+msgid ""
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
 msgstr ""
+"관리자와 ModelForms가 자동으로 :class:`~django_hstore_widget.forms.HStoreFormField` 및"
+" :class:`~django_hstore_widget.widgets.HStoreFormWidget`을 사용하도록 "
+"``formfield()``을 재정의합니다 -- 수동 폼 구성 불필요."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
-msgstr ""
+msgstr "예시"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:38
 msgid "Return a form field class pre-configured with the custom widget."
-msgstr ""
+msgstr "맞춤 위젯으로 사전 구성된 폼 필드 클래스를 반환합니다."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:40
-msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
+msgid ""
+"Keyword arguments forwarded to the form field constructor. Pass "
+"``form_class`` or ``widget`` to override the defaults."
 msgstr ""
+"폼 필드 생성자로 전달되는 키워드 인수. 기본값을 재정의하려면 ``form_class`` 또는 ``widget``을 전달하세요."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "반환"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:44
 msgid "A form field instance wired to the hstore widget."
-msgstr ""
+msgstr "hstore 위젯에 와이어링된 폼 필드 인스턴스."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"

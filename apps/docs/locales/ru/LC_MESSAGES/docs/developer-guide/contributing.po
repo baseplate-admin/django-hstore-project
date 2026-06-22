@@ -1,168 +1,116 @@
-﻿# Русский translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ru
-"
-"Language-Team: ru <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: ru <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
-msgstr "Участие в разработке"
+msgstr "Вклад"
 
-#: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "Пошаговое руководство по настройке среды разработки и участию в проекте django-hstore-project."
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"Пошаговое руководство по настройке среды разработки и вкладу в django-"
+"hstore-project."
 
-#: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
 msgstr "Предварительные требования"
 
-#: ../../docs/developer-guide/contributing.rst:10
 msgid "Make sure you have the following installed:"
-msgstr "Убедитесь, что у вас установлены следующие компоненты:"
+msgstr "Убедитесь, что у вас установлено следующее:"
 
-#: ../../docs/developer-guide/contributing.rst:12
 msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
-msgstr ":iconify:`mdi:python` **Python 3.10+** с менеджером пакетов uv"
+msgstr ":iconify:`mdi:python` **Python 3.10+** с менеджером пакетов ``uv``"
 
-#: ../../docs/developer-guide/contributing.rst:13
 msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
-msgstr ":iconify:`logos:nodejs` **Node.js 18+** с npm"
+msgstr ":iconify:`logos:nodejs` **Node.js 18+** с ``npm``"
 
-#: ../../docs/developer-guide/contributing.rst:14
 msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
-msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+**, запущенный локально"
+msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+**, работающий локально"
 
-#: ../../docs/developer-guide/contributing.rst:17
 msgid "Clone the Repository"
-msgstr "Клонирование репозитория"
+msgstr "Клонировать репозиторий"
 
-#: ../../docs/developer-guide/contributing.rst:25
 msgid "Install Python Dependencies"
-msgstr "Установка Python-зависимостей"
+msgstr "Установить зависимости Python"
 
-#: ../../docs/developer-guide/contributing.rst:29
 msgid ":iconify:`simple-icons:astral` uv"
 msgstr ":iconify:`simple-icons:astral` uv"
 
-#: ../../docs/developer-guide/contributing.rst:38
 msgid ":iconify:`simple-icons:poetry` Poetry"
 msgstr ":iconify:`simple-icons:poetry` Poetry"
 
-#: ../../docs/developer-guide/contributing.rst:47
 msgid ":iconify:`simple-icons:pdm` PDM"
 msgstr ":iconify:`simple-icons:pdm` PDM"
 
-#: ../../docs/developer-guide/contributing.rst:55
 msgid ":iconify:`mdi:package-variant` pip-tools"
 msgstr ":iconify:`mdi:package-variant` pip-tools"
 
-#: ../../docs/developer-guide/contributing.rst:65
 msgid "This installs all Python packages including test dependencies."
-msgstr "Это устанавливает все Python-пакеты, включая зависимости для тестирования."
+msgstr ""
+"Это устанавливает все пакеты Python, включая зависимости для тестирования."
 
-#: ../../docs/developer-guide/contributing.rst:68
 msgid "Install Frontend Dependencies"
-msgstr "Установка зависимостей фронтенда"
+msgstr "Установить зависимости фронтенда"
 
-#: ../../docs/developer-guide/contributing.rst:78
 msgid "This installs Lit, Vite, and all frontend tooling."
 msgstr "Это устанавливает Lit, Vite и все инструменты фронтенда."
 
-#: ../../docs/developer-guide/contributing.rst:81
 msgid "Set Up the Database"
-msgstr "Настройка базы данных"
+msgstr "Настроить базу данных"
 
-#: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr "Запустите локальный экземпляр PostgreSQL с включённым расширением hstore:"
+msgstr ""
+"Запустите локальный экземпляр PostgreSQL с включенным расширением hstore:"
 
-#: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
 msgstr ":iconify:`logos:django` Django ORM"
 
-#: ../../docs/developer-guide/contributing.rst:99
 msgid ":iconify:`mdi:database` SQL"
 msgstr ":iconify:`mdi:database` SQL"
 
-#: ../../docs/developer-guide/contributing.rst:110
 msgid "Run the Tests"
-msgstr "Запуск тестов"
+msgstr "Запустить тесты"
 
-#: ../../docs/developer-guide/contributing.rst:113
 msgid "Frontend Tests"
 msgstr "Тесты фронтенда"
 
-#: ../../docs/developer-guide/contributing.rst:129
 msgid "Backend Tests"
 msgstr "Тесты бэкенда"
 
-#: ../../docs/developer-guide/contributing.rst:145
 msgid "Type Checking"
 msgstr "Проверка типов"
 
-#: ../../docs/developer-guide/contributing.rst:153
 msgid "Build the Project"
-msgstr "Сборка проекта"
+msgstr "Собрать проект"
 
-#: ../../docs/developer-guide/contributing.rst:167
 msgid "Start the Dev Server"
-msgstr "Запуск сервера разработки"
+msgstr "Запустить сервер разработки"
 
-#: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr "Сервер разработки работает на порту 9100 с включённой горячей заменой модулей."
+msgstr ""
+"Сервер разработки работает на порту 9100 с включенной горячей заменой "
+"модулей."
 
-#: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"
 msgstr "Стиль кода"
 
-#: ../../docs/developer-guide/contributing.rst:180
 msgid "**Python**: Ruff (linter + formatter)"
 msgstr "**Python**: Ruff (линтер + форматировщик)"
 
-#: ../../docs/developer-guide/contributing.rst:181
 msgid "**TypeScript**: Prettier"
 msgstr "**TypeScript**: Prettier"
 
-#: ../../docs/developer-guide/contributing.rst:182
 msgid "Pre-commit hooks are configured for automated formatting"
-msgstr "Pre-commit хуки настроены для автоматического форматирования"
+msgstr "Хуки pre-commit настроены для автоматического форматирования"
 
-#: ../../docs/developer-guide/contributing.rst:184
 msgid "Before submitting a pull request, run:"
-msgstr "Перед отправкой pull request выполните:"
+msgstr "Перед отправкой pull request, выполните:"

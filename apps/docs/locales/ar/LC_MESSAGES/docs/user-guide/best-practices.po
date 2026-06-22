@@ -1,112 +1,76 @@
-﻿# العربية translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ar
-"
-"Language-Team: ar <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: ar <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/user-guide/best-practices.rst:2
 msgid "Best Practices"
 msgstr "أفضل الممارسات"
 
-#: ../../docs/user-guide/best-practices.rst:4
-msgid "Tips and recommendations for using HStore fields effectively in production."
-msgstr "نصائح وتوصيات لاستخدام حقول HStore بفعالية في بيئة الإنتاج."
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr "نصائح وتوصيات لاستخدام حقول HStore بفعالية في الإنتاج."
 
-#: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
 msgstr "الحفاظ على اتساق المفاتيح"
 
-#: ../../docs/user-guide/best-practices.rst:9
-msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
-msgstr "استخدم تسمية موحدة للمفاتيح في جميع أنحاء تطبيقك. هذا يجعل الاستعلامات والصيانة أسهل."
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+"استخدم اتفاقية تسمية للمفاتيح عبر تطبيقك. هذا يجعل الاستعلام والصيانة أسهل."
 
-#: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
-msgstr "استخدم مفاتيح صريحة عند الإمكان"
+msgstr "استخدم مفاتيح صريحة عندما يكون ذلك ممكناً"
 
-#: ../../docs/user-guide/best-practices.rst:29
 msgid "Defining explicit keys gives you:"
 msgstr "تحديد مفاتيح صريحة يمنحك:"
 
-#: ../../docs/user-guide/best-practices.rst:31
 msgid "Labeled form fields in the admin"
-msgstr "حقول نموذج موسومة في لوحة الإدارة"
+msgstr "حقول نموذج موسومة في admin"
 
-#: ../../docs/user-guide/best-practices.rst:32
 msgid "Built-in validation per key"
-msgstr "تحقق مدمج لكل مفتاح"
+msgstr "التحقق المدمج لكل مفتاح"
 
-#: ../../docs/user-guide/best-practices.rst:33
 msgid "Widget customization per field"
-msgstr "تخصيص الواجهة لكل حقل"
+msgstr "تخصيص widget لكل حقل"
 
-#: ../../docs/user-guide/best-practices.rst:34
 msgid "IDE autocomplete for key names"
-msgstr "إكمال تلقائي في بيئة التطوير لأسماء المفاتيح"
+msgstr "الإكمال التلقائي IDE لأسماء المفاتيح"
 
-#: ../../docs/user-guide/best-practices.rst:47
 msgid "Index Frequently Queried Keys"
-msgstr "فهرسة المفاتيح المستعلم عنها بشكل متكرر"
+msgstr "فهرسة المفاتيح المستعلمة بشكل متكرر"
 
-#: ../../docs/user-guide/best-practices.rst:49
 msgid "Add GIN indexes on HStore columns you query often:"
-msgstr "أضف فهارس GIN على أعمدة HStore التي تستعلم عنها كثيراً:"
+msgstr "أضف فهارس GIN على أعمدة HStore التي تستعلمها غالباً:"
 
-#: ../../docs/user-guide/best-practices.rst:64
 msgid "Handle Missing Keys Gracefully"
-msgstr "التعامل مع المفاتيح المفقودة بسلاسة"
+msgstr "التعامل مع المفاتيح المفقودة بأناقة"
 
-#: ../../docs/user-guide/best-practices.rst:66
 msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
-msgstr "قد لا توجد مفاتيح HStore في جميع الصفوف. استخدم ``get()`` مع قيم افتراضية:"
+msgstr ""
+"قد لا توجد مفاتيح HStore في جميع الصفوف. استخدم ``get()`` مع القيم "
+"الافتراضية:"
 
-#: ../../docs/user-guide/best-practices.rst:74
 msgid "Validate Key Values"
-msgstr "التحقق من قيم المفاتيح"
+msgstr "التحقق من صحة قيم المفاتيح"
 
-#: ../../docs/user-guide/best-practices.rst:76
 msgid "HStore values are strings. Validate and convert them where needed:"
-msgstr "قيم HStore هي سلاسل نصية. تحقق منها وحولها حيث يلزم:"
+msgstr "قيم HStore هي سلاسل. تحقق من صحتها وقم بتحويلها حيث يلزم:"
 
-#: ../../docs/user-guide/best-practices.rst:90
 msgid "Consider Migration Paths"
-msgstr "فكر في مسارات الترحيل"
+msgstr "خذ في الاعتبار مسارات الهجرة"
 
-#: ../../docs/user-guide/best-practices.rst:92
-msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
-msgstr "إذا توقعت الحاجة إلى بيانات متداخلة في المستقبل، فخطط ترحيلك من HStore إلى JSONB مبكراً. صيغ البيانات غير متوافقة مباشرة."
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+"إذا كنت تتوقع الحاجة إلى بيانات متداخلة في المستقبل، فخطط هجرتك من HStore "
+"إلى JSONB مبكراً. تنسيقات البيانات غير متوافقة مباشرة."

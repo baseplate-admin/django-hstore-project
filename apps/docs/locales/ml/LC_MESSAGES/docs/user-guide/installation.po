@@ -1,19 +1,17 @@
-﻿# Malayalam translation for Installation.
+# Malayalam translation for Installation.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ml\n"
-"Language-Team: ml <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/user-guide/installation.rst:2
@@ -22,7 +20,9 @@ msgstr "ഇൻസ്റ്റാലേഷൻ"
 
 #: ../../docs/user-guide/installation.rst:4
 msgid "Get up and running with django-hstore-project in minutes."
-msgstr "മിനിറ്റുകൾക്കുള്ളിൽ django-hstore-project ഇൻസ്റ്റാൾ ചെയ്ത് പ്രവർത്തിപ്പിക്കുക."
+msgstr ""
+"മിനിറ്റുകൾക്കുള്ളിൽ django-hstore-project ഇൻസ്റ്റാൾ ചെയ്ത് "
+"പ്രവർത്തിപ്പിക്കുക."
 
 #: ../../docs/user-guide/installation.rst:7
 msgid "Requirements"
@@ -89,5 +89,8 @@ msgid "Next"
 msgstr "അടുത്തത്"
 
 #: ../../docs/user-guide/installation.rst:103
-msgid "Head over to the :doc:`quickstart` to use HStore fields in your models."
-msgstr "നിങ്ങളുടെ മോഡലുകളിൽ HStore ഫീൽഡുകൾ ഉപയോഗിക്കാൻ :doc:`quickstart`-ലേക്ക് പോകുക."
+msgid ""
+"Head over to the :doc:`quickstart` to use HStore fields in your models."
+msgstr ""
+"നിങ്ങളുടെ മോഡലുകളിൽ HStore ഫീൽഡുകൾ ഉപയോഗിക്കാൻ :doc:`quickstart`-ലേക്ക് "
+"പോകുക."

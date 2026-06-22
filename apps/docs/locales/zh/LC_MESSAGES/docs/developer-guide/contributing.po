@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: zh\n"
-"Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
@@ -24,8 +23,7 @@ msgstr "贡献指南"
 msgid ""
 "Step-by-step guide to setting up your development environment and "
 "contributing to django-hstore-project."
-msgstr ""
-"逐步指导您设置开发环境并向 django-hstore-project 贡献代码。"
+msgstr "逐步指导您设置开发环境并向 django-hstore-project 贡献代码。"
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"

@@ -5,12 +5,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
-"Language-Team: Thai <ll@li.org>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,16 +20,22 @@ msgid "Best Practices"
 msgstr "แนวทางปฏิบัติที่ดี"
 
 #: ../../docs/user-guide/best-practices.rst:4
-msgid "Tips and recommendations for using HStore fields effectively in production."
-msgstr "เคล็ดลับและคำแนะนำสำหรับการใช้ฟิลด์ HStore อย่างมีประสิทธิภาพในระบบจริง"
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr ""
+"เคล็ดลับและคำแนะนำสำหรับการใช้ฟิลด์ HStore อย่างมีประสิทธิภาพในระบบจริง"
 
 #: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
 msgstr "รักษาความสม่ำเสมอของคีย์"
 
 #: ../../docs/user-guide/best-practices.rst:9
-msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
-msgstr "ใช้กฎการตั้งชื่อคีย์ตลอดทั้งแอปพลิเคชัน ทำให้การค้นหาและการบำรุงรักษาง่ายขึ้น"
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+"ใช้กฎการตั้งชื่อคีย์ตลอดทั้งแอปพลิเคชัน "
+"ทำให้การค้นหาและการบำรุงรักษาง่ายขึ้น"
 
 #: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
@@ -85,5 +90,9 @@ msgid "Consider Migration Paths"
 msgstr "พิจารณาเส้นทาง Migration"
 
 #: ../../docs/user-guide/best-practices.rst:92
-msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
-msgstr "หากคุณคาดการณ์ว่าจะต้องใช้ข้อมูลแบบซ้อนในอนาคต ให้วางแผน migration จาก HStore ไปยัง JSONB ตั้งแต่เนิ่นๆ รูปแบบข้อมูลไม่เข้ากันโดยตรง"
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+"หากคุณคาดการณ์ว่าจะต้องใช้ข้อมูลแบบซ้อนในอนาคต ให้วางแผน migration จาก "
+"HStore ไปยัง JSONB ตั้งแต่เนิ่นๆ รูปแบบข้อมูลไม่เข้ากันโดยตรง"

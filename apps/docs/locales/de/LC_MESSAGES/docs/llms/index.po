@@ -1,16 +1,15 @@
-﻿# German translations for Django HStore Project.
+# German translations for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: German\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,8 +19,13 @@ msgid "LLM Context Files"
 msgstr "LLM-Kontextdateien"
 
 #: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr "Dieses Projekt stellt maschinenlesbare Kontextdateien für die LLM-Integration bereit, die während des Sphinx-Dokumentationsbuilds automatisch generiert werden."
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+"Dieses Projekt stellt maschinenlesbare Kontextdateien für die LLM-"
+"Integration bereit, die während des Sphinx-Dokumentationsbuilds automatisch "
+"generiert werden."
 
 #: ../../docs/llms/index.rst:8
 msgid "Available Files"
@@ -64,21 +68,40 @@ msgid "`llms-full.txt <../../llms-full.txt>`_"
 msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
 #: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
-msgstr "Vollständige Projektdokumentation einschließlich aller Pakete, API-Referenz, Architektur, bewährte Verfahren und Leitfaden zum Mitwirken"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+"Vollständige Projektdokumentation einschließlich aller Pakete, API-Referenz,"
+" Architektur, bewährte Verfahren und Leitfaden zum Mitwirken"
 
 #: ../../docs/llms/index.rst:26
 msgid "Usage"
 msgstr "Verwendung"
 
 #: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
-msgstr "Weisen Sie Ihre LLM auf die Kontextdatei, die zu Ihrem Anwendungsbereich passt. Die generierten Dateien befinden sich im Stammverzeichnis der Dokumentation und sind relativ zum Dokumentationsstammverzeichnis zugreifbar."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
+msgstr ""
+"Weisen Sie Ihre LLM auf die Kontextdatei, die zu Ihrem Anwendungsbereich "
+"passt. Die generierten Dateien befinden sich im Stammverzeichnis der "
+"Dokumentation und sind relativ zum Dokumentationsstammverzeichnis "
+"zugreifbar."
 
 #: ../../docs/llms/index.rst:33
 msgid "How It Works"
 msgstr "Funktionsweise"
 
 #: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
-msgstr "Die llms.txt-Dateien werden automatisch durch eine benutzerdefinierte Sphinx-Erweiterung (``llms_txt_generator``) generiert, die den Inhalt aller Dokumentationsquelldateien zum Build-Zeitpunkt zusammenfügt, sodass die Kontextdateien synchron mit der Dokumentation bleiben."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
+msgstr ""
+"Die llms.txt-Dateien werden automatisch durch eine benutzerdefinierte "
+"Sphinx-Erweiterung (``llms_txt_generator``) generiert, die den Inhalt aller "
+"Dokumentationsquelldateien zum Build-Zeitpunkt zusammenfügt, sodass die "
+"Kontextdateien synchron mit der Dokumentation bleiben."

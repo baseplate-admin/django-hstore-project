@@ -1,64 +1,71 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
 msgid "django_hstore_widget.forms"
-msgstr ""
+msgstr "django_hstore_widget.forms"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "Nội dung module"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:18
 msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
-msgstr ""
+msgstr "Cơ sở: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:21
-msgid "Form field that uses :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgid ""
+"Form field that uses "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 msgstr ""
+"Trường biểu mẫu sử dụng "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
-msgid "Extends Django's built-in ``HStoreField`` to inject the custom widget and override ``clean()`` so incoming values are parsed through ``json.loads``."
+msgid ""
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
 msgstr ""
+"Mở rộng ``HStoreField`` tích hợp của Django để tiêm widget tùy chỉnh và ghi "
+"đè ``clean()`` để các giá trị đến được phân tích thông qua ``json.loads``."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"
-msgstr ""
+msgstr "Ví dụ"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:40
 msgid "Parse the raw form value into a Python dict."
-msgstr ""
+msgstr "Phân tích giá trị biểu mẫu thô thành dict Python."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "Thông số"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:42
 msgid "The raw value submitted by the form."
-msgstr ""
+msgstr "Giá trị thô được gửi bởi biểu mẫu."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "Trả về"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:45
 msgid "The deserialized key-value mapping."
-msgstr ""
+msgstr "Bản ánh xạ khóa-giá trị được deserialize."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "Kiểu trả về"

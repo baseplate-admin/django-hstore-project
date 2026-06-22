@@ -1,19 +1,17 @@
-﻿# Bengali translation for Use Cases.
+# Bengali translation for Use Cases.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/technical/use-cases.rst:2
@@ -22,11 +20,11 @@ msgstr "ইউজ কেসেস"
 
 #: ../../docs/technical/use-cases.rst:4
 msgid ""
-"Real-world scenarios for choosing between HStore and JSONB in your Django"
-" application."
+"Real-world scenarios for choosing between HStore and JSONB in your Django "
+"application."
 msgstr ""
-"আপনার Django application-এ HStore এবং JSONB-এর মধ্যে বেছে নেওয়ার "
-"real-world সিনারিওগুলো।"
+"আপনার Django application-এ HStore এবং JSONB-এর মধ্যে বেছে নেওয়ার real-world"
+" সিনারিওগুলো।"
 
 #: ../../docs/technical/use-cases.rst:8
 msgid "Use HStore When"
@@ -39,8 +37,8 @@ msgstr "Product Attributes"
 #: ../../docs/technical/use-cases.rst:13
 msgid ""
 "Products have varying attributes like color, size, material that don't "
-"warrant dedicated columns. HStore stores them as flat key-value pairs "
-"with a clean admin interface."
+"warrant dedicated columns. HStore stores them as flat key-value pairs with a"
+" clean admin interface."
 msgstr ""
 "products-এর color, size, material ইত্যাদি varying attributes থাকে যা "
 "dedicated columns-এর দরকার হয় না। HStore এগুলো clean admin interface সহ "
@@ -50,7 +48,8 @@ msgstr ""
 msgid ":iconify:`logos:django` Django ORM"
 msgstr ":iconify:`logos:django` Django ORM"
 
-#: ../../docs/technical/use-cases.rst:40 ../../docs/technical/use-cases.rst:101
+#: ../../docs/technical/use-cases.rst:40
+#: ../../docs/technical/use-cases.rst:101
 msgid ":iconify:`mdi:database` SQL"
 msgstr ":iconify:`mdi:database` SQL"
 
@@ -63,8 +62,8 @@ msgid ""
 "Store user settings like timezone, language, notification preferences as "
 "flexible key-value pairs:"
 msgstr ""
-"timezone, language, notification preferences ইত্যাদি user settings "
-"flexible key-value pairs হিসেবে স্টোর করুন:"
+"timezone, language, notification preferences ইত্যাদি user settings flexible "
+"key-value pairs হিসেবে স্টোর করুন:"
 
 #: ../../docs/technical/use-cases.rst:62
 msgid "Content Metadata"
@@ -75,8 +74,8 @@ msgid ""
 "Tags, categories, and custom fields for articles, media, or any content "
 "model:"
 msgstr ""
-"articles, media, বা যেকোনো content model-এর জন্য tags, categories, "
-"এবং custom fields:"
+"articles, media, বা যেকোনো content model-এর জন্য tags, categories, এবং "
+"custom fields:"
 
 #: ../../docs/technical/use-cases.rst:76
 msgid "Use JSONB When"
@@ -163,10 +162,10 @@ msgstr "ডকুমেন্ট storage"
 
 #: ../../docs/technical/use-cases.rst:164
 msgid ""
-"When in doubt, start with HStore. It's simpler, more compact, and gives "
-"you a better admin experience. Migrate to JSONB only when you genuinely "
-"need nested structures or mixed value types."
+"When in doubt, start with HStore. It's simpler, more compact, and gives you "
+"a better admin experience. Migrate to JSONB only when you genuinely need "
+"nested structures or mixed value types."
 msgstr ""
-"সন্দেহ থাকলে HStore দিয়ে শুরু করুন। এটি সিম্পল, বেশি compact, এবং "
-"বেশি ভালো admin experience দেয়। শুধুমাত্র nested structures বা mixed value "
-"types সত্যিই লাগলে JSONB-তে migrate করুন।"
+"সন্দেহ থাকলে HStore দিয়ে শুরু করুন। এটি সিম্পল, বেশি compact, এবং বেশি ভালো"
+" admin experience দেয়। শুধুমাত্র nested structures বা mixed value types "
+"সত্যিই লাগলে JSONB-তে migrate করুন।"

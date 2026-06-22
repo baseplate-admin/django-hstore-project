@@ -1,44 +1,22 @@
-﻿# Français translation for Django HStore Project.
+# Français translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:40+0600
-"
-"PO-Revision-Date: 2026-06-20 17:40+0600
-"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"
-"Language: fr
-"
-"Language-Team: fr <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: fr <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore ProjecReport-Msgid-Bugs-ToPOT-Creation-Date: 2026-06-20 17:40+060PO-Revision-Date: 2026-06-20 17:40+060Last-Translator: baseplate-admin <61817579+baseplate-Forms: nplurals=2; plural=(n != 1)MIME-Version: 1.Content-Type: text/plain; charset=utf-Content-Transfer-Encoding: 8biGenerated-By: Babel 2.18.\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 
 #: ../../docs/developer-guide/frontend-build.rst:2
 msgid "Frontend Build Pipeline"
@@ -49,57 +27,71 @@ msgid "Overview"
 msgstr "Vue d'ensemble"
 
 #: ../../docs/developer-guide/frontend-build.rst:7
-msgid "The widget frontend is built with Vite and TypeScript, producing a single IIFE bundle loaded by Django admin."
-msgstr "Le frontend du widget est construit avec Vite et TypeScript, produisant un bundle IIFE unique chargé par l'administration Django."
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
+msgstr ""
+"Le frontend du widget est construit avec Vite et TypeScript, produisant un "
+"bundle IIFE unique chargé par l'administration Django."
 
 #: ../../docs/developer-guide/frontend-build.rst:11
 msgid "Build Steps"
 msgstr "Étapes de construction"
 
 #: ../../docs/developer-guide/frontend-build.rst:13
-msgid "Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-widget.js``"
-msgstr "Vite agrège ``src/frontend/index.ts`` en ``dist/components/django-hstore-widget.js``"
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
+msgstr ""
+"Vite agrège ``src/frontend/index.ts`` en ``dist/components/django-hstore-"
+"widget.js``"
 
 #: ../../docs/developer-guide/frontend-build.rst:14
-msgid "``scripts/copy.ts`` copies the bundle to ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
-msgstr "``scripts/copy.ts`` copie le bundle vers ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgstr ""
+"``scripts/copy.ts`` copie le bundle vers "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
 
 #: ../../docs/developer-guide/frontend-build.rst:15
 msgid "Django serves the bundle via static files"
-msgstr ""
+msgstr "Django sert le bundle via les fichiers statiques"
 
 #: ../../docs/developer-guide/frontend-build.rst:18
 msgid "Configuration"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../docs/developer-guide/frontend-build.rst:20
 msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
 msgstr ""
+"``vite.config.ts`` - point d'entrée, sortie, alias, serveur de développement"
 
 #: ../../docs/developer-guide/frontend-build.rst:21
 msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
 msgstr ""
+"``tsconfig.json`` - options du compilateur TypeScript, alias de chemin"
 
 #: ../../docs/developer-guide/frontend-build.rst:24
 msgid "Path Aliases"
-msgstr ""
+msgstr "Alias de chemin"
 
 #: ../../docs/developer-guide/frontend-build.rst:36
 msgid "Resolves to ``src/frontend/lib/*``"
-msgstr ""
+msgstr "Résout vers ``src/frontend/lib/*``"
 
 #: ../../docs/developer-guide/frontend-build.rst:45
 msgid "Resolves to ``src/frontend/stores/*``"
-msgstr ""
+msgstr "Résout vers ``src/frontend/stores/*``"
 
 #: ../../docs/developer-guide/frontend-build.rst:54
 msgid "Resolves to ``src/frontend/mappings/*``"
-msgstr ""
+msgstr "Résout vers ``src/frontend/mappings/*``"
 
 #: ../../docs/developer-guide/frontend-build.rst:63
 msgid "Resolves to ``src/frontend/components/*``"
-msgstr ""
+msgstr "Résout vers ``src/frontend/components/*``"
 
 #: ../../docs/developer-guide/frontend-build.rst:66
 msgid "Development"
-msgstr ""
+msgstr "Développement"

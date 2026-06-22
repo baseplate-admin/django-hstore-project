@@ -1,104 +1,75 @@
-﻿# Русский translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ru
-"
-"Language-Team: ru <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: ru <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/user-guide/quickstart.rst:2
 msgid "Quick Start"
 msgstr "Быстрый старт"
 
-#: ../../docs/user-guide/quickstart.rst:4
 msgid "Get up and running with django-hstore-project in under a minute."
 msgstr "Начните работу с django-hstore-project менее чем за минуту."
 
-#: ../../docs/user-guide/quickstart.rst:7
 msgid "Create a Model"
-msgstr "Создание модели"
+msgstr "Создать модель"
 
-#: ../../docs/user-guide/quickstart.rst:9
 msgid "Add an HStore field to any model:"
 msgstr "Добавьте поле HStore в любую модель:"
 
-#: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr "Всё. Виджет подключается автоматически, конфигурация форм не требуется."
+msgstr "Всё. Виджет автоматически подключен, конфигурация форм не требуется."
 
-#: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"
-msgstr ""
+msgstr "Запустить миграции"
 
-#: ../../docs/user-guide/quickstart.rst:31
 msgid "This enables the PostgreSQL hstore extension automatically."
-msgstr ""
+msgstr "Это автоматически включает расширение hstore PostgreSQL."
 
-#: ../../docs/user-guide/quickstart.rst:34
 msgid "Register in Admin"
-msgstr ""
+msgstr "Зарегистрировать в администраторе"
 
-#: ../../docs/user-guide/quickstart.rst:46
-msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
 msgstr ""
+"Посетите страницу администратора, и вы увидите виджет HStore с чистым "
+"интерфейсом ключ-значение. Каждая пара ключ-значение редактируется inline. "
+"Добавляйте, удаляйте и изменяйте пары по мере необходимости."
 
-#: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
-msgstr ""
+msgstr "С пользовательскими ключами"
 
-#: ../../docs/user-guide/quickstart.rst:53
-msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
 msgstr ""
+"Определите явные ключи, чтобы получить поля форм с метками вместо редактора "
+"свободной формы:"
 
-#: ../../docs/user-guide/quickstart.rst:70
-msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
 msgstr ""
+"Каждый ключ становится правильным полем формы с валидацией, виджетами и "
+"метками."
 
-#: ../../docs/user-guide/quickstart.rst:73
 msgid "What's Next"
-msgstr ""
+msgstr "Что дальше"
 
-#: ../../docs/user-guide/quickstart.rst:75
 msgid ":doc:`../user-guide/installation` - Detailed installation options"
-msgstr ""
+msgstr ":doc:`../user-guide/installation` - Подробные варианты установки"
 
-#: ../../docs/user-guide/quickstart.rst:76
 msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
 msgstr ""
+":doc:`../technical/hstore-vs-jsonb` - Когда использовать HStore против JSONB"
 
-#: ../../docs/user-guide/quickstart.rst:77
 msgid ":doc:`../user-guide/best-practices` - Tips for production use"
 msgstr ""
+":doc:`../user-guide/best-practices` - Советы для использования в продакшене"

@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Polish <pl@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../../docs/developer-guide/architecture.rst:2
@@ -30,13 +29,21 @@ msgid "django-hstore-field"
 msgstr "django-hstore-field"
 
 #: ../../docs/developer-guide/architecture.rst:17
-msgid "Drop-in HStoreField that auto-wires the widget. No form configuration needed."
-msgstr "Gotowe pole HStoreField, które automatycznie podłącza widget. Nie wymaga konfiguracji formularza."
+msgid ""
+"Drop-in HStoreField that auto-wires the widget. No form configuration "
+"needed."
+msgstr ""
+"Gotowe pole HStoreField, które automatycznie podłącza widget. Nie wymaga "
+"konfiguracji formularza."
 
 #: ../../docs/developer-guide/architecture.rst:20
 msgid "django-hstore-widget"
 msgstr "django-hstore-widget"
 
 #: ../../docs/developer-guide/architecture.rst:22
-msgid "Lit-based frontend component with Django admin integration. Handles rendering, validation, and media registration."
-msgstr "Komponent frontendowy oparty na Lit z integracją z Django admin. Obsługuje renderowanie, walidację i rejestrację mediów."
+msgid ""
+"Lit-based frontend component with Django admin integration. Handles "
+"rendering, validation, and media registration."
+msgstr ""
+"Komponent frontendowy oparty na Lit z integracją z Django admin. Obsługuje "
+"renderowanie, walidację i rejestrację mediów."

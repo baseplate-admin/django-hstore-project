@@ -1,64 +1,79 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
 msgid "django_hstore_field.fields"
-msgstr ""
+msgstr "django_hstore_field.fields"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:10
 msgid "Module Contents"
-msgstr ""
+msgstr "Zawartość modułu"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:14
 msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
-msgstr ""
+msgstr "Bazy: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
 msgstr ""
+"Drop-in zastępstwo dla ``HStoreField`` Django z niestandardowym widgetem."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
-msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
+msgid ""
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
 msgstr ""
+"Nadpisuje ``formfield()`` tak aby admin i ModelForms automatycznie używały "
+":class:`~django_hstore_widget.forms.HStoreFormField` i "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- nie wymagana "
+"ręczna konfiguracja formularza."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
-msgstr ""
+msgstr "Przykład"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:38
 msgid "Return a form field class pre-configured with the custom widget."
 msgstr ""
+"Zwraca klasę pola formularza wstępnie skonfigurowaną z niestandardowym "
+"widgetem."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "Parametry"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:40
-msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
+msgid ""
+"Keyword arguments forwarded to the form field constructor. Pass "
+"``form_class`` or ``widget`` to override the defaults."
 msgstr ""
+"Argumenty słów kluczowych przekazywane do konstruktora pola formularza. "
+"Prześlij ``form_class`` lub ``widget`` aby nadpisać domyślne."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "Zwraca"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:44
 msgid "A form field instance wired to the hstore widget."
-msgstr ""
+msgstr "Instancja pola formularza podłączona do widgetu hstore."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "Typ zwracany"

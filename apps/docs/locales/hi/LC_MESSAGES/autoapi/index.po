@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: hi\n"
-"Language-Team: hi <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../autoapi/index.rst:2
 msgid "API Reference"
@@ -21,8 +20,13 @@ msgstr "API संदर्भ"
 
 #: ../../autoapi/index.rst:4
 msgid "This page contains auto-generated API reference documentation [#f1]_."
-msgstr "इस पृष्ठ में स्वचालित रूप से जनरित API संदर्भ दस्तावेज़ीकरण [#f1]_ शामिल है।"
+msgstr ""
+"इस पृष्ठ में स्वचालित रूप से जनरित API संदर्भ दस्तावेज़ीकरण [#f1]_ शामिल है।"
 
 #: ../../autoapi/index.rst:12
-msgid "Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-autoapi>`_"
-msgstr "`sphinx-autoapi <https://github.com/readthedocs/sphinx-autoapi>`_ के साथ बनाया गया"
+msgid ""
+"Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_"
+msgstr ""
+"`sphinx-autoapi <https://github.com/readthedocs/sphinx-autoapi>`_ के साथ "
+"बनाया गया"

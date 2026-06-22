@@ -1,16 +1,15 @@
-﻿# Persian (Farsi) translation of Django HStore LLM Context docs.
+# Persian (Farsi) translation of Django HStore LLM Context docs.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Persian (Farsi)\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,8 +19,12 @@ msgid "LLM Context Files"
 msgstr "فایل‌های زمینه LLM"
 
 #: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr "این پروژه فایل‌های زمینه قابل خواندن توسط ماشین را برای یکپارچه‌سازی LLM فراهم می‌کند که به‌طور خودکار در حین ساخت مستندات Sphinx تولید می‌شوند."
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+"این پروژه فایل‌های زمینه قابل خواندن توسط ماشین را برای یکپارچه‌سازی LLM "
+"فراهم می‌کند که به‌طور خودکار در حین ساخت مستندات Sphinx تولید می‌شوند."
 
 #: ../../docs/llms/index.rst:8
 msgid "Available Files"
@@ -41,44 +44,62 @@ msgstr "`llms.txt <../../llms.txt>`_"
 
 #: ../../docs/llms/index.rst:17
 msgid "Index file listing all context files"
-msgstr ""
+msgstr "فایل نمایه که تمام فایل‌های زمینه را فهرست می‌کند"
 
 #: ../../docs/llms/index.rst:18
 msgid "`llms-widget.txt <../../llms-widget.txt>`_"
-msgstr ""
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
 
 #: ../../docs/llms/index.rst:19
 msgid "django-hstore-widget package: widget API, frontend architecture"
-msgstr ""
+msgstr "بسته django-hstore-widget: API ویجت، معماری فرانت‌اند"
 
 #: ../../docs/llms/index.rst:20
 msgid "`llms-field.txt <../../llms-field.txt>`_"
-msgstr ""
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
 
 #: ../../docs/llms/index.rst:21
 msgid "django-hstore-field package: field API, installation, quick start"
-msgstr ""
+msgstr "بسته django-hstore-field: API فیلد، نصب، شروع سریع"
 
 #: ../../docs/llms/index.rst:22
 msgid "`llms-full.txt <../../llms-full.txt>`_"
-msgstr ""
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
 #: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
 msgstr ""
+"مستندات کامل پروژه شامل تمام بسته‌ها، مرجع API، معماری، بهترین روش‌ها و "
+"راهنمای مشارکت"
 
 #: ../../docs/llms/index.rst:26
 msgid "Usage"
-msgstr ""
+msgstr "استفاده"
 
 #: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
 msgstr ""
+"LLM خود را به فایل زمینه که با محدوده شما مطابقت دارد هدایت کنید. فایل‌های "
+"تولید شده در ریشه خروجی مستندات قرار دارند و نسبت به ریشه مستندات قابل "
+"دسترسی هستند."
 
 #: ../../docs/llms/index.rst:33
 msgid "How It Works"
-msgstr ""
+msgstr "چگونه کار می‌کند"
 
 #: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
 msgstr ""
+"فایل‌های llms.txt به طور خودکار توسط یک افزونه سفارشی Sphinx "
+"(``llms_txt_generator``) تولید می‌شوند که محتوا را از تمام فایل‌های منبع "
+"مستندات در زمان ساخت جمع‌آوری می‌کند و اطمینان حاصل می‌کند که فایل‌های زمینه"
+" با مستندات همگام می‌مانند."

@@ -5,12 +5,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
-"Language-Team: Turkish <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +32,8 @@ msgstr "Herhangi bir modele HStore alanı ekleyin:"
 
 #: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr "İşte bu kadar. Widget otomatik bağlanır, form yapılandırmasına gerek yoktur."
+msgstr ""
+"İşte bu kadar. Widget otomatik bağlanır, form yapılandırmasına gerek yoktur."
 
 #: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"
@@ -48,20 +48,33 @@ msgid "Register in Admin"
 msgstr "Admin'de Kaydedin"
 
 #: ../../docs/user-guide/quickstart.rst:46
-msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
-msgstr "Admin sayfanızı ziyaret edin ve HStore widget'ını temiz bir anahtar-değer arayüzüyle göreceksiniz. Her anahtar-değer çifti satır içi düzenlenebilir. Gerekirse çiftler ekleyin, kaldırın ve değiştirin."
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
+msgstr ""
+"Admin sayfanızı ziyaret edin ve HStore widget'ını temiz bir anahtar-değer "
+"arayüzüyle göreceksiniz. Her anahtar-değer çifti satır içi düzenlenebilir. "
+"Gerekirse çiftler ekleyin, kaldırın ve değiştirin."
 
 #: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
 msgstr "Özel Anahtarlarla"
 
 #: ../../docs/user-guide/quickstart.rst:53
-msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
-msgstr "Serbest form düzenleyici yerine etiketli form alanları almak için açık anahtarlar tanımlayın:"
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
+msgstr ""
+"Serbest form düzenleyici yerine etiketli form alanları almak için açık "
+"anahtarlar tanımlayın:"
 
 #: ../../docs/user-guide/quickstart.rst:70
-msgid "Each key becomes a proper form field with validation, widgets, and labels."
-msgstr "Her anahtar, doğrulama, widget'lar ve etiketlerle uygun bir form alanına dönüşür."
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
+msgstr ""
+"Her anahtar, doğrulama, widget'lar ve etiketlerle uygun bir form alanına "
+"dönüşür."
 
 #: ../../docs/user-guide/quickstart.rst:73
 msgid "What's Next"
@@ -73,7 +86,9 @@ msgstr ":doc:`../user-guide/installation` - Detaylı yükleme seçenekleri"
 
 #: ../../docs/user-guide/quickstart.rst:76
 msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
-msgstr ":doc:`../technical/hstore-vs-jsonb` - HStore mu JSONB mi, ne zaman kullanılır"
+msgstr ""
+":doc:`../technical/hstore-vs-jsonb` - HStore mu JSONB mi, ne zaman "
+"kullanılır"
 
 #: ../../docs/user-guide/quickstart.rst:77
 msgid ":doc:`../user-guide/best-practices` - Tips for production use"

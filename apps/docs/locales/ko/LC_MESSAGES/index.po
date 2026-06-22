@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Korean <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../index.rst:61
@@ -42,8 +41,12 @@ msgid "Django HStore Project"
 msgstr "Django HStore 프로젝트"
 
 #: ../../index.rst:4
-msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
-msgstr "Django admin을 위한 사용자 친화적인 PostgreSQL hstore 지원을 제공하는 Django HStore 생태계의 모노레포입니다."
+msgid ""
+"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore"
+" support for Django admin."
+msgstr ""
+"Django admin을 위한 사용자 친화적인 PostgreSQL hstore 지원을 제공하는 Django HStore 생태계의 "
+"모노레포입니다."
 
 #: ../../index.rst:8
 msgid "Packages"
@@ -54,15 +57,21 @@ msgid "django-hstore-widget"
 msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
-msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
-msgstr "Django admin에서 hstore 데이터를 편집하기 위한 커스텀 위젯입니다. 반응형 키-값 편집기를 위해 Lit와 TypeScript로 구축되었습니다."
+msgid ""
+"Custom widget for editing hstore data in Django admin. Built with Lit and "
+"TypeScript for a responsive key-value editor."
+msgstr ""
+"Django admin에서 hstore 데이터를 편집하기 위한 커스텀 위젯입니다. 반응형 키-값 편집기를 위해 Lit와 "
+"TypeScript로 구축되었습니다."
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
 msgstr "django-hstore-field"
 
 #: ../../index.rst:34
-msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgid ""
+"Drop-in HStoreField with auto-wired widget. Zero configuration for new "
+"projects."
 msgstr "자동 연결된 위젯을 갖춘 드롭인 HStoreField입니다. 새 프로젝트에서 추가 구성이 필요 없습니다."
 
 #: ../../index.rst:42

@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Persian <fa@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,39 +19,51 @@ msgid "HStore vs JSONB"
 msgstr "HStore در برابر JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:4
-msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
-msgstr "PostgreSQL دو نوع داده انعطاف‌پذیر برای ذخیره‌سازی کلید-مقدار و اسناد ارائه می‌دهد. این صفحه آن‌ها را مقایسه می‌کند تا به شما در انتخاب گزینه مناسب کمک کند."
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"PostgreSQL دو نوع داده انعطاف‌پذیر برای ذخیره‌سازی کلید-مقدار و اسناد ارائه "
+"می‌دهد. این صفحه آن‌ها را مقایسه می‌کند تا به شما در انتخاب گزینه مناسب کمک "
+"کند."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
-msgstr ""
+msgstr "تصمیم سریع"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
-msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need nested "
+"structures, mixed value types, or containment queries."
 msgstr ""
+"از **HStore** زمانی استفاده کنید که داده‌های شما جفت‌های کلید-مقدار تخت "
+"هستند که بیشتر متادیتا، تگ‌ها و ویژگی‌های محصول است. از **JSONB** زمانی "
+"استفاده کنید که به ساختارهای تو در تو، انواع مقدار مخلوط یا پرس‌و‌جوهای "
+"containment نیاز دارید."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"
-msgstr ""
+msgstr "ماتریس ویژگی"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:20
 #: ../../docs/technical/hstore-vs-jsonb.rst:25
 msgid "Feature"
-msgstr ""
+msgstr "ویژگی"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:25
 #: ../../docs/technical/hstore-vs-jsonb.rst:59
 msgid "HStore"
-msgstr ""
+msgstr "HStore"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:25
 #: ../../docs/technical/hstore-vs-jsonb.rst:87
 msgid "JSONB"
-msgstr ""
+msgstr "JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:27
 msgid "Flat key-value"
-msgstr ""
+msgstr "کلید-مقدار تخت"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:27
 #: ../../docs/technical/hstore-vs-jsonb.rst:29
@@ -63,11 +74,11 @@ msgstr ""
 #: ../../docs/technical/hstore-vs-jsonb.rst:39
 #: ../../docs/technical/hstore-vs-jsonb.rst:41
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:29
 msgid "Nested structs"
-msgstr ""
+msgstr "ساختارهای تو در تو"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:29
 #: ../../docs/technical/hstore-vs-jsonb.rst:31
@@ -76,74 +87,83 @@ msgstr ""
 #: ../../docs/technical/hstore-vs-jsonb.rst:37
 #: ../../docs/technical/hstore-vs-jsonb.rst:39
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:31
 msgid "Non-string vals"
-msgstr ""
+msgstr "مقادیر غیر رشته‌ای"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:33
 msgid "Simple admin UI"
-msgstr ""
+msgstr "رابط کاربری مدیر ساده"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:35
 msgid "Easy validation"
-msgstr ""
+msgstr "اعتبارسنجی آسان"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:37
 msgid "Containment"
-msgstr ""
+msgstr "Containment"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:39
 msgid "Smaller storage"
-msgstr ""
+msgstr "ذخیره‌سازی کوچکتر"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:41
 msgid "GIN indexes"
-msgstr ""
+msgstr "اینکس‌های GIN"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:45
 msgid "Storage"
-msgstr ""
+msgstr "ذخیره‌سازی"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:47
-msgid "HStore is more compact because it stores flat key-value pairs without structural overhead:"
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
 msgstr ""
+"HStore فشرده‌تر است زیرا جفت‌های کلید-مقدار تخت را بدون سربار ساختاری ذخیره "
+"می‌کند:"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:52
 msgid "HStore: ~200 bytes for 10 key-value pairs"
-msgstr ""
+msgstr "HStore: ~200 بایت برای 10 جفت کلید-مقدار"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:53
 msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
-msgstr ""
+msgstr "JSONB: ~350 بایت برای همان داده (سربار ساختار)"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:56
 msgid "Query Performance"
-msgstr ""
+msgstr "عملکرد پرس‌وجو"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:63
 #: ../../docs/technical/hstore-vs-jsonb.rst:91
 msgid ":iconify:`logos:django` Django ORM"
-msgstr ""
+msgstr ":iconify:`logos:django` Django ORM"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:73
 #: ../../docs/technical/hstore-vs-jsonb.rst:101
 msgid ":iconify:`mdi:database` SQL"
-msgstr ""
+msgstr ":iconify:`mdi:database` SQL"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:112
 msgid "Indexing"
-msgstr ""
+msgstr "اینکس‌گذاری"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:114
 msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
 msgstr ""
+"هر دو HStore و JSONB اینکس‌های GIN را برای جستجوی سریع پشتیبانی می‌کنند:"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:122
 msgid "Summary"
-msgstr ""
+msgstr "خلاصه"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:126
-msgid "Choose HStore for simple metadata, tags, and product attributes. Choose JSONB for nested configurations, API responses, and document storage."
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
 msgstr ""
+"برای متادیتای ساده، تگ‌ها و ویژگی‌های محصول HStore را انتخاب کنید. برای "
+"پیکربندی‌های تو در تو، پاسخ‌های API و ذخیره‌سازی سند JSONB را انتخاب کنید."

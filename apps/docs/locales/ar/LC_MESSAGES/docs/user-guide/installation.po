@@ -1,4 +1,4 @@
-﻿# العربية translation for Django HStore Project.
+# العربية translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
@@ -7,13 +7,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ar\n"
-"Language-Team: ar <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/user-guide/installation.rst:2
@@ -89,5 +87,6 @@ msgid "Next"
 msgstr "التالي"
 
 #: ../../docs/user-guide/installation.rst:103
-msgid "Head over to the :doc:`quickstart` to use HStore fields in your models."
+msgid ""
+"Head over to the :doc:`quickstart` to use HStore fields in your models."
 msgstr "انتقل إلى :doc:`quickstart` لاستخدام حقول HStore في نماذجك."

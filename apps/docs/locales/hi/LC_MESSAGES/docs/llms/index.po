@@ -1,108 +1,85 @@
-﻿# हिन्दी translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: hi <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/llms/index.rst:2
 msgid "LLM Context Files"
 msgstr "LLM संदर्भ फ़ाइलें"
 
-#: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr "यह परियोजना LLM एकीकरण के लिए मशीन-पाठ्य संदर्भ फ़ाइलें प्रदान करती है, जो Sphinx दस्तावेज़ीकरण बिल्ड के दौरान स्वचालित रूप से उत्पन्न होती हैं।"
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+"यह प्रोजेक्ट LLM एकीकरण के लिए मशीन-पठनीय संदर्भ फ़ाइलें प्रदान करता है, जो "
+"Sphinx दस्तावेज़ीकरण बिल्ड के दौरान स्वचालित रूप से जनरेट होते हैं।"
 
-#: ../../docs/llms/index.rst:8
 msgid "Available Files"
 msgstr "उपलब्ध फ़ाइलें"
 
-#: ../../docs/llms/index.rst:14
 msgid "File"
 msgstr "फ़ाइल"
 
-#: ../../docs/llms/index.rst:15
 msgid "Description"
 msgstr "विवरण"
 
-#: ../../docs/llms/index.rst:16
 msgid "`llms.txt <../../llms.txt>`_"
 msgstr "`llms.txt <../../llms.txt>`_"
 
-#: ../../docs/llms/index.rst:17
 msgid "Index file listing all context files"
-msgstr ""
+msgstr "सभी संदर्भ फ़ाइलों की सूची वाला इंडेक्स फ़ाइल"
 
-#: ../../docs/llms/index.rst:18
 msgid "`llms-widget.txt <../../llms-widget.txt>`_"
-msgstr ""
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
 
-#: ../../docs/llms/index.rst:19
 msgid "django-hstore-widget package: widget API, frontend architecture"
-msgstr ""
+msgstr "django-hstore-widget पैकेज: विजेट API, फ्रंटएंड आर्किटेक्चर"
 
-#: ../../docs/llms/index.rst:20
 msgid "`llms-field.txt <../../llms-field.txt>`_"
-msgstr ""
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
 
-#: ../../docs/llms/index.rst:21
 msgid "django-hstore-field package: field API, installation, quick start"
-msgstr ""
+msgstr "django-hstore-field पैकेज: फ़ील्ड API, इंस्टॉलेशन, क्विक स्टार्ट"
 
-#: ../../docs/llms/index.rst:22
 msgid "`llms-full.txt <../../llms-full.txt>`_"
-msgstr ""
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
-#: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
 msgstr ""
+"सभी पैकेज, API संदर्भ, आर्किटेक्चर, सर्वोत्तम प्रथाएं और योगदान गाइड सहित "
+"पूर्ण प्रोजेक्ट दस्तावेज़ीकरण"
 
-#: ../../docs/llms/index.rst:26
 msgid "Usage"
-msgstr ""
+msgstr "उपयोग"
 
-#: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
 msgstr ""
+"अपने LLM को अपने दायरे से मेल खाने वाले संदर्भ फ़ाइल पर निर्देशित करें। "
+"जनरेट की गई फ़ाइलें दस्तावेज़ीकरण आउटपुट की जड़ पर रखी जाती हैं और डॉक्स जड़"
+" के सापेक्ष सुलभ होती हैं।"
 
-#: ../../docs/llms/index.rst:33
 msgid "How It Works"
-msgstr ""
+msgstr "यह कैसे काम करता है"
 
-#: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
 msgstr ""
+"llms.txt फ़ाइलें कस्टम Sphinx एक्सटेंशन (``llms_txt_generator``) द्वारा "
+"स्वचालित रूप से जनरेट होती हैं जो बिल्ड समय पर सभी दस्तावेज़ीकरण स्रोत "
+"फ़ाइलों से सामग्री को एकत्र करता है, यह सुनिश्चित करते हुए कि संदर्भ फ़ाइलें"
+" दस्तावेज़ीकरण के साथ सिंक में रहें।"

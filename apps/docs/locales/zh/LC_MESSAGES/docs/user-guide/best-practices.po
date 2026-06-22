@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: zh\n"
-"Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/user-guide/best-practices.rst:2
@@ -22,10 +21,8 @@ msgstr "最佳实践"
 
 #: ../../docs/user-guide/best-practices.rst:4
 msgid ""
-"Tips and recommendations for using HStore fields effectively in "
-"production."
-msgstr ""
-"在生产环境中有效使用 HStore 字段的技巧和建议。"
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr "在生产环境中有效使用 HStore 字段的技巧和建议。"
 
 #: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
@@ -35,8 +32,7 @@ msgstr "保持键的一致性"
 msgid ""
 "Use a naming convention for keys across your application. This makes "
 "querying and maintenance easier."
-msgstr ""
-"在整个应用程序中使用统一的键命名约定。这将使查询和维护更加容易。"
+msgstr "在整个应用程序中使用统一的键命名约定。这将使查询和维护更加容易。"
 
 #: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
@@ -94,6 +90,4 @@ msgstr "考虑迁移路径"
 msgid ""
 "If you anticipate needing nested data in the future, plan your migration "
 "from HStore to JSONB early. The data formats are not directly compatible."
-msgstr ""
-"如果您预计未来需要嵌套数据，请尽早规划从 HStore 到 JSONB 的迁移。"
-"数据格式并不直接兼容。"
+msgstr "如果您预计未来需要嵌套数据，请尽早规划从 HStore 到 JSONB 的迁移。数据格式并不直接兼容。"

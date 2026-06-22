@@ -1,28 +1,31 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Turkish <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
 msgstr "Katkıda Bulunma"
 
 #: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "Geliştirme ortamınızı kurma ve django-hstore-project projesine katkıda bulunma konusunda adım adım kılavuz."
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"Geliştirme ortamınızı kurma ve django-hstore-project projesine katkıda "
+"bulunma konusunda adım adım kılavuz."
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
@@ -86,7 +89,8 @@ msgstr "Veritabanını Kurun"
 
 #: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr "hstore eklentisi etkinleştirilmiş yerel bir PostgreSQL örneği başlatın:"
+msgstr ""
+"hstore eklentisi etkinleştirilmiş yerel bir PostgreSQL örneği başlatın:"
 
 #: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
@@ -122,7 +126,9 @@ msgstr "Geliştirme Sunucusunu Başlatın"
 
 #: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr "Geliştirme sunucusu, sıcak modül değiştirme etkinleştirilmiş olarak 9100. portta çalışır."
+msgstr ""
+"Geliştirme sunucusu, sıcak modül değiştirme etkinleştirilmiş olarak 9100. "
+"portta çalışır."
 
 #: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"

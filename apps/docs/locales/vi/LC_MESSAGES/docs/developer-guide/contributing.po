@@ -1,16 +1,15 @@
-﻿# Vietnamese translation for django-hstore-widget contributing guide.
+# Vietnamese translation for django-hstore-widget contributing guide.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin <baseplate@admin>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Vietnamese <vi@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,8 +20,12 @@ msgid "Contributing"
 msgstr "Đóng góp"
 
 #: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "Hướng dẫn từng bước để thiết lập môi trường phát triển và đóng góp cho django-hstore-project."
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"Hướng dẫn từng bước để thiết lập môi trường phát triển và đóng góp cho "
+"django-hstore-project."
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
@@ -42,7 +45,8 @@ msgstr ":iconify:`logos:nodejs` **Node.js 18+** kèm ``npm``"
 
 #: ../../docs/developer-guide/contributing.rst:14
 msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
-msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+** đang chạy trên máy cục bộ"
+msgstr ""
+":iconify:`logos:postgresql` **PostgreSQL 14+** đang chạy trên máy cục bộ"
 
 #: ../../docs/developer-guide/contributing.rst:17
 msgid "Clone the Repository"
@@ -70,7 +74,9 @@ msgstr ":iconify:`mdi:package-variant` pip-tools"
 
 #: ../../docs/developer-guide/contributing.rst:65
 msgid "This installs all Python packages including test dependencies."
-msgstr "Lệnh này cài đặt tất cả các gói Python bao gồm cả các gói phụ thuộc cho kiểm thử."
+msgstr ""
+"Lệnh này cài đặt tất cả các gói Python bao gồm cả các gói phụ thuộc cho kiểm"
+" thử."
 
 #: ../../docs/developer-guide/contributing.rst:68
 msgid "Install Frontend Dependencies"
@@ -86,7 +92,9 @@ msgstr "Thiết lập cơ sở dữ liệu"
 
 #: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr "Khởi động một bản sao PostgreSQL trên máy cục bộ với tiện ích mở rộng hstore được bật:"
+msgstr ""
+"Khởi động một bản sao PostgreSQL trên máy cục bộ với tiện ích mở rộng hstore"
+" được bật:"
 
 #: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
@@ -122,7 +130,9 @@ msgstr "Khởi động máy chủ phát triển"
 
 #: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr "Máy chủ phát triển chạy trên cổng 9100 với tính năng thay thế module nóng được bật."
+msgstr ""
+"Máy chủ phát triển chạy trên cổng 9100 với tính năng thay thế module nóng "
+"được bật."
 
 #: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"

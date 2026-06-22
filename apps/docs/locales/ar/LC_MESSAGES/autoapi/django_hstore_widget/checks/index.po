@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: ar\n"
-"Language-Team: ar <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:2
@@ -26,11 +25,17 @@ msgstr "محتويات الوحدة"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:14
 msgid "System check that warns when the default DB backend is not PostgreSQL."
-msgstr "فحص نظامي يحذّر عندما لا تكون واجهة قاعدة البيانات الافتراضية هي PostgreSQL."
+msgstr ""
+"فحص نظامي يحذّر عندما لا تكون واجهة قاعدة البيانات الافتراضية هي PostgreSQL."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:16
-msgid "HStore requires the ``hstore`` extension, which is only available on PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py migrate``."
-msgstr "يتطلب HStore ملحق ``hstore`` الذي يتوفر فقط على PostgreSQL. يتم تشغيل هذا الفحص أثناء ``manage.py check`` و ``manage.py migrate``."
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+"يتطلب HStore ملحق ``hstore`` الذي يتوفر فقط على PostgreSQL. يتم تشغيل هذا "
+"الفحص أثناء ``manage.py check`` و ``manage.py migrate``."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Parameters"
@@ -49,8 +54,12 @@ msgid "Returns"
 msgstr "القيم المعادة"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:24
-msgid "A list containing a warning if the default database engine does not include ``postgres`` or ``postgis``."
-msgstr "قائمة تحتوي تحذيراً إذا لم يتضمن محرك قاعدة البيانات الافتراضي ``postgres`` أو ``postgis``."
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
+msgstr ""
+"قائمة تحتوي تحذيراً إذا لم يتضمن محرك قاعدة البيانات الافتراضي ``postgres`` "
+"أو ``postgis``."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Return type"

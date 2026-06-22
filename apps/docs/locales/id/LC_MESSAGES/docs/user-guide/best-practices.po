@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Indonesian <id@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../docs/user-guide/best-practices.rst:2
@@ -22,16 +21,23 @@ msgid "Best Practices"
 msgstr "Praktik Terbaik"
 
 #: ../../docs/user-guide/best-practices.rst:4
-msgid "Tips and recommendations for using HStore fields effectively in production."
-msgstr "Tips dan rekomendasi untuk menggunakan field HStore secara efektif dalam lingkungan produksi."
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr ""
+"Tips dan rekomendasi untuk menggunakan field HStore secara efektif dalam "
+"lingkungan produksi."
 
 #: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
 msgstr "Pertahankan Konsistensi Kunci"
 
 #: ../../docs/user-guide/best-practices.rst:9
-msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
-msgstr "Gunakan konvensi penamaan untuk kunci di seluruh aplikasi. Hal ini mempermudah proses kueri dan pemeliharaan."
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+"Gunakan konvensi penamaan untuk kunci di seluruh aplikasi. Hal ini "
+"mempermudah proses kueri dan pemeliharaan."
 
 #: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
@@ -71,7 +77,9 @@ msgstr "Tangani Kunci yang Hilang dengan Baik"
 
 #: ../../docs/user-guide/best-practices.rst:66
 msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
-msgstr "Kunci HStore mungkin tidak ada di semua baris. Gunakan ``get()`` dengan nilai default:"
+msgstr ""
+"Kunci HStore mungkin tidak ada di semua baris. Gunakan ``get()`` dengan "
+"nilai default:"
 
 #: ../../docs/user-guide/best-practices.rst:74
 msgid "Validate Key Values"
@@ -79,12 +87,18 @@ msgstr "Validasi Nilai Kunci"
 
 #: ../../docs/user-guide/best-practices.rst:76
 msgid "HStore values are strings. Validate and convert them where needed:"
-msgstr "Nilai HStore adalah string. Validasi dan konversilah sesuai kebutuhan:"
+msgstr ""
+"Nilai HStore adalah string. Validasi dan konversilah sesuai kebutuhan:"
 
 #: ../../docs/user-guide/best-practices.rst:90
 msgid "Consider Migration Paths"
 msgstr "Pertimbangkan Jalur Migrasi"
 
 #: ../../docs/user-guide/best-practices.rst:92
-msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
-msgstr "Jika Anda mengantisipasi kebutuhan data bersarang di masa depan, rencanakan migrasi dari HStore ke JSONB sedini mungkin. Format data keduanya tidak saling kompatibel secara langsung."
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+"Jika Anda mengantisipasi kebutuhan data bersarang di masa depan, rencanakan "
+"migrasi dari HStore ke JSONB sedini mungkin. Format data keduanya tidak "
+"saling kompatibel secara langsung."

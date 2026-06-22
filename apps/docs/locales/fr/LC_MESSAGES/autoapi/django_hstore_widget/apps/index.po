@@ -9,15 +9,14 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:2
 msgid "django_hstore_widget.apps"
-msgstr ""
+msgstr "django_hstore_widget.apps"
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:10
 msgid "Module Contents"
@@ -32,9 +31,16 @@ msgid "Application configuration for django-hstore-widget."
 msgstr "Configuration de l'application pour django-hstore-widget."
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:19
-msgid "Registers the PostgreSQL backend check on app ready so that non-PostgreSQL setups receive a warning during system checks."
-msgstr "Enregistre la vérification du backend PostgreSQL au démarrage de l'application afin que les configurations non-PostgreSQL reçoivent un avertissement lors des vérifications système."
+msgid ""
+"Registers the PostgreSQL backend check on app ready so that non-PostgreSQL "
+"setups receive a warning during system checks."
+msgstr ""
+"Enregistre la vérification du backend PostgreSQL au démarrage de "
+"l'application afin que les configurations non-PostgreSQL reçoivent un "
+"avertissement lors des vérifications système."
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:35
 msgid "Override this method in subclasses to run code when Django starts."
-msgstr "Redéfinissez cette méthode dans les sous-classes pour exécuter du code au démarrage de Django."
+msgstr ""
+"Redéfinissez cette méthode dans les sous-classes pour exécuter du code au "
+"démarrage de Django."

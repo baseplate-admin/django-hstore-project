@@ -1,28 +1,32 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../autoapi/index.rst:2
 msgid "API Reference"
-msgstr ""
+msgstr "API-Referenz"
 
 #: ../../autoapi/index.rst:4
 msgid "This page contains auto-generated API reference documentation [#f1]_."
 msgstr ""
+"Diese Seite enthält automatisch generierte API-Referenzdokumentation [#f1]_."
 
 #: ../../autoapi/index.rst:12
-msgid "Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-autoapi>`_"
+msgid ""
+"Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_"
 msgstr ""
+"Erstellt mit `sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_"

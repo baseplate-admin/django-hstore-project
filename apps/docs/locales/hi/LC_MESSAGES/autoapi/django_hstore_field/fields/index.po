@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: hi\n"
-"Language-Team: hi <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
 msgid "django_hstore_field.fields"
@@ -28,12 +27,23 @@ msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 msgstr "आधार: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
-msgstr "Django के ``HStoreField`` का ड्रॉप-इन प्रतिस्थापन जिसमें कस्टम विजेट शामिल है।"
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgstr ""
+"Django के ``HStoreField`` का ड्रॉप-इन प्रतिस्थापन जिसमें कस्टम विजेट शामिल "
+"है।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
-msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
-msgstr "``formfield()`` को ओवरराइड करता है ताकि एडमिन और ModelForms स्वचालित रूप से :class:`~django_hstore_widget.forms.HStoreFormField` और :class:`~django_hstore_widget.widgets.HStoreFormWidget` का उपयोग करें -- कोई मैन्युअल फॉर्म कॉन्फ़िगरेशन आवश्यक नहीं।"
+msgid ""
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
+msgstr ""
+"``formfield()`` को ओवरराइड करता है ताकि एडमिन और ModelForms स्वचालित रूप से "
+":class:`~django_hstore_widget.forms.HStoreFormField` और "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` का उपयोग करें -- कोई"
+" मैन्युअल फॉर्म कॉन्फ़िगरेशन आवश्यक नहीं।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
@@ -41,15 +51,20 @@ msgstr "उदाहरण"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:38
 msgid "Return a form field class pre-configured with the custom widget."
-msgstr "कस्टम विजेट के साथ पूर्व-कॉन्फ़िगर किया गया फॉर्म फ़ील्ड क्लास लौटाएँ।"
+msgstr ""
+"कस्टम विजेट के साथ पूर्व-कॉन्फ़िगर किया गया फॉर्म फ़ील्ड क्लास लौटाएँ।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Parameters"
 msgstr "पैरामीटर"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:40
-msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
-msgstr "फॉर्म फ़ील्ड कंस्ट्रक्टर को अग्रेदित कीवर्ड तर्क। डिफ़ॉल्ट को ओवरराइड करने के लिए ``form_class`` या ``widget`` पास करें।"
+msgid ""
+"Keyword arguments forwarded to the form field constructor. Pass "
+"``form_class`` or ``widget`` to override the defaults."
+msgstr ""
+"फॉर्म फ़ील्ड कंस्ट्रक्टर को अग्रेदित कीवर्ड तर्क। डिफ़ॉल्ट को ओवरराइड करने "
+"के लिए ``form_class`` या ``widget`` पास करें।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Returns"

@@ -1,4 +1,4 @@
-﻿# العربية translation for Django HStore Project.
+# العربية translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
@@ -7,13 +7,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ar\n"
-"Language-Team: ar <LL@li.org>\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:2
@@ -21,16 +19,26 @@ msgid "HStore vs JSONB"
 msgstr "HStore مقابل JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:4
-msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
-msgstr "يوفر PostgreSQL نوعين مرنين من البيانات لتخزين أزواج المفتاح والقيمة والمستندات. تقارن هذه الصفحة بينهما لمساعدتك في اختيار الأنسب."
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"يوفر PostgreSQL نوعين مرنين من البيانات لتخزين أزواج المفتاح والقيمة "
+"والمستندات. تقارن هذه الصفحة بينهما لمساعدتك في اختيار الأنسب."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
 msgstr "قرار سريع"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
-msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
-msgstr "استخدم **HStore** عندما تكون بياناتك أزواج مفتاح-قيمة مسطحة، وهو ما ينطبق على معظم البيانات الوصفية والوسوم وخصائص المنتجات. استخدم **JSONB** عندما تحتاج إلى هياكل متداخلة أو أنواع قيم مختلطة أو استعلامات الاحتواء."
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need nested "
+"structures, mixed value types, or containment queries."
+msgstr ""
+"استخدم **HStore** عندما تكون بياناتك أزواج مفتاح-قيمة مسطحة، وهو ما ينطبق "
+"على معظم البيانات الوصفية والوسوم وخصائص المنتجات. استخدم **JSONB** عندما "
+"تحتاج إلى هياكل متداخلة أو أنواع قيم مختلطة أو استعلامات الاحتواء."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"
@@ -108,8 +116,11 @@ msgid "Storage"
 msgstr "التخزين"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:47
-msgid "HStore is more compact because it stores flat key-value pairs without structural overhead:"
-msgstr "HStore أكثر إحكاماً لأنه يخزن أزواج المفتاح والقيمة المسطحة دون عبء هيكلي:"
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+"HStore أكثر إحكاماً لأنه يخزن أزواج المفتاح والقيمة المسطحة دون عبء هيكلي:"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:52
 msgid "HStore: ~200 bytes for 10 key-value pairs"
@@ -146,5 +157,9 @@ msgid "Summary"
 msgstr "ملخص"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:126
-msgid "Choose HStore for simple metadata, tags, and product attributes. Choose JSONB for nested configurations, API responses, and document storage."
-msgstr "اختر HStore للبيانات الوصفية البسيطة والوسوم وخصائص المنتجات. اختر JSONB للتكوينات المتداخلة واستجابات API وتخزين المستندات."
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+"اختر HStore للبيانات الوصفية البسيطة والوسوم وخصائص المنتجات. اختر JSONB "
+"للتكوينات المتداخلة واستجابات API وتخزين المستندات."

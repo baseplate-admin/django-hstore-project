@@ -1,51 +1,34 @@
-﻿# Español translation for Django HStore Project.
+# Español translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:40+0600
-"
-"PO-Revision-Date: 2026-06-20 17:40+0600
-"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"
-"Language: es
-"
-"Language-Team: es <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: es <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore ProjecReport-Msgid-Bugs-ToPOT-Creation-Date: 2026-06-20 17:40+060PO-Revision-Date: 2026-06-20 17:40+060Last-Translator: baseplate-admin <61817579+baseplate-Forms: nplurals=2; plural=(n != 1)MIME-Version: 1.Content-Type: text/plain; charset=utf-Content-Transfer-Encoding: 8biGenerated-By: Babel 2.18.\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 
 #: ../../docs/llms/index.rst:2
 msgid "LLM Context Files"
 msgstr "Archivos de contexto para LLM"
 
 #: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr "Este proyecto proporciona archivos de contexto legibles por máquina para la integración con LLM, generados automáticamente durante la compilación de la documentación Sphinx."
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+"Este proyecto proporciona archivos de contexto legibles por máquina para la "
+"integración con LLM, generados automáticamente durante la compilación de la "
+"documentación Sphinx."
 
 #: ../../docs/llms/index.rst:8
 msgid "Available Files"
@@ -73,7 +56,8 @@ msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
 
 #: ../../docs/llms/index.rst:19
 msgid "django-hstore-widget package: widget API, frontend architecture"
-msgstr "Paquete django-hstore-widget: API del widget, arquitectura del frontend"
+msgstr ""
+"Paquete django-hstore-widget: API del widget, arquitectura del frontend"
 
 #: ../../docs/llms/index.rst:20
 msgid "`llms-field.txt <../../llms-field.txt>`_"
@@ -81,28 +65,48 @@ msgstr "`llms-field.txt <../../llms-field.txt>`_"
 
 #: ../../docs/llms/index.rst:21
 msgid "django-hstore-field package: field API, installation, quick start"
-msgstr "Paquete django-hstore-field: API del campo, instalación, inicio rápido"
+msgstr ""
+"Paquete django-hstore-field: API del campo, instalación, inicio rápido"
 
 #: ../../docs/llms/index.rst:22
 msgid "`llms-full.txt <../../llms-full.txt>`_"
 msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
 #: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
-msgstr "Documentación completa del proyecto incluyendo todos los paquetes, referencia de API, arquitectura, mejores prácticas y guía de contribución"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+"Documentación completa del proyecto incluyendo todos los paquetes, "
+"referencia de API, arquitectura, mejores prácticas y guía de contribución"
 
 #: ../../docs/llms/index.rst:26
 msgid "Usage"
 msgstr "Uso"
 
 #: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
-msgstr "Dirija su LLM al archivo de contexto que se ajuste a su ámbito. Los archivos generados se colocan en la raíz de la salida de la documentación y son accesibles de forma relativa a la raíz de los documentos."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
+msgstr ""
+"Dirija su LLM al archivo de contexto que se ajuste a su ámbito. Los archivos"
+" generados se colocan en la raíz de la salida de la documentación y son "
+"accesibles de forma relativa a la raíz de los documentos."
 
 #: ../../docs/llms/index.rst:33
 msgid "How It Works"
 msgstr "Cómo funciona"
 
 #: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
-msgstr "Los archivos llms.txt se generan automáticamente mediante una extensión personalizada de Sphinx (``llms_txt_generator``) que ensambla el contenido de todos los archivos fuente de la documentación en el momento de la compilación, asegurando que los archivos de contexto se mantengan sincronizados con la documentación."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
+msgstr ""
+"Los archivos llms.txt se generan automáticamente mediante una extensión "
+"personalizada de Sphinx (``llms_txt_generator``) que ensambla el contenido "
+"de todos los archivos fuente de la documentación en el momento de la "
+"compilación, asegurando que los archivos de contexto se mantengan "
+"sincronizados con la documentación."

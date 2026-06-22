@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,8 +19,12 @@ msgid "Contributing"
 msgstr "مشارکت"
 
 #: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "راهنمای گام‌به‌گام برای راه‌اندازی محیط توسعه و مشارکت در django-hstore-project."
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"راهنمای گام‌به‌گام برای راه‌اندازی محیط توسعه و مشارکت در django-hstore-"
+"project."
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
@@ -41,7 +44,8 @@ msgstr ":iconify:`logos:nodejs` **Node.js 18+** با ``npm``"
 
 #: ../../docs/developer-guide/contributing.rst:14
 msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
-msgstr ":iconify:`logos:postgresql` **PostgreSQL 14+** در حال اجرا به‌صورت محلی"
+msgstr ""
+":iconify:`logos:postgresql` **PostgreSQL 14+** در حال اجرا به‌صورت محلی"
 
 #: ../../docs/developer-guide/contributing.rst:17
 msgid "Clone the Repository"
@@ -121,7 +125,9 @@ msgstr "شروع سرور توسعه"
 
 #: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr "سرور توسعه روی پورت 9100 با قابلیت جایگزینی زنده ماژول (hot module replacement) اجرا می‌شود."
+msgstr ""
+"سرور توسعه روی پورت 9100 با قابلیت جایگزینی زنده ماژول (hot module "
+"replacement) اجرا می‌شود."
 
 #: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"

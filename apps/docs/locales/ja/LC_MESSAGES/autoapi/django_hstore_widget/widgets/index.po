@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 16:01+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:2
@@ -31,11 +30,11 @@ msgstr "静的ファイルパスに解決される一般的なアセット参照
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:20
 msgid ""
 "Used by the widget ``Media`` class to declare JavaScript and CSS "
-"dependencies. Subclasses like :class:`ESM` render the asset as HTML "
-"instead of a plain path."
+"dependencies. Subclasses like :class:`ESM` render the asset as HTML instead "
+"of a plain path."
 msgstr ""
-"ウィジェット ``Media`` クラスによって JavaScript および CSS の依存関係を宣言するために使用されます。"
-":class:`ESM` のようなサブクラスは、単純なパスの代わりにアセットを HTML としてレンダリングします。"
+"ウィジェット ``Media`` クラスによって JavaScript および CSS の依存関係を宣言するために使用されます。:class:`ESM`"
+" のようなサブクラスは、単純なパスの代わりにアセットを HTML としてレンダリングします。"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:30
 msgid "Return the fully resolved URL for *path*."
@@ -43,11 +42,11 @@ msgstr "*path* の完全に解決された URL を返します。"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:32
 msgid ""
-"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-"
-"is. All other paths are resolved through Django's ``static()`` helper."
+"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. "
+"All other paths are resolved through Django's ``static()`` helper."
 msgstr ""
-"``http://``、``https://``、または ``/`` で始まるパスはそのまま返されます。"
-"その他のすべてのパスは Django の ``static()`` ヘルパーを通じて解決されます。"
+"``http://``、``https://``、または ``/`` で始まるパスはそのまま返されます。その他のすべてのパスは Django の "
+"``static()`` ヘルパーを通じて解決されます。"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:40
 msgid "Bases: :py:obj:`Asset`"
@@ -62,8 +61,8 @@ msgid ""
 "Renders as a ``<script type=\"module\">`` tag so the browser loads the "
 "widget as an ES module."
 msgstr ""
-"``<script type=\"module\">`` タグとしてレンダリングし、"
-"ブラウザがウィジェットを ES モジュールとしてロードできるようにします。"
+"``<script type=\"module\">`` タグとしてレンダリングし、ブラウザがウィジェットを ES "
+"モジュールとしてロードできるようにします。"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:51
 msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
@@ -75,12 +74,11 @@ msgstr "カスタム hstore エディタをレンダリングする Django admin
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:56
 msgid ""
-"Replaces the default textarea with a Lit-based key-value editor "
-"component.  Loads the widget JavaScript as an ES module via the ``Media``"
-" inner class."
+"Replaces the default textarea with a Lit-based key-value editor component.  "
+"Loads the widget JavaScript as an ES module via the ``Media`` inner class."
 msgstr ""
-"デフォルトのテキストエリアを Lit ベースのキー値エディタコンポーネントに置き換えます。"
-"``Media`` インナークラスを介してウィジェット JavaScript を ES モジュールとしてロードします。"
+"デフォルトのテキストエリアを Lit ベースのキー値エディタコンポーネントに置き換えます。``Media`` インナークラスを介してウィジェット "
+"JavaScript を ES モジュールとしてロードします。"
 
 #: ../../autoapi/django_hstore_widget/widgets/index.rst:61
 msgid "Example"

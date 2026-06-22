@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: es\n"
-"Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
@@ -29,12 +28,21 @@ msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 msgstr "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:21
-msgid "Form field that uses :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
-msgstr "Campo de formulario que utiliza :class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgid ""
+"Form field that uses "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgstr ""
+"Campo de formulario que utiliza "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
-msgid "Extends Django's built-in ``HStoreField`` to inject the custom widget and override ``clean()`` so incoming values are parsed through ``json.loads``."
-msgstr "Extiende ``HStoreField`` integrado de Django para inyectar el widget personalizado y anular ``clean()`` para que los valores entrantes se analicen a través de ``json.loads``."
+msgid ""
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
+msgstr ""
+"Extiende ``HStoreField`` integrado de Django para inyectar el widget "
+"personalizado y anular ``clean()`` para que los valores entrantes se "
+"analicen a través de ``json.loads``."
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"

@@ -1,19 +1,17 @@
-﻿# Bengali translations for autoapi django_hstore_widget.checks.
+# Bengali translations for autoapi django_hstore_widget.checks.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 16:01+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:2
@@ -34,9 +32,8 @@ msgid ""
 "PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
 "migrate``."
 msgstr ""
-"HStore-এর জন্য ``hstore`` এক্সটেনশন প্রয়োজন, যা শুধুমাত্র "
-"PostgreSQL-এ উপলব্ধ। এই চেকটি ``manage.py check`` এবং ``manage.py "
-"migrate``-এর সময় চলে।"
+"HStore-এর জন্য ``hstore`` এক্সটেনশন প্রয়োজন, যা শুধুমাত্র PostgreSQL-এ "
+"উপলব্ধ। এই চেকটি ``manage.py check`` এবং ``manage.py migrate``-এর সময় চলে।"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst
 msgid "Parameters"
@@ -56,11 +53,11 @@ msgstr "ফেরত দেয়"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:24
 msgid ""
-"A list containing a warning if the default database engine does not "
-"include ``postgres`` or ``postgis``."
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
 msgstr ""
-"যদি ডিফল্ট ডেটাবেস ইঞ্জিনে ``postgres`` অথবা ``postgis`` না থাকে "
-"তাহলে একটি সতর্কতা সহ তালিকা।"
+"যদি ডিফল্ট ডেটাবেস ইঞ্জিনে ``postgres`` অথবা ``postgis`` না থাকে তাহলে একটি "
+"সতর্কতা সহ তালিকা।"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst
 msgid "Return type"

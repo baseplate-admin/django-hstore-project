@@ -1,16 +1,15 @@
-﻿# Italian translation for HStore vs JSONB technical docs.
+# Italian translation for HStore vs JSONB technical docs.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Italian <it@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,16 +20,28 @@ msgid "HStore vs JSONB"
 msgstr "HStore vs JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:4
-msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
-msgstr "PostgreSQL offre due tipi di dati flessibili per l'archiviazione key-value e dei documenti. Questa pagina li confronta per aiutarvi a scegliere l'opzione giusta."
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"PostgreSQL offre due tipi di dati flessibili per l'archiviazione key-value e"
+" dei documenti. Questa pagina li confronta per aiutarvi a scegliere "
+"l'opzione giusta."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
 msgstr "Decisione Rapida"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
-msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
-msgstr "Usate **HStore** quando i vostri dati sono coppie key-value piatte, come la maggior parte dei metadati, i tag e gli attributi dei prodotti. Usate **JSONB** quando avete bisogno di strutture nidificate, tipi di valore misti o query di contenimento."
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need nested "
+"structures, mixed value types, or containment queries."
+msgstr ""
+"Usate **HStore** quando i vostri dati sono coppie key-value piatte, come la "
+"maggior parte dei metadati, i tag e gli attributi dei prodotti. Usate "
+"**JSONB** quando avete bisogno di strutture nidificate, tipi di valore misti"
+" o query di contenimento."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"
@@ -108,8 +119,12 @@ msgid "Storage"
 msgstr "Archiviazione"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:47
-msgid "HStore is more compact because it stores flat key-value pairs without structural overhead:"
-msgstr "HStore è più compatto perché memorizza coppie key-value piatte senza sovraccarico strutturale:"
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+"HStore è più compatto perché memorizza coppie key-value piatte senza "
+"sovraccarico strutturale:"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:52
 msgid "HStore: ~200 bytes for 10 key-value pairs"
@@ -146,5 +161,10 @@ msgid "Summary"
 msgstr "Riepilogo"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:126
-msgid "Choose HStore for simple metadata, tags, and product attributes. Choose JSONB for nested configurations, API responses, and document storage."
-msgstr "Scegliete HStore per metadati semplici, tag e attributi dei prodotti. Scegliete JSONB per configurazioni nidificate, risposte API e archiviazione dei documenti."
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+"Scegliete HStore per metadati semplici, tag e attributi dei prodotti. "
+"Scegliete JSONB per configurazioni nidificate, risposte API e archiviazione "
+"dei documenti."

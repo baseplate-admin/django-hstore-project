@@ -1,128 +1,101 @@
-﻿# Русский translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ru
-"
-"Language-Team: ru <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:2
 msgid "django_hstore_widget.widgets"
-msgstr ""
+msgstr "django_hstore_widget.widgets"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:12
 msgid "Module Contents"
-msgstr ""
+msgstr "Содержимое модуля"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:18
 msgid "A generic asset reference that resolves to a static file path."
 msgstr ""
+"Общее ссылочное обозначение актива, которое разрешается в путь к "
+"статическому файлу."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:20
-msgid "Used by the widget ``Media`` class to declare JavaScript and CSS dependencies. Subclasses like :class:`ESM` render the asset as HTML instead of a plain path."
+msgid ""
+"Used by the widget ``Media`` class to declare JavaScript and CSS "
+"dependencies. Subclasses like :class:`ESM` render the asset as HTML instead "
+"of a plain path."
 msgstr ""
+"Используется классом ``Media`` виджета для объявления зависимостей "
+"JavaScript и CSS. Подклассы, такие как :class:`ESM`, рендерят актив как HTML"
+" вместо простого пути."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:30
 msgid "Return the fully resolved URL for *path*."
-msgstr ""
+msgstr "Возвращает полностью разрешенный URL для *path*."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:32
-msgid "Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. All other paths are resolved through Django's ``static()`` helper."
+msgid ""
+"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. "
+"All other paths are resolved through Django's ``static()`` helper."
 msgstr ""
+"Пути, начинающиеся с ``http://``, ``https://`` или ``/``, возвращаются как "
+"есть. Все остальные пути разрешаются через вспомогательную функцию "
+"``static()`` Django."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:40
 msgid "Bases: :py:obj:`Asset`"
-msgstr ""
+msgstr "Bases: :py:obj:`Asset`"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:43
 msgid "An ECMAScript module asset."
-msgstr ""
+msgstr "Актив модуля ECMAScript."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:45
-msgid "Renders as a ``<script type=\"module\">`` tag so the browser loads the widget as an ES module."
+msgid ""
+"Renders as a ``<script type=\"module\">`` tag so the browser loads the "
+"widget as an ES module."
 msgstr ""
+"Рендерится как тег ``<script type=\"module\">``, чтобы браузер загружал "
+"виджет как ES модуль."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:51
 msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
-msgstr ""
+msgstr "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:54
 msgid "Django admin widget that renders the custom hstore editor."
 msgstr ""
+"Виджет Django admin, который рендерит пользовательский редактор hstore."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:56
-msgid "Replaces the default textarea with a Lit-based key-value editor component.  Loads the widget JavaScript as an ES module via the ``Media`` inner class."
+msgid ""
+"Replaces the default textarea with a Lit-based key-value editor component.  "
+"Loads the widget JavaScript as an ES module via the ``Media`` inner class."
 msgstr ""
+"Заменяет текстовую область по умолчанию компонентом редактора ключ-значение "
+"на основе Lit. Загружает JavaScript виджета как ES модуль через внутренний "
+"класс ``Media``."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:61
 msgid "Example"
-msgstr ""
+msgstr "Пример"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:68
 msgid "Render the widget HTML for a given form field."
-msgstr ""
+msgstr "Рендерит HTML виджета для данного поля формы."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:70
 msgid "The HTML ``name`` attribute for the field."
-msgstr ""
+msgstr "Атрибут HTML ``name`` для поля."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:72
 msgid "The current hstore data as a key-value mapping."
-msgstr ""
+msgstr "Текущие данные hstore как отображение ключ-значение."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:74
 msgid "Additional HTML attributes passed to the template."
-msgstr ""
+msgstr "Дополнительные атрибуты HTML, передаваемые в шаблон."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:76
 msgid "Template renderer instance."
-msgstr ""
+msgstr "Экземпляр рендерера шаблонов."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:79
 msgid "The rendered HTML markup for the widget."
-msgstr ""
+msgstr "Отрендеренная HTML разметка для виджета."
 
-#: ../../autoapi/django_hstore_widget/widgets/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "Тип возврата"

@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 06:43+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "django_hstore_field.fields"
+msgstr ""
+
+msgid "Module Contents"
+msgstr ""
+
+msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
+msgstr ""
+
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgstr ""
+
+msgid ""
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
+msgstr ""
+
+msgid "Example"
+msgstr ""
+
+msgid "Return a form field class pre-configured with the custom widget."
+msgstr ""
+
+msgid "Parameters"
+msgstr ""
+
+msgid ""
+"Keyword arguments forwarded to the form field constructor. Pass "
+"``form_class`` or ``widget`` to override the defaults."
+msgstr ""
+
+msgid "Returns"
+msgstr ""
+
+msgid "A form field instance wired to the hstore widget."
+msgstr ""
+
+msgid "Return type"
+msgstr ""
+
+msgid "django_hstore_field"
+msgstr ""
+
+msgid "django-hstore-field -- drop-in HStoreField with auto-wired widget."
+msgstr ""
+
+msgid "Submodules"
+msgstr ""
+
+msgid "django_hstore_widget.apps"
+msgstr ""
+
+msgid "Bases: :py:obj:`django.apps.AppConfig`"
+msgstr ""
+
+msgid "Application configuration for django-hstore-widget."
+msgstr ""
+
+msgid ""
+"Registers the PostgreSQL backend check on app ready so that non-PostgreSQL "
+"setups receive a warning during system checks."
+msgstr ""
+
+msgid "Override this method in subclasses to run code when Django starts."
+msgstr ""
+
+msgid "django_hstore_widget.checks"
+msgstr ""
+
+msgid "System check that warns when the default DB backend is not PostgreSQL."
+msgstr ""
+
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+
+msgid "The application configurations being checked."
+msgstr ""
+
+msgid "Additional keyword arguments from the check runner."
+msgstr ""
+
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
+msgstr ""
+
+msgid "django_hstore_widget.forms"
+msgstr ""
+
+msgid "Bases: :py:obj:`django.contrib.postgres.forms.HStoreField`"
+msgstr ""
+
+msgid ""
+"Form field that uses "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
+msgstr ""
+
+msgid ""
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
+msgstr ""
+
+msgid "Parse the raw form value into a Python dict."
+msgstr ""
+
+msgid "The raw value submitted by the form."
+msgstr ""
+
+msgid "The deserialized key-value mapping."
+msgstr ""
+
+msgid "django_hstore_widget"
+msgstr ""
+
+msgid "django-hstore-widget -- human-friendly hstore editor for Django admin."
+msgstr ""
+
+msgid "django_hstore_widget.widgets"
+msgstr ""
+
+msgid "A generic asset reference that resolves to a static file path."
+msgstr ""
+
+msgid ""
+"Used by the widget ``Media`` class to declare JavaScript and CSS "
+"dependencies. Subclasses like :class:`ESM` render the asset as HTML instead "
+"of a plain path."
+msgstr ""
+
+msgid "Return the fully resolved URL for *path*."
+msgstr ""
+
+msgid ""
+"Paths starting with ``http://``, ``https://``, or ``/`` are returned as-is. "
+"All other paths are resolved through Django's ``static()`` helper."
+msgstr ""
+
+msgid "Bases: :py:obj:`Asset`"
+msgstr ""
+
+msgid "An ECMAScript module asset."
+msgstr ""
+
+msgid ""
+"Renders as a ``<script type=\"module\">`` tag so the browser loads the "
+"widget as an ES module."
+msgstr ""
+
+msgid "Bases: :py:obj:`django.contrib.admin.widgets.AdminTextareaWidget`"
+msgstr ""
+
+msgid "Django admin widget that renders the custom hstore editor."
+msgstr ""
+
+msgid ""
+"Replaces the default textarea with a Lit-based key-value editor component.  "
+"Loads the widget JavaScript as an ES module via the ``Media`` inner class."
+msgstr ""
+
+msgid "Render the widget HTML for a given form field."
+msgstr ""
+
+msgid "The HTML ``name`` attribute for the field."
+msgstr ""
+
+msgid "The current hstore data as a key-value mapping."
+msgstr ""
+
+msgid "Additional HTML attributes passed to the template."
+msgstr ""
+
+msgid "Template renderer instance."
+msgstr ""
+
+msgid "The rendered HTML markup for the widget."
+msgstr ""
+
+msgid "API Reference"
+msgstr ""
+
+msgid "This page contains auto-generated API reference documentation [#f1]_."
+msgstr ""
+
+msgid ""
+"Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-"
+"autoapi>`_"
+msgstr ""

@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: de <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,60 +20,72 @@ msgstr "Frontend-Build-Pipeline"
 
 #: ../../docs/developer-guide/frontend-build.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "Übersicht"
 
 #: ../../docs/developer-guide/frontend-build.rst:7
-msgid "The widget frontend is built with Vite and TypeScript, producing a single IIFE bundle loaded by Django admin."
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
 msgstr ""
+"Das Widget-Frontend wird mit Vite und TypeScript erstellt und erzeugt ein "
+"einzelnes IIFE-Bundle, das von Django Admin geladen wird."
 
 #: ../../docs/developer-guide/frontend-build.rst:11
 msgid "Build Steps"
-msgstr ""
+msgstr "Build-Schritte"
 
 #: ../../docs/developer-guide/frontend-build.rst:13
-msgid "Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-widget.js``"
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
 msgstr ""
+"Vite bündelt ``src/frontend/index.ts`` in ``dist/components/django-hstore-"
+"widget.js``"
 
 #: ../../docs/developer-guide/frontend-build.rst:14
-msgid "``scripts/copy.ts`` copies the bundle to ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
 msgstr ""
+"``scripts/copy.ts`` kopiert das Bundle nach "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
 
 #: ../../docs/developer-guide/frontend-build.rst:15
 msgid "Django serves the bundle via static files"
-msgstr ""
+msgstr "Django gibt das Bundle über statische Dateien aus"
 
 #: ../../docs/developer-guide/frontend-build.rst:18
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguration"
 
 #: ../../docs/developer-guide/frontend-build.rst:20
 msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
-msgstr ""
+msgstr "``vite.config.ts`` - Einstiegspunkt, Ausgabe, Aliase, Dev-Server"
 
 #: ../../docs/developer-guide/frontend-build.rst:21
 msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
-msgstr ""
+msgstr "``tsconfig.json`` - TypeScript-Kompileroptionen, Pfad-Aliase"
 
 #: ../../docs/developer-guide/frontend-build.rst:24
 msgid "Path Aliases"
-msgstr ""
+msgstr "Pfad-Aliase"
 
 #: ../../docs/developer-guide/frontend-build.rst:36
 msgid "Resolves to ``src/frontend/lib/*``"
-msgstr ""
+msgstr "Löst auf ``src/frontend/lib/*`` auf"
 
 #: ../../docs/developer-guide/frontend-build.rst:45
 msgid "Resolves to ``src/frontend/stores/*``"
-msgstr ""
+msgstr "Löst auf ``src/frontend/stores/*`` auf"
 
 #: ../../docs/developer-guide/frontend-build.rst:54
 msgid "Resolves to ``src/frontend/mappings/*``"
-msgstr ""
+msgstr "Löst auf ``src/frontend/mappings/*`` auf"
 
 #: ../../docs/developer-guide/frontend-build.rst:63
 msgid "Resolves to ``src/frontend/components/*``"
-msgstr ""
+msgstr "Löst auf ``src/frontend/components/*`` auf"
 
 #: ../../docs/developer-guide/frontend-build.rst:66
 msgid "Development"
-msgstr ""
+msgstr "Entwicklung"

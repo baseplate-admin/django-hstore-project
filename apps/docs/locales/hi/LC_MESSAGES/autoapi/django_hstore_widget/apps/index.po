@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: hi\n"
-"Language-Team: hi <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:2
 msgid "django_hstore_widget.apps"
@@ -32,9 +31,14 @@ msgid "Application configuration for django-hstore-widget."
 msgstr "django-hstore-widget के लिए एप्लिकेशन कॉन्फ़िगरेशन।"
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:19
-msgid "Registers the PostgreSQL backend check on app ready so that non-PostgreSQL setups receive a warning during system checks."
-msgstr "PostgreSQL बैकएंड जांच को ऐप रीडی पर रजिस्टर करता है ताकि गैर-PostgreSQL सेटअप को सिस्टम जांच के दौरान चेतावनी मिल सके।"
+msgid ""
+"Registers the PostgreSQL backend check on app ready so that non-PostgreSQL "
+"setups receive a warning during system checks."
+msgstr ""
+"PostgreSQL बैकएंड जांच को ऐप रीडی पर रजिस्टर करता है ताकि गैर-PostgreSQL "
+"सेटअप को सिस्टम जांच के दौरान चेतावनी मिल सके।"
 
 #: ../../autoapi/django_hstore_widget/apps/index.rst:35
 msgid "Override this method in subclasses to run code when Django starts."
-msgstr "Django की शुरुआत में कोड चलाने के लिए उप-क्लास में इस विधि को ओवरराइड करें।"
+msgstr ""
+"Django की शुरुआत में कोड चलाने के लिए उप-क्लास में इस विधि को ओवरराइड करें।"

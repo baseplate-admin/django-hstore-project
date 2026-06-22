@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Italian <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 
 #: ../../docs/user-guide/quickstart.rst:2
 msgid "Quick Start"
@@ -34,7 +33,9 @@ msgstr "Aggiungete un campo HStore a qualsiasi model:"
 
 #: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr "Questo è sufficiente. Il widget viene configurato automaticamente, senza bisogno di alcun setup per i form."
+msgstr ""
+"Questo è sufficiente. Il widget viene configurato automaticamente, senza "
+"bisogno di alcun setup per i form."
 
 #: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"
@@ -49,20 +50,33 @@ msgid "Register in Admin"
 msgstr "Registrazione nell'Admin"
 
 #: ../../docs/user-guide/quickstart.rst:46
-msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
-msgstr "Visitare la pagina di admin e si vedrà il widget HStore con un'interfaccia chiave-valore pulita. Ogni coppia chiave-valore è modificabile inline. Aggiungete, rimuovete e modificate le coppie secondo le vostre esigenze."
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
+msgstr ""
+"Visitare la pagina di admin e si vedrà il widget HStore con un'interfaccia "
+"chiave-valore pulita. Ogni coppia chiave-valore è modificabile inline. "
+"Aggiungete, rimuovete e modificate le coppie secondo le vostre esigenze."
 
 #: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
 msgstr "Con Chiavi Personalizzate"
 
 #: ../../docs/user-guide/quickstart.rst:53
-msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
-msgstr "Definite chiavi esplicite per ottenere campi del form con etichette invece dell'editor libero:"
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
+msgstr ""
+"Definite chiavi esplicite per ottenere campi del form con etichette invece "
+"dell'editor libero:"
 
 #: ../../docs/user-guide/quickstart.rst:70
-msgid "Each key becomes a proper form field with validation, widgets, and labels."
-msgstr "Ogni chiave diventa un campo del form completo con validazione, widget ed etichette."
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
+msgstr ""
+"Ogni chiave diventa un campo del form completo con validazione, widget ed "
+"etichette."
 
 #: ../../docs/user-guide/quickstart.rst:73
 msgid "What's Next"
@@ -70,12 +84,15 @@ msgstr "Passaggi Successivi"
 
 #: ../../docs/user-guide/quickstart.rst:75
 msgid ":doc:`../user-guide/installation` - Detailed installation options"
-msgstr ":doc:`../user-guide/installation` - Opzioni di installazione dettagliate"
+msgstr ""
+":doc:`../user-guide/installation` - Opzioni di installazione dettagliate"
 
 #: ../../docs/user-guide/quickstart.rst:76
 msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
-msgstr ":doc:`../technical/hstore-vs-jsonb` - Quando usare HStore rispetto a JSONB"
+msgstr ""
+":doc:`../technical/hstore-vs-jsonb` - Quando usare HStore rispetto a JSONB"
 
 #: ../../docs/user-guide/quickstart.rst:77
 msgid ":doc:`../user-guide/best-practices` - Tips for production use"
-msgstr ":doc:`../user-guide/best-practices` - Consigli per l'uso in produzione"
+msgstr ""
+":doc:`../user-guide/best-practices` - Consigli per l'uso in produzione"

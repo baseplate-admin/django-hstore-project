@@ -1,19 +1,17 @@
-﻿# Bengali translation for HStore vs JSONB.
+# Bengali translation for HStore vs JSONB.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:2
@@ -35,12 +33,12 @@ msgstr "কুইক ডিসিশন"
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
 msgid ""
 "Use **HStore** when your data is flat key-value pairs, which is most "
-"metadata, tags, and product attributes. Use **JSONB** when you need "
-"nested structures, mixed value types, or containment queries."
+"metadata, tags, and product attributes. Use **JSONB** when you need nested "
+"structures, mixed value types, or containment queries."
 msgstr ""
 "আপনার ডাটা flat key-value pairs হলে **HStore** ব্যবহার করুন, যা বেশিরভাগ "
-"metadata, tags, এবং product attributes-এর জন্য। nested structures, mixed value "
-"types, বা containment queries লাগলে **JSONB** ব্যবহার করুন।"
+"metadata, tags, এবং product attributes-এর জন্য। nested structures, mixed "
+"value types, বা containment queries লাগলে **JSONB** ব্যবহার করুন।"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"

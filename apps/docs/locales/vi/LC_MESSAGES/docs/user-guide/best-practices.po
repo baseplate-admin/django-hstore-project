@@ -1,88 +1,100 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/user-guide/best-practices.rst:2
 msgid "Best Practices"
-msgstr ""
+msgstr "Thực tiễn tốt nhất"
 
 #: ../../docs/user-guide/best-practices.rst:4
-msgid "Tips and recommendations for using HStore fields effectively in production."
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
 msgstr ""
+"Mẹo và khuyến nghị để sử dụng hiệu quả các trường HStore trong sản xuất."
 
 #: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
-msgstr ""
+msgstr "Giữ khóa nhất quán"
 
 #: ../../docs/user-guide/best-practices.rst:9
-msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
 msgstr ""
+"Sử dụng quy ước đặt tên cho khóa trên toàn ứng dụng. Điều này làm cho truy "
+"vấn và bảo trì dễ dàng hơn."
 
 #: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
-msgstr ""
+msgstr "Sử dụng khóa rõ ràng khi có thể"
 
 #: ../../docs/user-guide/best-practices.rst:29
 msgid "Defining explicit keys gives you:"
-msgstr ""
+msgstr "Định nghĩa khóa rõ ràng cho bạn:"
 
 #: ../../docs/user-guide/best-practices.rst:31
 msgid "Labeled form fields in the admin"
-msgstr ""
+msgstr "Trường biểu mẫu có nhãn trong admin"
 
 #: ../../docs/user-guide/best-practices.rst:32
 msgid "Built-in validation per key"
-msgstr ""
+msgstr "Xác thực tích hợp theo khóa"
 
 #: ../../docs/user-guide/best-practices.rst:33
 msgid "Widget customization per field"
-msgstr ""
+msgstr "Tùy chỉnh widget theo trường"
 
 #: ../../docs/user-guide/best-practices.rst:34
 msgid "IDE autocomplete for key names"
-msgstr ""
+msgstr "Tự động hoàn thành IDE cho tên khóa"
 
 #: ../../docs/user-guide/best-practices.rst:47
 msgid "Index Frequently Queried Keys"
-msgstr ""
+msgstr "Chỉ mục hóa khóa được truy vấn thường xuyên"
 
 #: ../../docs/user-guide/best-practices.rst:49
 msgid "Add GIN indexes on HStore columns you query often:"
-msgstr ""
+msgstr "Thêm chỉ mục GIN vào các cột HStore mà bạn truy vấn thường xuyên:"
 
 #: ../../docs/user-guide/best-practices.rst:64
 msgid "Handle Missing Keys Gracefully"
-msgstr ""
+msgstr "Xử lý khóa bị thiếu một cách phù hợp"
 
 #: ../../docs/user-guide/best-practices.rst:66
 msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
 msgstr ""
+"Khóa HStore có thể không tồn tại trong tất cả các hàng. Sử dụng ``get()`` "
+"với giá trị mặc định:"
 
 #: ../../docs/user-guide/best-practices.rst:74
 msgid "Validate Key Values"
-msgstr ""
+msgstr "Xác thực giá trị khóa"
 
 #: ../../docs/user-guide/best-practices.rst:76
 msgid "HStore values are strings. Validate and convert them where needed:"
-msgstr ""
+msgstr "Giá trị HStore là chuỗi. Xác thực và chuyển đổi chúng khi cần:"
 
 #: ../../docs/user-guide/best-practices.rst:90
 msgid "Consider Migration Paths"
-msgstr ""
+msgstr "Cân nhắc đường dẫn di chuyển"
 
 #: ../../docs/user-guide/best-practices.rst:92
-msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
 msgstr ""
+"Nếu bạn dự kiến cần dữ liệu lồng nhau trong tương lai, hãy lập kế hoạch di "
+"chuyển từ HStore sang JSONB sớm. Các định dạng dữ liệu không tương thích "
+"trực tiếp."

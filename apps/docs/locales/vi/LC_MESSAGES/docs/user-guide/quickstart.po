@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Vietnamese <vi@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,60 +20,73 @@ msgstr "Bắt đầu nhanh"
 
 #: ../../docs/user-guide/quickstart.rst:4
 msgid "Get up and running with django-hstore-project in under a minute."
-msgstr ""
+msgstr "Bắt đầu chạy với django-hstore-project trong dưới một phút."
 
 #: ../../docs/user-guide/quickstart.rst:7
 msgid "Create a Model"
-msgstr ""
+msgstr "Tạo mô hình"
 
 #: ../../docs/user-guide/quickstart.rst:9
 msgid "Add an HStore field to any model:"
-msgstr ""
+msgstr "Thêm trường HStore vào bất kỳ mô hình nào:"
 
 #: ../../docs/user-guide/quickstart.rst:21
 msgid "That's it. The widget is auto-wired, no form configuration needed."
-msgstr ""
+msgstr "Vậy là xong. Widget tự động kết nối, không cần cấu hình biểu mẫu."
 
 #: ../../docs/user-guide/quickstart.rst:24
 msgid "Run Migrations"
-msgstr ""
+msgstr "Chạy di chuyển"
 
 #: ../../docs/user-guide/quickstart.rst:31
 msgid "This enables the PostgreSQL hstore extension automatically."
-msgstr ""
+msgstr "Điều này tự động kích hoạt tiện ích mở rộng hstore của PostgreSQL."
 
 #: ../../docs/user-guide/quickstart.rst:34
 msgid "Register in Admin"
-msgstr ""
+msgstr "Đăng ký trong Admin"
 
 #: ../../docs/user-guide/quickstart.rst:46
-msgid "Visit your admin page and you'll see the HStore widget with a clean key-value interface. Each key-value pair is editable inline. Add, remove, and modify pairs as needed."
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
 msgstr ""
+"Truy cập trang admin của bạn và bạn sẽ thấy widget HStore với giao diện "
+"khóa-giá trị sạch sẽ. Mỗi cặp khóa-giá trị có thể chỉnh sửa nội tuyến. Thêm,"
+" xóa và sửa đổi các cặp theo yêu cầu."
 
 #: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
-msgstr ""
+msgstr "Với khóa tùy chỉnh"
 
 #: ../../docs/user-guide/quickstart.rst:53
-msgid "Define explicit keys to get labeled form fields instead of the free-form editor:"
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
 msgstr ""
+"Định nghĩa khóa rõ ràng để có các trường biểu mẫu có nhãn thay vì trình soạn"
+" thảo tự do:"
 
 #: ../../docs/user-guide/quickstart.rst:70
-msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
 msgstr ""
+"Mỗi khóa trở thành một trường biểu mẫu phù hợp với xác thực, widget và nhãn."
 
 #: ../../docs/user-guide/quickstart.rst:73
 msgid "What's Next"
-msgstr ""
+msgstr "Tiếp theo là gì"
 
 #: ../../docs/user-guide/quickstart.rst:75
 msgid ":doc:`../user-guide/installation` - Detailed installation options"
-msgstr ""
+msgstr ":doc:`../user-guide/installation` - Tùy chọn cài đặt chi tiết"
 
 #: ../../docs/user-guide/quickstart.rst:76
 msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
 msgstr ""
+":doc:`../technical/hstore-vs-jsonb` - Khi nào sử dụng HStore so với JSONB"
 
 #: ../../docs/user-guide/quickstart.rst:77
 msgid ":doc:`../user-guide/best-practices` - Tips for production use"
-msgstr ""
+msgstr ":doc:`../user-guide/best-practices` - Mẹo sử dụng trong sản xuất"

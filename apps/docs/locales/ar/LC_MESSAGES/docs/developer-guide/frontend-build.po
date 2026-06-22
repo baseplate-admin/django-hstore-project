@@ -1,104 +1,73 @@
-﻿# العربية translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ar
-"
-"Language-Team: ar <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: ar <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/developer-guide/frontend-build.rst:2
 msgid "Frontend Build Pipeline"
-msgstr "خط إنتاج الواجهة الأمامية"
+msgstr "خط بناء الواجهة الأمامية"
 
-#: ../../docs/developer-guide/frontend-build.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "نظرة عامة"
 
-#: ../../docs/developer-guide/frontend-build.rst:7
-msgid "The widget frontend is built with Vite and TypeScript, producing a single IIFE bundle loaded by Django admin."
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
 msgstr ""
+"تم بناء واجهة widget باستخدام Vite و TypeScript، مما ينتج حزمة IIFE واحدة "
+"يتم تحميلها بواسطة Django admin."
 
-#: ../../docs/developer-guide/frontend-build.rst:11
 msgid "Build Steps"
-msgstr ""
+msgstr "خطوات البناء"
 
-#: ../../docs/developer-guide/frontend-build.rst:13
-msgid "Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-widget.js``"
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
 msgstr ""
+"يجمع Vite ``src/frontend/index.ts`` إلى ``dist/components/django-hstore-"
+"widget.js``"
 
-#: ../../docs/developer-guide/frontend-build.rst:14
-msgid "``scripts/copy.ts`` copies the bundle to ``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
 msgstr ""
+"``scripts/copy.ts`` ينسخ الحزمة إلى "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
 
-#: ../../docs/developer-guide/frontend-build.rst:15
 msgid "Django serves the bundle via static files"
-msgstr ""
+msgstr "يخدم Django الحزمة عبر الملفات الثابتة"
 
-#: ../../docs/developer-guide/frontend-build.rst:18
 msgid "Configuration"
-msgstr ""
+msgstr "التكوين"
 
-#: ../../docs/developer-guide/frontend-build.rst:20
 msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
 msgstr ""
+"``vite.config.ts`` - نقطة الدخول، المخرجات، الاسم المستعار، خادم التطوير"
 
-#: ../../docs/developer-guide/frontend-build.rst:21
 msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
-msgstr ""
+msgstr "``tsconfig.json`` - خيارات مترجم TypeScript، أسماء المسارات المستعارة"
 
-#: ../../docs/developer-guide/frontend-build.rst:24
 msgid "Path Aliases"
-msgstr ""
+msgstr "أسماء المسارات المستعارة"
 
-#: ../../docs/developer-guide/frontend-build.rst:36
 msgid "Resolves to ``src/frontend/lib/*``"
-msgstr ""
+msgstr "يحل إلى ``src/frontend/lib/*``"
 
-#: ../../docs/developer-guide/frontend-build.rst:45
 msgid "Resolves to ``src/frontend/stores/*``"
-msgstr ""
+msgstr "يحل إلى ``src/frontend/stores/*``"
 
-#: ../../docs/developer-guide/frontend-build.rst:54
 msgid "Resolves to ``src/frontend/mappings/*``"
-msgstr ""
+msgstr "يحل إلى ``src/frontend/mappings/*``"
 
-#: ../../docs/developer-guide/frontend-build.rst:63
 msgid "Resolves to ``src/frontend/components/*``"
-msgstr ""
+msgstr "يحل إلى ``src/frontend/components/*``"
 
-#: ../../docs/developer-guide/frontend-build.rst:66
 msgid "Development"
-msgstr ""
+msgstr "التطوير"

@@ -1,112 +1,80 @@
-﻿# Português translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: pt
-"
-"Language-Team: pt <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/user-guide/best-practices.rst:2
 msgid "Best Practices"
-msgstr ""
+msgstr "Melhores práticas"
 
-#: ../../docs/user-guide/best-practices.rst:4
-msgid "Tips and recommendations for using HStore fields effectively in production."
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
 msgstr ""
+"Dicas e recomendações para usar campos HStore efetivamente em produção."
 
-#: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
-msgstr ""
+msgstr "Manter chaves consistentes"
 
-#: ../../docs/user-guide/best-practices.rst:9
-msgid "Use a naming convention for keys across your application. This makes querying and maintenance easier."
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
 msgstr ""
+"Use uma convenção de nomenclatura para chaves em toda sua aplicação. Isso "
+"torna consultas e manutenção mais fáceis."
 
-#: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
-msgstr ""
+msgstr "Usar chaves explícitas quando possível"
 
-#: ../../docs/user-guide/best-practices.rst:29
 msgid "Defining explicit keys gives you:"
-msgstr ""
+msgstr "Definir chaves explícitas dá a você:"
 
-#: ../../docs/user-guide/best-practices.rst:31
 msgid "Labeled form fields in the admin"
-msgstr ""
+msgstr "Campos de formulário rotulados no admin"
 
-#: ../../docs/user-guide/best-practices.rst:32
 msgid "Built-in validation per key"
-msgstr ""
+msgstr "Validação integrada por chave"
 
-#: ../../docs/user-guide/best-practices.rst:33
 msgid "Widget customization per field"
-msgstr ""
+msgstr "Personalização do widget por campo"
 
-#: ../../docs/user-guide/best-practices.rst:34
 msgid "IDE autocomplete for key names"
-msgstr ""
+msgstr "Autocompletar IDE para nomes de chave"
 
-#: ../../docs/user-guide/best-practices.rst:47
 msgid "Index Frequently Queried Keys"
-msgstr ""
+msgstr "Indexar chaves frequentemente consultadas"
 
-#: ../../docs/user-guide/best-practices.rst:49
 msgid "Add GIN indexes on HStore columns you query often:"
 msgstr ""
+"Adicione índices GIN nas colunas HStore que você consulta frequentemente:"
 
-#: ../../docs/user-guide/best-practices.rst:64
 msgid "Handle Missing Keys Gracefully"
-msgstr ""
+msgstr "Lidar com chaves ausentes adequadamente"
 
-#: ../../docs/user-guide/best-practices.rst:66
 msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
 msgstr ""
+"Chaves HStore podem não existir em todas as linhas. Use ``get()`` com "
+"valores padrão:"
 
-#: ../../docs/user-guide/best-practices.rst:74
 msgid "Validate Key Values"
-msgstr ""
+msgstr "Validar valores de chave"
 
-#: ../../docs/user-guide/best-practices.rst:76
 msgid "HStore values are strings. Validate and convert them where needed:"
-msgstr ""
+msgstr "Valores HStore são strings. Valide e converta-os onde necessário:"
 
-#: ../../docs/user-guide/best-practices.rst:90
 msgid "Consider Migration Paths"
-msgstr ""
+msgstr "Considerar caminhos de migração"
 
-#: ../../docs/user-guide/best-practices.rst:92
-msgid "If you anticipate needing nested data in the future, plan your migration from HStore to JSONB early. The data formats are not directly compatible."
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
 msgstr ""
+"Se antecipar precisar de dados aninhados no futuro, planeje sua migração de "
+"HStore para JSONB cedo. Os formatos de dados não são diretamente "
+"compatíveis."

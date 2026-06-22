@@ -1,21 +1,19 @@
-﻿# Bengali translation for Django HStore Project.
+# Bengali translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore
 # Project package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../index.rst:61
@@ -44,8 +42,8 @@ msgstr "Django HStore প্রজেক্ট"
 
 #: ../../index.rst:4
 msgid ""
-"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL "
-"hstore support for Django admin."
+"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore"
+" support for Django admin."
 msgstr ""
 "Django HStore ইকোসিস্টেমের জন্য একটি একক ভঁড়ার, Django admin-এর জন্য "
 "PostgreSQL hstore সহজ ও ব্যবহারকারী-বান্ধব সমর্থন।"
@@ -60,11 +58,11 @@ msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
 msgid ""
-"Custom widget for editing hstore data in Django admin. Built with Lit and"
-" TypeScript for a responsive key-value editor."
+"Custom widget for editing hstore data in Django admin. Built with Lit and "
+"TypeScript for a responsive key-value editor."
 msgstr ""
-"Django admin-এ hstore ডাটা সম্পাদনা করার জন্য কাস্টম উইজেট। Lit এবং TypeScript দিয়ে "
-"নির্মিত প্রতিক্রিয়াশীল key-value এডিটর।"
+"Django admin-এ hstore ডাটা সম্পাদনা করার জন্য কাস্টম উইজেট। Lit এবং "
+"TypeScript দিয়ে নির্মিত প্রতিক্রিয়াশীল key-value এডিটর।"
 
 #: ../../index.rst:27
 msgid "django-hstore-field"

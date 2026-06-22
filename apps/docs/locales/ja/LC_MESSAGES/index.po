@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../index.rst:61
@@ -42,11 +41,11 @@ msgstr "Django HStore プロジェクト"
 
 #: ../../index.rst:4
 msgid ""
-"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL "
-"hstore support for Django admin."
+"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore"
+" support for Django admin."
 msgstr ""
-"Django HStore エコシステムのモノリポ。Django admin 向けに PostgreSQL "
-"hstore を人間に優しい形でサポートします。"
+"Django HStore エコシステムのモノリポ。Django admin 向けに PostgreSQL hstore "
+"を人間に優しい形でサポートします。"
 
 #: ../../index.rst:8
 msgid "Packages"
@@ -58,11 +57,11 @@ msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
 msgid ""
-"Custom widget for editing hstore data in Django admin. Built with Lit and"
-" TypeScript for a responsive key-value editor."
+"Custom widget for editing hstore data in Django admin. Built with Lit and "
+"TypeScript for a responsive key-value editor."
 msgstr ""
-"Django admin で hstore データを編集するカスタムウィジェット。"
-"Lit と TypeScript で構築されたレスポンシブな key-value エディタ。"
+"Django admin で hstore データを編集するカスタムウィジェット。Lit と TypeScript で構築されたレスポンシブな key-"
+"value エディタ。"
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
@@ -72,9 +71,7 @@ msgstr "django-hstore-field"
 msgid ""
 "Drop-in HStoreField with auto-wired widget. Zero configuration for new "
 "projects."
-msgstr ""
-"ウィジェットが自動で接続されるドロップイン型の HStoreField。"
-"新しいプロジェクトでは設定不要。"
+msgstr "ウィジェットが自動で接続されるドロップイン型の HStoreField。新しいプロジェクトでは設定不要。"
 
 #: ../../index.rst:42
 msgid "Quick Start"

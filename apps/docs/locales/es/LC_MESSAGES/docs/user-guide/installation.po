@@ -1,14 +1,13 @@
-﻿# Español translation for Django HStore Project.
+# Español translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -86,5 +85,8 @@ msgid "Next"
 msgstr "Siguiente"
 
 #: ../../docs/user-guide/installation.rst:103
-msgid "Head over to the :doc:`quickstart` to use HStore fields in your models."
-msgstr "Diríjase a la sección :doc:`quickstart` para usar campos HStore en sus modelos."
+msgid ""
+"Head over to the :doc:`quickstart` to use HStore fields in your models."
+msgstr ""
+"Diríjase a la sección :doc:`quickstart` para usar campos HStore en sus "
+"modelos."

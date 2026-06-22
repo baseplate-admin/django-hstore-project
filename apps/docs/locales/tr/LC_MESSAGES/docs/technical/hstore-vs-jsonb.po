@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Turkish <tr@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:2
@@ -22,16 +21,28 @@ msgid "HStore vs JSONB"
 msgstr "HStore ile JSONB"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:4
-msgid "PostgreSQL offers two flexible data types for key-value and document storage. This page compares them to help you choose the right one."
-msgstr "PostgreSQL, anahtar-değer ve belge depolama için iki esnek veri türü sunar. Bu sayfa, size doğru seçimi yapmanızda yardımcı olmak için bunları karşılaştırır."
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+"PostgreSQL, anahtar-değer ve belge depolama için iki esnek veri türü sunar. "
+"Bu sayfa, size doğru seçimi yapmanızda yardımcı olmak için bunları "
+"karşılaştırır."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:8
 msgid "Quick Decision"
 msgstr "Hızlı Karar"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:10
-msgid "Use **HStore** when your data is flat key-value pairs, which is most metadata, tags, and product attributes. Use **JSONB** when you need nested structures, mixed value types, or containment queries."
-msgstr "Verileriniz düz anahtar-değer çiftleri olduğunda, yani çoğu meta veri, etiket ve ürün özelliklerinde **HStore** kullanın. İç içe yapılar, karışık değer türleri veya kapsama sorgularına ihtiyaç duyduğunuzda **JSONB** kullanın."
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need nested "
+"structures, mixed value types, or containment queries."
+msgstr ""
+"Verileriniz düz anahtar-değer çiftleri olduğunda, yani çoğu meta veri, "
+"etiket ve ürün özelliklerinde **HStore** kullanın. İç içe yapılar, karışık "
+"değer türleri veya kapsama sorgularına ihtiyaç duyduğunuzda **JSONB** "
+"kullanın."
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:15
 msgid "Feature Matrix"
@@ -109,8 +120,12 @@ msgid "Storage"
 msgstr "Depolama"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:47
-msgid "HStore is more compact because it stores flat key-value pairs without structural overhead:"
-msgstr "HStore, düz anahtar-değer çiftlerini yapısal ek yük olmadan sakladığı için daha kompakttır:"
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+"HStore, düz anahtar-değer çiftlerini yapısal ek yük olmadan sakladığı için "
+"daha kompakttır:"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:52
 msgid "HStore: ~200 bytes for 10 key-value pairs"
@@ -147,5 +162,9 @@ msgid "Summary"
 msgstr "Özet"
 
 #: ../../docs/technical/hstore-vs-jsonb.rst:126
-msgid "Choose HStore for simple metadata, tags, and product attributes. Choose JSONB for nested configurations, API responses, and document storage."
-msgstr "Basit meta veriler, etiketler ve ürün özellikleri için HStore seçin. İç içe yapılandırmalar, API yanıtları ve belge depolama için JSONB seçin."
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+"Basit meta veriler, etiketler ve ürün özellikleri için HStore seçin. İç içe "
+"yapılandırmalar, API yanıtları ve belge depolama için JSONB seçin."

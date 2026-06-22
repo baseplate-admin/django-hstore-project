@@ -1,16 +1,15 @@
-﻿# Italian translation for Django HStore Project documentation.
+# Italian translation for Django HStore Project documentation.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Italian <it@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,13 +28,21 @@ msgid "django-hstore-field"
 msgstr "django-hstore-field"
 
 #: ../../docs/developer-guide/architecture.rst:17
-msgid "Drop-in HStoreField that auto-wires the widget. No form configuration needed."
-msgstr "HStoreField plug-and-play che collega automaticamente il widget. Nessuna configurazione del form necessaria."
+msgid ""
+"Drop-in HStoreField that auto-wires the widget. No form configuration "
+"needed."
+msgstr ""
+"HStoreField plug-and-play che collega automaticamente il widget. Nessuna "
+"configurazione del form necessaria."
 
 #: ../../docs/developer-guide/architecture.rst:20
 msgid "django-hstore-widget"
 msgstr "django-hstore-widget"
 
 #: ../../docs/developer-guide/architecture.rst:22
-msgid "Lit-based frontend component with Django admin integration. Handles rendering, validation, and media registration."
-msgstr "Componente frontend basato su Lit con integrazione nell'admin di Django. Gestisce il rendering, la convalida e la registrazione dei media."
+msgid ""
+"Lit-based frontend component with Django admin integration. Handles "
+"rendering, validation, and media registration."
+msgstr ""
+"Componente frontend basato su Lit con integrazione nell'admin di Django. "
+"Gestisce il rendering, la convalida e la registrazione dei media."

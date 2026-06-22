@@ -1,4 +1,4 @@
-﻿# Русский translation for Django HStore Project.
+# Русский translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
@@ -7,13 +7,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../docs/license.rst:2
 msgid "License"
@@ -25,16 +23,50 @@ msgstr "Лицензия MIT"
 
 #: ../../docs/license.rst:6
 msgid "Copyright 2024-onwards baseplate-admin"
-msgstr ""
+msgstr "Авторские права 2024-настоящее время baseplate-admin"
 
 #: ../../docs/license.rst:8
-msgid "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+" of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
 msgstr ""
+"Данное разрешение предоставляется бесплатно любому лицу, получающему копию "
+"этого программного обеспечения и связанных с ним файлов документации "
+"(\"Программное обеспечение\"), для работы с Программным обеспечением без "
+"ограничений, включая без ограничений права на использование, копирование, "
+"модификацию, объединение, публикацию, распространение, сублицензирование "
+"и/или продажу копий Программного обеспечения, а также разрешать лицам, "
+"которым предоставляется Программное обеспечение, делать то же самое при "
+"соблюдении следующих условий:"
 
 #: ../../docs/license.rst:15
-msgid "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
 msgstr ""
+"Вышеуказанное уведомление об авторских правах и это уведомление о разрешении"
+" должны быть включены во все копии или значительные части Программного "
+"обеспечения."
 
 #: ../../docs/license.rst:18
-msgid "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 msgstr ""
+"ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ \"КАК ЕСТЬ\", БЕЗ КАКИХ-ЛИБО "
+"ГАРАНТИЙ, ЯВНЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ГАРАНТИЯМИ"
+" ТОВАРНОЙ ПРИГОДНОСТИ, ОТВЕТСТВЕННОСТИ ЗА ОСОБЫЕ ЦЕЛИ И НЕПРИСУТСТВИЯ "
+"НАРУШЕНИЙ. НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ АВТОРЫ ИЛИ ДЕРЖАТЕЛИ АВТОРСКИХ ПРАВ "
+"НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ЗА ЛЮБЫЕ ПРЕТЕНЗИИ, УЩЕРБ ИЛИ ДРУГУЮ "
+"ОТВЕТСТВЕННОСТЬ, БУДЬ ТО ИСК ИЗ ДОГОВОРА, ДЕЛИКТА ИЛИ ИНОЕ, ВОЗНИКАЮЩЕЕ ИЗ "
+"ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ, ИСПОЛЬЗОВАНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ В ОТНОШЕНИИ "
+"ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ."

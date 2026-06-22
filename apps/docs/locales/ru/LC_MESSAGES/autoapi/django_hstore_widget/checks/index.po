@@ -1,80 +1,54 @@
-﻿# Русский translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ru
-"
-"Language-Team: ru <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:2
 msgid "django_hstore_widget.checks"
-msgstr ""
+msgstr "django_hstore_widget.checks"
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:10
 msgid "Module Contents"
-msgstr ""
+msgstr "Содержимое модуля"
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:14
 msgid "System check that warns when the default DB backend is not PostgreSQL."
 msgstr ""
+"Системная проверка, которая предупреждает, когда бэкенд БД по умолчанию не "
+"PostgreSQL."
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:16
-msgid "HStore requires the ``hstore`` extension, which is only available on PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py migrate``."
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
 msgstr ""
+"HStore требует расширения ``hstore``, которое доступно только в PostgreSQL. "
+"Эта проверка выполняется во время ``manage.py check`` и ``manage.py "
+"migrate``."
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:20
 msgid "The application configurations being checked."
-msgstr ""
+msgstr "Конфигурации приложений, которые проверяются."
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:22
 msgid "Additional keyword arguments from the check runner."
-msgstr ""
+msgstr "Дополнительные именованные аргументы из запускающей проверки."
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:24
-msgid "A list containing a warning if the default database engine does not include ``postgres`` or ``postgis``."
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
 msgstr ""
+"Список, содержащий предупреждение, если движок базы данных по умолчанию не "
+"включает ``postgres`` или ``postgis``."
 
-#: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "Тип возврата"

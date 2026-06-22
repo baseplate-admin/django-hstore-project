@@ -1,16 +1,15 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,9 +19,18 @@ msgid "Playground"
 msgstr "Ambiente di prova"
 
 #: ../../docs/playground.rst:4
-msgid "Interactive demo of the ``django-hstore-widget`` component. Edit key-value pairs, add new entries, and delete existing ones."
-msgstr "Demo interattiva del componente ``django-hstore-widget``. Modificate le coppie chiave-valore, aggiungete nuove voci e eliminate quelle esistenti."
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-value "
+"pairs, add new entries, and delete existing ones."
+msgstr ""
+"Demo interattiva del componente ``django-hstore-widget``. Modificate le "
+"coppie chiave-valore, aggiungete nuove voci e eliminate quelle esistenti."
 
 #: ../../docs/playground.rst:149
-msgid "The widget above is the live ``django-hstore-widget`` Lit component built at docs build time.  Try adding, editing, and deleting key-value pairs."
-msgstr "Il widget sopra è il componente Lit ``django-hstore-widget`` attivo compilato durante la generazione della documentazione. Provate ad aggiungere, modificare ed eliminare coppie chiave-valore."
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built at"
+" docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+"Il widget sopra è il componente Lit ``django-hstore-widget`` attivo "
+"compilato durante la generazione della documentazione. Provate ad "
+"aggiungere, modificare ed eliminare coppie chiave-valore."

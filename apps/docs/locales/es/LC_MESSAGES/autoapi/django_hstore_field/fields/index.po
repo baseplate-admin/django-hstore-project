@@ -9,11 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:41\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: es\n"
-"Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
@@ -29,12 +28,23 @@ msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 msgstr "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
-msgstr "Reemplazo directo para ``HStoreField`` de Django con el widget personalizado."
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgstr ""
+"Reemplazo directo para ``HStoreField`` de Django con el widget "
+"personalizado."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
-msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
-msgstr "Anula ``formfield()`` para que el admin y ModelForms utilicen automáticamente :class:`~django_hstore_widget.forms.HStoreFormField` y :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no se requiere configuración manual de formularios."
+msgid ""
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
+msgstr ""
+"Anula ``formfield()`` para que el admin y ModelForms utilicen "
+"automáticamente :class:`~django_hstore_widget.forms.HStoreFormField` y "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no se requiere "
+"configuración manual de formularios."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
@@ -42,15 +52,22 @@ msgstr "Ejemplo"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:38
 msgid "Return a form field class pre-configured with the custom widget."
-msgstr "Devuelve una clase de campo de formulario preconfigurada con el widget personalizado."
+msgstr ""
+"Devuelve una clase de campo de formulario preconfigurada con el widget "
+"personalizado."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Parameters"
 msgstr "Parámetros"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:40
-msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
-msgstr "Argumentos de palabra clave reenviados al constructor del campo de formulario. Pase ``form_class`` o ``widget`` para anular los valores predeterminados."
+msgid ""
+"Keyword arguments forwarded to the form field constructor. Pass "
+"``form_class`` or ``widget`` to override the defaults."
+msgstr ""
+"Argumentos de palabra clave reenviados al constructor del campo de "
+"formulario. Pase ``form_class`` o ``widget`` para anular los valores "
+"predeterminados."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Returns"

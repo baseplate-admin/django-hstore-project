@@ -9,15 +9,14 @@ msgstr ""
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:2
 msgid "django_hstore_widget.checks"
-msgstr ""
+msgstr "django_hstore_widget.checks"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:10
 msgid "Module Contents"
@@ -25,11 +24,19 @@ msgstr "Contenu du module"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:14
 msgid "System check that warns when the default DB backend is not PostgreSQL."
-msgstr "Vérification système qui émet un avertissement lorsque le backend de base de données par défaut n'est pas PostgreSQL."
+msgstr ""
+"Vérification système qui émet un avertissement lorsque le backend de base de"
+" données par défaut n'est pas PostgreSQL."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:16
-msgid "HStore requires the ``hstore`` extension, which is only available on PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py migrate``."
-msgstr "HStore nécessite l'extension ``hstore``, uniquement disponible sur PostgreSQL. Cette vérification s'exécute pendant ``manage.py check`` et ``manage.py migrate``."
+msgid ""
+"HStore requires the ``hstore`` extension, which is only available on "
+"PostgreSQL.  This check runs during ``manage.py check`` and ``manage.py "
+"migrate``."
+msgstr ""
+"HStore nécessite l'extension ``hstore``, uniquement disponible sur "
+"PostgreSQL. Cette vérification s'exécute pendant ``manage.py check`` et "
+"``manage.py migrate``."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Parameters"
@@ -41,15 +48,20 @@ msgstr "Les configurations d'application en cours de vérification."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:22
 msgid "Additional keyword arguments from the check runner."
-msgstr "Arguments nommés supplémentaires provenant de l'exécuteur de vérification."
+msgstr ""
+"Arguments nommés supplémentaires provenant de l'exécuteur de vérification."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Returns"
 msgstr "Valeur de retour"
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:24
-msgid "A list containing a warning if the default database engine does not include ``postgres`` or ``postgis``."
-msgstr "Une liste contenant un avertissement si le moteur de base de données par défaut n'inclut pas ``postgres`` ou ``postgis``."
+msgid ""
+"A list containing a warning if the default database engine does not include "
+"``postgres`` or ``postgis``."
+msgstr ""
+"Une liste contenant un avertissement si le moteur de base de données par "
+"défaut n'inclut pas ``postgres`` ou ``postgis``."
 
 #: ../../autoapi/django_hstore_widget/checks/index.rst:0
 msgid "Return type"

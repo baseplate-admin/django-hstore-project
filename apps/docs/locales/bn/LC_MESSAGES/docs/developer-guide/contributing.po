@@ -1,19 +1,17 @@
-﻿# Bengali translation for Contributing.
+# Bengali translation for Contributing.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
@@ -25,8 +23,8 @@ msgid ""
 "Step-by-step guide to setting up your development environment and "
 "contributing to django-hstore-project."
 msgstr ""
-"আপনার development environment সেটআপ এবং django-hstore-project-এ "
-"কনট্রিবিউট করার step-by-step গাইড।"
+"আপনার development environment সেটআপ এবং django-hstore-project-এ কনট্রিবিউট "
+"করার step-by-step গাইড।"
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
@@ -90,7 +88,8 @@ msgstr "Database সেটআপ করুন"
 
 #: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr "hstore extension enabled করে একটি লোকাল PostgreSQL instance চালু করুন:"
+msgstr ""
+"hstore extension enabled করে একটি লোকাল PostgreSQL instance চালু করুন:"
 
 #: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"

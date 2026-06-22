@@ -1,51 +1,33 @@
-﻿# Español translation for Django HStore Project.
+# Español translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:40+0600
-"
-"PO-Revision-Date: 2026-06-20 17:40+0600
-"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"
-"Language: es
-"
-"Language-Team: es <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-msgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: es <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore ProjecReport-Msgid-Bugs-ToPOT-Creation-Date: 2026-06-20 17:40+060PO-Revision-Date: 2026-06-20 17:40+060Last-Translator: baseplate-admin <61817579+baseplate-Forms: nplurals=2; plural=(n != 1)MIME-Version: 1.Content-Type: text/plain; charset=utf-Content-Transfer-Encoding: 8biGenerated-By: Babel 2.18.\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
 msgstr "Cómo contribuir"
 
 #: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "Guía paso a paso para configurar su entorno de desarrollo y contribuir a django-hstore-project."
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"Guía paso a paso para configurar su entorno de desarrollo y contribuir a "
+"django-hstore-project."
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
@@ -57,7 +39,9 @@ msgstr "Asegúrese de tener lo siguiente instalado:"
 
 #: ../../docs/developer-guide/contributing.rst:12
 msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
-msgstr ":iconify:`mdi:python` **Python 3.10+** con el administrador de paquetes ``uv``"
+msgstr ""
+":iconify:`mdi:python` **Python 3.10+** con el administrador de paquetes "
+"``uv``"
 
 #: ../../docs/developer-guide/contributing.rst:13
 msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
@@ -93,7 +77,9 @@ msgstr ":iconify:`mdi:package-variant` pip-tools"
 
 #: ../../docs/developer-guide/contributing.rst:65
 msgid "This installs all Python packages including test dependencies."
-msgstr "Esto instala todos los paquetes de Python, incluidas las dependencias de prueba."
+msgstr ""
+"Esto instala todos los paquetes de Python, incluidas las dependencias de "
+"prueba."
 
 #: ../../docs/developer-guide/contributing.rst:68
 msgid "Install Frontend Dependencies"
@@ -109,7 +95,8 @@ msgstr "Configurar la base de datos"
 
 #: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
-msgstr "Inicie una instancia local de PostgreSQL con la extensión hstore habilitada:"
+msgstr ""
+"Inicie una instancia local de PostgreSQL con la extensión hstore habilitada:"
 
 #: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
@@ -145,7 +132,9 @@ msgstr "Iniciar el servidor de desarrollo"
 
 #: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
-msgstr "El servidor de desarrollo se ejecuta en el puerto 9100 con el reemplazo en caliente de módulos habilitado."
+msgstr ""
+"El servidor de desarrollo se ejecuta en el puerto 9100 con el reemplazo en "
+"caliente de módulos habilitado."
 
 #: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"
@@ -161,7 +150,8 @@ msgstr "**TypeScript**: Prettier"
 
 #: ../../docs/developer-guide/contributing.rst:182
 msgid "Pre-commit hooks are configured for automated formatting"
-msgstr "Los hooks de pre-commit están configurados para el formateo automatizado"
+msgstr ""
+"Los hooks de pre-commit están configurados para el formateo automatizado"
 
 #: ../../docs/developer-guide/contributing.rst:184
 msgid "Before submitting a pull request, run:"

@@ -1,19 +1,17 @@
-﻿# Bengali translations for autoapi django_hstore_widget.forms.
+# Bengali translations for autoapi django_hstore_widget.forms.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 16:01+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
@@ -33,18 +31,17 @@ msgid ""
 "Form field that uses "
 ":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
 msgstr ""
-"ফর্ম ফিল্ড যা "
-":class:`~django_hstore_widget.widgets.HStoreFormWidget` ব্যবহার করে।"
+"ফর্ম ফিল্ড যা :class:`~django_hstore_widget.widgets.HStoreFormWidget` "
+"ব্যবহার করে।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
 msgid ""
-"Extends Django's built-in ``HStoreField`` to inject the custom widget and"
-" override ``clean()`` so incoming values are parsed through "
-"``json.loads``."
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
 msgstr ""
-"কাস্টম উইজেট ইনজেক্ট করতে এবং প্রবেশকারী মানগুলো "
-"``json.loads``-এর মাধ্যমে পার্স করতে ``clean()`` ওভাররাইড করার জন্য "
-"Django-এর বিল্ট-ইন ``HStoreField``-এর সম্প্রসারণ।"
+"কাস্টম উইজেট ইনজেক্ট করতে এবং প্রবেশকারী মানগুলো ``json.loads``-এর মাধ্যমে "
+"পার্স করতে ``clean()`` ওভাররাইড করার জন্য Django-এর বিল্ট-ইন "
+"``HStoreField``-এর সম্প্রসারণ।"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"

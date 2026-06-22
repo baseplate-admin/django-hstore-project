@@ -1,168 +1,116 @@
-﻿# हिन्दी translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: hi
-"
-"Language-Team: hi <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: hi <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/developer-guide/contributing.rst:2
 msgid "Contributing"
 msgstr "योगदान करना"
 
-#: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "django-hstore-project में योगदान करने और अपने विकास वातावरण को स्थापित करने का चरण-दर-चरण मार्गदर्शिका।"
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"अपनी डेवलपमेंट एनवायरनमेंट सेट अप करने और django-hstore-project में योगदान "
+"करने की चरण-दर-चरण गाइड।"
 
-#: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"
-msgstr ""
+msgstr "पूर्वापेक्षाएं"
 
-#: ../../docs/developer-guide/contributing.rst:10
 msgid "Make sure you have the following installed:"
-msgstr ""
+msgstr "सुनिश्चित करें कि आपके पास निम्नलिखित इंस्टॉल है:"
 
-#: ../../docs/developer-guide/contributing.rst:12
 msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
-msgstr ""
+msgstr ":iconify:`mdi:python` **Python 3.10+** ``uv`` पैकेज मैनेजर के साथ"
 
-#: ../../docs/developer-guide/contributing.rst:13
 msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
-msgstr ""
+msgstr ":iconify:`logos:nodejs` **Node.js 18+** ``npm`` के साथ"
 
-#: ../../docs/developer-guide/contributing.rst:14
 msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
 msgstr ""
+":iconify:`logos:postgresql` **PostgreSQL 14+** स्थानीय रूप से चल रहा है"
 
-#: ../../docs/developer-guide/contributing.rst:17
 msgid "Clone the Repository"
-msgstr ""
+msgstr "रिपोजिटरी क्लोन करें"
 
-#: ../../docs/developer-guide/contributing.rst:25
 msgid "Install Python Dependencies"
-msgstr ""
+msgstr "Python निर्भरताएं इंस्टॉल करें"
 
-#: ../../docs/developer-guide/contributing.rst:29
 msgid ":iconify:`simple-icons:astral` uv"
-msgstr ""
+msgstr ":iconify:`simple-icons:astral` uv"
 
-#: ../../docs/developer-guide/contributing.rst:38
 msgid ":iconify:`simple-icons:poetry` Poetry"
-msgstr ""
+msgstr ":iconify:`simple-icons:poetry` Poetry"
 
-#: ../../docs/developer-guide/contributing.rst:47
 msgid ":iconify:`simple-icons:pdm` PDM"
-msgstr ""
+msgstr ":iconify:`simple-icons:pdm` PDM"
 
-#: ../../docs/developer-guide/contributing.rst:55
 msgid ":iconify:`mdi:package-variant` pip-tools"
-msgstr ""
+msgstr ":iconify:`mdi:package-variant` pip-tools"
 
-#: ../../docs/developer-guide/contributing.rst:65
 msgid "This installs all Python packages including test dependencies."
 msgstr ""
+"इसमें सभी Python पैकेज इंस्टॉल होते हैं जिनमें टेस्ट निर्भरताएं शामिल हैं।"
 
-#: ../../docs/developer-guide/contributing.rst:68
 msgid "Install Frontend Dependencies"
-msgstr ""
+msgstr "फ्रंटएंड निर्भरताएं इंस्टॉल करें"
 
-#: ../../docs/developer-guide/contributing.rst:78
 msgid "This installs Lit, Vite, and all frontend tooling."
-msgstr ""
+msgstr "इसमें Lit, Vite और सभी फ्रंटएंड टूल्स इंस्टॉल होते हैं।"
 
-#: ../../docs/developer-guide/contributing.rst:81
 msgid "Set Up the Database"
-msgstr ""
+msgstr "डेटाबेस सेट अप करें"
 
-#: ../../docs/developer-guide/contributing.rst:83
 msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
 msgstr ""
+"सक्षम hstore एक्सटेंशन के साथ एक स्थानीय PostgreSQL इंस्टेंस शुरू करें:"
 
-#: ../../docs/developer-guide/contributing.rst:87
 msgid ":iconify:`logos:django` Django ORM"
-msgstr ""
+msgstr ":iconify:`logos:django` Django ORM"
 
-#: ../../docs/developer-guide/contributing.rst:99
 msgid ":iconify:`mdi:database` SQL"
-msgstr ""
+msgstr ":iconify:`mdi:database` SQL"
 
-#: ../../docs/developer-guide/contributing.rst:110
 msgid "Run the Tests"
-msgstr ""
+msgstr "टेस्ट चलाएं"
 
-#: ../../docs/developer-guide/contributing.rst:113
 msgid "Frontend Tests"
-msgstr ""
+msgstr "फ्रंटएंड टेस्ट"
 
-#: ../../docs/developer-guide/contributing.rst:129
 msgid "Backend Tests"
-msgstr ""
+msgstr "बैकएंड टेस्ट"
 
-#: ../../docs/developer-guide/contributing.rst:145
 msgid "Type Checking"
-msgstr ""
+msgstr "टाइप जांच"
 
-#: ../../docs/developer-guide/contributing.rst:153
 msgid "Build the Project"
-msgstr ""
+msgstr "प्रोजेक्ट बिल्ड करें"
 
-#: ../../docs/developer-guide/contributing.rst:167
 msgid "Start the Dev Server"
-msgstr ""
+msgstr "डेव सर्वर शुरू करें"
 
-#: ../../docs/developer-guide/contributing.rst:175
 msgid "The dev server runs on port 9100 with hot module replacement enabled."
 msgstr ""
+"डेव सर्वर पोर्ट 9100 पर हॉट मॉड्यूल रिप्लेसमेंट सक्षम के साथ चलाता है।"
 
-#: ../../docs/developer-guide/contributing.rst:178
 msgid "Code Style"
-msgstr ""
+msgstr "कोड स्टाइल"
 
-#: ../../docs/developer-guide/contributing.rst:180
 msgid "**Python**: Ruff (linter + formatter)"
-msgstr ""
+msgstr "**Python**: Ruff (लिनर + फॉर्मैटर)"
 
-#: ../../docs/developer-guide/contributing.rst:181
 msgid "**TypeScript**: Prettier"
-msgstr ""
+msgstr "**TypeScript**: Prettier"
 
-#: ../../docs/developer-guide/contributing.rst:182
 msgid "Pre-commit hooks are configured for automated formatting"
-msgstr ""
+msgstr "स्वचालित प्रारूपण के लिए प्री-कमिट हुक्स कॉन्फ़िगर किए गए हैं"
 
-#: ../../docs/developer-guide/contributing.rst:184
 msgid "Before submitting a pull request, run:"
-msgstr ""
+msgstr "पुल अनुरोध जमा करने से पहले, चलाएं:"

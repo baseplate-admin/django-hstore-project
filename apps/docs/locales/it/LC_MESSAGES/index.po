@@ -1,20 +1,19 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Italian <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../index.rst:61
@@ -35,48 +34,61 @@ msgstr "Contesto LLM"
 
 #: ../../index.rst:90
 msgid "Legal"
-msgstr ""
+msgstr "Legale"
 
 #: ../../index.rst:2
 msgid "Django HStore Project"
-msgstr ""
+msgstr "Progetto Django HStore"
 
 #: ../../index.rst:4
-msgid "A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore support for Django admin."
+msgid ""
+"A monorepo for the Django HStore ecosystem, human-friendly PostgreSQL hstore"
+" support for Django admin."
 msgstr ""
+"Un monorepo per l'ecosistema Django HStore, supporto PostgreSQL hstore user-"
+"friendly per Django admin."
 
 #: ../../index.rst:8
 msgid "Packages"
-msgstr ""
+msgstr "Pacchetti"
 
 #: ../../index.rst:13
 msgid "django-hstore-widget"
-msgstr ""
+msgstr "django-hstore-widget"
 
 #: ../../index.rst:20
-msgid "Custom widget for editing hstore data in Django admin. Built with Lit and TypeScript for a responsive key-value editor."
+msgid ""
+"Custom widget for editing hstore data in Django admin. Built with Lit and "
+"TypeScript for a responsive key-value editor."
 msgstr ""
+"Widget personalizzato per modificare i dati hstore in Django admin. "
+"Costruito con Lit e TypeScript per un editor chiave-valore reattivo."
 
 #: ../../index.rst:27
 msgid "django-hstore-field"
-msgstr ""
+msgstr "django-hstore-field"
 
 #: ../../index.rst:34
-msgid "Drop-in HStoreField with auto-wired widget. Zero configuration for new projects."
+msgid ""
+"Drop-in HStoreField with auto-wired widget. Zero configuration for new "
+"projects."
 msgstr ""
+"HStoreField di sostituzione con widget auto-connesso. Zero configurazione "
+"per nuovi progetti."
 
 #: ../../index.rst:42
 msgid "Quick Start"
-msgstr ""
+msgstr "Avvio rapido"
 
 #: ../../index.rst:44
 msgid "For new projects, use **django-hstore-field**:"
-msgstr ""
+msgstr "Per nuovi progetti, usa **django-hstore-field**:"
 
 #: ../../index.rst:56
 msgid "The widget is auto-wired, no form configuration needed."
 msgstr ""
+"Il widget è auto-connesso, nessuna configurazione del modulo necessaria."
 
 #: ../../index.rst:59
 msgid "Contents"
-msgstr ""
+msgstr "Contenuti"

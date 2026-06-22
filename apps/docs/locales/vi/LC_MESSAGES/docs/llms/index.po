@@ -1,4 +1,4 @@
-﻿# Vietnamese translations for Django HStore Project.
+# Vietnamese translations for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # baseplate-admin <baseplate-admin>, 2026.
@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: Vietnamese <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,8 +20,12 @@ msgid "LLM Context Files"
 msgstr "Các tệp ngữ cảnh LLM"
 
 #: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr "Dự án này cung cấp các tệp ngữ cảnh có thể đọc được bởi máy để tích hợp LLM, được tự động tạo trong quá trình xây dựng tài liệu Sphinx."
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+"Dự án này cung cấp các tệp ngữ cảnh có thể đọc được bởi máy để tích hợp LLM,"
+" được tự động tạo trong quá trình xây dựng tài liệu Sphinx."
 
 #: ../../docs/llms/index.rst:8
 msgid "Available Files"
@@ -38,7 +41,7 @@ msgstr "Mô tả"
 
 #: ../../docs/llms/index.rst:16
 msgid "`llms.txt <../../llms.txt>`_"
-msgstr ""
+msgstr "`llms.txt <../../llms.txt>`_"
 
 #: ../../docs/llms/index.rst:17
 msgid "Index file listing all context files"
@@ -46,7 +49,7 @@ msgstr "Tệp chỉ mục liệt kê tất cả các tệp ngữ cảnh"
 
 #: ../../docs/llms/index.rst:18
 msgid "`llms-widget.txt <../../llms-widget.txt>`_"
-msgstr ""
+msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
 
 #: ../../docs/llms/index.rst:19
 msgid "django-hstore-widget package: widget API, frontend architecture"
@@ -54,7 +57,7 @@ msgstr "Gói django-hstore-widget: API widget, kiến trúc frontend"
 
 #: ../../docs/llms/index.rst:20
 msgid "`llms-field.txt <../../llms-field.txt>`_"
-msgstr ""
+msgstr "`llms-field.txt <../../llms-field.txt>`_"
 
 #: ../../docs/llms/index.rst:21
 msgid "django-hstore-field package: field API, installation, quick start"
@@ -62,24 +65,41 @@ msgstr "Gói django-hstore-field: API trường, cài đặt, khởi động nha
 
 #: ../../docs/llms/index.rst:22
 msgid "`llms-full.txt <../../llms-full.txt>`_"
-msgstr ""
+msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
 #: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
-msgstr "Tài liệu dự án đầy đủ bao gồm tất cả các gói, tài liệu tham khảo API, kiến trúc, các thực hành tốt nhất và hướng dẫn đóng góp"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+"Tài liệu dự án đầy đủ bao gồm tất cả các gói, tài liệu tham khảo API, kiến "
+"trúc, các thực hành tốt nhất và hướng dẫn đóng góp"
 
 #: ../../docs/llms/index.rst:26
 msgid "Usage"
 msgstr "Cách sử dụng"
 
 #: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
 msgstr ""
+"Chỉ LLM của bạn vào tệp ngữ cảnh phù hợp với phạm vi của bạn. Các tệp được "
+"tạo được đặt tại gốc của đầu ra tài liệu và có thể truy cập tương đối so với"
+" gốc tài liệu."
 
 #: ../../docs/llms/index.rst:33
 msgid "How It Works"
-msgstr ""
+msgstr "Nó hoạt động như thế nào"
 
 #: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
 msgstr ""
+"Các tệp llms.txt được tạo tự động bởi tiện ích mở rộng Sphinx tùy chỉnh "
+"(``llms_txt_generator``) lắp ráp nội dung từ tất cả các tệp nguồn tài liệu "
+"tại thời điểm xây dựng, đảm bảo các tệp ngữ cảnh đồng bộ với tài liệu."

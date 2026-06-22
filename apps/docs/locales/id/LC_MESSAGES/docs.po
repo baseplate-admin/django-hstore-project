@@ -1,0 +1,631 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django HStore Project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 06:43+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Architecture"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "django-hstore-field"
+msgstr ""
+
+msgid ""
+"Drop-in HStoreField that auto-wires the widget. No form configuration "
+"needed."
+msgstr ""
+
+msgid "django-hstore-widget"
+msgstr ""
+
+msgid ""
+"Lit-based frontend component with Django admin integration. Handles "
+"rendering, validation, and media registration."
+msgstr ""
+
+msgid "Contributing"
+msgstr ""
+
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+
+msgid "Prerequisites"
+msgstr ""
+
+msgid "Make sure you have the following installed:"
+msgstr ""
+
+msgid ":iconify:`mdi:python` **Python 3.10+** with ``uv`` package manager"
+msgstr ""
+
+msgid ":iconify:`logos:nodejs` **Node.js 18+** with ``npm``"
+msgstr ""
+
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+** running locally"
+msgstr ""
+
+msgid "Clone the Repository"
+msgstr ""
+
+msgid "Install Python Dependencies"
+msgstr ""
+
+msgid ":iconify:`simple-icons:astral` uv"
+msgstr ""
+
+msgid ":iconify:`simple-icons:poetry` Poetry"
+msgstr ""
+
+msgid ":iconify:`simple-icons:pdm` PDM"
+msgstr ""
+
+msgid ":iconify:`mdi:package-variant` pip-tools"
+msgstr ""
+
+msgid "This installs all Python packages including test dependencies."
+msgstr ""
+
+msgid "Install Frontend Dependencies"
+msgstr ""
+
+msgid "This installs Lit, Vite, and all frontend tooling."
+msgstr ""
+
+msgid "Set Up the Database"
+msgstr ""
+
+msgid "Start a local PostgreSQL instance with the hstore extension enabled:"
+msgstr ""
+
+msgid ":iconify:`logos:django` Django ORM"
+msgstr ""
+
+msgid ":iconify:`mdi:database` SQL"
+msgstr ""
+
+msgid "Run the Tests"
+msgstr ""
+
+msgid "Frontend Tests"
+msgstr ""
+
+msgid "Backend Tests"
+msgstr ""
+
+msgid "Type Checking"
+msgstr ""
+
+msgid "Build the Project"
+msgstr ""
+
+msgid "Start the Dev Server"
+msgstr ""
+
+msgid "The dev server runs on port 9100 with hot module replacement enabled."
+msgstr ""
+
+msgid "Code Style"
+msgstr ""
+
+msgid "**Python**: Ruff (linter + formatter)"
+msgstr ""
+
+msgid "**TypeScript**: Prettier"
+msgstr ""
+
+msgid "Pre-commit hooks are configured for automated formatting"
+msgstr ""
+
+msgid "Before submitting a pull request, run:"
+msgstr ""
+
+msgid "Frontend Build Pipeline"
+msgstr ""
+
+msgid ""
+"The widget frontend is built with Vite and TypeScript, producing a single "
+"IIFE bundle loaded by Django admin."
+msgstr ""
+
+msgid "Build Steps"
+msgstr ""
+
+msgid ""
+"Vite bundles ``src/frontend/index.ts`` into ``dist/components/django-hstore-"
+"widget.js``"
+msgstr ""
+
+msgid ""
+"``scripts/copy.ts`` copies the bundle to "
+"``src/django_hstore_widget/static/admin/js/django_hstore_widget/``"
+msgstr ""
+
+msgid "Django serves the bundle via static files"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+msgid "``vite.config.ts`` - Entry point, output, aliases, dev server"
+msgstr ""
+
+msgid "``tsconfig.json`` - TypeScript compiler options, path aliases"
+msgstr ""
+
+msgid "Path Aliases"
+msgstr ""
+
+msgid "Resolves to ``src/frontend/lib/*``"
+msgstr ""
+
+msgid "Resolves to ``src/frontend/stores/*``"
+msgstr ""
+
+msgid "Resolves to ``src/frontend/mappings/*``"
+msgstr ""
+
+msgid "Resolves to ``src/frontend/components/*``"
+msgstr ""
+
+msgid "Development"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "MIT License"
+msgstr ""
+
+msgid "Copyright 2024-onwards baseplate-admin"
+msgstr ""
+
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+" of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
+msgstr ""
+
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
+msgstr ""
+
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
+msgstr ""
+
+msgid "LLM Context Files"
+msgstr ""
+
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+
+msgid "Available Files"
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "`llms.txt <../../llms.txt>`_"
+msgstr ""
+
+msgid "Index file listing all context files"
+msgstr ""
+
+msgid "`llms-widget.txt <../../llms-widget.txt>`_"
+msgstr ""
+
+msgid "django-hstore-widget package: widget API, frontend architecture"
+msgstr ""
+
+msgid "`llms-field.txt <../../llms-field.txt>`_"
+msgstr ""
+
+msgid "django-hstore-field package: field API, installation, quick start"
+msgstr ""
+
+msgid "`llms-full.txt <../../llms-full.txt>`_"
+msgstr ""
+
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+
+msgid "Usage"
+msgstr ""
+
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
+msgstr ""
+
+msgid "How It Works"
+msgstr ""
+
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
+msgstr ""
+
+msgid "Playground"
+msgstr ""
+
+msgid ""
+"Interactive demo of the ``django-hstore-widget`` component. Edit key-value "
+"pairs, add new entries, and delete existing ones."
+msgstr ""
+
+msgid ""
+"The widget above is the live ``django-hstore-widget`` Lit component built at"
+" docs build time.  Try adding, editing, and deleting key-value pairs."
+msgstr ""
+
+msgid "HStore vs JSONB"
+msgstr ""
+
+msgid ""
+"PostgreSQL offers two flexible data types for key-value and document "
+"storage. This page compares them to help you choose the right one."
+msgstr ""
+
+msgid "Quick Decision"
+msgstr ""
+
+msgid ""
+"Use **HStore** when your data is flat key-value pairs, which is most "
+"metadata, tags, and product attributes. Use **JSONB** when you need nested "
+"structures, mixed value types, or containment queries."
+msgstr ""
+
+msgid "Feature Matrix"
+msgstr ""
+
+msgid "Feature"
+msgstr ""
+
+msgid "HStore"
+msgstr ""
+
+msgid "JSONB"
+msgstr ""
+
+msgid "Flat key-value"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "Nested structs"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Non-string vals"
+msgstr ""
+
+msgid "Simple admin UI"
+msgstr ""
+
+msgid "Easy validation"
+msgstr ""
+
+msgid "Containment"
+msgstr ""
+
+msgid "Smaller storage"
+msgstr ""
+
+msgid "GIN indexes"
+msgstr ""
+
+msgid "Storage"
+msgstr ""
+
+msgid ""
+"HStore is more compact because it stores flat key-value pairs without "
+"structural overhead:"
+msgstr ""
+
+msgid "HStore: ~200 bytes for 10 key-value pairs"
+msgstr ""
+
+msgid "JSONB:  ~350 bytes for the same data (structure overhead)"
+msgstr ""
+
+msgid "Query Performance"
+msgstr ""
+
+msgid "Indexing"
+msgstr ""
+
+msgid "Both HStore and JSONB support GIN indexes for fast lookups:"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid ""
+"Choose HStore for simple metadata, tags, and product attributes. Choose "
+"JSONB for nested configurations, API responses, and document storage."
+msgstr ""
+
+msgid "Technical"
+msgstr ""
+
+msgid ""
+"Deep dives into HStore, JSONB, and how the widget works under the hood."
+msgstr ""
+
+msgid "Use Cases"
+msgstr ""
+
+msgid ""
+"Real-world scenarios for choosing between HStore and JSONB in your Django "
+"application."
+msgstr ""
+
+msgid "Use HStore When"
+msgstr ""
+
+msgid "Product Attributes"
+msgstr ""
+
+msgid ""
+"Products have varying attributes like color, size, material that don't "
+"warrant dedicated columns. HStore stores them as flat key-value pairs with a"
+" clean admin interface."
+msgstr ""
+
+msgid "User Preferences"
+msgstr ""
+
+msgid ""
+"Store user settings like timezone, language, notification preferences as "
+"flexible key-value pairs:"
+msgstr ""
+
+msgid "Content Metadata"
+msgstr ""
+
+msgid ""
+"Tags, categories, and custom fields for articles, media, or any content "
+"model:"
+msgstr ""
+
+msgid "Use JSONB When"
+msgstr ""
+
+msgid "Nested Configuration"
+msgstr ""
+
+msgid "Application settings with hierarchical structure:"
+msgstr ""
+
+msgid "API Response Cache"
+msgstr ""
+
+msgid "Store and query nested API responses:"
+msgstr ""
+
+msgid "Search Facets"
+msgstr ""
+
+msgid "Dynamic filter options with mixed types:"
+msgstr ""
+
+msgid "Guidelines"
+msgstr ""
+
+msgid "Scenario"
+msgstr ""
+
+msgid "Product attributes"
+msgstr ""
+
+msgid "User preferences"
+msgstr ""
+
+msgid "Content tags / metadata"
+msgstr ""
+
+msgid "Nested app config"
+msgstr ""
+
+msgid "API response caching"
+msgstr ""
+
+msgid "Mixed-type form data"
+msgstr ""
+
+msgid "Document storage"
+msgstr ""
+
+msgid ""
+"When in doubt, start with HStore. It's simpler, more compact, and gives you "
+"a better admin experience. Migrate to JSONB only when you genuinely need "
+"nested structures or mixed value types."
+msgstr ""
+
+msgid "Best Practices"
+msgstr ""
+
+msgid ""
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr ""
+
+msgid "Keep Keys Consistent"
+msgstr ""
+
+msgid ""
+"Use a naming convention for keys across your application. This makes "
+"querying and maintenance easier."
+msgstr ""
+
+msgid "Use Explicit Keys When Possible"
+msgstr ""
+
+msgid "Defining explicit keys gives you:"
+msgstr ""
+
+msgid "Labeled form fields in the admin"
+msgstr ""
+
+msgid "Built-in validation per key"
+msgstr ""
+
+msgid "Widget customization per field"
+msgstr ""
+
+msgid "IDE autocomplete for key names"
+msgstr ""
+
+msgid "Index Frequently Queried Keys"
+msgstr ""
+
+msgid "Add GIN indexes on HStore columns you query often:"
+msgstr ""
+
+msgid "Handle Missing Keys Gracefully"
+msgstr ""
+
+msgid "HStore keys may not exist in all rows. Use ``get()`` with defaults:"
+msgstr ""
+
+msgid "Validate Key Values"
+msgstr ""
+
+msgid "HStore values are strings. Validate and convert them where needed:"
+msgstr ""
+
+msgid "Consider Migration Paths"
+msgstr ""
+
+msgid ""
+"If you anticipate needing nested data in the future, plan your migration "
+"from HStore to JSONB early. The data formats are not directly compatible."
+msgstr ""
+
+msgid "Installation"
+msgstr ""
+
+msgid "Get up and running with django-hstore-project in minutes."
+msgstr ""
+
+msgid "Requirements"
+msgstr ""
+
+msgid ":iconify:`mdi:python` **Python 3.10+**"
+msgstr ""
+
+msgid ":iconify:`logos:django` **Django 5.0+**"
+msgstr ""
+
+msgid ":iconify:`logos:postgresql` **PostgreSQL 14+**"
+msgstr ""
+
+msgid "Modern browsers (Chrome 112+, Firefox 117+, Safari 16.5+)"
+msgstr ""
+
+msgid "Install django-hstore-field"
+msgstr ""
+
+msgid ":iconify:`logos:pypi` pip"
+msgstr ""
+
+msgid "Configure"
+msgstr ""
+
+msgid "Add both packages to your ``INSTALLED_APPS``:"
+msgstr ""
+
+msgid "Run Migrations"
+msgstr ""
+
+msgid "This enables the PostgreSQL hstore extension automatically."
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid ""
+"Head over to the :doc:`quickstart` to use HStore fields in your models."
+msgstr ""
+
+msgid "Quick Start"
+msgstr ""
+
+msgid "Get up and running with django-hstore-project in under a minute."
+msgstr ""
+
+msgid "Create a Model"
+msgstr ""
+
+msgid "Add an HStore field to any model:"
+msgstr ""
+
+msgid "That's it. The widget is auto-wired, no form configuration needed."
+msgstr ""
+
+msgid "Register in Admin"
+msgstr ""
+
+msgid ""
+"Visit your admin page and you'll see the HStore widget with a clean key-"
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
+msgstr ""
+
+msgid "With Custom Keys"
+msgstr ""
+
+msgid ""
+"Define explicit keys to get labeled form fields instead of the free-form "
+"editor:"
+msgstr ""
+
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
+msgstr ""
+
+msgid "What's Next"
+msgstr ""
+
+msgid ":doc:`../user-guide/installation` - Detailed installation options"
+msgstr ""
+
+msgid ":doc:`../technical/hstore-vs-jsonb` - When to use HStore vs JSONB"
+msgstr ""
+
+msgid ":doc:`../user-guide/best-practices` - Tips for production use"
+msgstr ""

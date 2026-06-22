@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: zh\n"
-"Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:2
@@ -32,18 +31,15 @@ msgstr "基类: :py:obj:`django.contrib.postgres.forms.HStoreField`"
 msgid ""
 "Form field that uses "
 ":class:`~django_hstore_widget.widgets.HStoreFormWidget`."
-msgstr ""
-"使用 :class:`~django_hstore_widget.widgets.HStoreFormWidget` 的"
-"表单字段。"
+msgstr "使用 :class:`~django_hstore_widget.widgets.HStoreFormWidget` 的表单字段。"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:23
 msgid ""
-"Extends Django's built-in ``HStoreField`` to inject the custom widget and"
-" override ``clean()`` so incoming values are parsed through "
-"``json.loads``."
+"Extends Django's built-in ``HStoreField`` to inject the custom widget and "
+"override ``clean()`` so incoming values are parsed through ``json.loads``."
 msgstr ""
-"扩展 Django 内置的 ``HStoreField`` 以注入自定义小部件并"
-"重写 ``clean()`` 使传入的值通过 ``json.loads`` 解析。"
+"扩展 Django 内置的 ``HStoreField`` 以注入自定义小部件并重写 ``clean()`` 使传入的值通过 "
+"``json.loads`` 解析。"
 
 #: ../../autoapi/django_hstore_widget/forms/index.rst:28
 msgid "Example"

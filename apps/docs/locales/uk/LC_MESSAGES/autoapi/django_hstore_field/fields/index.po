@@ -5,12 +5,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
-"Language-Team: Ukrainian <LL@li.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,12 +28,22 @@ msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 msgstr "Базові класи: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
 msgstr "Готова заміна для ``HStoreField`` Django із користувацьким віджетом."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
-msgid "Overrides ``formfield()`` so that the admin and ModelForms automatically use :class:`~django_hstore_widget.forms.HStoreFormField` and :class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form configuration required."
-msgstr "Перевизначає ``formfield()``, щоб адміністративна панель та ModelForms автоматично використовували :class:`~django_hstore_widget.forms.HStoreFormField` та :class:`~django_hstore_widget.widgets.HStoreFormWidget` — ручна конфігурація форми не потрібна."
+msgid ""
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
+msgstr ""
+"Перевизначає ``formfield()``, щоб адміністративна панель та ModelForms "
+"автоматично використовували "
+":class:`~django_hstore_widget.forms.HStoreFormField` та "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` — ручна конфігурація"
+" форми не потрібна."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
@@ -42,15 +51,21 @@ msgstr "Приклад"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:38
 msgid "Return a form field class pre-configured with the custom widget."
-msgstr "Повертає клас поля форми, попередньо налаштований із користувацьким віджетом."
+msgstr ""
+"Повертає клас поля форми, попередньо налаштований із користувацьким "
+"віджетом."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Parameters"
 msgstr "Параметри"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:40
-msgid "Keyword arguments forwarded to the form field constructor. Pass ``form_class`` or ``widget`` to override the defaults."
-msgstr "Аргументи з іменами, які передаються до конструктора поля форми. Передайте ``form_class`` або ``widget``, щоб перевизначити значення за замовчуванням."
+msgid ""
+"Keyword arguments forwarded to the form field constructor. Pass "
+"``form_class`` or ``widget`` to override the defaults."
+msgstr ""
+"Аргументи з іменами, які передаються до конструктора поля форми. Передайте "
+"``form_class`` або ``widget``, щоб перевизначити значення за замовчуванням."
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:0
 msgid "Returns"

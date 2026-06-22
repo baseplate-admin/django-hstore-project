@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/user-guide/quickstart.rst:2
@@ -51,12 +50,11 @@ msgstr "Admin に登録"
 #: ../../docs/user-guide/quickstart.rst:46
 msgid ""
 "Visit your admin page and you'll see the HStore widget with a clean key-"
-"value interface. Each key-value pair is editable inline. Add, remove, and"
-" modify pairs as needed."
+"value interface. Each key-value pair is editable inline. Add, remove, and "
+"modify pairs as needed."
 msgstr ""
-"admin ページにアクセスすると、クリーンな key-value インターフェースを持つ "
-"HStore ウィジェットが表示されます。各 key-value ペアはインラインで編集可能です。"
-"必要に応じてペアを追加、削除、または修正してください。"
+"admin ページにアクセスすると、クリーンな key-value インターフェースを持つ HStore ウィジェットが表示されます。各 key-"
+"value ペアはインラインで編集可能です。必要に応じてペアを追加、削除、または修正してください。"
 
 #: ../../docs/user-guide/quickstart.rst:51
 msgid "With Custom Keys"
@@ -66,12 +64,11 @@ msgstr "カスタムキーを使用"
 msgid ""
 "Define explicit keys to get labeled form fields instead of the free-form "
 "editor:"
-msgstr ""
-"フリーフォームエディタの代わりにラベル付きフォームフィールドを取得するには、"
-"明示的なキーを定義してください:"
+msgstr "フリーフォームエディタの代わりにラベル付きフォームフィールドを取得するには、明示的なキーを定義してください:"
 
 #: ../../docs/user-guide/quickstart.rst:70
-msgid "Each key becomes a proper form field with validation, widgets, and labels."
+msgid ""
+"Each key becomes a proper form field with validation, widgets, and labels."
 msgstr "各キーはバリデーション、ウィジェット、ラベル付きの適切なフォームフィールドになります。"
 
 #: ../../docs/user-guide/quickstart.rst:73

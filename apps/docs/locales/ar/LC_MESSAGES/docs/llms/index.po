@@ -1,108 +1,83 @@
-﻿# العربية translation for Django HStore Project.
-# Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project 
-"
-"Report-Msgid-Bugs-To: 
-"
-"POT-Creation-Date: 2026-06-20 17:41
-"
-"PO-Revision-Date: 2026-06-20 17:41
-"
-"Last-Translator: 
-baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ar
-"
-"Language-Team: ar <LL@li.org>
-"
-"Plural-Forms: nplurals=2; plural=(n != 1);
-"
-"MIME-Version: 1.0
-"
-"Content-Type: text/plain; charset=utf-8
-"
-"Content-Transfer-Encoding: 8bit
-"
-"Generated-By: Babel 2.18.0
-"
-sgid ""
-msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
-"PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: ar <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/llms/index.rst:2
 msgid "LLM Context Files"
 msgstr "ملفات سياق LLM"
 
-#: ../../docs/llms/index.rst:4
-msgid "This project provides machine-readable context files for LLM integration, auto-generated during the Sphinx documentation build."
-msgstr "توفر هذه المشروع ملفات سياق قابلة للقراءة آلياً لدمج LLM، وتُولد تلقائياً أثناء بناء توثيق Sphinx."
+msgid ""
+"This project provides machine-readable context files for LLM integration, "
+"auto-generated during the Sphinx documentation build."
+msgstr ""
+"يوفر هذا المشروع ملفات سياق قابلة للقراءة الآلية لتكامل LLM، يتم إنشاؤها "
+"تلقائياً أثناء بناء توثيق Sphinx."
 
-#: ../../docs/llms/index.rst:8
 msgid "Available Files"
 msgstr "الملفات المتاحة"
 
-#: ../../docs/llms/index.rst:14
 msgid "File"
 msgstr "الملف"
 
-#: ../../docs/llms/index.rst:15
 msgid "Description"
 msgstr "الوصف"
 
-#: ../../docs/llms/index.rst:16
 msgid "`llms.txt <../../llms.txt>`_"
 msgstr "`llms.txt <../../llms.txt>`_"
 
-#: ../../docs/llms/index.rst:17
 msgid "Index file listing all context files"
-msgstr "ملف الفهرس الذي يسرد جميع ملفات السياق"
+msgstr "ملف فهرسة يسرد جميع ملفات السياق"
 
-#: ../../docs/llms/index.rst:18
 msgid "`llms-widget.txt <../../llms-widget.txt>`_"
 msgstr "`llms-widget.txt <../../llms-widget.txt>`_"
 
-#: ../../docs/llms/index.rst:19
 msgid "django-hstore-widget package: widget API, frontend architecture"
-msgstr "حزمة django-hstore-widget: واجهة widget API، بنية الواجهة الأمامية"
+msgstr "حزمة django-hstore-widget: widget API، هيكلية الواجهة الأمامية"
 
-#: ../../docs/llms/index.rst:20
 msgid "`llms-field.txt <../../llms-field.txt>`_"
 msgstr "`llms-field.txt <../../llms-field.txt>`_"
 
-#: ../../docs/llms/index.rst:21
 msgid "django-hstore-field package: field API, installation, quick start"
-msgstr "حزمة django-hstore-field: واجهة field API، التثبيت، البدء السريع"
+msgstr "حزمة django-hstore-field: حقل API، التثبيت، البدء السريع"
 
-#: ../../docs/llms/index.rst:22
 msgid "`llms-full.txt <../../llms-full.txt>`_"
 msgstr "`llms-full.txt <../../llms-full.txt>`_"
 
-#: ../../docs/llms/index.rst:23
-msgid "Complete project documentation including all packages, API reference, architecture, best practices, and contributing guide"
-msgstr "توثيق كامل للمشروع يشمل جميع الحزم، مرجع API، البنية، أفضل الممارسات ودليل المساهمة"
+msgid ""
+"Complete project documentation including all packages, API reference, "
+"architecture, best practices, and contributing guide"
+msgstr ""
+"توثيق المشروع الكامل بما في ذلك جميع الحزم، مرجع API، الهيكلية، أفضل "
+"الممارسات، ودليل المساهمة"
 
-#: ../../docs/llms/index.rst:26
 msgid "Usage"
 msgstr "الاستخدام"
 
-#: ../../docs/llms/index.rst:28
-msgid "Point your LLM to the context file that matches your scope. The generated files are placed at the root of the documentation output and are accessible relative to the docs root."
-msgstr "وجّه نموذج LLM نحو ملف السياق الذي يتوافق مع نطاق عملك. توضع الملفات المُولدة في جذر مخرجات التوثيق ويمكن الوصول إليها بالنسبة لجذر التوثيق."
+msgid ""
+"Point your LLM to the context file that matches your scope. The generated "
+"files are placed at the root of the documentation output and are accessible "
+"relative to the docs root."
+msgstr ""
+"وجّه LLM الخاص بك إلى ملف السياق الذي يتطابق مع نطاقك. يتم وضع الملفات "
+"المولدة في جذر مخرجات التوثيق ويمكن الوصول إليها بالنسبة لجذر التوثيق."
 
-#: ../../docs/llms/index.rst:33
 msgid "How It Works"
 msgstr "كيف يعمل"
 
-#: ../../docs/llms/index.rst:35
-msgid "The llms.txt files are generated automatically by a custom Sphinx extension (``llms_txt_generator``) that assembles content from all documentation source files at build time, ensuring the context files stay in sync with the documentation."
-msgstr "تُولد ملفات llms.txt تلقائياً بواسطة امتداد Sphinx مخصص (``llms_txt_generator``) يجمع المحتوى من جميع ملفات مصدر التوثيق أثناء البناء، مما يضمن بقاء ملفات السياق متزامنة مع التوثيق."
+msgid ""
+"The llms.txt files are generated automatically by a custom Sphinx extension "
+"(``llms_txt_generator``) that assembles content from all documentation "
+"source files at build time, ensuring the context files stay in sync with the"
+" documentation."
+msgstr ""
+"يتم إنشاء ملفات llms.txt تلقائياً بواسطة إضافة Sphinx مخصصة "
+"(``llms_txt_generator``) التي تجمع المحتوى من جميع ملفات المصدر التوثيقية "
+"أثناء البناء، مما يضمن بقاء ملفات السياق متزامنة مع التوثيق."

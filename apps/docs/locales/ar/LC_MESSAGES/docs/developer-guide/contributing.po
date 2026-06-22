@@ -1,19 +1,17 @@
-﻿# العربية translation for Django HStore Project.
+# العربية translation for Django HStore Project.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Django HStore Project\n"
-"Report-Msgid-Bugs-To:\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: ar\n"
-"Language-Team: ar <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/developer-guide/contributing.rst:2
@@ -21,8 +19,12 @@ msgid "Contributing"
 msgstr "المساهمة"
 
 #: ../../docs/developer-guide/contributing.rst:4
-msgid "Step-by-step guide to setting up your development environment and contributing to django-hstore-project."
-msgstr "دليل خطوة بخطوة لإعداد بيئة التطوير والمساهمة في مشروع django-hstore-project."
+msgid ""
+"Step-by-step guide to setting up your development environment and "
+"contributing to django-hstore-project."
+msgstr ""
+"دليل خطوة بخطوة لإعداد بيئة التطوير والمساهمة في مشروع django-hstore-"
+"project."
 
 #: ../../docs/developer-guide/contributing.rst:8
 msgid "Prerequisites"

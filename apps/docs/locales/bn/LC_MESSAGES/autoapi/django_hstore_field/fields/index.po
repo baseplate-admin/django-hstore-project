@@ -1,19 +1,17 @@
-﻿# Bengali translations for autoapi django_hstore_field.fields.
+# Bengali translations for autoapi django_hstore_field.fields.
 # Copyright (C) 2026, baseplate-admin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 16:01+0600\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language: bn\n"
-"Language-Team: bn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:2
@@ -29,20 +27,21 @@ msgid "Bases: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 msgstr "বেস: :py:obj:`django.contrib.postgres.fields.HStoreField`"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:17
-msgid "Drop-in replacement for Django's ``HStoreField`` with the custom widget."
+msgid ""
+"Drop-in replacement for Django's ``HStoreField`` with the custom widget."
 msgstr "কাস্টম উইজেট সহ Django-এর ``HStoreField``-এর ড্রপ-ইন প্রতিস্থাপন।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:19
 msgid ""
-"Overrides ``formfield()`` so that the admin and ModelForms automatically "
-"use :class:`~django_hstore_widget.forms.HStoreFormField` and "
-":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form"
-" configuration required."
+"Overrides ``formfield()`` so that the admin and ModelForms automatically use"
+" :class:`~django_hstore_widget.forms.HStoreFormField` and "
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` -- no manual form "
+"configuration required."
 msgstr ""
 "``formfield()`` ওভাররাইড করে যাতে admin এবং ModelForms স্বয়ংক্রিয়ভাবে "
 ":class:`~django_hstore_widget.forms.HStoreFormField` এবং "
-":class:`~django_hstore_widget.widgets.HStoreFormWidget` ব্যবহার করে -- "
-"কোনো ম্যানুয়াল ফর্ম কনফিগারেশন প্রয়োজন নেই।"
+":class:`~django_hstore_widget.widgets.HStoreFormWidget` ব্যবহার করে -- কোনো "
+"ম্যানুয়াল ফর্ম কনফিগারেশন প্রয়োজন নেই।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst:25
 msgid "Example"
@@ -61,8 +60,8 @@ msgid ""
 "Keyword arguments forwarded to the form field constructor. Pass "
 "``form_class`` or ``widget`` to override the defaults."
 msgstr ""
-"ফর্ম ফিল্ড কনস্ট্রাক্টরে ফরওয়ার্ড করা কিওয়ার্ড আর্গুমেন্ট। "
-"ডিফল্ট ওভাররাইড করতে ``form_class`` অথবা ``widget`` পাঠান।"
+"ফর্ম ফিল্ড কনস্ট্রাক্টরে ফরওয়ার্ড করা কিওয়ার্ড আর্গুমেন্ট। ডিফল্ট ওভাররাইড"
+" করতে ``form_class`` অথবা ``widget`` পাঠান।"
 
 #: ../../autoapi/django_hstore_field/fields/index.rst
 msgid "Returns"

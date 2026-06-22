@@ -1,40 +1,46 @@
-﻿# SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, baseplate-admin
 # This file is distributed under the same license as the Django HStore Project package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 17:40+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/developer-guide/architecture.rst:2
 msgid "Architecture"
-msgstr ""
+msgstr "معماری"
 
 #: ../../docs/developer-guide/architecture.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "نمای کلی"
 
 #: ../../docs/developer-guide/architecture.rst:15
 msgid "django-hstore-field"
-msgstr ""
+msgstr "django-hstore-field"
 
 #: ../../docs/developer-guide/architecture.rst:17
-msgid "Drop-in HStoreField that auto-wires the widget. No form configuration needed."
+msgid ""
+"Drop-in HStoreField that auto-wires the widget. No form configuration "
+"needed."
 msgstr ""
+"HStoreField جایگزین که ویجت را خودکار می‌کند. نیازی به پیکربندی فرم نیست."
 
 #: ../../docs/developer-guide/architecture.rst:20
 msgid "django-hstore-widget"
-msgstr ""
+msgstr "django-hstore-widget"
 
 #: ../../docs/developer-guide/architecture.rst:22
-msgid "Lit-based frontend component with Django admin integration. Handles rendering, validation, and media registration."
+msgid ""
+"Lit-based frontend component with Django admin integration. Handles "
+"rendering, validation, and media registration."
 msgstr ""
+"جزء فرانت‌اند مبتنی بر Lit با یکپارچه‌سازی Django admin. رندرینگ، اعتبارسنجی"
+" و ثبت رسانه را مدیریت می‌کند."

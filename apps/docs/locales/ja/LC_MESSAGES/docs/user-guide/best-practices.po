@@ -3,17 +3,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Django HStore Project \n"
+"Project-Id-Version: Django HStore Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-20 16:01+0600\n"
 "PO-Revision-Date: 2026-06-20 17:40+0600\n"
 "Last-Translator: baseplate-admin <61817579+baseplate-admin@users.noreply.github.com>\n"
 "Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../docs/user-guide/best-practices.rst:2
@@ -22,10 +21,8 @@ msgstr "ベストプラクティス"
 
 #: ../../docs/user-guide/best-practices.rst:4
 msgid ""
-"Tips and recommendations for using HStore fields effectively in "
-"production."
-msgstr ""
-"本番環境で HStore フィールドを効果的に使用するためのヒントと推奨事項。"
+"Tips and recommendations for using HStore fields effectively in production."
+msgstr "本番環境で HStore フィールドを効果的に使用するためのヒントと推奨事項。"
 
 #: ../../docs/user-guide/best-practices.rst:7
 msgid "Keep Keys Consistent"
@@ -35,9 +32,7 @@ msgstr "キーの一貫性を保つ"
 msgid ""
 "Use a naming convention for keys across your application. This makes "
 "querying and maintenance easier."
-msgstr ""
-"アプリケーション全体でキーの名前付け規則を使用してください。"
-"これによりクエリとメンテナンスが容易になります。"
+msgstr "アプリケーション全体でキーの名前付け規則を使用してください。これによりクエリとメンテナンスが容易になります。"
 
 #: ../../docs/user-guide/best-practices.rst:27
 msgid "Use Explicit Keys When Possible"
@@ -96,5 +91,5 @@ msgid ""
 "If you anticipate needing nested data in the future, plan your migration "
 "from HStore to JSONB early. The data formats are not directly compatible."
 msgstr ""
-"将来ネストされたデータが必要になる可能性がある場合は、HStore から JSONB への"
-"マイグレーションを早めに計画してください。データ形式は直接互換性がありません。"
+"将来ネストされたデータが必要になる可能性がある場合は、HStore から JSONB "
+"へのマイグレーションを早めに計画してください。データ形式は直接互換性がありません。"
