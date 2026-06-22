@@ -17,3 +17,18 @@ export function setFromAttributes(el: HTMLElement) {
         if (src) iconSignals[key].value = src;
     }
 }
+
+export function resolveSvgFromScriptUrl() {
+    try {
+        const scriptUrl = new URL(import.meta.url);
+        const pathParts = scriptUrl.pathname.split('/');
+        const adminIndex = pathParts.indexOf('admin');
+        if (adminIndex === -1) return;
+        pathParts.splice(adminIndex + 1);
+        pathParts.push('img');
+        const imgBase = scriptUrl.protocol + '//' + scriptUrl.host + pathParts.join('/');
+        if (!iconSignals.delete.value) iconSignals.delete.value = imgBase + '/icon-deletelink.svg';
+        if (!iconSignals.add.value) iconSignals.add.value = imgBase + '/icon-addlink.svg';
+        if (!iconSignals.edit.value) iconSignals.edit.value = imgBase + '/icon-changelink.svg';
+    } catch { /* ignore — fall back to Lucide icons */ }
+}

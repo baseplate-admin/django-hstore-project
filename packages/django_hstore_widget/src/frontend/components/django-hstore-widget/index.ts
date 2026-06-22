@@ -10,7 +10,7 @@ import { cn } from '$lib/classnames';
 import { DJANGO_INPUT_STYLES, DJANGO_TEXTAREA_STYLES } from '$mapppings/django';
 import { GITHUB_ISSUES_URL } from '$mapppings/github';
 
-import { setFromAttributes } from '$store/image';
+import { resolveSvgFromScriptUrl, setFromAttributes } from '$store/image';
 
 import '$css/app.css';
 
@@ -51,6 +51,7 @@ export class DjangoHstoreWidget extends LitElement {
 
     override connectedCallback() {
         super.connectedCallback();
+        resolveSvgFromScriptUrl();
         setFromAttributes(this);
     }
 
