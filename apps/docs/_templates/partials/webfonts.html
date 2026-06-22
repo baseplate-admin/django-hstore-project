@@ -83,9 +83,16 @@
     font-display: swap;
     src: url("{{ pathto('_static/fonts/noto-sans-kr/NotoSansKR-Regular.ttf', 1) }}") format("truetype");
 }
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("{{ pathto('_static/fonts/noto-sans-tc/NotoSansTC-Regular.ttf', 1) }}") format("truetype");
+}
 :root {
-    --sy-f-heading: 'Source Sans 3', 'Noto Sans Arabic', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Malayalam', 'Noto Sans Thai', 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', var(--sy-f-sys), sans-serif;
-    --sy-f-text: 'Source Sans 3', 'Noto Sans Arabic', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Malayalam', 'Noto Sans Thai', 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', var(--sy-f-sys), sans-serif;
+    --sy-f-heading: 'Source Sans 3', 'Noto Sans Arabic', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Malayalam', 'Noto Sans Thai', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', var(--sy-f-sys), sans-serif;
+    --sy-f-text: 'Source Sans 3', 'Noto Sans Arabic', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Malayalam', 'Noto Sans Thai', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', var(--sy-f-sys), sans-serif;
     --sy-f-mono: 'JetBrains Mono', var(--sy-f-sys), monospace;
 }
 </style>
