@@ -158,7 +158,7 @@ jobs:
           if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
         
           steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
         
             - name: Debug PR URL
               run: echo "$PR_URL"
