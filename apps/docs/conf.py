@@ -17,7 +17,7 @@ author = "baseplate-admin"
 
 html_theme = "shibuya"
 html_theme_options = {
-    "github_url": "https://github.com/baseplate-admin/django-hstore-widget",
+    "github_url": "https://github.com/baseplate-admin/django-hstore-project",
     "globaltoc_expand_depth": 1,
 }
 
@@ -26,8 +26,9 @@ _rtd_version = os.environ.get("READTHEDOCS_VERSION", "latest").rstrip("/")
 html_context = {
     "source_type": "github",
     "source_user": "baseplate-admin",
-    "source_repo": "django-hstore-widget",
-    "edit_page_url_template": "apps/docs/{filename}",
+    "source_repo": "django-hstore-project",
+    "source_version": "master",
+    "source_docs_path": "/apps/docs/",
     "languages": [
         ("English", f"/en/{_rtd_version}/%s.html", "en"),
         ("বাংলা", f"/bn/{_rtd_version}/%s.html", "bn"),
