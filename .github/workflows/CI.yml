@@ -156,6 +156,9 @@ jobs:
           runs-on: ubuntu-latest
           needs: [test-frontend, test-widget-backend, test-field-backend]
           if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
+          concurrency:
+            group: merge
+            max-parallel: 1
         
           steps:
             - uses: actions/checkout@v7
