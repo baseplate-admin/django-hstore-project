@@ -256,7 +256,7 @@ requires-dist = [
     { name = "myst-parser", specifier = ">=4.0" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "pyrefly", specifier = ">=1.0" },
-    { name = "ruff", specifier = ">=0.15.20" },
+    { name = "ruff", specifier = ">=0.11" },
     { name = "shibuya", specifier = ">=2024.9.24" },
     { name = "sphinx", specifier = ">=8.0" },
     { name = "sphinx-autoapi", specifier = ">=3.0" },
@@ -308,7 +308,7 @@ requires-dist = [
 dev = [
     { name = "django-stubs", specifier = ">=5.0" },
     { name = "pyrefly", specifier = ">=1.0" },
-    { name = "ruff", specifier = ">=0.15.20" },
+    { name = "ruff", specifier = ">=0.11" },
 ]
 test = [
     { name = "playwright", specifier = ">=1.52.0" },
@@ -351,7 +351,7 @@ requires-dist = [{ name = "django", specifier = ">=5.0" }]
 dev = [
     { name = "django-stubs", specifier = ">=5.0" },
     { name = "pyrefly", specifier = ">=1.0" },
-    { name = "ruff", specifier = ">=0.15.20" },
+    { name = "ruff", specifier = ">=0.11" },
 ]
 test = [
     { name = "playwright", specifier = ">=1.52.0" },
