@@ -158,7 +158,6 @@ jobs:
           if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
           concurrency:
             group: merge
-            max-parallel: 1
         
           steps:
             - uses: actions/checkout@v7
