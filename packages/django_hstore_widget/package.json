@@ -23,7 +23,7 @@
         "@ianvs/prettier-plugin-sort-imports": "4.7.1",
         "@playwright/test": "^1.61.1",
         "@types/node": "^26.0.1",
-        "@typescript/native-preview": "^7.0.0-dev.20260629.1",
+        "@typescript/native-preview": "^7.0.0-dev.20260630.1",
         "@vitest/browser": "^4.1.9",
         "@vitest/browser-playwright": "^4.1.9",
         "lightningcss": "^1.32.0",
