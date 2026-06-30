@@ -28,7 +28,7 @@
         "@vitest/browser-playwright": "^4.1.9",
         "lightningcss": "^1.32.0",
         "lit": "^3.3.3",
-        "lucide": "^1.21.0",
+        "lucide": "^1.22.0",
         "lucide-static": "^1.22.0",
         "playwright": "^1.51.0",
         "prettier": "3.9.3",
