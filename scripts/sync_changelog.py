@@ -4,6 +4,7 @@
 Fetches releases from the current repo and updates CHANGELOG.md with the latest tags.
 """
 
+import os
 import subprocess
 from datetime import datetime
 from pathlib import Path
@@ -33,7 +34,6 @@ def fetch_tags(prefix: str, max_tags: int = 30) -> list[dict]:
     releases = []
 
     for tag in tags:
-        # Get the commit message and date for this tag
         commit_result = subprocess.run(
             ["git", "log", "-1", "--format=%H|%s|%ci", tag],
             capture_output=True,
@@ -51,10 +51,69 @@ def fetch_tags(prefix: str, max_tags: int = 30) -> list[dict]:
         releases.append(
             {
                 "tag": tag,
-                "version": tag[len(prefix) :],
+                "version": tag[len(prefix):],
                 "message": message,
                 "date": date,
                 "commit": commit_hash[:7],
+            }
+        )
+
+    return releases
+
+
+def fetch_monorepo_releases(max_releases: int = 30) -> list[dict]:
+    """Fetch monorepo release tags (v-prefixed) with release body from GitHub API."""
+    result = subprocess.run(
+        ["git", "tag", "-l", "v*"],
+        capture_output=True,
+        text=True,
+        cwd=BASE_DIR,
+    )
+    if result.returncode != 0:
+        return []
+
+    tags = sorted(result.stdout.strip().splitlines(), reverse=True)[:max_releases]
+    releases = []
+
+    for tag in tags:
+        commit_result = subprocess.run(
+            ["git", "log", "-1", "--format=%s|%ci", tag],
+            capture_output=True,
+            text=True,
+            cwd=BASE_DIR,
+        )
+        if commit_result.returncode != 0:
+            continue
+
+        parts = commit_result.stdout.strip().split("|", 1)
+        message = parts[0] if parts else ""
+        date = parts[1][:10] if len(parts) > 1 else ""
+
+        # Try to fetch release body from GitHub API
+        body = None
+        token = os.environ.get("GITHUB_TOKEN", "")
+        if token:
+            import json
+            import urllib.request
+
+            url = f"https://api.github.com/repos/baseplate-admin/django-hstore-project/releases/tags/{tag}"
+            req = urllib.request.Request(url)
+            req.add_header("Authorization", f"Bearer {token}")
+            req.add_header("Accept", "application/vnd.github+json")
+            try:
+                with urllib.request.urlopen(req, timeout=10) as resp:
+                    data = json.loads(resp.read().decode())
+                    body = data.get("body")
+            except Exception:
+                pass
+
+        releases.append(
+            {
+                "tag": tag,
+                "version": tag.lstrip("v"),
+                "message": message,
+                "date": date,
+                "body": body,
             }
         )
 
@@ -69,6 +128,19 @@ def generate_changelog() -> str:
         f"\n_Last updated: {datetime.now().strftime('%Y-%m-%d')}_\n",
     ]
 
+    # Add monorepo release entries
+    monorepo_releases = fetch_monorepo_releases()
+    if monorepo_releases:
+        sections.append("\n## Monorepo Releases\n")
+        for release in monorepo_releases:
+            sections.append(f"### v{release['version']} - {release['date']}\n")
+            if release.get("body"):
+                sections.append(release["body"])
+            elif release.get("message"):
+                sections.append(f"- {release['message']}")
+            sections.append("")
+
+    # Add per-package release entries
     for package, prefix in PACKAGES.items():
         sections.append(f"\n## {package}\n")
         releases = fetch_tags(prefix)

@@ -1,0 +1,71 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  release:
+    name: Release packages
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/django-hstore-widget
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Extract version from release tag
+        id: version
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Update pyproject.toml versions
+        run: |
+          uv run python scripts/sync_release.py "widget-${{ steps.version.outputs.version }}"
+          uv run python scripts/sync_release.py "field-${{ steps.version.outputs.version }}"
+
+      - name: Update CHANGELOG.md
+        run: uv run python scripts/sync_changelog.py
+
+      - name: Commit version & changelog updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            packages/django_hstore_widget/pyproject.toml \
+            packages/django_hstore_widget/src/django_hstore_widget/__init__.py \
+            packages/django_hstore_field/pyproject.toml \
+            packages/django_hstore_field/src/django_hstore_field/__init__.py \
+            CHANGELOG.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: sync versions and changelog for release ${{ steps.version.outputs.version }}"
+          git push origin HEAD:master
+
+      - name: Build widget package
+        run: |
+          uv build --package django-hstore-widget --no-sources \
+            --out-dir packages/django_hstore_widget/py-dist --clear
+
+      - name: Build field package
+        run: |
+          uv build --package django-hstore-field --no-sources \
+            --out-dir packages/django_hstore_field/py-dist --clear
+
+      - name: Publish widget to PyPI
+        run: uv publish --trusted-publishing always packages/django_hstore_widget/py-dist/*
+
+      - name: Publish field to PyPI
+        run: uv publish --trusted-publishing always packages/django_hstore_field/py-dist/*
