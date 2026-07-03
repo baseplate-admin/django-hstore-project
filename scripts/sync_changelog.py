@@ -51,7 +51,7 @@ def fetch_tags(prefix: str, max_tags: int = 30) -> list[dict]:
         releases.append(
             {
                 "tag": tag,
-                "version": tag[len(prefix):],
+                "version": tag[len(prefix) :],
                 "message": message,
                 "date": date,
                 "commit": commit_hash[:7],
