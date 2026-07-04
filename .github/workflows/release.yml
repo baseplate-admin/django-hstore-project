@@ -9,8 +9,40 @@ permissions:
   id-token: write
 
 jobs:
+  wait-for-ci:
+    name: Wait for CI to pass
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check CI status for tagged commit
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 30
+          timeout_minutes: 60
+          retry_wait_seconds: 120
+          command: |
+            gh api repos/${{ github.repository }}/commits/${{ github.sha }}/check-runs \
+              --jq '
+                .check_runs[] | select(.name | test("CI")) |
+                "\(.name) \(.conclusion)"
+              '
+            CI_STATUS=$(gh api repos/${{ github.repository }}/commits/${{ github.sha }}/check-runs \
+              --jq '
+                [.check_runs[] | select(.name | test("CI")) | .conclusion] |
+                all(. == "success" or . == "skipped")
+              ')
+            if [ "$CI_STATUS" = "true" ]; then
+              echo "All CI checks passed"
+              exit 0
+            else
+              echo "CI checks not yet passed or failed"
+              exit 1
+            fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   release:
     name: Release packages
+    needs: wait-for-ci
     runs-on: ubuntu-latest
     environment:
       name: pypi
@@ -25,6 +57,7 @@ jobs:
         uses: astral-sh/setup-uv@v7
         with:
           enable-cache: true
+          python-version: "3.13"
 
       - name: Extract version from release tag
         id: version
