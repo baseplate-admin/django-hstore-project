@@ -1,10 +1,15 @@
 name: CI
 
-on: [push, pull_request]
+on:
+    push:
+    pull_request:
+    release:
+        types: [published]
 
 permissions:
     contents: write
     pull-requests: write
+    id-token: write
 
 jobs:
     build-frontend:
@@ -172,4 +177,100 @@ jobs:
               env:
                 PR_URL: ${{ github.event.pull_request.html_url }}
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    wait-for-ci:
+        name: Wait for CI to pass
+        runs-on: ubuntu-latest
+        if: github.event_name == 'release'
+        steps:
+            - name: Check CI status for tagged commit
+              uses: nick-fields/retry@v3
+              with:
+                max_attempts: 30
+                timeout_minutes: 60
+                retry_wait_seconds: 120
+                command: |
+                  gh api repos/${{ github.repository }}/commits/${{ github.sha }}/check-runs \
+                    --jq '
+                      .check_runs[] | select(.name | test("CI")) |
+                      "\(.name) \(.conclusion)"
+                    '
+                  CI_STATUS=$(gh api repos/${{ github.repository }}/commits/${{ github.sha }}/check-runs \
+                    --jq '
+                      [.check_runs[] | select(.name | test("CI")) | .conclusion] |
+                      all(. == "success" or . == "skipped")
+                    ')
+                  if [ "$CI_STATUS" = "true" ]; then
+                    echo "All CI checks passed"
+                    exit 0
+                  else
+                    echo "CI checks not yet passed or failed"
+                    exit 1
+                  fi
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    release:
+        name: Release packages
+        needs: wait-for-ci
+        runs-on: ubuntu-latest
+        if: github.event_name == 'release'
+        environment:
+            name: pypi
+            url: https://pypi.org/project/django-hstore-widget
+        steps:
+            - uses: actions/checkout@v7
+              with:
+                fetch-depth: 0
+                token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Set up uv
+              uses: astral-sh/setup-uv@v7
+              with:
+                enable-cache: true
+                python-version: "3.13"
+
+            - name: Extract version from release tag
+              id: version
+              run: |
+                VERSION="${GITHUB_REF_NAME#v}"
+                echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+            - name: Update pyproject.toml versions
+              run: |
+                uv run python scripts/sync_release.py "widget-${{ steps.version.outputs.version }}"
+                uv run python scripts/sync_release.py "field-${{ steps.version.outputs.version }}"
+
+            - name: Update CHANGELOG.md
+              run: uv run python scripts/sync_changelog.py
+
+            - name: Commit version & changelog updates
+              run: |
+                git config user.name "github-actions[bot]"
+                git config user.email "github-actions[bot]@users.noreply.github.com"
+                git add \
+                  packages/django_hstore_widget/pyproject.toml \
+                  packages/django_hstore_widget/src/django_hstore_widget/__init__.py \
+                  packages/django_hstore_field/pyproject.toml \
+                  packages/django_hstore_field/src/django_hstore_field/__init__.py \
+                  CHANGELOG.md
+                git diff --cached --quiet && exit 0
+                git commit -m "chore: sync versions and changelog for release ${{ steps.version.outputs.version }}"
+                git push origin HEAD:master
+
+            - name: Build widget package
+              run: |
+                uv build --package django-hstore-widget --no-sources \
+                  --out-dir packages/django_hstore_widget/py-dist --clear
+
+            - name: Build field package
+              run: |
+                uv build --package django-hstore-field --no-sources \
+                  --out-dir packages/django_hstore_field/py-dist --clear
+
+            - name: Publish widget to PyPI
+              run: uv publish --trusted-publishing always packages/django_hstore_widget/py-dist/*
+
+            - name: Publish field to PyPI
+              run: uv publish --trusted-publishing always packages/django_hstore_field/py-dist/*
 
