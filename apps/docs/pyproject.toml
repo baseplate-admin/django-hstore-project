@@ -7,7 +7,7 @@ description = "Sphinx documentation for the Django HStore project"
 
 dependencies = [
     "sphinx>=8.0",
-    "shibuya>=2024.9.24",
+    "shibuya>=2026.7.8",
     "myst-parser>=4.0",
     "django>=5.2.16",
     "psycopg[binary]>=3.3.4",
