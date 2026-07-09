@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "baseUrl": "./src/frontend",
         "ignoreDeprecations": "6.0",
         "strict": true,
         "experimentalDecorators": true,
@@ -18,13 +17,13 @@
         "noUnusedParameters": true,
         "skipLibCheck": true,
         "paths": {
-            "$lib/*": ["./lib/*"],
-            "$store/*": ["./stores/*"],
-            "$mapppings/*": ["./mappings/*"],
-            "$mappping/*": ["./mappings/*"],
-            "$components/*": ["./components/*"],
-            "$composite_classes/*": ["./composite_classes/*"],
-            "$css/*": ["./css/*"]
+            "$lib/*": ["./src/frontend/lib/*"],
+            "$store/*": ["./src/frontend/stores/*"],
+            "$mapppings/*": ["./src/frontend/mappings/*"],
+            "$mappping/*": ["./src/frontend/mappings/*"],
+            "$components/*": ["./src/frontend/components/*"],
+            "$composite_classes/*": ["./src/frontend/composite_classes/*"],
+            "$css/*": ["./src/frontend/css/*"]
         }
     },
     "include": ["src/frontend"],
