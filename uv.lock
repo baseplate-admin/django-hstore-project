@@ -235,7 +235,7 @@ requires-dist = [
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "pyrefly", specifier = ">=1.0" },
     { name = "ruff", specifier = ">=0.15.21" },
-    { name = "shibuya", specifier = ">=2026.7.8" },
+    { name = "shibuya", specifier = ">=2026.7.12" },
     { name = "sphinx", specifier = ">=8.0" },
     { name = "sphinx-autoapi", specifier = ">=3.0" },
     { name = "sphinx-contributors", specifier = ">=0.2" },
@@ -1021,7 +1021,7 @@ wheels = [
 
 [[package]]
 name = "shibuya"
-version = "2026.7.8"
+version = "2026.7.12"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pygments-styles" },
@@ -1029,9 +1029,9 @@ dependencies = [
     { name = "sphinx", version = "9.0.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
     { name = "sphinx", version = "9.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1e/90/a0e02f97230c5b80aab1aa035c9d82cacfae9bd5de3d4ff39fd0b8c0de83/shibuya-2026.7.8.tar.gz", hash = "sha256:ad14887fd73de89bdba374341064c715ef82d30b2125b34c4a4cdea79d624ab6", size = 86537, upload-time = "2026-07-08T12:18:29.089Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ba/d2/8017988e02791162b286576116fedd200ed33e8d8af3579ab3587df3d3d0/shibuya-2026.7.12.tar.gz", hash = "sha256:9496606f5b95595511ad86b773d74b4b8d694a4dcc2f848e6ec34e2ad71d9060", size = 86545, upload-time = "2026-07-11T15:41:16.342Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b5/7d/e30e7d1c4494eb61a192315115b8245458dee8b28c2585f0f2589b41736b/shibuya-2026.7.8-py3-none-any.whl", hash = "sha256:b5510abf81c9758826f68a6aa39ddc3c458a83b6911f1dcc36b28c5b76b6618c", size = 104091, upload-time = "2026-07-08T12:18:27.395Z" },
+    { url = "https://files.pythonhosted.org/packages/84/70/9ca2b8187666be1bcfa82b938107247159f5b566a22b5e43be27df45039d/shibuya-2026.7.12-py3-none-any.whl", hash = "sha256:0a2c0c109e7cc47fc650b01feb671d267c0ffe2e39c98f3529e32d723a9c9d9b", size = 104092, upload-time = "2026-07-11T15:41:14.936Z" },
 ]
 
 [[package]]
