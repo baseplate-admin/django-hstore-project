@@ -19,7 +19,7 @@ dependencies = [
     "sphinx-contributors>=0.2",
     "sphinx-iconify>=0.1",
     "sphinx-autoapi>=3.0",
-    "ruff>=0.15.21",
+    "ruff>=0.15.22",
     "pyrefly>=1.0",
     "django-stubs>=6.0.7",
 ]
