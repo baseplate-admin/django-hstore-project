@@ -23,11 +23,7 @@ pip install django-hstore-widget
 Add to `INSTALLED_APPS`:
 
 ```python
-INSTALLED_APPS = [
-    ...,
-    'django_hstore_widget',
-    ...
-]
+INSTALLED_APPS = [..., "django_hstore_widget", ...]
 ```
 
 ## Usage
@@ -36,6 +32,7 @@ INSTALLED_APPS = [
 # forms.py
 from django import forms
 from django_hstore_widget.forms import HStoreFormField
+
 
 class MyModelAdminForm(forms.ModelForm):
     my_hstore_field = HStoreFormField()
@@ -49,6 +46,7 @@ class MyModelAdminForm(forms.ModelForm):
 from django.contrib import admin
 from .models import MyModel
 from .forms import MyModelAdminForm
+
 
 @admin.register(MyModel)
 class MyModelAdmin(admin.ModelAdmin):

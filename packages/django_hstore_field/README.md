@@ -13,12 +13,7 @@ pip install django-hstore-field
 Add both packages to `INSTALLED_APPS`:
 
 ```python
-INSTALLED_APPS = [
-    ...,
-    'django_hstore_widget',
-    'django_hstore_field',
-    ...
-]
+INSTALLED_APPS = [..., "django_hstore_widget", "django_hstore_field", ...]
 ```
 
 ## Usage
@@ -27,6 +22,7 @@ INSTALLED_APPS = [
 # models.py
 from django.db import models
 from django_hstore_field import HStoreField
+
 
 class MyModel(models.Model):
     metadata = HStoreField()
