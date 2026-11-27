@@ -29,7 +29,7 @@
         "lightningcss": "^1.33.0",
         "lit": "^3.3.3",
         "lucide": "^1.78.0",
-        "lucide-static": "^1.77.0",
+        "lucide-static": "^1.78.0",
         "playwright": "^1.65.1",
         "prettier": "3.10.1",
         "prettier-plugin-organize-imports": "^4.3.0",
